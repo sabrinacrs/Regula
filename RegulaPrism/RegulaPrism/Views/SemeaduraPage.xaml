@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.SemeaduraPage"
+             Title="Semeadura">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20, 10, 20, 10">
+            <Label Text="{Binding Title}"></Label>
+            <Label Text="Cultivar"></Label>
+            <Picker x:Name="CultivaresPicker" Title="Cultivar" SelectedIndex="{Binding Cultivar}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Época de Semeadura"></Label>
+            <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeadura}" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>1</x:String>
+                    <x:String>2</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Espaçamento (m)"></Label>
+            <Entry x:Name="Espacamento" Placeholder="Ex 0.8"></Entry>
+            <Label Text="Metros Lineares"></Label>
+            <Entry x:Name="MetrosLineares" Keyboard="Numeric"></Entry>
+            <Label Text="Germinação (%)"></Label>
+            <Entry x:Name="Germinacao" Keyboard="Numeric"></Entry>
+            <Button x:Name="Calcular" Text="Calcular" Style="{StaticResource button-save}"></Button>
+        </StackLayout>
+
+    </ContentPage.Content>
+    
+</ContentPage>

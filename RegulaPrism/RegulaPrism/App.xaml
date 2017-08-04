@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms"
+                        x:Class="RegulaPrism.App">
+  <!-- Application resource dictionary -->
+  <prism:PrismApplication.Resources>
+    <ResourceDictionary>
+
+      <!-- Color Header Bar -->
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="#8fd08f"/>
+        <Setter Property="BarTextColor" Value="Color.White"/>
+      </Style>
+
+      <!-- Button Save Style -->
+      <Style x:Key="button-save" TargetType="Button">
+        <Setter Property="BorderColor" Value="Blue"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+        <Setter Property="BackgroundColor" Value="#60BD60"/>
+        <!--<Setter Property="BorderWidth" Value="10"/>-->
+        <!--<Setter Property="BorderRadius" Value="-20"/>-->
+      </Style>
+
+      <!-- Button Delete Style -->
+      <Style x:Key="button-delete" TargetType="Button">
+        <Setter Property="TextColor" Value="#ffffff"/>
+        <Setter Property="BackgroundColor" Value="#E82929"/>
+      </Style>
+
+      <!-- Button Edit Style -->
+      <Style x:Key="button-edit" TargetType="Button">
+        <Setter Property="TextColor" Value="#ffffff"/>
+        <Setter Property="BackgroundColor" Value="#294BC5"/>
+      </Style>
+
+      <!-- Button Warning Style -->
+      <Style x:Key="button-warning" TargetType="Button">
+        <Setter Property="TextColor" Value="#ffffff" />
+        <Setter Property="BackgroundColor" Value="#FFAE19"/>
+      </Style>
+
+      <!-- Button Menu Lateral Style -->
+      <Style x:Key="button-menu-lateral" TargetType="Button">
+        <Setter Property="BorderRadius" Value="20"/>
+        <Setter Property="TextColor" Value="#293546" />
+        <Setter Property="BackgroundColor" Value="#ffffff"/>
+      </Style>
+      
+      <!-- Button Menu Home -->
+      <Style x:Key="button-menu-home" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#9fd79f"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+        <Setter Property="BorderRadius" Value="20"/>
+      </Style>
+
+      <!-- Label Dados Pessoais Formulário -->
+      <Style x:Key="label-dados-pessoais" TargetType="Label">
+        <Setter Property="BackgroundColor" Value="#dde0ec"/>
+        <Setter Property="TextColor" Value="#989aa3"/>
+        <Setter Property="FontSize" Value="Medium"/>
+      </Style>
+
+      <!-- Entry Formulário Edição -->
+      <Style x:Key="entry-formulario" TargetType="Entry">
+        <Setter Property="FontSize" Value="Medium"/>
+      </Style>
+      
+    </ResourceDictionary>
+  </prism:PrismApplication.Resources>
+        
+
+</prism:PrismApplication>

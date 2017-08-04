@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:utils="clr-namespace:RegulaPrism.Utils"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.FazendaContatoPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="LabelInformacoesContato" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Contato"></Label>
+            <StackLayout Padding="10, 20, 10, 10" Spacing="20">
+                <Label Text="Email"></Label>
+                <Entry x:Name="Email" Keyboard="Email">
+                    <Entry.Behaviors>
+                        <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Endereço Web"></Label>
+                <Entry x:Name="EnderecoWeb"/>
+                <Label Text="Telefone"></Label>
+                <Entry x:Name="Telefone" Keyboard="Telephone">
+                    <Entry.Behaviors>
+                        <utils:TelefoneValidatorBehavior x:Name="telefoneValidator"></utils:TelefoneValidatorBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+            </StackLayout>
+            <StackLayout Padding="40, 20, 40, 20">
+                <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Command="{Binding FazendaSaveCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

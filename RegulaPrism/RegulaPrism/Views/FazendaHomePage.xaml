@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.FazendaHomePage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid>
+            <!-- Row Definitions of Grid -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- Column Definitions of Grid -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="CreateFazenda" Text="Nova Fazenda" Grid.Row="0" Grid.Column="0" Command="{Binding FazendaCreateCommand}"></Button>
+            <Button x:Name="UpdateFazenda" Text="Atualizar Fazenda" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaUpdateCommand}"></Button>
+            <Button x:Name="ListFazendas" Text="Listar Fazendas" Grid.Row="1" Grid.Column="0" Command="{Binding FazendaListCommand}"></Button>
+            <Button x:Name="DeleteFazenda" Text="Excluir Fazenda" Grid.Row="1" Grid.Column="1" Command="{Binding FazendaDeleteCommand}"></Button>
+        </Grid>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.HomePage"
+             Title="{Binding Title}">
+    <Grid>
+        <!-- Row Definitions of Grid -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <!-- Column Definitions of Grid -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
+        <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
+        <Button x:Name="ButtonHomeCultivarRecomendada" Text="Cultivar Recomendada" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
+        <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
+        <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
+        <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
+    </Grid>
+
+</ContentPage>

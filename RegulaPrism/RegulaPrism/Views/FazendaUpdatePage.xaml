@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.FazendaUpdatePage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <StackLayout Spacing="10">
+                <!-- Informacoes Basicas -->
+                <Label x:Name="LabelInformacoesBasicas" Style="{StaticResource label-dados-pessoais}" Text="      Informações Básicas"></Label>
+                <StackLayout Padding="20, 10, 20, 10">
+                    <Label Text="Nome da Fazenda"></Label>
+                    <Entry x:Name="Nome" Text="{Binding Fazenda.Nome}"></Entry>
+                    <Label Text="Hectares"></Label>
+                    <Entry x:Name="Hectares" Keyboard="Numeric" Text="{Binding Fazenda.Hectares}"></Entry>
+                    <Label Text="Observações"></Label>
+                    <Entry x:Name="Observacoes" Text="{Binding Fazenda.Observacoes}"></Entry>
+                </StackLayout>
+
+                <!-- Informacoes Contato -->
+                <Label x:Name="LabelInformacoesContato" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Contato"></Label>
+                <StackLayout Padding="20, 10, 20, 10">
+                    <Label Text="Email"></Label>
+                    <Entry x:Name="Email" Keyboard="Email" Text="{Binding Fazenda.Email}"/>
+                    <Label Text="Endereço Web"></Label>
+                    <Entry x:Name="EnderecoWeb" Placeholder="Endereço Web" Text="{Binding Fazenda.EnderecoWeb}"/>
+                    <Label Text="Telefone"></Label>
+                    <Entry x:Name="Telefone" Keyboard="Telephone" Text="{Binding Fazenda.Telefone}"/>
+                </StackLayout>
+
+                <!-- Informacoes Localizacao -->
+                <Label x:Name="LabelInformacoesLocalizacao" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Localização"></Label>
+                <StackLayout Padding="20, 10, 20, 10">
+                    <Label Text="Bairro"></Label>
+                    <Entry x:Name="Bairro" Text="{Binding Fazenda.Bairro}"></Entry>
+                    <Label Text="Cidade"></Label>
+                    <Entry x:Name="Cidade" Text="{Binding Fazenda.Cidade}"></Entry>
+                    <Label Text="UF"></Label>
+                    <Entry x:Name="UF" Text="{Binding Fazenda.UF}"></Entry>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid>
+                        <!-- Row Definitions of Grid -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <!-- Row Definitions of Grid -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Button x:Name="ButtonDeleteFazenda" Text="Excluir Fazenda" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding FazendaDeleteCommand}"></Button>
+                        <Button x:Name="ButtonSaveFazenda" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaUpdateCommand}"></Button>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

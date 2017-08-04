@@ -1,0 +1,2 @@
+- criar tabela historico com epoca de semeadura, espaçamento, etc
+e armazenar cálculos
