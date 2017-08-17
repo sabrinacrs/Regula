@@ -9,7 +9,7 @@
 
       <!-- Color Header Bar -->
       <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="#8fd08f"/>
+        <Setter Property="BarBackgroundColor" Value="#4ba561"/><!--8fd08f-->
         <Setter Property="BarTextColor" Value="Color.White"/>
       </Style>
 
@@ -48,10 +48,29 @@
       </Style>
       
       <!-- Button Menu Home -->
-      <Style x:Key="button-menu-home" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#9fd79f"/>
+      <Style x:Key="button-menu-home-1" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#127E35"/>
         <Setter Property="TextColor" Value="#ffffff"/>
-        <Setter Property="BorderRadius" Value="20"/>
+      </Style>
+      <Style x:Key="button-menu-home-2" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#1cc1a4"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+      </Style>
+      <Style x:Key="button-menu-home-3" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#1cc151"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+      </Style>
+      <Style x:Key="button-menu-home-4" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#1b5c9e"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+      </Style>
+      <Style x:Key="button-menu-home-5" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#1B9E5C"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
+      </Style>
+      <Style x:Key="button-menu-home-6" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#1b9e9e"/>
+        <Setter Property="TextColor" Value="#ffffff"/>
       </Style>
 
       <!-- Label Dados Pessoais Formulário -->

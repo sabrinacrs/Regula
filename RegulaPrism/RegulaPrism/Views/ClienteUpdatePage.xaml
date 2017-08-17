@@ -62,8 +62,8 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Button x:Name="ExcluirConta" Text="Excluir Conta" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="ClienteDeleteCommand"></Button>
-                    <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="ClienteSaveCommand"></Button>
+                    <Button x:Name="ExcluirConta" Text="Excluir Conta" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding ClienteDeleteCommand}"></Button>
+                    <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding ClienteSaveCommand}"></Button>
                 </Grid>
             </StackLayout>
         </ScrollView>

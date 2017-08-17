@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:utils="clr-namespace:RegulaPrism.Utils"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaUpdatePage"
              Title="{Binding Title}">
@@ -24,11 +25,19 @@
                 <Label x:Name="LabelInformacoesContato" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Contato"></Label>
                 <StackLayout Padding="20, 10, 20, 10">
                     <Label Text="Email"></Label>
-                    <Entry x:Name="Email" Keyboard="Email" Text="{Binding Fazenda.Email}"/>
+                    <Entry x:Name="Email" Keyboard="Email" Text="{Binding Fazenda.Email}">
+                        <Entry.Behaviors>
+                            <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
                     <Label Text="Endereço Web"></Label>
-                    <Entry x:Name="EnderecoWeb" Placeholder="Endereço Web" Text="{Binding Fazenda.EnderecoWeb}"/>
+                    <Entry x:Name="EnderecoWeb" Text="{Binding Fazenda.EnderecoWeb}"/>
                     <Label Text="Telefone"></Label>
-                    <Entry x:Name="Telefone" Keyboard="Telephone" Text="{Binding Fazenda.Telefone}"/>
+                    <Entry x:Name="Telefone" Keyboard="Telephone" Text="{Binding Fazenda.Telefone}">
+                        <Entry.Behaviors>
+                            <utils:TelefoneValidatorBehavior x:Name="telefoneValidator"></utils:TelefoneValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
                 </StackLayout>
 
                 <!-- Informacoes Localizacao -->
@@ -39,9 +48,14 @@
                     <Label Text="Cidade"></Label>
                     <Entry x:Name="Cidade" Text="{Binding Fazenda.Cidade}"></Entry>
                     <Label Text="UF"></Label>
-                    <Entry x:Name="UF" Text="{Binding Fazenda.UF}"></Entry>
+                    <Entry x:Name="UF" Text="{Binding Fazenda.UF}">
+                        <Entry.Behaviors>
+                            <utils:UFValidatorBehavior x:Name="ufValidator"></utils:UFValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
                 </StackLayout>
 
+                <!-- Botoes -->
                 <StackLayout>
                     <Grid>
                         <!-- Row Definitions of Grid -->

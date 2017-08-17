@@ -2,23 +2,62 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:utils="clr-namespace:RegulaPrism.Utils"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaCreatePage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label x:Name="LabelInformacoesBasicas" Style="{StaticResource label-dados-pessoais}" Text="      Informações Básicas"></Label>
-            <StackLayout Padding="10, 20, 10, 10" Spacing="20">
-                <Label Text="Nome da Fazenda"></Label>
-                <Entry x:Name="Nome"></Entry>
-                <Label Text="Hectares"></Label>
-                <Entry x:Name="Hectares" Keyboard="Numeric"></Entry>
-                <Label Text="Observações"></Label>
-                <Entry x:Name="Observacoes"></Entry>
+        <ScrollView>
+            <StackLayout>
+                <!-- Bloco de informacoes basicas -->
+                <Label x:Name="LabelInformacoesBasicas" Style="{StaticResource label-dados-pessoais}" Text="      Informações Básicas"></Label>
+                <StackLayout Padding="10, 20, 10, 10" Spacing="20">
+                    <Label Text="Nome da Fazenda"></Label>
+                    <Entry Text="{Binding Nome}" x:Name="Nome"></Entry>
+                    <Label Text="Hectares"></Label>
+                    <Entry Text="{Binding Hectares}" x:Name="Hectares" Keyboard="Numeric"></Entry>
+                    <Label Text="Observações"></Label>
+                    <Entry Text="{Binding Observacoes}" x:Name="Observacoes"></Entry>
+                </StackLayout>
+
+                <!-- Bloco de informacoes de contato -->
+                <Label x:Name="LabelInformacoesContato" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Contato"></Label>
+                <StackLayout Padding="10, 20, 10, 10" Spacing="20">
+                    <Label Text="Email"></Label>
+                    <Entry Text="{Binding Email}" x:Name="Email" Keyboard="Email">
+                        <Entry.Behaviors>
+                            <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                    <Label Text="Endereço Web"></Label>
+                    <Entry Text="{Binding EnderecoWeb}" x:Name="EnderecoWeb"/>
+                    <Label Text="Telefone"></Label>
+                    <Entry Text="{Binding Telefone}" x:Name="Telefone" Keyboard="Telephone">
+                        <Entry.Behaviors>
+                            <utils:TelefoneValidatorBehavior x:Name="telefoneValidator"></utils:TelefoneValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                </StackLayout>
+                
+                <!-- Bloco de informacoes de localizacao -->
+                <Label x:Name="LabelInformacoesLocalizacao" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Localização"></Label>
+                <StackLayout Padding="10, 20, 10, 10" Spacing="20">
+                    <Label Text="Bairro"></Label>
+                    <Entry Text="{Binding Bairro}" x:Name="Bairro"></Entry>
+                    <Label Text="Cidade"></Label>
+                    <Entry Text="{Binding Cidade}" x:Name="Cidade"></Entry>
+                    <Label Text="UF"></Label>
+                    <Entry Text="{Binding UF}" x:Name="UF">
+                        <Entry.Behaviors>
+                            <utils:UFValidatorBehavior x:Name="ufValidator"></utils:UFValidatorBehavior>
+                        </Entry.Behaviors>
+                    </Entry>
+                </StackLayout>
+
+                <StackLayout Padding="40, 20, 40, 20">
+                    <Button x:Name="ButtonSaveFazenda" Text="Salvar" Style="{StaticResource button-save}" Command="{Binding FazendaSaveCommand}"></Button>
+                </StackLayout>
             </StackLayout>
-            <StackLayout Padding="40, 20, 40, 20">
-                <Button x:Name="Proximo" Text="Salvar" Style="{StaticResource button-save}" Command="{Binding FazendaSaveCommand}"></Button>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -1,19 +1,27 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using RegulaPrism.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace RegulaPrism.ViewModels
 {
-    public class HomeMasterDetailPageViewModel : BindableBase
+    public class HomeMasterDetailPageViewModel : BindableBase, INavigatedAware
     {
         private string _title;
         public string Title
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
+        }
+
+        private Cliente _cliente;
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { SetProperty(ref _cliente, value); }
         }
 
         private List<ItemMenuLateral> _itens;
@@ -43,6 +51,8 @@ namespace RegulaPrism.ViewModels
 
         private INavigationService _navigationService;
 
+        private NavigationParameters _navigationParameters;
+
         public DelegateCommand NavigateToItemPageCommand { get; private set; }
 
         public HomeMasterDetailPageViewModel(INavigationService navigationService)
@@ -51,6 +61,8 @@ namespace RegulaPrism.ViewModels
 
             _itens = GetItens();
             _navigationService = navigationService;
+            _navigationParameters = new NavigationParameters();
+
             NavigateToItemPageCommand = new DelegateCommand(NavigateToItemPage);
         }
 
@@ -72,23 +84,27 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            parameters.Add("cliente", _cliente);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            _cliente = (Cliente)parameters["cliente"];
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            _cliente = (Cliente)parameters["cliente"];
         }
 
         private void NavigateToItemPage()
         {
             if(!SelectedItem.Titulo.Equals("Sair"))
-                _navigationService.NavigateAsync("NavigationPage/" + SelectedItem.Descricao);
+            {
+                _navigationParameters.Add("cliente", _cliente);
+                _navigationService.NavigateAsync("NavigationPage/" + SelectedItem.Descricao, _navigationParameters);
+            }
+                
             else
                 _navigationService.NavigateAsync(new Uri("http://regulafabioecher.com/NavigationPage/LoginPage", UriKind.Absolute));
         }

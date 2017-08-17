@@ -43,3 +43,7 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPris
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoHomePage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoUpdatePage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoListPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\SQLite.Net.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSelectedTabbedPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TesteInterface.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoSelectedTabbedPage.xaml.g.cs

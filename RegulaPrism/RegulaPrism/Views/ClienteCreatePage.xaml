@@ -6,22 +6,28 @@
              xmlns:utils="clr-namespace:RegulaPrism.Utils"
              x:Class="RegulaPrism.Views.ClienteCreatePage"
              Title="{Binding Title}">
-    <StackLayout Padding="40, 20, 40, 0">
-        <Label Text="Nome Completo"></Label>
-        <Entry x:Name="Nome"/>
-        <Label Text="Email"></Label>
-        <Entry x:Name="Email" Keyboard="Email">
-            <Entry.Behaviors>
-                <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
-            </Entry.Behaviors>
-        </Entry>
-        <Label Text="Login"></Label>
-        <Entry x:Name="Login"></Entry>
-        <Label Text="Senha"></Label>
-        <Entry x:Name="Senha" IsPassword="True"></Entry>
-        <Label Text="Confrimar Senha"></Label>
-        <Entry x:Name="ConfirmarSenha" IsPassword="True"></Entry>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Share" Command="{Binding Path=ShareItemCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="40, 20, 40, 0">
+            <Label Text="Nome Completo"></Label>
+            <Entry Text="{Binding Nome, Mode=TwoWay}" x:Name="nome"/>
+            <Label Text="Email"></Label>
+            <Entry Text="{Binding Email, Mode=TwoWay}" Keyboard="Email" x:Name="email">
+                <Entry.Behaviors>
+                    <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
+                </Entry.Behaviors>
+            </Entry>
+            <!--<Label Style="{Binding Source={x:Reference emailValidator}, Path=IsValid, Converter={StaticResource boolToStyleEmail}}" />-->
+            <Label Text="Login"></Label>
+            <Entry Text="{Binding Login, Mode=TwoWay}" x:Name="login"></Entry>
+            <Label Text="Senha"></Label>
+            <Entry Text="{Binding Senha, Mode=TwoWay}" IsPassword="True" x:Name="senha"></Entry>
+            <Label Text="Confirmar Senha"></Label>
+            <Entry Text="{Binding ConfirmaSenha, Mode=TwoWay}" IsPassword="True" x:Name="confirmarSenha"></Entry>
 
-        <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Command="SalvarCommand"></Button>
-    </StackLayout>
+            <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Command="{Binding ClienteSaveCommand}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

@@ -10,24 +10,24 @@
             <StackLayout Padding="10, 20, 10, 10" Spacing="20">
                 <Label Text="Buscar Fazenda" Grid.Row="0" Grid.Column="0"></Label>
                 <Grid>
-                    <!-- Row Definitions of Grid -->
+                    <!--Row Definitions of Grid-->
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"></RowDefinition>
                     </Grid.RowDefinitions>
 
-                    <!-- Row Definitions of Grid -->
+                    <!--Row Definitions of Grid-->
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="90"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Entry x:Name="EntrySearchFazenda" Grid.Row="0" Grid.Column="0"></Entry>
-                    <Button x:Name="ButtonSearchFazenda" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="FazendaSearchCommand"></Button>
+                    <Entry x:Name="EntrySearchFazenda" Text="{Binding Filtro, Mode=TwoWay}"  Grid.Row="0" Grid.Column="0"></Entry>
+                    <Button x:Name="ButtonSearchFazenda" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaSearchCommand}"></Button>
                 </Grid>
-                
             </StackLayout>
+            
             <StackLayout>
-                <ListView x:Name="ListaFazendas" HasUnevenRows="True" ItemsSource="{Binding Fazendas}" SelectedItem="{Binding FazendaSelectedCommand}">
+                <ListView x:Name="ListaFazendas" HasUnevenRows="True" ItemsSource="{Binding Fazendas}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <TextCell Text="{Binding Nome}" Detail="{Binding Hectares}"/>
@@ -36,5 +36,6 @@
                 </ListView>
             </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>

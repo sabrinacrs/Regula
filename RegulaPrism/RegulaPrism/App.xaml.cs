@@ -12,7 +12,7 @@ namespace RegulaPrism
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/LoginPage"); // HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
+            NavigationService.NavigateAsync("NavigationPage/HomePage"); // HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
         }
 
         protected override void RegisterTypes()
@@ -21,7 +21,6 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<MainPage>();
             Container.RegisterTypeForNavigation<SpeakPage>();
             Container.RegisterTypeForNavigation<CalcularSemeaduraPage>();
-            Container.RegisterTypeForNavigation<LoginPage>();
             Container.RegisterTypeForNavigation<HomeMasterDetailPage>();
             Container.RegisterTypeForNavigation<HomePage>();
             Container.RegisterTypeForNavigation<SemeaduraPage>();
@@ -38,6 +37,10 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<TalhaoHomePage>();
             Container.RegisterTypeForNavigation<TalhaoUpdatePage>();
             Container.RegisterTypeForNavigation<TalhaoListPage>();
+            Container.RegisterTypeForNavigation<LoginPage>();
+            Container.RegisterTypeForNavigation<FazendaSelectedTabbedPage>();
+            Container.RegisterTypeForNavigation<TesteInterface>();
+            Container.RegisterTypeForNavigation<TalhaoSelectedTabbedPage>();
         }
     }
 }

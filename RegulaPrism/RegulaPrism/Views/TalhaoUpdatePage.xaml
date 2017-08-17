@@ -8,19 +8,20 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="10, 10, 10, 10" Spacing="20">
-                <Label Text="Descrição"></Label>
-                <Entry x:Name="Descricao"></Entry>
-                <Label Text="Tamanho"></Label>
-                <Entry x:Name="Tamanho" Keyboard="Numeric"></Entry>
-                <Label Text="Espaçamento"></Label>
-                <Entry x:Name="Espacamento"></Entry>
                 <Label Text="Fazenda"></Label>
-                <Picker x:Name="FazendasPicker" Title="Selecionar Fazenda" SelectedIndex="{Binding Fazenda}" HorizontalOptions="FillAndExpand">
-                    <Picker.Items>
-                        <x:String>Fazenda 1</x:String>
-                        <x:String>Fazenda 2</x:String>
-                    </Picker.Items>
+                <Picker x:Name="FazendasPicker" 
+                        Title="Selecionar Fazenda"
+                        SelectedIndex="{Binding FazendaSelectedIndex}"
+                        ItemsSource="{Binding Fazendas}" 
+                        ItemDisplayBinding="{Binding Nome}" 
+                        HorizontalOptions="FillAndExpand">
                 </Picker>
+                <Label Text="Descrição"></Label>
+                <Entry Text="{Binding Talhao.Descricao}" x:Name="Descricao"></Entry>
+                <Label Text="Tamanho"></Label>
+                <Entry Text="{Binding Talhao.Tamanho}" x:Name="Tamanho" Keyboard="Numeric"></Entry>
+                <Label Text="Espaçamento"></Label>
+                <Entry Text="{Binding Talhao.Espacamento}" x:Name="Espacamento"></Entry>
             </StackLayout>
             <StackLayout>
                 <Grid>

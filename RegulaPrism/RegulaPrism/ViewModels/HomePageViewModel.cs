@@ -2,13 +2,14 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using RegulaPrism.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace RegulaPrism.ViewModels
 {
-    public class HomePageViewModel : BindableBase
+    public class HomePageViewModel : BindableBase, INavigationAware
     {
         private string _title;
         public string Title
@@ -17,9 +18,18 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private Cliente _cliente;
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { SetProperty(ref _cliente, value); }
+        }
+
         private INavigationService _navigationService;
 
         private IPageDialogService _dialogService;
+
+        private NavigationParameters _navigationParameters;
 
         public DelegateCommand NavigateToCultivarListPageCommand { get; private set; }
         public DelegateCommand NavigateToSemeaduraPageCommand { get; private set; }
@@ -33,6 +43,7 @@ namespace RegulaPrism.ViewModels
 
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _navigationParameters = new NavigationParameters();
 
             NavigateToCultivarListPageCommand = new DelegateCommand(NavigateToCultivarListPage);
             NavigateToSemeaduraPageCommand = new DelegateCommand(NavigateToSemeaduraPage);
@@ -53,17 +64,35 @@ namespace RegulaPrism.ViewModels
 
         private void NavigateToFazendaHomePage()
         {
-            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaHomePage", UriKind.Absolute));
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaHomePage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToTalhaoHomePage()
         {
-            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/TalhaoHomePage", UriKind.Absolute));
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/TalhaoHomePage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToClienteUpdatePage()
         {
-            _navigationService.NavigateAsync("ClienteUpdatePage");
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync("ClienteUpdatePage", _navigationParameters);
+        }
+
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+            parameters.Add("cliente", _cliente);
+        }
+
+        public void OnNavigatedTo(NavigationParameters parameters)
+        {
+            _cliente = (Cliente)parameters["cliente"];
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+            _cliente = (Cliente)parameters["cliente"];
         }
     }
 }

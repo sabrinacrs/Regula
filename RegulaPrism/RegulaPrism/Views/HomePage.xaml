@@ -4,27 +4,32 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.HomePage"
-             Title="{Binding Title}">
-    <Grid>
-        <!-- Row Definitions of Grid -->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
+             Title="{Binding Title}"
+             BackgroundColor="#4ba561">
+    <ContentPage.Content>
+        <Grid Padding="0, 0, 0, 0">
+            <!-- Row Definitions of Grid -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <!--<RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>-->
+            </Grid.RowDefinitions>
 
-        <!-- Column Definitions of Grid -->
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+            <!-- Column Definitions of Grid -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
-        <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
-        <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
-        <Button x:Name="ButtonHomeCultivarRecomendada" Text="Cultivar Recomendada" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
-        <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
-        <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home}"></Button>
-        <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home}"></Button>
-    </Grid>
-
+            <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home-1}"></Button>
+            <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home-2}"></Button>
+            <Button x:Name="ButtonHomeCultivarRecomendada" Text="Cultivar Recomendada" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-3}"></Button>
+            <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home-4}"></Button>
+            <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home-5}"></Button>
+            <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-6}"></Button>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

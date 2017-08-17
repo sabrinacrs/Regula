@@ -7,8 +7,8 @@
              Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout Padding="30, 150, 30, 0" Spacing="20">
-            <Entry x:Name="Login" Placeholder="Login ou Email" />
-            <Entry x:Name="Senha" Placeholder="Senha" IsPassword="True" />
+            <Entry Text="{Binding Login, Mode=TwoWay}" x:Name="Login" Placeholder="Login ou Email" />
+            <Entry Text="{Binding Senha, Mode=TwoWay}" x:Name="Senha" Placeholder="Senha" IsPassword="True" />
             <Label x:Name="Registrar" Text="       Não possui usuário registrado? Cadastre-se" />
 
             <Button x:Name="Entrar" Text="Entrar" Style="{StaticResource button-save}" Command="{Binding NavigateToHomeMasterDetailPageCommand}"/>

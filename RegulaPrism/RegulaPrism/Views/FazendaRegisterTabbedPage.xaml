@@ -9,7 +9,7 @@
             BarBackgroundColor="#8fd08f"
             BarTextColor="White">
     <TabbedPage.Children>
-        <local:FazendaCreatePage/>
+        <!--<local:FazendaCreatePage/>-->
         <local:FazendaContatoPage/>
         <local:FazendaLocalizacaoPage/>
     </TabbedPage.Children>

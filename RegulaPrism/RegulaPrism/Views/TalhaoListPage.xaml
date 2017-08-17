@@ -8,6 +8,14 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="10, 20, 10, 10" Spacing="20">
+                <Label Text="Fazenda" Grid.Row="0" Grid.Column="0"></Label>
+                <Picker x:Name="FazendasPicker" 
+                        Title="Selecionar Fazenda"
+                        SelectedIndex="{Binding FazendaSelectedIndex}"
+                        ItemsSource="{Binding Fazendas}" 
+                        ItemDisplayBinding="{Binding Nome}" 
+                        HorizontalOptions="FillAndExpand">
+                </Picker>
                 <Label Text="Buscar Talhão" Grid.Row="0" Grid.Column="0"></Label>
                 <Grid>
                     <!-- Row Definitions of Grid -->
@@ -21,13 +29,13 @@
                         <ColumnDefinition Width="90"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Entry x:Name="EntrySearchTalhao" Grid.Row="0" Grid.Column="0"></Entry>
-                    <Button x:Name="ButtonSearchTalhao" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="TalhaoSearchCommand"></Button>
+                    <Entry Text="{Binding Filtro}" x:Name="EntrySearchTalhao" Grid.Row="0" Grid.Column="0"></Entry>
+                    <Button x:Name="ButtonSearchTalhao" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoSearchCommand}"></Button>
                 </Grid>
 
             </StackLayout>
             <StackLayout>
-                <ListView x:Name="ListaTalhoes" HasUnevenRows="True" ItemsSource="{Binding Talhoes}" SelectedItem="{Binding TalhaoSelectedCommand}">
+                <ListView x:Name="ListaTalhoes" HasUnevenRows="True" ItemsSource="{Binding Talhoes}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <TextCell Text="{Binding Descricao}" Detail="{Binding Tamanho}"/>

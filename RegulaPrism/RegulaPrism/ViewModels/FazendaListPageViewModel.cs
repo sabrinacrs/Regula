@@ -2,6 +2,7 @@
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
+using RegulaPrism.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,7 +10,7 @@ using System.Linq;
 
 namespace RegulaPrism.ViewModels
 {
-    public class FazendaListPageViewModel : BindableBase
+    public class FazendaListPageViewModel : BindableBase, INavigationAware
     {
         private string _title;
         public string Title
@@ -18,34 +19,74 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public Cliente _cliente;
+        private Cliente _cliente;
         public Cliente Cliente
         {
             get { return _cliente; }
             set { SetProperty(ref _cliente, value); }
         }
 
-        public Fazenda _fazenda;
+        private Fazenda _fazenda;
         public Fazenda Fazenda
         {
             get { return _fazenda; }
             set { SetProperty(ref _fazenda, value); }
         }
-        public ObservableCollection<Fazenda> Fazendas { get; }
+
+        private List<Fazenda> _fazendas;
+        public List<Fazenda> Fazendas
+        {
+            get { return _fazendas; }
+            set { SetProperty(ref _fazendas, value); }
+        }
+
+        private string _filtro;
+        public string Filtro
+        {
+            get { return _filtro; }
+            set { SetProperty(ref _filtro, value); }
+        }
+
+        private Fazenda _selectedItem;
+        public Fazenda SelectedItem
+        {
+            get
+            {
+                return _selectedItem;
+            }
+            set
+            {
+                _selectedItem = value;
+
+                if (_selectedItem == null)
+                    return;
+
+                FazendaSelectedCommand.Execute();
+            }
+        }
+
+        private string _action;
 
         private INavigationService _navigationService;
 
         private IPageDialogService _dialogService;
 
+        private IRegulaApiService _regulaApiService;
+
+        private NavigationParameters _navigationParameters;
+        
+
         public DelegateCommand FazendaSelectedCommand { get; private set; }
         public DelegateCommand FazendaSearchCommand { get; private set; }
 
-        public FazendaListPageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+        public FazendaListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
             Title = "Fazendas";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _regulaApiService = regulaApiService;
+            _navigationParameters = new NavigationParameters();
 
             FazendaSelectedCommand = new DelegateCommand(FazendaSelected);
             FazendaSearchCommand = new DelegateCommand(FazendaSearch);
@@ -53,14 +94,61 @@ namespace RegulaPrism.ViewModels
 
         private void FazendaSelected()
         {
-            // TODO
-            // leva fazenda selecionada pra página de update
+            // verificação para não repetir parâmetros
+            if (_navigationParameters.Count() > 0)
+                _navigationParameters = new NavigationParameters();
+
+            // adiciona parametros
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationParameters.Add("fazenda", _selectedItem);
+
+            if(_action == null)
+            {
+                // leva para pagina de informacoes gerais fazenda - tabbedpage
+                _navigationParameters.Add("action", "list");
+                _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaSelectedTabbedPage", UriKind.Absolute), _navigationParameters);
+            }
+            else if (_action.Equals("update"))
+            {
+                // leva fazenda selecionada pra página de update
+                _navigationParameters.Add("action", "update");
+                _navigationService.NavigateAsync("FazendaUpdatePage", _navigationParameters);
+            }
+            else if (_action.Equals("list"))
+            {
+                _navigationParameters.Add("action", "list");
+                _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaSelectedTabbedPage", UriKind.Absolute), _navigationParameters);
+            }
         }
 
         private void FazendaSearch()
         {
-            // TODO
             // filtra de acordo com o texto digitado os nomes das fazendas
+            if (_filtro == null || _filtro.Equals(""))
+                Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
+            else
+                Fazendas = _regulaApiService.GetFazendasByNomeAndCliente(_filtro, _cliente.Id);
+        }
+
+        public void OnNavigatedFrom(NavigationParameters parameters)
+        {
+            //parameters.Add("action", "update"); // testar se é necessário
+            parameters.Add("cliente", _cliente);
+            parameters.Add("fazenda", _fazenda);
+        }
+
+        public void OnNavigatedTo(NavigationParameters parameters)
+        {
+            _cliente = (Cliente)parameters["cliente"];
+            _action = (string)parameters["action"];
+            Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
+        }
+
+        public void OnNavigatingTo(NavigationParameters parameters)
+        {
+            _cliente = (Cliente)parameters["cliente"];
+            _action = (string)parameters["action"];
+            Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
         }
     }
 }
