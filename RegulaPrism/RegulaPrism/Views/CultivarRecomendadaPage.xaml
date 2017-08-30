@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                prism:ViewModelLocator.AutowireViewModel="True"
+                x:Class="RegulaPrism.Views.CultivarRecomendadaPage"
+                Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="20, 50, 20, 10">
+                <Label Text="Época de Semeadura"></Label>
+                <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
+
+                <Label Text="Espaçamento (m)"></Label>
+                <Entry x:Name="Espacamento" Placeholder="Ex 0.8" Keyboard="Numeric" Text="{Binding Espacamento}"></Entry>
+
+                <Label Text="Metros Lineares"></Label>
+                <Entry x:Name="MetrosLineares" Text="{Binding MetrosLineares}" Keyboard="Numeric"></Entry>
+
+                <Label Text="Germinação (%)"></Label>
+                <Entry x:Name="Germinacao" Text="{Binding Germinacao}" Keyboard="Numeric"></Entry>
+
+            </StackLayout>
+            <StackLayout Padding="20, 30, 20, 10">
+                <Button x:Name="Consultar" Text="Consultar" Style="{StaticResource button-save}" Command="{Binding CultivarConsultCommand}"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

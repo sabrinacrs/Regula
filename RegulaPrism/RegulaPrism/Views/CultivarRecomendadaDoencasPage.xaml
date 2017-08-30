@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+                prism:ViewModelLocator.AutowireViewModel="True"
+                x:Class="RegulaPrism.Views.CultivarRecomendadaDoencasPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10, 0, 10, 10">
+                <ListView x:Name="ListaDoencas" HasUnevenRows="True" ItemsSource="{Binding Doencas}">
+                    <!--Header-->
+                    <ListView.Header>
+                        <StackLayout Padding="0, 0, 20, 20">
+                            <Grid>
+                                <!--Rows-->
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <!--Columns-->
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="60" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="Doenças" Grid.Row="0" Grid.Column="0" FontSize="Default"></Label>
+                                <Label Text="Tolerante" Grid.Row="0" Grid.Column="1" FontSize="Default"></Label>
+                            </Grid>
+                        </StackLayout>
+                    </ListView.Header>
+
+                    <!--Itens-->
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <!--Rows-->
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <!--Columns-->
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="100" />
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <Label Text="{Binding Descricao}" Grid.Row="0" Grid.Column="0" FontSize="Medium"></Label>
+                                    <Switch x:Name="{Binding Descricao}" Grid.Row="0" Grid.Column="1" IsToggled="False"></Switch>
+                                    <!--<Switch IsToggled="{Binding f}" Toggled="{Binding g}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" />-->
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button x:Name="ButtonSearchFazenda" Text="Buscar" Style="{StaticResource button-save}" Command="{Binding CultivarRecomendadaListCommand}"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -12,7 +12,7 @@ namespace RegulaPrism
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/SemeaduraPage"); // HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
+            NavigationService.NavigateAsync("NavigationPage/CultivarRecomendadaPage"); // HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
         }
 
         protected override void RegisterTypes()
@@ -41,6 +41,9 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<FazendaSelectedTabbedPage>();
             Container.RegisterTypeForNavigation<TesteInterface>();
             Container.RegisterTypeForNavigation<TalhaoSelectedTabbedPage>();
+            Container.RegisterTypeForNavigation<CultivarRecomendadaPage>();
+            Container.RegisterTypeForNavigation<CultivarListPage>();
+            Container.RegisterTypeForNavigation<CultivarRecomendadaDoencasPage>();
         }
     }
 }

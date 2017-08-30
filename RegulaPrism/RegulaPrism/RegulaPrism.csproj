@@ -65,6 +65,9 @@
     <Compile Include="ViewModels\CalcularSemeaduraPageViewModel.cs" />
     <Compile Include="ViewModels\ClienteCreatePageViewModel.cs" />
     <Compile Include="ViewModels\ClienteUpdatePageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarListPageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarRecomendadaDoencasPageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarRecomendadaPageViewModel.cs" />
     <Compile Include="ViewModels\FazendaContatoPageViewModel.cs" />
     <Compile Include="ViewModels\FazendaCreatePageViewModel.cs" />
     <Compile Include="ViewModels\FazendaHomePageViewModel.cs" />
@@ -93,6 +96,15 @@
     </Compile>
     <Compile Include="Views\ClienteUpdatePage.xaml.cs">
       <DependentUpon>ClienteUpdatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarListPage.xaml.cs">
+      <DependentUpon>CultivarListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarRecomendadaDoencasPage.xaml.cs">
+      <DependentUpon>CultivarRecomendadaDoencasPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarRecomendadaPage.xaml.cs">
+      <DependentUpon>CultivarRecomendadaPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FazendaContatoPage.xaml.cs">
       <DependentUpon>FazendaContatoPage.xaml</DependentUpon>
@@ -342,6 +354,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\TalhaoSelectedTabbedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarRecomendadaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarRecomendadaDoencasPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

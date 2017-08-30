@@ -130,7 +130,7 @@ namespace RegulaPrism.ViewModels
 
         private void SemeaduraCalculate()
         {
-            // validar se seleciounou cultivar e epoca de semeadura
+            // validar se selecionou cultivar e epoca de semeadura
             string message = validateFields();
 
             if(message.Equals(""))

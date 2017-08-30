@@ -133,6 +133,46 @@ namespace RegulaPrism.Droid
             }
         }
 
+        public List<Doenca> CarregaDoencas()
+        {
+            List<Doenca> lista;
+            string StringConexaoMysql = CriarStringConexao();
+            string consulta = "SELECT * FROM doencas";
+            try
+            {
+                conexaoMySQL = new MySqlConnection(StringConexaoMysql);
+                conexaoMySQL.Open();
+
+                MySqlDataReader dataReader = null;
+                MySqlCommand command = new MySqlCommand(consulta, conexaoMySQL);
+
+                dataReader = command.ExecuteReader();
+                lista = new List<Doenca>();
+
+                while (dataReader.Read())
+                {
+                    Doenca doe = new Doenca();
+
+                    doe.Id = Int32.Parse(dataReader["id"].ToString());
+                    doe.Descricao = dataReader["descricao"].ToString();
+                    var status = dataReader["status"].ToString();
+                    if (!status.Equals(""))
+                        doe.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+
+                    lista.Add(doe);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexaoMySQL.Close();
+            }
+        }
+
         public void CarregaDados(ref List<Cultivar> lista)
         {
             string consulta = "select nome from cultivares";
@@ -244,5 +284,46 @@ namespace RegulaPrism.Droid
                 conexaoMySQL.Close();
             }
         }
+
+        public List<CultivarEpocaSemeadura> CarregaCultivarEpocaSemeaduraId(int epocaId)
+        {
+            List<CultivarEpocaSemeadura> lista;
+            string StringConexaoMysql = CriarStringConexao();
+            string consulta = "SELECT * FROM cultivares_has_epocasemeadura WHERE ep_id = @epId";
+            consulta = consulta.Replace("@epId", epocaId.ToString());
+
+            try
+            {
+                conexaoMySQL = new MySqlConnection(StringConexaoMysql);
+                conexaoMySQL.Open();
+
+                MySqlDataReader dataReader = null;
+                MySqlCommand command = new MySqlCommand(consulta, conexaoMySQL);
+
+                dataReader = command.ExecuteReader();
+                lista = new List<CultivarEpocaSemeadura>();
+
+                while (dataReader.Read())
+                {
+                    CultivarEpocaSemeadura ces = new CultivarEpocaSemeadura();
+
+                    ces.CultivarId = Int32.Parse(dataReader["cult_id"].ToString());
+                    ces.EpocaSemeaduraId = Int32.Parse(dataReader["ep_id"].ToString());
+                    ces.PlantasHa = Decimal.Parse(dataReader["plantas_ha"].ToString());
+
+                    lista.Add(ces);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexaoMySQL.Close();
+            }
+        }
+
     }
 }
