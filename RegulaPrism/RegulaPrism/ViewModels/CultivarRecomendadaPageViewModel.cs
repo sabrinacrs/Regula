@@ -60,6 +60,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivares, value); }
         }
 
+        private List<CultivarRecomendada> _cultivaresRecomendadas;
+        public List<CultivarRecomendada> CultivaresRecomendadas
+        {
+            get { return _cultivaresRecomendadas; }
+            set { SetProperty(ref _cultivaresRecomendadas, value); }
+        }
+
         private List<EpocaSemeadura> _epocasSemeadura;
         public List<EpocaSemeadura> EpocasSemeadura
         {
@@ -116,17 +123,19 @@ namespace RegulaPrism.ViewModels
                 // pega epoca de semeadura selecionada
                 _epocaSemeadura = EpocasSemeadura.ElementAt(_epocaSemeaduraSelectedIndex);
 
+                // criar um filtro para já selecionar as recomendadas
+                SelecionarCultivaresRecomendadas();
+
+                _navigationParameters.Add("cultivares", _cultivares);
                 _navigationParameters.Add("epocaSemeadura", _epocaSemeadura);
                 _navigationParameters.Add("epocaSemeaduraSelectedIndex", _epocaSemeaduraSelectedIndex);
                 _navigationParameters.Add("epocasSemeadura", _epocasSemeadura);
                 _navigationParameters.Add("espacamento", _espacamento);
                 _navigationParameters.Add("metrosLineares", _metrosLineares);
                 _navigationParameters.Add("germinacao", _germinacao);
-
-                // criar um filtro para já selecionar as recomendadas
+                _navigationParameters.Add("cultivaresRecomendadas", _cultivaresRecomendadas);
 
                 // vai para página par selecionar doencas
-
                 // vai para página de cultivares recomendadas
                 _navigationService.NavigateAsync("CultivarRecomendadaDoencasPage", _navigationParameters);
             }
@@ -134,6 +143,34 @@ namespace RegulaPrism.ViewModels
             {
                 _dialogService.DisplayAlertAsync("", message, "OK");
             }
+        }
+
+        private void SelecionarCultivaresRecomendadas()
+        {
+            List<CultivarRecomendada> cultivaresRecomendadas = new List<CultivarRecomendada>();
+
+            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
+
+            // seleciona cultivares epoca semeadura, com base na epoca semeadura
+            _cultivarEpocasSemeadura = config.CarregaCultivarEpocaSemeaduraId(_epocaSemeadura.Id);
+
+            // selecionar cultivares que são recomendadas naquela semeadura
+            foreach(var c in _cultivarEpocasSemeadura)
+            {
+                // se o número de plantas for maior que 0, é recomendado o plantio
+                if(c.PlantasHa != 0)
+                {
+                    // procura cultivar e adiciona
+                    CultivarRecomendada cr = new CultivarRecomendada();
+
+                    cr.Cultivar = _cultivares.Find(x => x.Id == c.CultivarId);
+                    cr.EpocaSemeadura = _epocasSemeadura.Find(x => x.Id == c.EpocaSemeaduraId);
+                    cr.PlantasHectare = (int)c.PlantasHa;
+
+                    _cultivaresRecomendadas.Add(cr);
+                }
+            }
+
         }
 
         private void CultivarEpocaSemeaduraList()

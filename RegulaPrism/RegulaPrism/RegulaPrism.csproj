@@ -43,6 +43,7 @@
     <Compile Include="Models\Cultivar.cs" />
     <Compile Include="Models\CultivarDoenca.cs" />
     <Compile Include="Models\CultivarEpocaSemeadura.cs" />
+    <Compile Include="Models\CultivarRecomendada.cs" />
     <Compile Include="Models\Doenca.cs" />
     <Compile Include="Models\EpocaSemeadura.cs" />
     <Compile Include="Models\Fazenda.cs" />
