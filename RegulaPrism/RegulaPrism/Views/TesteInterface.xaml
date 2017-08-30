@@ -5,6 +5,12 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TesteInterface">
     <ContentPage.Content>
-        <Button Image="testando.png" BackgroundColor="Transparent"></Button>
+        <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding Cultivares}" SelectedItem="{Binding SelectedItem}">
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" Detail="{Binding Nome}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </ContentPage.Content>
 </ContentPage>

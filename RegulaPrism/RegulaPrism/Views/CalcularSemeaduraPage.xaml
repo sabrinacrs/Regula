@@ -6,30 +6,121 @@
              x:Class="RegulaPrism.Views.CalcularSemeaduraPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout Padding="20, 10, 20, 10">
-            <Label Text="Cultivar"></Label>
-            <Picker x:Name="CultivaresPicker" Title="Selecionar cultivar" SelectedIndex="{Binding Cultivar}" HorizontalOptions="FillAndExpand">
-                <Picker.Items>
-                    <x:String>1</x:String>
-                    <x:String>2</x:String>
-                </Picker.Items>
-            </Picker>
+        <StackLayout> <!-- Padding="20, 10, 20, 10"-->
+            <!-- Label -->
+            <StackLayout>
+                <Grid>
+                    <!-- Row Definitions of Grid -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
 
-            <Label Text="Época de Semeadura"></Label>
-            <Picker x:Name="EpocaSemeaduraPicker" Title="Selecionar época" SelectedIndex="{Binding EpocaSemeadura}" HorizontalOptions="FillAndExpand">
-                <Picker.Items>
-                    <x:String>1</x:String>
-                    <x:String>2</x:String>
-                </Picker.Items>
-            </Picker>
+                    <!-- Row Definitions of Grid -->
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
 
-            <Label Text="Espaçamento (m)"></Label>
-            <Entry x:Name="Espacamento" Placeholder="Ex 0.8"></Entry>
-            <Label Text="Metros Lineares"></Label>
-            <Entry x:Name="MetrosLineares" Keyboard="Numeric"></Entry>
-            <Label Text="Germinação (%)"></Label>
-            <Entry x:Name="Germinacao" Keyboard="Numeric"></Entry>
-            <Button x:Name="Calcular" Text="Calcular" Style="{StaticResource button-save}"></Button>
+                    <Label Style="{StaticResource label-dados-pessoais}" Text="Cultivar: " Grid.Row="0" Grid.Column="0"></Label>
+                    <Label x:Name="LabelCultivar" Style="{StaticResource label-dados-pessoais}" Text="{Binding Cultivar.Nome}" Grid.Row="0" Grid.Column="1"></Label>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout>
+                <!--Época de Semeadura-->
+                <StackLayout Padding="20, 0, 0, 0">
+                    <Label Text="Época de Semeadura"></Label>
+                    <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
+                </StackLayout>
+
+                <!--Plantas por Hectare-->
+                <Label x:Name="LabelPlantasHa" Style="{StaticResource label-dados-pessoais}" Text="Plantas/Ha"></Label>
+                <StackLayout Padding="150, 10, 20, 10">
+                    <Label x:Name="PlantasHa" Text="{Binding PlantasHectare}"></Label>
+                </StackLayout>
+                
+                <!--Peso de Sementes por grama-->
+                <Label x:Name="LabelPesoSementesGramas" Style="{StaticResource label-dados-pessoais}" Text="Peso de 100 sementes (g)"></Label>
+                <StackLayout Padding="40, 10, 20, 10">
+                    <Grid>
+                        <!-- Row Definitions of Grid -->
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <!-- Row Definitions of Grid -->
+                        <Grid.ColumnDefinitions >
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Mínimo: " Grid.Row="0" Grid.Column="0"></Label>
+                        <Label x:Name="PesoSementesGramasMinimo" Text="{Binding PesoSementesMinimo}" Grid.Row="0" Grid.Column="1"></Label>
+
+                        <Label Text="Máximo: " Grid.Row="0" Grid.Column="2"></Label>
+                        <Label x:Name="PesoSementesGramasMaximo" Text="{Binding PesoSementesMaximo}" Grid.Row="0" Grid.Column="3"></Label>
+                    </Grid>
+                </StackLayout>
+
+                
+                <StackLayout>
+                    <!--Sementes Por Metro-->
+                    <Label x:Name="LabelSementesMetro" Style="{StaticResource label-dados-pessoais}" Text="Sementes (kg/m)" Grid.Row="0" Grid.Column="0"></Label>
+                    <StackLayout Padding="150, 10, 20, 10">
+                        <Label x:Name="PesoSementesMetro" Text="{Binding PesoSementesMetro}"></Label>
+                    </StackLayout>
+
+                    <!--Sementes por Hectare-->
+                    <Label x:Name="LabelSementesHectare" Style="{StaticResource label-dados-pessoais}" Text="Sementes (kg/ha)"></Label>
+                    <StackLayout Padding="40, 10, 20, 10">
+                        <Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!-- Row Definitions of Grid -->
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Mínimo: " Grid.Row="0" Grid.Column="0"></Label>
+                            <Label x:Name="PesoSementesHectareMinimo" Text="{Binding PesoSementesHectareMinimo}" Grid.Row="0" Grid.Column="1"></Label>
+                            <Label Text="Máximo: " Grid.Row="0" Grid.Column="2"></Label>
+                            <Label x:Name="PesoSementesHectareMaximo" Text="{Binding PesoSementesHectareMaximo}" Grid.Row="0" Grid.Column="3"></Label>
+                        </Grid>
+                    </StackLayout>
+
+                    <!--Sementes por Alqueire-->
+                    <Label x:Name="LabelSementesAlqueire" Style="{StaticResource label-dados-pessoais}" Text="Sementes (kg/alq)"></Label>
+                    <StackLayout Padding="40, 10, 20, 10">
+                        <Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!-- Row Definitions of Grid -->
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Label Text="Mínimo: "  Grid.Row="0" Grid.Column="0"></Label>
+                            <Label x:Name="PesoSementesAlqueireMinimo" Text="{Binding PesoSementesAlqueireMinimo}"  Grid.Row="0" Grid.Column="1"></Label>
+                            <Label Text="Máximo: "  Grid.Row="0" Grid.Column="2"></Label>
+                            <Label x:Name="PesoSementesAlqueireMaximo" Text="{Binding PesoSementesAlqueireMaximo}"  Grid.Row="0" Grid.Column="3"></Label>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
 
     </ContentPage.Content>

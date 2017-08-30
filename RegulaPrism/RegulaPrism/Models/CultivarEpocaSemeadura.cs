@@ -21,8 +21,7 @@ namespace RegulaPrism.Models
             set;
         }
 
-        [NotNull]
-        public int PlantasHa
+        public decimal PlantasHa
         {
             get;
             set;

@@ -75,3 +75,4 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\andr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\regula.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\talhao-icon.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\MySql.Data.CF.dll

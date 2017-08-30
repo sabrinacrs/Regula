@@ -59,7 +59,8 @@ namespace RegulaPrism.ViewModels
 
         private void NavigateToSemeaduraPage()
         {
-            _navigationService.NavigateAsync("SemeaduraPage");
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/SemeaduraPage", UriKind.Absolute));
+            //_navigationService.NavigateAsync("SemeaduraPage");
         }
 
         private void NavigateToFazendaHomePage()

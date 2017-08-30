@@ -128,6 +128,12 @@ namespace RegulaPrism.Models
             set;
         }
 
+        public char Status
+        {
+            get;
+            set;
+        }
+
         public DateTime DataDesativacao
         {
             get;

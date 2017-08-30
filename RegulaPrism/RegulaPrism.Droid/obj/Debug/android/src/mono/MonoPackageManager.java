@@ -102,6 +102,7 @@ class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Microsoft.Practices.ServiceLocation.dll",
 		"Microsoft.Practices.Unity.dll",
+		"MySql.Data.CF.dll",
 		"Prism.dll",
 		"Prism.Forms.dll",
 		"Prism.Unity.Forms.dll",

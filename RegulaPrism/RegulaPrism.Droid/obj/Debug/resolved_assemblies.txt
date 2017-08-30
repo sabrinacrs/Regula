@@ -2,6 +2,7 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\andr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\FormsViewGroup.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Microsoft.Practices.ServiceLocation.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Microsoft.Practices.Unity.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\MySql.Data.CF.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Prism.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Prism.Forms.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Prism.Unity.Forms.dll
@@ -31,6 +32,7 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\andr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Mono.Android.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\mscorlib.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Core.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Data.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Xml.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Xml.Linq.dll
@@ -61,4 +63,7 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\andr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Text.RegularExpressions.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Numerics.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Transactions.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Mono.Data.Tds.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Mono.Security.dll
