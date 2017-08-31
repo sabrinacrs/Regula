@@ -129,9 +129,32 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivarEpocasSemeadura, value); }
         }
 
+        public DelegateCommand CalcularSemeaduraCommand { get; private set; }
+
         public CalcularSemeaduraPageViewModel()
         {
             Title = "Calcular Semeadura";
+
+            CalcularSemeaduraCommand = new DelegateCommand(CalcularSemeadura);
+        }
+
+        private void CalcularSemeadura()
+        {
+            _epocaSemeadura = _epocasSemeadura.ElementAt(_epocaSemeaduraSelectedIndex);
+
+            // pega número de plantas/ha
+            PlantasHectare = findCultivarEpocaSemeadura();
+
+            // Peso Sementes Minimo
+            PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
+
+            // Peso Sementes Maximo
+            PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+
+            // realiza calculos
+            calculoSementesMetro();
+            calculoSementesHectare();
+            calculoSementesAlqueire();
         }
 
         private void calculoSementesMetro()

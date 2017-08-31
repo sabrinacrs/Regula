@@ -26,11 +26,11 @@ namespace RegulaPrism.Droid
 
         public string CriarStringConexao()
         {
-            builder.Server = "mysql552.umbler.com";
-            builder.Port = 41890;
+            builder.Server = "localhost"; //"mysql552.umbler.com" 192.168.60.1;
+            builder.Port = 3306; //41890;
             builder.Database = "reguladb";
-            builder.UserID = "reguladb";
-            builder.Password = "eitagiovana";
+            builder.UserID = "root";
+            builder.Password = "";
 
             return builder.ToString();
         }

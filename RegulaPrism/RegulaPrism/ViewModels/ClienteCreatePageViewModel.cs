@@ -55,6 +55,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _confirmaSenha, value); }
         }
 
+        private Cliente _cliente;
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { SetProperty(ref _cliente, value); }
+        }
+
         private IRegulaApiService _regulaApiService;
 
         private INavigationService _navigationService;
@@ -95,7 +102,7 @@ namespace RegulaPrism.ViewModels
                     _navigationParameters.Add("cliente", cliente);
 
                     _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
-                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute));
+                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                 }
                 else
                 {
@@ -154,17 +161,17 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            parameters.Add("cliente", _cliente);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            throw new NotImplementedException();
+            
         }
     }
 }

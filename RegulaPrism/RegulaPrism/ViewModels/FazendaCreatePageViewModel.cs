@@ -141,7 +141,7 @@ namespace RegulaPrism.ViewModels
                     _navigationParameters.Add("cliente", _cliente);
 
                     _dialogService.DisplayAlertAsync("Nova fazenda", "Fazenda " + _fazenda.Nome + " registrada", "OK");
-                    _navigationService.NavigateAsync("FazendaListPage", _navigationParameters);
+                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaListPage", UriKind.Absolute), _navigationParameters); // "FazendaListPage", _navigationParameters
                 }
                 else
                 {
