@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.Login2Page"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout Padding="30, 150, 30, 0" Spacing="20">
+            <Entry Text="{Binding Login, Mode=TwoWay}" x:Name="Login" Placeholder="Login ou Email" />
+            <Entry Text="{Binding Senha, Mode=TwoWay}" x:Name="Senha" Placeholder="Senha" IsPassword="True" />
+            <Label x:Name="Registrar" Text="       Não possui usuário registrado? Cadastre-se" />
+
+            <Button x:Name="Entrar" Text="Entrar" Style="{StaticResource button-save}" Command="{Binding NavigateToHomeMasterDetailPageCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

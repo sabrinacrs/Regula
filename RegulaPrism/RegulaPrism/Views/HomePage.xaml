@@ -24,6 +24,7 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
+            <Button Text="Has Image" Image="icon.png"></Button>
             <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home-1}"></Button>
             <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home-2}"></Button>
             <Button x:Name="ButtonHomeCultivarRecomendada" Text="Cultivar Recomendada" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-3}"></Button>

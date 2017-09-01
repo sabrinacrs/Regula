@@ -9,12 +9,13 @@ namespace RegulaPrism.Models
 {
     public class CultivarEpocaSemeadura
     {
+        [NotNull]
         public int CultivarId
         {
             get;
             set;
         }
-
+        [NotNull]
         public int EpocaSemeaduraId
         {
             get;

@@ -44,6 +44,8 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<CultivarRecomendadaPage>();
             Container.RegisterTypeForNavigation<CultivarListPage>();
             Container.RegisterTypeForNavigation<CultivarRecomendadaDoencasPage>();
+            Container.RegisterTypeForNavigation<Login2Page>();
+            //Container.RegisterType<IRegulaApiService, MyService>();
         }
     }
 }

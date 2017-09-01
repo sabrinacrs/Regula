@@ -45,6 +45,8 @@ namespace RegulaPrism.ViewModels
             _dialogService = dialogService;
             _navigationParameters = new NavigationParameters();
 
+            // chama clone database server
+
             NavigateToCultivarListPageCommand = new DelegateCommand(NavigateToCultivarListPage);
             NavigateToSemeaduraPageCommand = new DelegateCommand(NavigateToSemeaduraPage);
             NavigateToFazendaHomePageCommand = new DelegateCommand(NavigateToFazendaHomePage);

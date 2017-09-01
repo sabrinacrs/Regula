@@ -10,23 +10,13 @@ namespace RegulaPrism.Models
     public class Ciclo
     {
         [PrimaryKey, AutoIncrement]
-        public int Id
-        {
-            get;
-            set;
-        }
+        public int Id { get; set; }
 
         [MaxLength(45), NotNull]
-        public String Descricao
-        {
-            get;
-            set;
-        }
+        public String Descricao { get; set; }
 
-        public DateTime DataDesativacao
-        {
-            get;
-            set;
-        }
+        public char Status { get; set; }
+
+        public DateTime DataDesativacao { get; set; }
     }
 }

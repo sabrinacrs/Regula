@@ -51,3 +51,4 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\MySql.Data
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarListPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaDoencasPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.Login2Page.xaml.g.cs

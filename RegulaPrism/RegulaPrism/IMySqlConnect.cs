@@ -11,6 +11,9 @@ namespace RegulaPrism
     {
         bool ConnectDB { get; }
         List<Cultivar> CarregaCultivares();
+        List<Tolerancia> CarregaTolerancias();
+        List<Ciclo> CarregaCiclos();
+        List<CultivarDoenca> CarregaCultivarDoencas();
         List<EpocaSemeadura> CarregaEpocasSemeadura();
         List<CultivarEpocaSemeadura> CarregaCultivarEpocaSemeadura();
         List<CultivarEpocaSemeadura> CarregaCultivarEpocaSemeadura(int cultivarId);

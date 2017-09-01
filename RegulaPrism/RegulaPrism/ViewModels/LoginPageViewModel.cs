@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace RegulaPrism.ViewModels
 {
-    public class LoginPageViewModel : BindableBase
+    public class LoginPageViewModel : BindableBase, INavigationAware
     {
         private string _title;
         public string Title
@@ -39,9 +39,11 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cliente, value); }
         }
 
+        private INavigationService _navigationService;
+
         private IRegulaApiService _regulaApiService;
 
-        private INavigationService _navigationService;
+        private IDependencyService _dependencyService;
 
         private IPageDialogService _dialogService;
 
@@ -50,7 +52,7 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToClienteCreatePageCommand { get; private set; }
         public DelegateCommand NavigateToHomeMasterDetailPageCommand { get; private set; }
 
-        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IDependencyService dependencyService)
         {
             // binding do título da página
             Title = "Regula";
@@ -58,7 +60,9 @@ namespace RegulaPrism.ViewModels
             // services
             _navigationParameters = new NavigationParameters();
             _navigationService = navigationService;
-            _regulaApiService = regulaApiService;
+            _dependencyService = dependencyService;
+            //_regulaApiService = (IRegulaApiService)dependencyService;//dependencyService.Get<IRegulaApiService>().;//DependencyService.Get<IRegulaApiService>();
+            //_regulaApiService = regulaApiService;
             _dialogService = dialogService;
             
             // instanciar commands
@@ -82,6 +86,7 @@ namespace RegulaPrism.ViewModels
 
             // validações do login
             var cliente = _regulaApiService.GetClienteByEmail(Login);
+            //var cliente = _dependencyService.Get<IRegulaApiService>().GetClienteByEmail(Login);
             if (cliente == null)
                 cliente = _regulaApiService.GetClienteByLogin(Login);
 

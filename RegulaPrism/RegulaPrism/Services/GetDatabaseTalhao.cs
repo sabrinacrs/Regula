@@ -47,17 +47,17 @@ namespace RegulaPrism.Services
 
         public List<Talhao> ObterPorDescricao(string descricao)
         {
-            return _conexao.Table<Talhao>().Where(t => t.DataDesativacao == DateTime.MinValue).Where(t => (t.Descricao).Contains(descricao)).ToList<Talhao>();
+            return _conexao.Table<Talhao>().Where(t => t.DataDesativacao == DateTime.MinValue).Where(t => (t.Descricao).Contains(descricao)).ToList();
         }
 
         public List<Talhao> ObterPorDescricaoAndFazendaId(string descricao, int fazendaId)
         {
-            return _conexao.Table<Talhao>().Where(t => (t.FazendaId) == fazendaId).Where(t => t.DataDesativacao == DateTime.MinValue).Where(t => (t.Descricao).Contains(descricao)).ToList<Talhao>();
+            return _conexao.Table<Talhao>().Where(t => (t.FazendaId) == fazendaId).Where(t => t.DataDesativacao == DateTime.MinValue).Where(t => (t.Descricao).Contains(descricao)).ToList();
         }
 
         public List<Talhao> Listar()
         {
-            return _conexao.Table<Talhao>().Where(t => t.DataDesativacao == DateTime.MinValue).OrderBy(t => t.Descricao).ToList<Talhao>();
+            return _conexao.Table<Talhao>().Where(t => t.DataDesativacao == DateTime.MinValue).OrderBy(t => t.Descricao).ToList();
         }
 
         public void Dispose()

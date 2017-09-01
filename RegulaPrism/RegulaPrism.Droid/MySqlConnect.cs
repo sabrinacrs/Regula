@@ -173,32 +173,83 @@ namespace RegulaPrism.Droid
             }
         }
 
-        public void CarregaDados(ref List<Cultivar> lista)
+        public List<Tolerancia> CarregaTolerancias()
         {
-            string consulta = "select nome from cultivares";
-            string stringConexaoMySQL = CriarStringConexao();
+            List<Tolerancia> lista;
+            string StringConexaoMysql = CriarStringConexao();
+            string consulta = "SELECT * FROM tolerancias";
             try
             {
-                MySqlConnection con = new MySqlConnection();
-                con.Open();
+                conexaoMySQL = new MySqlConnection(StringConexaoMysql);
+                conexaoMySQL.Open();
 
-                MySqlDataReader rdr = null;
-                MySqlCommand cmd = new MySqlCommand(consulta, con);
+                MySqlDataReader dataReader = null;
+                MySqlCommand command = new MySqlCommand(consulta, conexaoMySQL);
 
-                rdr = cmd.ExecuteReader();
+                dataReader = command.ExecuteReader();
+                lista = new List<Tolerancia>();
 
-                while (rdr.Read())
+                while (dataReader.Read())
                 {
-                    Cultivar p = new Cultivar();
-                    p.Nome = rdr["nome"].ToString();
-                    //p.Preco = Convert.ToDecimal(rdr["preco"]);
+                    Tolerancia tol = new Tolerancia();
 
-                    lista.Add(p);
+                    tol.Id = Int32.Parse(dataReader["id"].ToString());
+                    tol.Descricao = dataReader["descricao"].ToString();
+                    var status = dataReader["status"].ToString();
+                    if (!status.Equals(""))
+                        tol.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+
+                    lista.Add(tol);
                 }
+                return lista;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw ex;
+            }
+            finally
+            {
+                conexaoMySQL.Close();
+            }
+        }
+
+        public List<Ciclo> CarregaCiclos()
+        {
+            List<Ciclo> lista;
+            string StringConexaoMysql = CriarStringConexao();
+            string consulta = "SELECT * FROM ciclos";
+            try
+            {
+                conexaoMySQL = new MySqlConnection(StringConexaoMysql);
+                conexaoMySQL.Open();
+
+                MySqlDataReader dataReader = null;
+                MySqlCommand command = new MySqlCommand(consulta, conexaoMySQL);
+
+                dataReader = command.ExecuteReader();
+                lista = new List<Ciclo>();
+
+                while (dataReader.Read())
+                {
+                    Ciclo ciclo = new Ciclo();
+
+                    ciclo.Id = Int32.Parse(dataReader["id"].ToString());
+                    ciclo.Descricao = dataReader["descricao"].ToString();
+                    var status = dataReader["status"].ToString();
+                    if (!status.Equals(""))
+                        ciclo.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+
+                    lista.Add(ciclo);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexaoMySQL.Close();
             }
         }
 
@@ -322,6 +373,75 @@ namespace RegulaPrism.Droid
             finally
             {
                 conexaoMySQL.Close();
+            }
+        }
+
+        public List<CultivarDoenca> CarregaCultivarDoencas()
+        {
+            List<CultivarDoenca> lista;
+            string StringConexaoMysql = CriarStringConexao();
+            string consulta = "SELECT * FROM cultivares_has_doencas";
+
+            try
+            {
+                conexaoMySQL = new MySqlConnection(StringConexaoMysql);
+                conexaoMySQL.Open();
+
+                MySqlDataReader dataReader = null;
+                MySqlCommand command = new MySqlCommand(consulta, conexaoMySQL);
+
+                dataReader = command.ExecuteReader();
+                lista = new List<CultivarDoenca>();
+
+                while (dataReader.Read())
+                {
+                    CultivarDoenca cd = new CultivarDoenca();
+
+                    cd.CultivarId = Int32.Parse(dataReader["cult_id"].ToString());
+                    cd.DoencaId = Int32.Parse(dataReader["doe_id"].ToString());
+                    cd.ToleranciaId = Int32.Parse(dataReader["tol_id"].ToString());
+
+                    lista.Add(cd);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conexaoMySQL.Close();
+            }
+        }
+
+
+        public void CarregaDados(ref List<Cultivar> lista)
+        {
+            string consulta = "select nome from cultivares";
+            string stringConexaoMySQL = CriarStringConexao();
+            try
+            {
+                MySqlConnection con = new MySqlConnection();
+                con.Open();
+
+                MySqlDataReader rdr = null;
+                MySqlCommand cmd = new MySqlCommand(consulta, con);
+
+                rdr = cmd.ExecuteReader();
+
+                while (rdr.Read())
+                {
+                    Cultivar p = new Cultivar();
+                    p.Nome = rdr["nome"].ToString();
+                    //p.Preco = Convert.ToDecimal(rdr["preco"]);
+
+                    lista.Add(p);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
             }
         }
     }

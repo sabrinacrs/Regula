@@ -41,5 +41,49 @@ namespace RegulaPrism
         bool UpdateTalhao(Talhao talhao);
         bool DeleteTalhao(Talhao talhao);
         bool DeleteLogicalTalhao(Talhao talhao);
+
+        // Cultivares
+        bool InsertCultivar(Cultivar cultivar);
+        Cultivar GetCultivarById(int id);
+        List<Cultivar> GetCultivar();
+
+        // Doenças
+        bool InsertDoenca(Doenca doenca);
+        Doenca GetDoencaById(int id);
+        Doenca GetDoencaByDescricao(string descricao);
+        List<Doenca> GetDoenca();
+
+        // Épocas Semeadura
+        bool InsertEpocaSemeadura(EpocaSemeadura epocaSemeadura);
+        EpocaSemeadura GetEpocaSemeaduraById(int id);
+        List<EpocaSemeadura> GetCultivarByDescricao();
+
+        // Tolerâncias
+        bool InsertTolerancia(Tolerancia tolerancia);
+        Tolerancia GetToleranciaById(int id);
+        Tolerancia GetToleranciaByDescricao(string descricao);
+        List<Tolerancia> GetTolerancias();
+
+        // Ciclos
+        bool InsertCiclo(Ciclo ciclo);
+        Ciclo GetCicloById(int id);
+        Ciclo GetCicloByDescricao(string descricao);
+        List<Ciclo> GetCiclos();
+
+        // Cultivares Doenças
+        bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca);
+        List<CultivarDoenca> GetAll();
+        List<CultivarDoenca> GetCultivarDoencaCultivarId(int cultId);
+        List<CultivarDoenca> GetCultivarDoencaDoencaId(int doeId);
+        List<CultivarDoenca> GetCultivarDoencaToleranciaId(int tolId);
+        List<CultivarDoenca> GetCultivarDoenca(int cultId, int doeId);
+        CultivarDoenca GetCultivarDoencaTolerancia(int cultId, int doeId, int tolId);
+
+        // Cultivares Épocas Semeadura
+        bool InsertCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
+        List<CultivarEpocaSemeadura> GetCultivarEpocaSemeadura();
+        List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraEpocaId(int epocaId);
+        List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarId(int cultId);
+        List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarEpoca(int cultId, int epocaId);
     }
 }
