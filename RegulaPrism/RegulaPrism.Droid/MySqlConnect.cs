@@ -26,11 +26,11 @@ namespace RegulaPrism.Droid
 
         public string CriarStringConexao()
         {
-            builder.Server = "localhost"; //"mysql552.umbler.com" 192.168.60.1;
-            builder.Port = 3306; //41890;
+            builder.Server = "mysql552.umbler.com"; // 192.168.60.1;
+            builder.Port = 41890;
             builder.Database = "reguladb";
-            builder.UserID = "root";
-            builder.Password = "";
+            builder.UserID = "reguladb";
+            builder.Password = "eitagiovana";
 
             return builder.ToString();
         }
@@ -75,7 +75,7 @@ namespace RegulaPrism.Droid
 
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
-                        c.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+                        c.Status = dataReader["status"].ToString();
                     //c.DataDesativacao = DateTime.Parse(dataReader["data_desativacao"].ToString());
                     c.CicloId = Int32.Parse(dataReader["cic_id"].ToString());
 
@@ -117,7 +117,7 @@ namespace RegulaPrism.Droid
                     es.Descricao = dataReader["descricao"].ToString();
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
-                        es.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+                        es.Status = dataReader["status"].ToString();
 
                     lista.Add(es);
                 }
@@ -157,7 +157,7 @@ namespace RegulaPrism.Droid
                     doe.Descricao = dataReader["descricao"].ToString();
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
-                        doe.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+                        doe.Status = dataReader["status"].ToString();
 
                     lista.Add(doe);
                 }
@@ -197,7 +197,7 @@ namespace RegulaPrism.Droid
                     tol.Descricao = dataReader["descricao"].ToString();
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
-                        tol.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+                        tol.Status = dataReader["status"].ToString();
 
                     lista.Add(tol);
                 }
@@ -237,7 +237,7 @@ namespace RegulaPrism.Droid
                     ciclo.Descricao = dataReader["descricao"].ToString();
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
-                        ciclo.Status = dataReader["status"].ToString().ToCharArray().ElementAt(0);
+                        ciclo.Status = dataReader["status"].ToString();
 
                     lista.Add(ciclo);
                 }

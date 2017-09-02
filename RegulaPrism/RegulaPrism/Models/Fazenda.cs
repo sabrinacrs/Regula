@@ -18,7 +18,7 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(50), NotNull]
-        public String Nome
+        public string Nome
         {
             get;
             set;
@@ -32,49 +32,49 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(15)]
-        public String Telefone
+        public string Telefone
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String Email
+        public string Email
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String EnderecoWeb
+        public string EnderecoWeb
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String Cidade
+        public string Cidade
         {
             get;
             set;
         }
 
         [MaxLength(2)]
-        public String UF
+        public string UF
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String Bairro
+        public string Bairro
         {
             get;
             set;
         }
 
         [MaxLength(200)]
-        public String Observacoes
+        public string Observacoes
         {
             get;
             set;

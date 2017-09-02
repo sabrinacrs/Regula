@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace RegulaPrism.Services
 {
@@ -14,9 +13,13 @@ namespace RegulaPrism.Services
 
         public GetDatabaseCultivar()
         {
-            var config = DependencyService.Get<IConfig>();
+            var config = Xamarin.Forms.DependencyService.Get<IConfig>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "reguladb.db3"));
 
+            // drop old table
+            _conexao.DropTable<Cultivar>();
+
+            // create new table
             _conexao.CreateTable<Cultivar>();
         }
 
@@ -37,12 +40,14 @@ namespace RegulaPrism.Services
 
         public Cultivar ObterPorID(int id)
         {
+            //
             return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).FirstOrDefault(c => c.Id == id);
         }
 
         public List<Cultivar> Listar()
         {
-            return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).OrderBy(c => c.Nome).ToList<Cultivar>();
+            //
+            return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).OrderBy(c => c.Id).ToList();
         }
 
         public void Dispose()

@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,7 +44,7 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
-        private IDependencyService _dependencyService;
+        private ICloneDatabaseServer _cloneDatabaseServer;
 
         private IPageDialogService _dialogService;
 
@@ -52,7 +53,7 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToClienteCreatePageCommand { get; private set; }
         public DelegateCommand NavigateToHomeMasterDetailPageCommand { get; private set; }
 
-        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IDependencyService dependencyService)
+        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer)
         {
             // binding do título da página
             Title = "Regula";
@@ -60,11 +61,10 @@ namespace RegulaPrism.ViewModels
             // services
             _navigationParameters = new NavigationParameters();
             _navigationService = navigationService;
-            _dependencyService = dependencyService;
-            //_regulaApiService = (IRegulaApiService)dependencyService;//dependencyService.Get<IRegulaApiService>().;//DependencyService.Get<IRegulaApiService>();
-            //_regulaApiService = regulaApiService;
+            _regulaApiService = regulaApiService;
             _dialogService = dialogService;
-            
+            _cloneDatabaseServer = cloneDatabaseServer;
+
             // instanciar commands
             NavigateToClienteCreatePageCommand = new DelegateCommand(NavigateToClienteCreatePage);
             NavigateToHomeMasterDetailPageCommand = new DelegateCommand(NavigateToHomeMasterDetailPage);
@@ -86,7 +86,6 @@ namespace RegulaPrism.ViewModels
 
             // validações do login
             var cliente = _regulaApiService.GetClienteByEmail(Login);
-            //var cliente = _dependencyService.Get<IRegulaApiService>().GetClienteByEmail(Login);
             if (cliente == null)
                 cliente = _regulaApiService.GetClienteByLogin(Login);
 
@@ -102,6 +101,8 @@ namespace RegulaPrism.ViewModels
                     {
                         Cliente = new Cliente();
                         Cliente = cliente;
+
+                        _cloneDatabaseServer.CloneDatabase(_regulaApiService);
 
                         _navigationParameters.Add("cliente", _cliente);
                         _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);

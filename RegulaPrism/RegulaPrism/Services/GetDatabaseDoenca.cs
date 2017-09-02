@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace RegulaPrism.Services
 {
-    public class GetDatabaseDoenca
+    public class GetDatabaseDoenca: IDisposable
     {
         private SQLite.Net.SQLiteConnection _conexao;
 
@@ -17,6 +17,10 @@ namespace RegulaPrism.Services
             var config = DependencyService.Get<IConfig>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "reguladb.db3"));
 
+            // drop old table
+            _conexao.DropTable<Doenca>();
+
+            // create new table
             _conexao.CreateTable<Doenca>();
         }
 

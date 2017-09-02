@@ -75,9 +75,15 @@
 
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
-        <Setter Property="BackgroundColor" Value="#dde0ec"/>
-        <Setter Property="TextColor" Value="#989aa3"/>
-        <Setter Property="FontSize" Value="Medium"/>
+        <Setter Property="BackgroundColor" Value="#ededee"/> <!-- C6C6C7#dde0ec -->
+        <Setter Property="TextColor" Value="#3b3b3b"/> <!-- #989aa3 -->
+        <!--<Setter Property="FontSize" Value="Medium"/>-->
+      </Style>
+      
+      <!-- Label Resultado Cálculos -->
+      <Style x:Key="label-resultados-calculos" TargetType="Label">
+        <Setter Property="TextColor" Value="#000000"/> <!-- #989aa3 -->
+        <!--<Setter Property="FontSize" Value="Medium"/>-->
       </Style>
 
       <!-- Entry Formulário Edição -->

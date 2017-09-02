@@ -45,7 +45,7 @@
                                     </Grid.ColumnDefinitions>
                                     
                                     <Label Text="{Binding Descricao}" Grid.Row="0" Grid.Column="0" FontSize="Medium"></Label>
-                                    <Switch x:Name="{Binding Descricao}" Grid.Row="0" Grid.Column="1" IsToggled="False"></Switch>
+                                    <Switch x:Name="{Binding Id}" Grid.Row="0" Grid.Column="1" IsToggled="False" Toggled="{Binding AddRemoveDoencaCommand}"></Switch>
                                     <!--<Switch IsToggled="{Binding f}" Toggled="{Binding g}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" />-->
                                 </Grid>
                             </ViewCell>

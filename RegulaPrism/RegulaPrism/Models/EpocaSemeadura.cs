@@ -17,13 +17,13 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(45), NotNull]
-        public String Descricao
+        public string Descricao
         {
             get;
             set;
         }
 
-        public char Status
+        public string Status
         {
             get;
             set;

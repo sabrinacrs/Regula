@@ -17,63 +17,63 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(50), NotNull]
-        public String Nome
+        public string Nome
         {
             get;
             set;
         }
 
         [MaxLength(45), NotNull]
-        public String Email
+        public string Email
         {
             get;
             set;
         }
 
         [MaxLength(45), NotNull]
-        public String Login
+        public string Login
         {
             get;
             set;
         }
 
         [MaxLength(20), NotNull]
-        public String Senha
+        public string Senha
         {
             get;
             set;
         }
 
         [MaxLength(15)]
-        public String Telefone
+        public string Telefone
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String Cidade
+        public string Cidade
         {
             get;
             set;
         }
 
         [MaxLength(2)]
-        public String UF
+        public string UF
         {
             get;
             set;
         }
 
         [MaxLength(10)]
-        public String CEP
+        public string CEP
         {
             get;
             set;
         }
 
         [MaxLength(45)]
-        public String Logradouro
+        public string Logradouro
         {
             get;
             set;
@@ -86,14 +86,14 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(45)]
-        public String Bairro
+        public string Bairro
         {
             get;
             set;
         }
 
         [MaxLength(15)]
-        public String CPF
+        public string CPF
         {
             get;
             set;

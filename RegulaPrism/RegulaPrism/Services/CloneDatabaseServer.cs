@@ -4,16 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
+[assembly: Dependency(typeof(RegulaPrism.Services.CloneDatabaseServer))]
 namespace RegulaPrism.Services
 {
-    public class CloneDatabaseServer
+    public class CloneDatabaseServer : ICloneDatabaseServer
     {
-        
         private IRegulaApiService _regulaApiService;
         private IMySqlConnect _config;
 
-        public CloneDatabaseServer(IRegulaApiService regulaApiService)
+        public void CloneDatabase(IRegulaApiService regulaApiService)
         {
             _regulaApiService = regulaApiService;
 
@@ -22,13 +23,40 @@ namespace RegulaPrism.Services
             // clona as tabelas alteradas
 
             _config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
+
+            // copia dados
+            Clone();
+        }
+
+        private void Clone()
+        {
+            // save cultivar
+            SaveCultivar();
+
+            // save doencas
+            SaveDoenca();
+
+            // save tolerancias
+            SaveTolerancia();
+
+            // save epocas semeadura
+            SaveEpocaSemeadura();
+
+            // save ciclos
+            SaveCiclo();
+
+            // save cultivar doencas
+            SaveCultivarDoenca();
+
+            // save cultivar epocas semeadura
+            SaveCultivarEpocaSemeadura();
         }
 
         private void SaveCultivar()
         {
             List<Cultivar> cultivaresBD = _config.CarregaCultivares();
 
-            foreach(var c in cultivaresBD)
+            foreach (Cultivar c in cultivaresBD)
             {
                 _regulaApiService.InsertCultivar(c);
             }
@@ -38,7 +66,7 @@ namespace RegulaPrism.Services
         {
             List<Doenca> doencasDB = _config.CarregaDoencas();
 
-            foreach(var d in doencasDB)
+            foreach (var d in doencasDB)
             {
                 _regulaApiService.InsertDoenca(d);
             }
@@ -48,7 +76,7 @@ namespace RegulaPrism.Services
         {
             List<EpocaSemeadura> epocaSemeaduraDB = _config.CarregaEpocasSemeadura();
 
-            foreach(var ep in epocaSemeaduraDB)
+            foreach (var ep in epocaSemeaduraDB)
             {
                 _regulaApiService.InsertEpocaSemeadura(ep);
             }
@@ -58,7 +86,7 @@ namespace RegulaPrism.Services
         {
             List<Tolerancia> toleranciasDB = _config.CarregaTolerancias();
 
-            foreach(var t in toleranciasDB)
+            foreach (var t in toleranciasDB)
             {
                 _regulaApiService.InsertTolerancia(t);
             }
@@ -68,7 +96,7 @@ namespace RegulaPrism.Services
         {
             List<Ciclo> ciclosDB = _config.CarregaCiclos();
 
-            foreach(var c in ciclosDB)
+            foreach (var c in ciclosDB)
             {
                 _regulaApiService.InsertCiclo(c);
             }
@@ -78,7 +106,7 @@ namespace RegulaPrism.Services
         {
             List<CultivarEpocaSemeadura> cultivarEpocaSemeaduraDB = _config.CarregaCultivarEpocaSemeadura();
 
-            foreach(var c in cultivarEpocaSemeaduraDB)
+            foreach (var c in cultivarEpocaSemeaduraDB)
             {
                 _regulaApiService.InsertCultivarEpocaSemeadura(c);
             }
@@ -88,11 +116,12 @@ namespace RegulaPrism.Services
         {
             List<CultivarDoenca> cultivarDoencaDB = _config.CarregaCultivarDoencas();
 
-            foreach(var cd in cultivarDoencaDB)
+            foreach (var cd in cultivarDoencaDB)
             {
                 _regulaApiService.InsertCultivarDoenca(cd);
             }
         }
+
     }
 
     

@@ -13,13 +13,13 @@ namespace RegulaPrism
             this.Titulo = Titulo;
             this.Descricao = Descricao;
         }
-        public String Titulo
+        public string Titulo
         {
             get;
             set;
         }
 
-        public String Descricao
+        public string Descricao
         {
             get;
             set;

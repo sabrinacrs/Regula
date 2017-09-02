@@ -9,7 +9,7 @@ namespace RegulaPrism.Models
 {
     public class Cultivar
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id
         {
             get;
@@ -17,28 +17,28 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(45), NotNull]
-        public String Nome
+        public string Nome
         {
             get;
             set;
         }
 
         [MaxLength(45), NotNull]
-        public String AlturaPlanta
+        public string AlturaPlanta
         {
             get;
             set;
         }
 
         [MaxLength(45), NotNull]
-        public String Fertilidade
+        public string Fertilidade
         {
             get;
             set;
         }
 
         [MaxLength(45), NotNull]
-        public String Regulador
+        public string Regulador
         {
             get;
             set;
@@ -128,7 +128,7 @@ namespace RegulaPrism.Models
             set;
         }
 
-        public char Status
+        public string Status
         {
             get;
             set;
@@ -144,6 +144,11 @@ namespace RegulaPrism.Models
         {
             get;
             set;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Nome={0}", Nome);
         }
     }
 }

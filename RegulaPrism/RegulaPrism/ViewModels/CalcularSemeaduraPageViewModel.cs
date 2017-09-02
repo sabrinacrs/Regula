@@ -17,6 +17,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private string _recomendacao;
+        public string Recomendacao
+        {
+            get { return _recomendacao; }
+            set { SetProperty(ref _recomendacao, value); }
+        }
+
         private int _epocaSemeaduraSelectedIndex;
         public int EpocaSemeaduraSelectedIndex
         {
@@ -145,6 +152,11 @@ namespace RegulaPrism.ViewModels
             // pega número de plantas/ha
             PlantasHectare = findCultivarEpocaSemeadura();
 
+            if (PlantasHectare == 0)
+                Recomendacao = "       * Semeadura não recomendada para a época \n" + _epocaSemeadura.Descricao;
+            else
+                Recomendacao = "";
+
             // Peso Sementes Minimo
             PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
 
@@ -166,7 +178,7 @@ namespace RegulaPrism.ViewModels
         private void calculoSementesHectare()
         {
             // peso de sementes por hectare
-            PesoSementesHectareMinimo = Math.Round((((((_plantasHectare / _metrosLineares)) / (_germinacao / 100) * _metrosLineares) * ((double)_cultivar.PesoSementesMinimo)) / 100 ) / 1000, 1);
+            PesoSementesHectareMinimo = Math.Round((((((_plantasHectare / _metrosLineares)) / (_germinacao / 100) * _metrosLineares) * ((double)_cultivar.PesoSementesMinimo)) / 100) / 1000, 1);
             PesoSementesHectareMaximo = Math.Round((((((_plantasHectare / _metrosLineares)) / (_germinacao / 100) * _metrosLineares) * ((double)_cultivar.PesoSementesMaximo)) / 100) / 1000, 1);
         }
 
@@ -205,6 +217,11 @@ namespace RegulaPrism.ViewModels
             // pega número de plantas/ha
             PlantasHectare = findCultivarEpocaSemeadura();
 
+            if (PlantasHectare == 0)
+                Recomendacao = "       * Semeadura não recomendada para a época \n" + _epocaSemeadura.Descricao;
+            else
+                Recomendacao = "";
+
             // Peso Sementes Minimo
             PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
 
@@ -219,29 +236,34 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            Cultivar = (Cultivar)parameters["cultivar"];
-            CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
-            EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
-            EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
-            EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
+            //Cultivar = (Cultivar)parameters["cultivar"];
+            //CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
+            //EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
+            //EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
+            //EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
 
-            Espacamento = (double)parameters["espacamento"];
-            MetrosLineares = (double)parameters["metrosLineares"];
-            Germinacao = (double)parameters["germinacao"];
+            //Espacamento = (double)parameters["espacamento"];
+            //MetrosLineares = (double)parameters["metrosLineares"];
+            //Germinacao = (double)parameters["germinacao"];
 
-            // pega numero de plantas/ha
-            PlantasHectare = findCultivarEpocaSemeadura();
+            //// pega numero de plantas/ha
+            //PlantasHectare = findCultivarEpocaSemeadura();
 
-            // Peso Sementes Minimo
-            PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
+            //if (PlantasHectare == 0)
+            //    Recomendacao = "       * Não é recomendado realizar o plantio desta cultivar na época de " + _epocaSemeadura.Descricao;
+            //else
+            //    Recomendacao = "";
 
-            // Peso Sementes Maximo
-            PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+            //// Peso Sementes Minimo
+            //PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
 
-            // realiza calculos
-            calculoSementesMetro();
-            calculoSementesHectare();
-            calculoSementesAlqueire();
+            //// Peso Sementes Maximo
+            //PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+
+            //// realiza calculos
+            //calculoSementesMetro();
+            //calculoSementesHectare();
+            //calculoSementesAlqueire();
         }
     }
 }

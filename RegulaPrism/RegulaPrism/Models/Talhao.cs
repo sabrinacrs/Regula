@@ -18,7 +18,7 @@ namespace RegulaPrism.Models
         }
 
         [MaxLength(50), NotNull]
-        public String Descricao
+        public string Descricao
         {
             get;
             set;

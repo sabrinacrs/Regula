@@ -96,18 +96,19 @@ namespace RegulaPrism.ViewModels
         {
             Title = "Buscar Cultivar Recomendada";
 
-            // carrega lista de epocas de semeadura
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-            EpocasSemeadura = config.CarregaEpocasSemeadura();
-
-            // carrega lista de cultivares
-            Cultivares = config.CarregaCultivares();
-
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
             _epocaSemeaduraSelectedIndex = -1;
+
+            // carrega lista de cultivares
+            Cultivares = _regulaApiService.GetCultivar();
+
+            // carrega lista de epocas de semeadura
+            EpocasSemeadura = _regulaApiService.GetEpocaSemeadura();
+
+            _cultivaresRecomendadas = new List<CultivarRecomendada>();
 
             CultivarConsultCommand = new DelegateCommand(ConsultarCultivaresRecomendadas);
             CultivarEpocaSemeaduraListCommand = new DelegateCommand(CultivarEpocaSemeaduraList);
@@ -149,10 +150,8 @@ namespace RegulaPrism.ViewModels
         {
             List<CultivarRecomendada> cultivaresRecomendadas = new List<CultivarRecomendada>();
 
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-
             // seleciona cultivares epoca semeadura, com base na epoca semeadura
-            _cultivarEpocasSemeadura = config.CarregaCultivarEpocaSemeaduraId(_epocaSemeadura.Id);
+            _cultivarEpocasSemeadura = _regulaApiService.GetCultivarEpocaSemeaduraEpocaId(_epocaSemeadura.Id);
 
             // selecionar cultivares que são recomendadas naquela semeadura
             foreach(var c in _cultivarEpocasSemeadura)
@@ -176,11 +175,9 @@ namespace RegulaPrism.ViewModels
         private void CultivarEpocaSemeaduraList()
         {
             // carrega vínculo cultivar e época de semeadura
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-
             _epocaSemeadura = EpocasSemeadura.ElementAt(_epocaSemeaduraSelectedIndex);
 
-            CultivarEpocasSemeadura = config.CarregaCultivarEpocaSemeadura(_epocaSemeadura.Id);
+            CultivarEpocasSemeadura = _regulaApiService.GetCultivarEpocaSemeaduraEpocaId(_epocaSemeadura.Id);
         }
 
         private string validateFields()
@@ -200,7 +197,11 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
+            parameters.Add("cultivaresRecomendadas", _cultivaresRecomendadas);
+            parameters.Add("epocaSemeadura", _epocaSemeadura);
+            parameters.Add("espacamento", _espacamento);
+            parameters.Add("metrosLineares", _metrosLineares);
+            parameters.Add("germinacao", _germinacao);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)

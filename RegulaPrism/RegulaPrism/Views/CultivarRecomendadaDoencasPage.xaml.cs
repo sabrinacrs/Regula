@@ -7,6 +7,8 @@ namespace RegulaPrism.Views
         public CultivarRecomendadaDoencasPage()
         {
             InitializeComponent();
+
+            // usar lista de doencas
         }
     }
 }

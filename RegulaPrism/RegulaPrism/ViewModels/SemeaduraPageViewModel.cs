@@ -111,11 +111,11 @@ namespace RegulaPrism.ViewModels
             Title = "Semeadura";
 
             // carrega lista de cultivares
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-            Cultivares = config.CarregaCultivares();
+            //var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
+            //Cultivares = config.CarregaCultivares();
 
-            // carrega lista de semeaduras
-            EpocasSemeadura = config.CarregaEpocasSemeadura();
+            //// carrega lista de semeaduras
+            //EpocasSemeadura = config.CarregaEpocasSemeadura();
 
             _navigationService = navigationService;
             _dialogService = dialogService;
@@ -123,6 +123,9 @@ namespace RegulaPrism.ViewModels
             _navigationParameters = new NavigationParameters();
             _cultivarSelectedIndex = -1;
             _epocaSemeaduraSelectedIndex = -1;
+
+            Cultivares = _regulaApiService.GetCultivar();
+            EpocasSemeadura = _regulaApiService.GetEpocaSemeadura();
 
             SemeaduraCalculateCommand = new DelegateCommand(SemeaduraCalculate);
             CultivarEpocaSemeaduraListCommand = new DelegateCommand(CultivarEpocaSemeaduraList);

@@ -7,8 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(RegulaPrism.RegulaApiService))]
-namespace RegulaPrism
+[assembly: Dependency(typeof(RegulaPrism.Services.RegulaApiService))]
+namespace RegulaPrism.Services
 {
     public class RegulaApiService : IRegulaApiService
     {
@@ -199,7 +199,7 @@ namespace RegulaPrism
         }
 
         // -------------------
-        // CULTIVAR OPERATIONS
+        //// CULTIVAR OPERATIONS
         public bool InsertCultivar(Cultivar cultivar)
         {
             if (_dataBaseCultivar.Insert(cultivar) <= 0)
@@ -234,7 +234,7 @@ namespace RegulaPrism
             return ep;
         }
 
-        public List<EpocaSemeadura> GetCultivarByDescricao()
+        public List<EpocaSemeadura> GetEpocaSemeadura()
         {
             return _dataBaseEpocaSemeadura.Listar();
         }

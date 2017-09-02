@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,8 @@ namespace RegulaPrism.ViewModels
 
         private INavigationService _navigationService;
 
+        private ICloneDatabaseServer _cloneDatabaseServer;
+
         private IPageDialogService _dialogService;
 
         private NavigationParameters _navigationParameters;
@@ -37,16 +40,14 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToTalhaoHomePageCommand { get; private set; }
         public DelegateCommand NavigateToClienteUpdatePageCommand { get; private set; }
 
-        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService)
+        public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, ICloneDatabaseServer cloneDatabaseServer, IRegulaApiService regulaApiService)
         {
             Title = "Regula";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _navigationParameters = new NavigationParameters();
-
-            // chama clone database server
-
+            
             NavigateToCultivarListPageCommand = new DelegateCommand(NavigateToCultivarListPage);
             NavigateToSemeaduraPageCommand = new DelegateCommand(NavigateToSemeaduraPage);
             NavigateToFazendaHomePageCommand = new DelegateCommand(NavigateToFazendaHomePage);
@@ -57,6 +58,8 @@ namespace RegulaPrism.ViewModels
         private void NavigateToCultivarListPage()
         {
             //_navigationService.NavigateAsync("");
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaPage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToSemeaduraPage()

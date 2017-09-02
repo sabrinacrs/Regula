@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace RegulaPrism.Services
 {
-    public class GetDatabaseTolerancia
+    public class GetDatabaseTolerancia : IDisposable
     {
         private SQLite.Net.SQLiteConnection _conexao;
 
@@ -17,6 +17,10 @@ namespace RegulaPrism.Services
             var config = DependencyService.Get<IConfig>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "reguladb.db3"));
 
+            // drop old table
+            _conexao.DropTable<Tolerancia>();
+
+            // create new table
             _conexao.CreateTable<Tolerancia>();
         }
 
