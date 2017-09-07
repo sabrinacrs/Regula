@@ -145,6 +145,7 @@ namespace RegulaPrism.ViewModels
                 _epocaSemeadura = EpocasSemeadura.ElementAt(_epocaSemeaduraSelectedIndex);
 
                 // passa parâmetros
+                _navigationParameters = new NavigationParameters();
                 _navigationParameters.Add("cultivar", _cultivar);
                 _navigationParameters.Add("epocaSemeadura", _epocaSemeadura);
                 _navigationParameters.Add("epocaSemeaduraSelectedIndex", _epocaSemeaduraSelectedIndex);
@@ -167,11 +168,11 @@ namespace RegulaPrism.ViewModels
         private void CultivarEpocaSemeaduraList()
         {
             // carrega vínculo cultivar e época de semeadura
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
+            //var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
 
-            _cultivar = Cultivares.ElementAt(_cultivarSelectedIndex);
+            Cultivar = Cultivares.ElementAt(_cultivarSelectedIndex);
 
-            CultivarEpocasSemeadura = config.CarregaCultivarEpocaSemeadura(_cultivar.Id);
+            CultivarEpocasSemeadura = _regulaApiService.GetCultivarEpocaSemeaduraCultivarId(_cultivar.Id);
         }
 
         private string validateFields()
@@ -193,7 +194,6 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)

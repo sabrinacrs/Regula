@@ -18,7 +18,7 @@ namespace RegulaPrism.Services
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "reguladb.db3"));
 
             // drop old table
-            _conexao.DropTable<CultivarDoenca>();
+            //_conexao.DropTable<CultivarDoenca>();
 
             // create new table
             _conexao.CreateTable<CultivarDoenca>();

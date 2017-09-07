@@ -30,7 +30,12 @@
                 <!--Época de Semeadura-->
                 <StackLayout Padding="20, 0, 0, 0">
                     <Label Text="Época de Semeadura"></Label>
-                    <Picker x:Name="EpocaSemeaduraPicker" Title="Selecionar Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
+                    <Picker x:Name="EpocaSemeaduraPicker" 
+                            Title="Selecionar Época Semeadura" 
+                            ItemsSource="{Binding EpocasSemeadura}"
+                            ItemDisplayBinding="{Binding Descricao}" 
+                            SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" 
+                            HorizontalOptions="FillAndExpand"></Picker>
                 </StackLayout>
 
                 <!--Plantas por Hectare-->

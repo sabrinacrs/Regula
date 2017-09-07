@@ -33,22 +33,31 @@
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <Grid>
-                                    <!--Rows-->
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*" />
-                                    </Grid.RowDefinitions>
-                                    <!--Columns-->
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="100" />
-                                    </Grid.ColumnDefinitions>
-                                    
-                                    <Label Text="{Binding Descricao}" Grid.Row="0" Grid.Column="0" FontSize="Medium"></Label>
-                                    <Switch x:Name="{Binding Id}" Grid.Row="0" Grid.Column="1" IsToggled="False" Toggled="{Binding AddRemoveDoencaCommand}"></Switch>
-                                    <!--<Switch IsToggled="{Binding f}" Toggled="{Binding g}" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" />-->
-                                </Grid>
+                                <StackLayout Padding="10, 2, 10, 2">
+                                    <Frame OutlineColor="Gray">
+                                        <Frame.Content>
+                                            <StackLayout>
+                                                <Grid>
+                                                    <!--Rows-->
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*" />
+                                                    </Grid.RowDefinitions>
+
+                                                    <!--Columns-->
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*" />
+                                                        <ColumnDefinition Width="100" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Label Text="{Binding Descricao}" Grid.Row="0" Grid.Column="0" FontSize="Default"></Label>
+                                                    <Switch x:Name="switchDoenca" ClassId="{Binding Id}"  Grid.Row="0" Grid.Column="1" IsToggled="False" Toggled="SwitchOnChanged"></Switch>
+                                                </Grid>
+                                            </StackLayout>
+                                        </Frame.Content>
+                                    </Frame>
+                                </StackLayout>
                             </ViewCell>
+                            <!--<SwitchCell x:Name="SwitchCellDoenca" Text="{Binding Descricao}" On="False" OnChanged="SwitchCellOnChanged"></SwitchCell>-->
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

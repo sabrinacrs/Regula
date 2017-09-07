@@ -18,6 +18,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private string _doencaSwitchCell;
+        public string DoencaSwitchCell
+        {
+            get { return _doencaSwitchCell; }
+            set { SetProperty(ref _doencaSwitchCell, value); }
+        }
+
         private double _espacamento;
         public double Espacamento
         {
@@ -53,6 +60,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _doencas, value); }
         }
 
+        private List<Doenca> _doencasSolo;
+        public List<Doenca> DoencasSolo
+        {
+            get { return _doencasSolo; }
+            set { SetProperty(ref _doencasSolo, value); }
+        }
+
         private List<Cultivar> _cultivares;
         public List<Cultivar> Cultivares
         {
@@ -81,17 +95,15 @@ namespace RegulaPrism.ViewModels
 
         public CultivarRecomendadaDoencasPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
-            Title = "Doenças";
-
-            // carrega lista de epocas de semeadura
-            //var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-            //Doencas = config.CarregaDoencas();
+            Title = "Doenças do Solo";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
+            _doencasSolo = new List<Doenca>();
 
+            // carrega lista de doencas
             Doencas = _regulaApiService.GetDoenca();
 
             CultivarRecomendadaListCommand = new DelegateCommand(CultivarRecomendadaList);
@@ -100,18 +112,45 @@ namespace RegulaPrism.ViewModels
 
         private void AddRemoveDoenca()
         {
+            // adiciona doenca à lista de doencas do solo
+            // procura doenca na lista com todas as doencas
+            var doe = _doencas.Find(d => d.Id == Int32.Parse(_doencaSwitchCell));
 
+            // verifica se já foi inserida na list de doencas do solo
+            Doenca doeSolo = _doencasSolo.Find(d => d.Id == Int32.Parse(_doencaSwitchCell));
+
+            // se já foi inserida, remove
+            if(doeSolo != null)
+            {
+                int pos = _doencasSolo.FindIndex(d => d.Id == doeSolo.Id);
+                _doencasSolo.Remove(doeSolo);
+            }
+            else
+            {
+                _doencasSolo.Add(doe);
+            }
         }
 
         private void CultivarRecomendadaList()
         {
-            // adiciona filtros de doencas, etc
-
             // filtra dentre a lista de cultivares recomendadas
+            _navigationParameters.Add("doencasSolo", _doencasSolo);
+            _navigationParameters.Add("cultivaresRecomendadas", _cultivaresRecomendadas);
+            _navigationParameters.Add("epocaSemeadura", _epocaSemeadura);
+            _navigationParameters.Add("espacamento", _espacamento);
+            _navigationParameters.Add("metrosLineares", _metrosLineares);
+            _navigationParameters.Add("germinacao", _germinacao);
 
-            // vai para cultivar list
-            _navigationService.NavigateAsync("CultivarListPage", _navigationParameters);
-
+            if (_doencasSolo.Count() > 0)
+            {
+                // vai para página com sliders
+                _navigationService.NavigateAsync("CultivarDoencaToleranciaPage", _navigationParameters);
+            }
+            else
+            {
+                // vai para cultivar list
+                _navigationService.NavigateAsync("CultivarListPage", _navigationParameters);
+            }
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -121,7 +160,6 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            // tem que receber vários parametros - epoca semeadura, etc
             CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
             _epocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
             _espacamento = (double)parameters["espacamento"];
@@ -131,7 +169,7 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+            //CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
         }
     }
 }

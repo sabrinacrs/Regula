@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.CultivarDoencaToleranciaPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ListView x:Name="ListaDoencas" HasUnevenRows="True" ItemsSource="{Binding DoencasSolo}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20, 3, 20, 3">
+                                    <Frame OutlineColor="Gray">
+                                        <Frame.Content>
+                                            <StackLayout>
+                                                <Label Text="{Binding Descricao}" Style="{StaticResource label-doencas-tolerancias-title}" ></Label>
+                                                <Slider x:Name="sliderTolerancia" ClassId="{Binding Id}" Minimum="0" Maximum="100" Value="5" ValueChanged="HandleValueChanged"></Slider>
+                                                <StackLayout Padding="25, 0, 0, 0">
+                                                    <Grid>
+                                                        <!--Rows-->
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*" />
+                                                        </Grid.RowDefinitions>
+                                                        <!--Columns-->
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="*" />
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <Label Text="Intolerante" Style="{StaticResource label-doencas-tolerancias}" Grid.Row="0" Grid.Column="0"></Label>
+                                                        <Label Text="Susceptível" Style="{StaticResource label-doencas-tolerancias}" Grid.Row="0" Grid.Column="1"></Label>
+                                                        <Label Text="Tolerante" Style="{StaticResource label-doencas-tolerancias}" Grid.Row="0" Grid.Column="2"></Label>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </Frame.Content>
+                                    </Frame>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button x:Name="ButtonSearchFazenda" Text="Buscar" Style="{StaticResource button-save}" Command="{Binding CultivarRecomendadaListCommand}"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

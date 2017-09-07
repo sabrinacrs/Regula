@@ -83,7 +83,16 @@
       <!-- Label Resultado Cálculos -->
       <Style x:Key="label-resultados-calculos" TargetType="Label">
         <Setter Property="TextColor" Value="#000000"/> <!-- #989aa3 -->
-        <!--<Setter Property="FontSize" Value="Medium"/>-->
+      </Style>
+
+      <!-- Label Doenças e Tolerâncias -->
+      <Style x:Key="label-doencas-tolerancias" TargetType="Label">
+        <Setter Property="FontSize" Value="Small"></Setter>
+      </Style>
+
+      <Style x:Key="label-doencas-tolerancias-title" TargetType="Label">
+        <Setter Property="Font" Value="Bold"/>
+        <Setter Property="TextColor" Value="#5AAA3D"></Setter>
       </Style>
 
       <!-- Entry Formulário Edição -->

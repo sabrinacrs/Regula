@@ -75,6 +75,7 @@
     <Compile Include="ViewModels\CalcularSemeaduraPageViewModel.cs" />
     <Compile Include="ViewModels\ClienteCreatePageViewModel.cs" />
     <Compile Include="ViewModels\ClienteUpdatePageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarDoencaToleranciaPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarListPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaDoencasPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaPageViewModel.cs" />
@@ -106,6 +107,9 @@
     </Compile>
     <Compile Include="Views\ClienteUpdatePage.xaml.cs">
       <DependentUpon>ClienteUpdatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarDoencaToleranciaPage.xaml.cs">
+      <DependentUpon>CultivarDoencaToleranciaPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CultivarListPage.xaml.cs">
       <DependentUpon>CultivarListPage.xaml</DependentUpon>
@@ -382,6 +386,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\CultivarRecomendadaDoencasPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarDoencaToleranciaPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

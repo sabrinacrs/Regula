@@ -102,7 +102,8 @@ namespace RegulaPrism.ViewModels
                         Cliente = new Cliente();
                         Cliente = cliente;
 
-                        _cloneDatabaseServer.CloneDatabase(_regulaApiService);
+                        // clonar a base de dados
+                        //_cloneDatabaseServer.CloneDatabase(_regulaApiService);
 
                         _navigationParameters.Add("cliente", _cliente);
                         _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
