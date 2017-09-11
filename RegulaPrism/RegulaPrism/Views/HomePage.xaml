@@ -7,7 +7,7 @@
              Title="{Binding Title}"
              ><!-- BackgroundColor="#4ba561" -->
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Padding="30, 20, 30, 10">
             <Grid Padding="0, 0, 0, 0">
                 <!-- Row Definitions of Grid -->
                 <Grid.RowDefinitions>
@@ -21,16 +21,15 @@
 
                 <!-- Column Definitions of Grid -->
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="90"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home-1}"></Button>
-                <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home-2}"></Button>
-                <Button x:Name="ButtonHomeCultivarRecomendada" Text="Cultivar Recomendada" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-3}"></Button>
-                <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home-4}"></Button>
-                <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home-5}"></Button>
-                <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-6}"></Button>
+                <Button x:Name="ButtonHomeCultivares" Text="Cultivares" Command="{Binding NavigateToCultivarListPageCommand}" Grid.Row="0" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button> <!-- Style="{StaticResource button-menu-home-1}" -->
+                <Button x:Name="ButtonHomeSemeadura" Text="Semeaduras" Command="{Binding NavigateToSemeaduraPageCommand}" Grid.Row="0" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
+                <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
+                <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
+                <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
             </Grid>
         </StackLayout>
         

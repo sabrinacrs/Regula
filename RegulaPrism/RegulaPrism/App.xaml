@@ -72,6 +72,10 @@
         <Setter Property="BackgroundColor" Value="#1b9e9e"/>
         <Setter Property="TextColor" Value="#ffffff"/>
       </Style>
+      <Style x:Key="button-menu-home-default" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#fafafa"/>
+        <Setter Property="TextColor" Value="#32b573"/>
+      </Style>
 
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
