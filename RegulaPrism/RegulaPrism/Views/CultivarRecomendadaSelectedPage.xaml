@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.CultivarRecomendadaSelectedPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20, 20, 20, 20">
+                <Label x:Name="labelNomeCultivar" Style="{StaticResource label-dados-pessoais}" Text="{Binding CultivarRecomendada}"></Label>
+                
+            </StackLayout>
+            <StackLayout Padding="10, 10, 10, 10">
+                <ListView x:Name="ListaDoencasTolerancias" HasUnevenRows="True" ItemsSource="{Binding DoencasTolerancias}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10, 10, 10, 10">
+                                    <Label Text="{Binding Doenca.Descricao}" Style="{StaticResource label-cultivares-recomendadas-title}"></Label>
+                                    <Grid>
+                                        <!--Row Definitions of Grid-->
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="20"></RowDefinition>
+                                        </Grid.RowDefinitions>
+                                        <!--Columns-->
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="20" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Button x:Name="{Binding Doenca.Descricao}" BackgroundColor="GreenYellow" Grid.Row="0" Grid.Column="0"></Button>
+                                        <!--<Label Text=">>" Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="0"></Label>-->
+                                        <Label Text="{Binding Tolerancia.Descricao}" Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="1"></Label>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

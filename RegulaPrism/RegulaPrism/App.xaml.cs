@@ -46,6 +46,8 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<CultivarRecomendadaDoencasPage>();
             //Container.RegisterType<IRegulaApiService, MyService>();
             Container.RegisterTypeForNavigation<CultivarDoencaToleranciaPage>();
+            Container.RegisterTypeForNavigation<CultivarRecomendadaListPage>();
+            Container.RegisterTypeForNavigation<CultivarRecomendadaSelectedPage>();
         }
     }
 }

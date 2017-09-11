@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.CultivarRecomendadaListPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10, 5, 10, 5">
+                <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding CultivaresRecomendadas}" SelectedItem="{Binding SelectedItem}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="10, 10, 10, 10">
+                                    <Label Text="{Binding Cultivar.Nome}" Style="{StaticResource label-cultivares-recomendadas-title}"></Label>
+                                    <Label Text="{Binding Recomendacao}" Style="{StaticResource label-doencas-tolerancias}"></Label>
+                                    <Grid>
+                                        <!--Rows-->
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <!--Columns-->
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="100" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+                                        
+                                        <Label Text="Plantas/Ha: " Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="0"></Label>
+                                        <Label Text="{Binding PlantasHectare}" Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="1"></Label>
+                                        <Label Text="Época: " Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="2"></Label>
+                                        <Label Text="{Binding EpocaSemeadura.Descricao}" Style="{StaticResource label-cultivares-recomendadas-detail}" Grid.Row="0" Grid.Column="3"></Label>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

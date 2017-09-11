@@ -165,6 +165,7 @@ namespace RegulaPrism.ViewModels
                     cr.Cultivar = _cultivares.Find(x => x.Id == c.CultivarId);
                     cr.EpocaSemeadura = _epocasSemeadura.Find(x => x.Id == c.EpocaSemeaduraId);
                     cr.PlantasHectare = (int)c.PlantasHa;
+                    cr.DoencasTolerancias = new List<DoencaTolerancia>();
 
                     _cultivaresRecomendadas.Add(cr);
                 }

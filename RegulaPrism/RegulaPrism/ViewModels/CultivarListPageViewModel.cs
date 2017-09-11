@@ -50,6 +50,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivares, value); }
         }
 
+        private List<CultivarRecomendada> _cultivaresRecomendadas;
+        public List<CultivarRecomendada> CultivaresRecomendadas
+        {
+            get { return _cultivaresRecomendadas; }
+            set { SetProperty(ref _cultivaresRecomendadas, value); }
+        }
+
         private INavigationService _navigationService;
 
         private IPageDialogService _dialogService;
@@ -65,21 +72,20 @@ namespace RegulaPrism.ViewModels
         {
             Title = "Cultivares";
 
-            // carrega lista de cultivares
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-            Cultivares = config.CarregaCultivares();
-
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
+
+            // carrega lista de cultivares
+            Cultivares = _regulaApiService.GetCultivar();
 
             CultivarSelectedCommand = new DelegateCommand(CultivarSelected);
         }
 
         private void CultivarSelected()
         {
-
+            
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -89,12 +95,33 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            
+            CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+
+            if(CultivaresRecomendadas.Count > 0)
+            {
+                Cultivares = new List<Cultivar>();
+
+                foreach (var cr in CultivaresRecomendadas)
+                {
+                    Cultivares.Add(cr.Cultivar);
+                }
+            }
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            
+            CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+
+            if (CultivaresRecomendadas.Count > 0)
+            {
+                Cultivares = new List<Cultivar>();
+
+                foreach (var cr in CultivaresRecomendadas)
+                {
+                    Cultivares.Add(cr.Cultivar);
+                }
+            }
+            //CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
         }
     }
 }

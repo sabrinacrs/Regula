@@ -25,5 +25,19 @@ namespace RegulaPrism.Models
             get;
             set;
         }
+
+        public List<DoencaTolerancia> DoencasTolerancias
+        {
+            get;
+            set;
+        }
+
+        
+
+        public string Recomendacao
+        {
+            get;
+            set;
+        }
     }
 }

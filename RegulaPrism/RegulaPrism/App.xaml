@@ -99,6 +99,17 @@
         <Setter Property="TextColor" Value="#5AAA3D"></Setter>
       </Style>
 
+      <!--Label Cultivares Recomedadas-->
+      <Style x:Key="label-cultivares-recomendadas-title" TargetType="Label">
+        <Setter Property="Font" Value="Bold"/>
+        <!--<Setter Property="TextColor" Value="#5AAA3D"></Setter>-->
+      </Style>
+      
+      <Style x:Key="label-cultivares-recomendadas-detail" TargetType="Label">
+        <Setter Property="FontSize" Value="Small"></Setter>
+        <!--<Setter Property="TextColor" Value="#5AAA3D"></Setter>-->
+      </Style>
+      
       <!-- Entry Formulário Edição -->
       <Style x:Key="entry-formulario" TargetType="Entry">
         <Setter Property="FontSize" Value="Medium"/>

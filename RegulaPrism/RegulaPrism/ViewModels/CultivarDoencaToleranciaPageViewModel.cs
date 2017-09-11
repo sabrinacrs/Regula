@@ -95,6 +95,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivaresRecomendadas, value); }
         }
 
+        private List<CultivarRecomendada> _cultivaresRecomendadasPorDoenca;
+        public List<CultivarRecomendada> CultivaresRecomendadasPorDoenca
+        {
+            get { return _cultivaresRecomendadasPorDoenca; }
+            set { SetProperty(ref _cultivaresRecomendadasPorDoenca, value); }
+        }
+
         private List<CultivarDoenca> _cultivarDoencaTolerancia;
         public List<CultivarDoenca> CultivarDoencaTolerancia
         {
@@ -102,11 +109,25 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivarDoencaTolerancia, value); }
         }
 
+        private List<CultivarDoenca> _cultivaresDoencas;
+        public List<CultivarDoenca> CultivaresDoencas
+        {
+            get { return _cultivaresDoencas; }
+            set { SetProperty(ref _cultivaresDoencas, value); }
+        }
+
         private List<Tolerancia> _tolerancias;
         public List<Tolerancia> Tolerancias
         {
             get { return _tolerancias; }
             set { SetProperty(ref _tolerancias, value); }
+        }
+
+        private List<DoencaTolerancia> _doencasTolerancias;
+        public List<DoencaTolerancia> DoencasTolerancias
+        {
+            get { return _doencasTolerancias; }
+            set { SetProperty(ref _doencasTolerancias, value); }
         }
 
         private INavigationService _navigationService;
@@ -130,6 +151,9 @@ namespace RegulaPrism.ViewModels
             _navigationParameters = new NavigationParameters();
 
             _cultivarDoencaTolerancia = new List<CultivarDoenca>();
+            _cultivaresRecomendadasPorDoenca = new List<CultivarRecomendada>();
+            _doencasTolerancias = new List<DoencaTolerancia>();
+            _cultivaresDoencas = new List<CultivarDoenca>();
             _tolerancias = new List<Tolerancia>();
 
             _tolerancias = _regulaApiService.GetTolerancias();
@@ -143,21 +167,69 @@ namespace RegulaPrism.ViewModels
             // pega doença e nível de tolerancia
             Tolerancia tol = NivelTolerancia(ToleranciaSliderToleracia);
             Doenca doe = _doencasSolo.Find(d => d.Id == Int32.Parse(ToleranciaSliderDoenca));
-            
-            // atribui tolerancia à doenca da cultivar
-            CultivarDoenca cd = new CultivarDoenca();
-            cd.ToleranciaId = tol.Id;
-            cd.DoencaId = doe.Id;
 
-            //
-            _cultivarDoencaTolerancia.Add(cd);
+            DoencaTolerancia dt = new DoencaTolerancia();
+            dt.Doenca = doe;
+            dt.Tolerancia = tol;
 
-            // remover se o valor da tolerancia mudar
+            // se a doença ainda não está na lista, adiciona
+            var doencaFind = _doencasTolerancias.Find(d => d.Doenca.Id == dt.Doenca.Id);
+
+            if (doencaFind == null)
+                _doencasTolerancias.Add(dt);
+            else
+            {
+                // se estiver, remove ou altera valor da tolerância
+                _doencasTolerancias.Remove(doencaFind);
+                _doencasTolerancias.Add(dt);
+            }
         }
 
         private void CultivarRecomendadaList()
         {
             // filtrar cultivares com base nas doenças e tolerâncias
+
+            foreach(var c in _cultivaresRecomendadas)
+            {
+                // lista as doencas da cultivar
+                List<CultivarDoenca> doencasCultivar = _regulaApiService.GetCultivarDoencaCultivarId(c.Cultivar.Id);
+
+                // reset vetor de Doencas Tolerancias
+                c.DoencasTolerancias = new List<DoencaTolerancia>();
+
+                foreach(var dc in doencasCultivar)
+                {
+                    Doenca d = _regulaApiService.GetDoencaById(dc.DoencaId);
+                    Tolerancia t = _regulaApiService.GetToleranciaById(dc.ToleranciaId);
+
+                    DoencaTolerancia dt = new DoencaTolerancia();
+                    dt.Doenca = d;
+                    dt.Tolerancia = t;
+
+                    if (!(dt.Tolerancia.Descricao.ToUpper().Contains("INTOLERANTE")))
+                    {
+                        // verifica se a doenca tem no solo do produtor
+                        Doenca doencaSoloProdutor = _doencasSolo.Find(ds => ds.Id == d.Id);
+
+                        //_doencasTolerancias.Find(x => x.Tolerancia.Descricao.Equals(dt.Tolerancia.Descricao));
+
+                        // insere a lista de doencas e respectivas tolerancias da cultivar recomendada
+                        if (doencaSoloProdutor != null)
+                            c.DoencasTolerancias.Add(dt);
+                    }
+                }
+            }
+
+            // ordena pelo numero de plantas
+            var newList = _cultivaresRecomendadas.OrderByDescending(cr => cr.PlantasHectare).ToList();
+
+            // adiciona parametros
+            _navigationParameters.ToList().Clear();
+            _navigationParameters.Add("cultivaresRecomendadas", newList);
+
+            // navega para lista de cultivares recomendadas
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaListPage", UriKind.Absolute), _navigationParameters);
+            //new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaListPage", UriKind.Absolute)
         }
 
         private Tolerancia NivelTolerancia(string value)
@@ -196,7 +268,10 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
+            parameters.Add("cultivaresRecomendadas", _cultivaresRecomendadas);
+            parameters.Add("doencasSolo", _doencasSolo);
+            parameters.Add("epocaSemeadura", _epocaSemeadura);
+            parameters.Add("epocaSemeadura", _epocaSemeadura);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
@@ -212,6 +287,12 @@ namespace RegulaPrism.ViewModels
         public void OnNavigatingTo(NavigationParameters parameters)
         {
             //CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+            CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+            DoencasSolo = (List<Doenca>)parameters["doencasSolo"];
+            _epocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
+            _espacamento = (double)parameters["espacamento"];
+            _metrosLineares = (double)parameters["metrosLineares"];
+            _germinacao = (double)parameters["germinacao"];
         }
     }
 }

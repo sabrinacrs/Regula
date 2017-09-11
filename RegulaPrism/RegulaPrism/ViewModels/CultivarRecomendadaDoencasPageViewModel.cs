@@ -155,7 +155,6 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
@@ -170,6 +169,11 @@ namespace RegulaPrism.ViewModels
         public void OnNavigatingTo(NavigationParameters parameters)
         {
             //CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+            CultivaresRecomendadas = (List<CultivarRecomendada>)parameters["cultivaresRecomendadas"];
+            _epocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
+            _espacamento = (double)parameters["espacamento"];
+            _metrosLineares = (double)parameters["metrosLineares"];
+            _germinacao = (double)parameters["germinacao"];
         }
     }
 }
