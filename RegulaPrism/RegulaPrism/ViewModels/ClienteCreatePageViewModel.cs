@@ -68,12 +68,14 @@ namespace RegulaPrism.ViewModels
 
         private IPageDialogService _dialogService;
 
+        private ICloneDatabaseServer _cloneDatabaseServer;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand NavigateToFazendaContatoPageCommand { get; private set; }
         public DelegateCommand ClienteSaveCommand { get; private set; }
 
-        public ClienteCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public ClienteCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer)
         {
             // binding para titulo da pagina
             Title = "Cadastro Cliente";
@@ -81,6 +83,7 @@ namespace RegulaPrism.ViewModels
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _cloneDatabaseServer = cloneDatabaseServer;
             _navigationParameters = new NavigationParameters();
 
             ClienteSaveCommand = new DelegateCommand(ClienteSave);
@@ -102,6 +105,11 @@ namespace RegulaPrism.ViewModels
                     _navigationParameters.Add("cliente", cliente);
 
                     _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
+
+                    // clonar a base de dados
+                    if (_regulaApiService.GetCultivar().Count() <= 0)
+                        _cloneDatabaseServer.CloneDatabase(_regulaApiService);
+
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                 }
                 else

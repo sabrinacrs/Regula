@@ -28,8 +28,6 @@ namespace RegulaPrism.ViewModels
 
         private INavigationService _navigationService;
 
-        private ICloneDatabaseServer _cloneDatabaseServer;
-
         private IPageDialogService _dialogService;
 
         private NavigationParameters _navigationParameters;
@@ -57,15 +55,14 @@ namespace RegulaPrism.ViewModels
 
         private void NavigateToCultivarListPage()
         {
-            //_navigationService.NavigateAsync("");
             _navigationParameters.Add("cliente", _cliente);
             _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaPage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToSemeaduraPage()
         {
-            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/SemeaduraPage", UriKind.Absolute));
-            //_navigationService.NavigateAsync("SemeaduraPage");
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/SemeaduraPage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToFazendaHomePage()

@@ -144,11 +144,11 @@ namespace RegulaPrism.ViewModels
             _cliente = (Cliente)parameters["cliente"];
             Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
 
-            //if(Fazendas.Count() <= 0)
-            //{
-            //    _dialogService.DisplayAlertAsync("", "Você precisa cadastrar uma fazenda para cadastrar um talhão", "OK");
-            //    _navigationService.NavigateAsync("NavigationPage/FazendaCreatePage");
-            //}
+            if (Fazendas.Count() <= 0)
+            {
+                _dialogService.DisplayAlertAsync("", "Você precisa cadastrar uma fazenda para cadastrar um talhão", "OK");
+                _navigationService.NavigateAsync("NavigationPage/FazendaCreatePage");
+            }
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)

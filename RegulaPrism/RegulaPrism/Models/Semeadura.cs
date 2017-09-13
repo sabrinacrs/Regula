@@ -54,5 +54,11 @@ namespace RegulaPrism.Models
             get;
             set;
         }
+
+        public DateTime Data
+        {
+            get;
+            set;
+        }
     }
 }

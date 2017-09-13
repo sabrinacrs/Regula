@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.FazendaSemeadurasListPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ListView x:Name="ListaSemeaduras" HasUnevenRows="True" ItemsSource="{Binding Semeaduras}" SelectedItem="{Binding SelectedItem}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Frame>
+                                        <Frame.Content>
+                                            <StackLayout>
+                                                <Grid>
+                                                    <!--Rows-->
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*" />
+                                                    </Grid.RowDefinitions>
+                                                    <!--Columns-->
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="100" />
+                                                        <ColumnDefinition Width="*" />
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <Label Text="Data: " Grid.Row="0" Grid.Column="0"></Label>
+                                                    <Label Text="{Binding Data}" Grid.Row="0" Grid.Column="1"></Label>
+                                                    <Label Text="Talhão: " Grid.Row="1" Grid.Column="0"></Label>
+                                                    <Label Text="{Binding Talhao.Descricao}" Grid.Row="1" Grid.Column="1"></Label>
+                                                </Grid>
+                                            </StackLayout>
+                                        </Frame.Content>
+                                    </Frame>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

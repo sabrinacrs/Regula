@@ -72,7 +72,8 @@ namespace RegulaPrism.ViewModels
 
         private void NavigateToClienteCreatePage()
         {
-            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/ClienteCreatePage", UriKind.Absolute));
+            _navigationService.NavigateAsync("ClienteCreatePage");
+            //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/ClienteCreatePage", UriKind.Absolute));
         }
 
         private void NavigateToHomeMasterDetailPage()

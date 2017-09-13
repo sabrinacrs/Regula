@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
+using Prism.Services;
 using RegulaPrism.Models;
 using System;
 using System.Collections.Generic;
@@ -115,6 +116,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivar, value); }
         }
 
+        private Cliente _cliente;
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { SetProperty(ref _cliente, value); }
+        }
+
         private EpocaSemeadura _epocaSemeadura;
         public EpocaSemeadura EpocaSemeadura
         {
@@ -136,13 +144,58 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivarEpocasSemeadura, value); }
         }
 
-        public DelegateCommand CalcularSemeaduraCommand { get; private set; }
+        private INavigationService _navigationService;
 
-        public CalcularSemeaduraPageViewModel()
+        private IPageDialogService _dialogService;
+
+        private IRegulaApiService _regulaApiService;
+
+        private NavigationParameters _navigationParameters;
+
+        public DelegateCommand CalcularSemeaduraCommand { get; private set; }
+        public DelegateCommand NavigateToSemeaduraSaveCommand { get; private set; }
+
+        public CalcularSemeaduraPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
             Title = "Calcular Semeadura";
 
+            _navigationService = navigationService;
+            _dialogService = dialogService;
+            _regulaApiService = regulaApiService;
+            _navigationParameters = new NavigationParameters();
+
             CalcularSemeaduraCommand = new DelegateCommand(CalcularSemeadura);
+            NavigateToSemeaduraSaveCommand = new DelegateCommand(NavigateToSemeaduraSave);
+        }
+
+        private void NavigateToSemeaduraSave()
+        {
+            _navigationParameters.Add("cultivar", _cultivar);
+            _navigationParameters.Add("cultivarEpocasSemeadura", _cultivarEpocasSemeadura);
+            _navigationParameters.Add("epocasSemeadura", _epocasSemeadura);
+            _navigationParameters.Add("epocaSemeadura", _epocaSemeadura);
+            _navigationParameters.Add("epocaSemeaduraSelectedIndex", _epocaSemeaduraSelectedIndex);
+
+            _navigationParameters.Add("espacamento", _espacamento);
+            _navigationParameters.Add("metrosLineares", _metrosLineares);
+            _navigationParameters.Add("germinacao", _germinacao);
+
+            _navigationParameters.Add("plantasHectare", _plantasHectare);
+
+            _navigationParameters.Add("pesoSementesMinimo", _pesoSementesMinimo);
+            _navigationParameters.Add("pesoSementesMaximo", _pesoSementesMaximo);
+
+            _navigationParameters.Add("pesoSementesMetro", _pesoSementesMetro);
+
+            _navigationParameters.Add("pesoSementesHectareMinimo", _pesoSementesHectareMinimo);
+            _navigationParameters.Add("pesoSementesHectareMaximo", _pesoSementesHectareMaximo);
+
+            _navigationParameters.Add("pesoSementesAlqueireMinimo", _pesoSementesAlqueireMinimo);
+            _navigationParameters.Add("pesoSementesAlqueireMaximo", _pesoSementesAlqueireMaximo);
+
+            _navigationParameters.Add("cliente", _cliente);
+
+            _navigationService.NavigateAsync("RegistrarSemeaduraPage", _navigationParameters);
         }
 
         private void CalcularSemeadura()
@@ -199,11 +252,13 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
+            parameters.Add("cliente", _cliente);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            Cliente = (Cliente)parameters["cliente"];
+
             Cultivar = (Cultivar)parameters["cultivar"];
             CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
             EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
@@ -236,6 +291,8 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
+            Cliente = (Cliente)parameters["cliente"];
+
             Cultivar = (Cultivar)parameters["cultivar"];
             CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
             EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];

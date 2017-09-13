@@ -57,10 +57,10 @@ namespace RegulaPrism.Models
             set;
         }
 
-        public Semeadura Semeadura
-        {
-            get;
-            set;
-        }
+        //public Semeadura Semeadura
+        //{
+        //    get;
+        //    set;
+        //}
     }
 }

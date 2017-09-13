@@ -85,5 +85,21 @@ namespace RegulaPrism
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraEpocaId(int epocaId);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarId(int cultId);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarEpoca(int cultId, int epocaId);
+
+        //// Semeadura
+        bool InsertSemeadura(Semeadura semeadura);
+        bool DeleteSemeadura(Semeadura semeadura);
+        bool UpdateSemeadura(Semeadura semeadura);
+        Semeadura GetSemeaduraById(int id);
+        List<Semeadura> GetSemeadurasByTalhaoId(int talhaoId);
+        List<Semeadura> GetSemeaduras();
+
+        // Calculos Semeadura
+        bool InsertCalculosSemeadura(CalculosSemeadura calculosSemeadura);
+        bool DeleteCalculosSemeadura(CalculosSemeadura calculosSemeadura);
+        bool UpdateCalculosSemeadura(CalculosSemeadura calculosSemeadura);
+        CalculosSemeadura GetCalculosSemeaduraById(int id);
+        CalculosSemeadura GetCalculosSemeaduraBySemeaduraId(int semeaduraId);
+        List<CalculosSemeadura> GetCalculosSemeaduras();
     }
 }

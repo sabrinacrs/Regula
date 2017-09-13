@@ -9,8 +9,8 @@
             BarBackgroundColor="#4ba561"
             BarTextColor="White">
     <TabbedPage.Children>
-        <local:FazendaUpdatePage/> <!-- Lista de Semeaduras daquela fazenda -->
-        <local:FazendaContatoPage/> <!-- Lista de talhões da fazenda-->
-        <local:FazendaListPage/>
+        <local:FazendaSemeadurasListPage/> <!-- Lista de Semeaduras daquela fazenda -->
+        <local:TalhaoListPage/> <!-- Lista de talhões da fazenda-->
+        <local:FazendaUpdatePage/>
     </TabbedPage.Children>
 </TabbedPage>

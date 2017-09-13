@@ -48,6 +48,9 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<CultivarDoencaToleranciaPage>();
             Container.RegisterTypeForNavigation<CultivarRecomendadaListPage>();
             Container.RegisterTypeForNavigation<CultivarRecomendadaSelectedPage>();
+            Container.RegisterTypeForNavigation<RegistrarSemeaduraPage>();
+            Container.RegisterTypeForNavigation<FazendaSemeadurasListPage>();
+            Container.RegisterTypeForNavigation<FazendaSemeaduraSelectedPage>();
         }
     }
 }

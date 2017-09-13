@@ -9,6 +9,7 @@
     <ContentPage.Content Title="Editar Perfil">
         <ScrollView>
             <StackLayout Spacing="10">
+                
                 <Label x:Name="LabelDadosPessoais" Style="{StaticResource label-dados-pessoais}" Text="      Dados Pessoais"></Label>
                 <StackLayout Padding="10, 5, 10, 0"><!--Spacing="10"-->
                     <Label Text="Nome Completo"></Label>
@@ -26,6 +27,7 @@
                         </Entry.Behaviors>
                     </Entry>
                 </StackLayout>
+                
                 <Label x:Name="LabelDadosLocalizacao" Style="{StaticResource label-dados-pessoais}" Text="      Dados de Localização"></Label>
                 <StackLayout Padding="10, 5, 10, 20"><!--Spacing="10"-->
                     <Label Text="Logradouro"></Label>

@@ -64,6 +64,9 @@ namespace RegulaPrism.Views {
         private global::Xamarin.Forms.Label LabelRecomendacao;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Button ButtonSaveSemeadura;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CalcularSemeaduraPage));
             LabelCultivar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelCultivar");
@@ -82,6 +85,7 @@ namespace RegulaPrism.Views {
             PesoSementesAlqueireMinimo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "PesoSementesAlqueireMinimo");
             PesoSementesAlqueireMaximo = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "PesoSementesAlqueireMaximo");
             LabelRecomendacao = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LabelRecomendacao");
+            ButtonSaveSemeadura = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonSaveSemeadura");
         }
     }
 }

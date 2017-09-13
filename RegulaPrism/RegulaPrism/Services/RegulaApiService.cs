@@ -16,6 +16,8 @@ namespace RegulaPrism.Services
         GetDatabaseCliente _dataBaseCliente = new GetDatabaseCliente();
         GetDatabaseFazenda _dataBaseFazenda = new GetDatabaseFazenda();
         GetDatabaseTalhao _dataBaseTalhao = new GetDatabaseTalhao();
+        GetDatabaseSemeadura _dataBaseSemeadura = new GetDatabaseSemeadura();
+        GetDataBaseCalculosSemeadura _dataBaseCalculoSemeadura = new GetDataBaseCalculosSemeadura();
 
         // clone database server
         GetDatabaseCultivar _dataBaseCultivar = new GetDatabaseCultivar();
@@ -379,6 +381,82 @@ namespace RegulaPrism.Services
         public List<Tolerancia> GetTolerancias()
         {
             return _dataBaseTolerancia.Listar();
+        }
+
+        // -------------------
+        // SEMEADURA OPERATIONS
+        public bool InsertSemeadura(Semeadura semeadura)
+        {
+            if (_dataBaseSemeadura.Insert(semeadura) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool DeleteSemeadura(Semeadura semeadura)
+        {
+            if (_dataBaseSemeadura.Delete(semeadura) < 0)
+                return false;
+            return true;
+        }
+
+        public bool UpdateSemeadura(Semeadura semeadura)
+        {
+            if (_dataBaseSemeadura.Update(semeadura) <= 0)
+                return false;
+            return true;
+        }
+
+        public Semeadura GetSemeaduraById(int id)
+        {
+            return _dataBaseSemeadura.ObterPorID(id);
+        }
+
+        public List<Semeadura> GetSemeadurasByTalhaoId(int talhaoId)
+        {
+            return _dataBaseSemeadura.ObterPorTalhaoId(talhaoId);
+        }
+
+        public List<Semeadura> GetSemeaduras()
+        {
+            return _dataBaseSemeadura.Listar();
+        }
+
+        // -------------------
+        // CCALCULOS SEMEADURA OPERATIONS
+        public bool InsertCalculosSemeadura(CalculosSemeadura calculosSemeadura)
+        {
+            if (_dataBaseCalculoSemeadura.Insert(calculosSemeadura) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool DeleteCalculosSemeadura(CalculosSemeadura calculosSemeadura)
+        {
+            if (_dataBaseCalculoSemeadura.Delete(calculosSemeadura) < 0)
+                return false;
+            return true;
+        }
+
+        public bool UpdateCalculosSemeadura(CalculosSemeadura calculosSemeadura)
+        {
+            if (_dataBaseCalculoSemeadura.Update(calculosSemeadura) <= 0)
+                return false;
+            return true;
+        }
+
+        public CalculosSemeadura GetCalculosSemeaduraById(int id)
+        {
+            return _dataBaseCalculoSemeadura.ObterPorID(id);
+        }
+
+        public CalculosSemeadura GetCalculosSemeaduraBySemeaduraId(int semeaduraId)
+        {
+            return _dataBaseCalculoSemeadura.ObterPorSemeaduraId(semeaduraId);
+        }
+
+        public List<CalculosSemeadura> GetCalculosSemeaduras()
+        {
+            return _dataBaseCalculoSemeadura.Listar();
         }
     }
 }
