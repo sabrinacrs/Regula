@@ -34,5 +34,12 @@ namespace RegulaPrism.Models
             get;
             set;
         }
+
+        [MaxLength(45), NotNull]
+        public string Sigla
+        {
+            get;
+            set;
+        }
     }
 }

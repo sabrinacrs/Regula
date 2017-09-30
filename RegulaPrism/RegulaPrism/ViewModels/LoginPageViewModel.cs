@@ -56,7 +56,7 @@ namespace RegulaPrism.ViewModels
         public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer)
         {
             // binding do título da página
-            Title = "Regula";
+            Title = "CottonApp";
 
             // services
             _navigationParameters = new NavigationParameters();

@@ -74,6 +74,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _doencasTolerancias, value); }
         }
 
+        private List<Tolerancia> _tolerancias;
+        public List<Tolerancia> Tolerancias
+        {
+            get { return _tolerancias; }
+            set { SetProperty(ref _tolerancias, value); }
+        }
+
         private Cliente _cliente;
         public Cliente Cliente
         {
@@ -96,6 +103,9 @@ namespace RegulaPrism.ViewModels
             _regulaApiService = regulaApiService;
 
             CultivarModel = new CultivarModel();
+            Tolerancias = new List<Tolerancia>();
+            Tolerancias = _regulaApiService.GetTolerancias();
+            Tolerancias = Tolerancias.OrderBy(t => t.Sigla.Length).ToList();
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

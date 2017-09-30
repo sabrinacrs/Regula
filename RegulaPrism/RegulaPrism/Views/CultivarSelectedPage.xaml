@@ -225,13 +225,65 @@
                                 <Label Text="Reações às Doenças" FontSize="Medium" TextColor="Green"></Label>
                             </StackLayout>
 
-                            <ListView x:Name="ListaCultivaresDoencas" HasUnevenRows="True" ItemsSource="{Binding DoencasTolerancias}">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate>
-                                        <TextCell Text="{Binding Doenca.Descricao}" Detail="{Binding Tolerancia.Descricao}"/>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                            </ListView>
+                            <StackLayout>
+                                <ListView x:Name="ListaCultivaresDoencas" HasUnevenRows="True" ItemsSource="{Binding DoencasTolerancias}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <StackLayout Padding="10, 10, 10, 10">
+                                                    <Grid>
+                                                         <!--Row Definitions of Grid--> 
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+
+                                                         <!--Column Definitions of Grid--> 
+                                                        <Grid.ColumnDefinitions >
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                                            <ColumnDefinition Width="60"></ColumnDefinition>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <Label x:Name="LabelDoenca" Text="{Binding Doenca.Descricao}" Grid.Row="0" Grid.Column="0" Style="{StaticResource label-cultivares-list-detail}"></Label>
+                                                        <Label x:Name="LabelTolerancia" Text="{Binding Tolerancia.Sigla}" Grid.Row="0" Grid.Column="1" Style="{StaticResource label-cultivares-list-detail}"></Label>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+
+                            <!--Legenda-->
+                            <StackLayout Padding="20, 20, 20, 20">
+                                <Label Text="Legenda: " FontSize="Small" TextColor="Green"></Label>
+
+                                <ListView x:Name="ListaTolerancias" HasUnevenRows="True"  SeparatorVisibility="None" ItemsSource="{Binding Tolerancias}">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <StackLayout>
+                                                    <Grid>
+                                                         <!--Row Definitions of Grid--> 
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"></RowDefinition>
+                                                        </Grid.RowDefinitions>
+
+                                                         <!--Column Definitions of Grid--> 
+                                                        <Grid.ColumnDefinitions >
+                                                            <ColumnDefinition Width="40"></ColumnDefinition>
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <Label x:Name="LabelToleranciaSigla" Text="{Binding Sigla}" Grid.Row="0" Grid.Column="0"></Label>
+                                                        <Label x:Name="LabelToleranciaDescricao" Text="{Binding Descricao}" Grid.Row="0" Grid.Column="1"></Label>
+                                                        
+                                                    </Grid>
+                                                </StackLayout>
+                                            </ViewCell>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
                         </StackLayout>
                     </Frame.Content>
                 </Frame>

@@ -195,6 +195,7 @@ namespace RegulaPrism.Droid
 
                     tol.Id = Int32.Parse(dataReader["id"].ToString());
                     tol.Descricao = dataReader["descricao"].ToString();
+                    tol.Sigla = dataReader["sigla"].ToString();
                     var status = dataReader["status"].ToString();
                     if (!status.Equals(""))
                         tol.Status = dataReader["status"].ToString();
