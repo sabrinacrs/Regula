@@ -51,6 +51,10 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<RegistrarSemeaduraPage>();
             Container.RegisterTypeForNavigation<FazendaSemeadurasListPage>();
             Container.RegisterTypeForNavigation<FazendaSemeaduraSelectedPage>();
+            Container.RegisterTypeForNavigation<CultivarHomePage>();
+            Container.RegisterTypeForNavigation<CultivarSelectedPage>();
+            Container.RegisterTypeForNavigation<CultivarCicloPage>();
+            Container.RegisterTypeForNavigation<CultivarRendimentoFibraListPage>();
         }
     }
 }

@@ -76,6 +76,12 @@
         <Setter Property="BackgroundColor" Value="#fafafa"/>
         <Setter Property="TextColor" Value="#32b573"/>
       </Style>
+      
+      <!--Button HomePage Fazenda Tahao-->
+      <Style x:Key="button-menu-home-fazenda" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#fafafa"/>
+        <Setter Property="TextColor" Value="#000000"/>
+      </Style>
 
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
@@ -108,6 +114,17 @@
       <Style x:Key="label-cultivares-recomendadas-detail" TargetType="Label">
         <Setter Property="FontSize" Value="Small"></Setter>
         <!--<Setter Property="TextColor" Value="#5AAA3D"></Setter>-->
+      </Style>
+      
+      <!--Cultivar List-->
+      <Style x:Key="label-cultivares-list-title" TargetType="Label">
+        <Setter Property="Font" Value="Bold"/>
+        <Setter Property="TextColor" Value="#b9d334"></Setter>
+      </Style>
+      
+      <Style x:Key="label-cultivares-list-detail" TargetType="Label">
+        <Setter Property="TextColor" Value="#000000"></Setter>
+      <Setter Property="FontSize" Value="Small"></Setter>
       </Style>
       
       <!-- Entry Formulário Edição -->

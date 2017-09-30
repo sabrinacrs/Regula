@@ -7,6 +7,9 @@ namespace RegulaPrism.Views
         public TalhaoHomePage()
         {
             InitializeComponent();
+
+            CreateTalhao.Image = "add.png";
+            ListTalhoes.Image = "list.png";
         }
     }
 }

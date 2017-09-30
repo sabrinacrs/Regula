@@ -214,7 +214,7 @@ namespace RegulaPrism.ViewModels
 
             if (message.Equals(""))
             {
-                // paga objeto talhoa selecionado no picker
+                // paga objeto talhao selecionado no picker
                 _talhao = Talhoes.ElementAt(_talhaoSelectedIndex);
 
                 // registra dados da semeadura

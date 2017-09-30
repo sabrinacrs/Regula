@@ -6,25 +6,24 @@
              x:Class="RegulaPrism.Views.FazendaHomePage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <Grid>
-            <!-- Row Definitions of Grid -->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
+        <StackLayout Padding="20, 20, 20, 20">
+            <Grid>
+                <!-- Row Definitions of Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
 
-            <!-- Column Definitions of Grid -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+                <!-- Column Definitions of Grid -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
-            <Button x:Name="CreateFazenda" Text="Nova Fazenda" Grid.Row="0" Grid.Column="0" Command="{Binding FazendaCreateCommand}"></Button>
-            <Button x:Name="UpdateFazenda" Text="Atualizar Fazenda" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaUpdateCommand}"></Button>
-            <Button x:Name="ListFazendas" Text="Listar Fazendas" Grid.Row="1" Grid.Column="0" Command="{Binding FazendaListCommand}"></Button>
-            <Button x:Name="DeleteFazenda" Text="Excluir Fazenda" Grid.Row="1" Grid.Column="1" Command="{Binding FazendaDeleteCommand}"></Button>
-        </Grid>
+                <Button x:Name="CreateFazenda" Text="Nova Fazenda" Grid.Row="0" Grid.Column="0" Command="{Binding FazendaCreateCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
+                <Button x:Name="ListFazendas" Text="Listar Fazendas" Grid.Row="1" Grid.Column="0" Command="{Binding FazendaListCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
+                <!--<Button x:Name="UpdateFazenda" Text="Atualizar Fazenda" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaUpdateCommand}"></Button>-->
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
     
 </ContentPage>

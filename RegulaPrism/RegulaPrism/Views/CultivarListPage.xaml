@@ -5,7 +5,44 @@
                 prism:ViewModelLocator.AutowireViewModel="True"
                 x:Class="RegulaPrism.Views.CultivarListPage"
              Title="{Binding Title}">
+
     <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding Cultivares}" SelectedItem="{Binding SelectedItem}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20, 10, 10, 10" BackgroundColor="White">
+                                    <Label Text="{Binding Nome}" Style="{StaticResource label-cultivares-list-title}"></Label>
+                                    
+                                    <Grid>
+                                        <!--Rows-->
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <!--Columns-->
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="80" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="Ciclo: " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="0"></Label>
+                                        <Label Text="{Binding Ciclo.Descricao}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="1"></Label>
+                                        <Label Text="Fertilidade: " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="2"></Label>
+                                        <Label Text="{Binding Fertilidade}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="3"></Label>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    <!--<ContentPage.Content>
         <ScrollView>
             <StackLayout>
                 <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding Cultivares}" SelectedItem="{Binding SelectedItem}">
@@ -17,6 +54,6 @@
                 </ListView>
             </StackLayout>
         </ScrollView>
-    </ContentPage.Content>
+    </ContentPage.Content>-->
   
 </ContentPage>

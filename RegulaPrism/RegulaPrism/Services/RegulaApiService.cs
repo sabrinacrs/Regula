@@ -221,6 +221,11 @@ namespace RegulaPrism.Services
             return _dataBaseCultivar.Listar();
         }
 
+        public List<Cultivar> GetCultivarByCiclo(int cicloId)
+        {
+            return _dataBaseCultivar.ObterPorCiclo(cicloId);
+        }
+
         // -------------------
         // EPÓCA SEMEADURA OPERATIONS
         public bool InsertEpocaSemeadura(EpocaSemeadura epocaSemeadura)

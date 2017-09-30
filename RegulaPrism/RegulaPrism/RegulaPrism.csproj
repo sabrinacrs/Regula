@@ -43,6 +43,7 @@
     <Compile Include="Models\Cultivar.cs" />
     <Compile Include="Models\CultivarDoenca.cs" />
     <Compile Include="Models\CultivarEpocaSemeadura.cs" />
+    <Compile Include="Models\CultivarModel.cs" />
     <Compile Include="Models\CultivarRecomendada.cs" />
     <Compile Include="Models\Doenca.cs" />
     <Compile Include="Models\DoencaTolerancia.cs" />
@@ -79,12 +80,16 @@
     <Compile Include="ViewModels\CalcularSemeaduraPageViewModel.cs" />
     <Compile Include="ViewModels\ClienteCreatePageViewModel.cs" />
     <Compile Include="ViewModels\ClienteUpdatePageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarCicloPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarDoencaToleranciaPageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarHomePageViewModel.cs" />
     <Compile Include="ViewModels\CultivarListPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaDoencasPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaListPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaPageViewModel.cs" />
     <Compile Include="ViewModels\CultivarRecomendadaSelectedPageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarRendimentoFibraListPageViewModel.cs" />
+    <Compile Include="ViewModels\CultivarSelectedPageViewModel.cs" />
     <Compile Include="ViewModels\FazendaContatoPageViewModel.cs" />
     <Compile Include="ViewModels\FazendaCreatePageViewModel.cs" />
     <Compile Include="ViewModels\FazendaHomePageViewModel.cs" />
@@ -117,8 +122,14 @@
     <Compile Include="Views\ClienteUpdatePage.xaml.cs">
       <DependentUpon>ClienteUpdatePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CultivarCicloPage.xaml.cs">
+      <DependentUpon>CultivarCicloPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CultivarDoencaToleranciaPage.xaml.cs">
       <DependentUpon>CultivarDoencaToleranciaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarHomePage.xaml.cs">
+      <DependentUpon>CultivarHomePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CultivarListPage.xaml.cs">
       <DependentUpon>CultivarListPage.xaml</DependentUpon>
@@ -134,6 +145,12 @@
     </Compile>
     <Compile Include="Views\CultivarRecomendadaSelectedPage.xaml.cs">
       <DependentUpon>CultivarRecomendadaSelectedPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarRendimentoFibraListPage.xaml.cs">
+      <DependentUpon>CultivarRendimentoFibraListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivarSelectedPage.xaml.cs">
+      <DependentUpon>CultivarSelectedPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\FazendaContatoPage.xaml.cs">
       <DependentUpon>FazendaContatoPage.xaml</DependentUpon>
@@ -446,6 +463,30 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FazendaSemeaduraSelectedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarHomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarSelectedPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarCicloPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivarRendimentoFibraListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

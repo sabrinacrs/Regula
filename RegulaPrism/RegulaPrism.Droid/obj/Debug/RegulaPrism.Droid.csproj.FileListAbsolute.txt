@@ -73,6 +73,15 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\iconsemeadura.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\iconcultivar.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\icontalhao.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\home.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\add.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\list.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\semeaduraicon.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\icontalhaoo.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\cultivaricon.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\usericonresize.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\farmicon.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\icontalhaoresize.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\R.cs.flag
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\uploadflags.txt
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\RegulaPrism.dll.mdb

@@ -6,24 +6,26 @@
              x:Class="RegulaPrism.Views.TalhaoHomePage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <Grid>
-            <!-- Row Definitions of Grid -->
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-            </Grid.RowDefinitions>
+        <StackLayout Padding="20, 20, 20, 20">
+            <Grid>
+                <!-- Row Definitions of Grid -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <!--<RowDefinition Height="*"></RowDefinition>-->
+                </Grid.RowDefinitions>
 
-            <!-- Column Definitions of Grid -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-                <ColumnDefinition Width="*"></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+                <!-- Column Definitions of Grid -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <!--<ColumnDefinition Width="*"></ColumnDefinition>-->
+                </Grid.ColumnDefinitions>
 
-            <Button x:Name="CreateTalhao" Text="Novo Talhão" Grid.Row="0" Grid.Column="0" Command="{Binding TalhaoCreateCommand}"></Button>
-            <Button x:Name="UpdateTalhao" Text="Atualizar Talhão" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoUpdateCommand}"></Button>
-            <Button x:Name="ListTalhoes" Text="Listar Talhões" Grid.Row="1" Grid.Column="0" Command="{Binding TalhaoListCommand}"></Button>
-            <Button x:Name="DeleteTalhao" Text="Excluir Talhão" Grid.Row="1" Grid.Column="1" Command="{Binding TalhaoDeleteCommand}"></Button>
-        </Grid>
+                <Button x:Name="CreateTalhao" Text="Novo Talhão" Grid.Row="0" Grid.Column="0" Command="{Binding TalhaoCreateCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
+                <Button x:Name="ListTalhoes" Text="Listar Talhões" Grid.Row="1" Grid.Column="0" Command="{Binding TalhaoListCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
+                <!--<Button x:Name="UpdateTalhao" Text="Atualizar Talhão" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoUpdateCommand}"></Button>-->
+                <!--<Button x:Name="DeleteTalhao" Text="Excluir Talhão" Grid.Row="1" Grid.Column="1" Command="{Binding TalhaoDeleteCommand}"></Button>-->
+            </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

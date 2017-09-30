@@ -56,7 +56,9 @@ namespace RegulaPrism.ViewModels
         private void NavigateToCultivarListPage()
         {
             _navigationParameters.Add("cliente", _cliente);
-            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaPage", UriKind.Absolute), _navigationParameters);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarHomePage", UriKind.Absolute), _navigationParameters);
+            //_navigationParameters.Add("cliente", _cliente);
+            //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivarRecomendadaPage", UriKind.Absolute), _navigationParameters);
         }
 
         private void NavigateToSemeaduraPage()

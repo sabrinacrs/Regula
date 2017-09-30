@@ -44,6 +44,12 @@ namespace RegulaPrism.Services
             return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).FirstOrDefault(c => c.Id == id);
         }
 
+        public List<Cultivar> ObterPorCiclo(int cicloId)
+        {
+            //
+            return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).Where(c => c.CicloId == cicloId).ToList();
+        }
+
         public List<Cultivar> Listar()
         {
             //

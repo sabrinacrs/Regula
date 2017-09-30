@@ -34,5 +34,10 @@ namespace RegulaPrism.Models
             get;
             set;
         }
+
+        public override string ToString()
+        {
+            return string.Format("Descricao={0}", Descricao);
+        }
     }
 }

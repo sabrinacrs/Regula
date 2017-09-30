@@ -46,6 +46,7 @@ namespace RegulaPrism
         bool InsertCultivar(Cultivar cultivar);
         Cultivar GetCultivarById(int id);
         List<Cultivar> GetCultivar();
+        List<Cultivar> GetCultivarByCiclo(int cicloId);
 
         //Doenças
         bool InsertDoenca(Doenca doenca);

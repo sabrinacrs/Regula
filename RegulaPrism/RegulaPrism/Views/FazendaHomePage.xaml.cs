@@ -7,6 +7,9 @@ namespace RegulaPrism.Views
         public FazendaHomePage()
         {
             InitializeComponent();
+
+            CreateFazenda.Image = "add.png";
+            ListFazendas.Image = "list.png";
         }
     }
 }
