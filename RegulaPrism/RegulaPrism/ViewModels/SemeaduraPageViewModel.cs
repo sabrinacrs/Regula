@@ -146,6 +146,8 @@ namespace RegulaPrism.ViewModels
                 // pega epoca de semeadura selecionada
                 _epocaSemeadura = EpocasSemeadura.ElementAt(_epocaSemeaduraSelectedIndex);
 
+                _metrosLineares = 10000 / _espacamento;
+
                 // passa parâmetros
                 _navigationParameters = new NavigationParameters();
                 _navigationParameters.Add("cultivar", _cultivar);
@@ -185,10 +187,11 @@ namespace RegulaPrism.ViewModels
                 return "Selecione a época de semeadura";
             else if (_espacamento < 0) // espacamento não pode ser negativo
                 return "Espaçamento inválido"; 
-            else if (_metrosLineares <= 0) // metros lineares maior que 0
-                return "O valor dos metros lineares inválido";
             else if (_germinacao <= 0) // germinacao maior que 0
                 return "O valor da germinação é inválido";
+
+            //else if (_metrosLineares <= 0) // metros lineares maior que 0
+            //    return "O valor dos metros lineares inválido";
 
             return "";
         }

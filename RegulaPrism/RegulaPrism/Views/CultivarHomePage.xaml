@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="RegulaPrism.Views.CultivarHomePage">
+             x:Class="RegulaPrism.Views.CultivarHomePage"
+             Title="{Binding Title}">
     <ContentPage.Content>
         <StackLayout Padding="20, 20, 20, 20">
             <Grid>
@@ -17,7 +18,8 @@
 
                 <!-- Column Definitions of Grid -->
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <!--<ColumnDefinition Width="*"></ColumnDefinition>-->
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="ListCultivares" Text="Listar Cultivares" Grid.Row="0" Grid.Column="0" Command="{Binding CultivarListCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>

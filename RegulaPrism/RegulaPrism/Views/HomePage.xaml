@@ -30,6 +30,9 @@
                 <Button x:Name="ButtonHomeFazenda" Text="Fazendas" Command="{Binding NavigateToFazendaHomePageCommand}" Grid.Row="1" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
                 <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
                 <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
+                
+                <!--Teste-->
+                <Button x:Name="ButtonTesteInterface" Text="Teste" Command="{Binding NavigateToCultivarDoencasPageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
             </Grid>
         </StackLayout>
         

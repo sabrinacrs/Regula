@@ -11,7 +11,32 @@
                 <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding Cultivares}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Nome}" Detail="{Binding RendimentoFibraMaximo}"/>
+                            <ViewCell>
+                                <StackLayout Padding="20, 10, 10, 10" BackgroundColor="White">
+                                    <Label Text="{Binding Nome}" Style="{StaticResource label-cultivares-list-title}"></Label>
+
+                                    <Grid>
+                                        <!--Rows-->
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <!--Columns-->
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="110" />
+                                            <ColumnDefinition Width="50" />
+                                            <ColumnDefinition Width="40" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="Rendimento (%): " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="0"></Label>
+                                        <Label Text="{Binding RendimentoFibraMaximo}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="1"></Label>
+                                        <Label Text="Ciclo: " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="2"></Label>
+                                        <Label Text="{Binding Ciclo.Descricao}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="3"></Label>
+                                        
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                            <!--<TextCell Text="{Binding Nome}" Detail="{Binding RendimentoFibraMaximo}"/>-->
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>

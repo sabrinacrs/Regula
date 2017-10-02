@@ -93,3 +93,6 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\andr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\ciclo.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\measure.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\recommended.png

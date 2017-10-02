@@ -22,9 +22,6 @@ namespace RegulaPrism.Views {
         private global::Xamarin.Forms.Entry Espacamento;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry MetrosLineares;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Entry Germinacao;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -35,7 +32,6 @@ namespace RegulaPrism.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CultivarRecomendadaPage));
             EpocaSemeaduraPicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "EpocaSemeaduraPicker");
             Espacamento = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "Espacamento");
-            MetrosLineares = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "MetrosLineares");
             Germinacao = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "Germinacao");
             Consultar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "Consultar");
         }

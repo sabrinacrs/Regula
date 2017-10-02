@@ -38,6 +38,9 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToTalhaoHomePageCommand { get; private set; }
         public DelegateCommand NavigateToClienteUpdatePageCommand { get; private set; }
 
+        // teste
+        public DelegateCommand NavigateToCultivarDoencasPageCommand { get; private set; }
+
         public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, ICloneDatabaseServer cloneDatabaseServer, IRegulaApiService regulaApiService)
         {
             Title = "CottonApp";
@@ -51,6 +54,9 @@ namespace RegulaPrism.ViewModels
             NavigateToFazendaHomePageCommand = new DelegateCommand(NavigateToFazendaHomePage);
             NavigateToTalhaoHomePageCommand = new DelegateCommand(NavigateToTalhaoHomePage);
             NavigateToClienteUpdatePageCommand = new DelegateCommand(NavigateToClienteUpdatePage);
+
+            // teste
+            NavigateToCultivarDoencasPageCommand = new DelegateCommand(NavigateToCultivarDoencasPage);
         }
 
         private void NavigateToCultivarListPage()
@@ -83,6 +89,13 @@ namespace RegulaPrism.ViewModels
         {
             _navigationParameters.Add("cliente", _cliente);
             _navigationService.NavigateAsync("ClienteUpdatePage", _navigationParameters);
+        }
+
+        // teste
+        private void NavigateToCultivarDoencasPage()
+        {
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivaresDoencasListPage", UriKind.Absolute), _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

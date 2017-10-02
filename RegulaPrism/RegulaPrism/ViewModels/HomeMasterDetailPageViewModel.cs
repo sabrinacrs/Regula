@@ -72,11 +72,12 @@ namespace RegulaPrism.ViewModels
 
             //lista.Add(new ItemMenuLateral("Cadastrar Cliente", ""));
             lista.Add(new ItemMenuLateral("Home", "HomePage"));
-            lista.Add(new ItemMenuLateral("Dados Pessoais", "ClienteUpdatePage"));
+            lista.Add(new ItemMenuLateral("Cultivares", "CultivarHomePage"));
+            lista.Add(new ItemMenuLateral("Semeadura", "SemeaduraPage"));
             lista.Add(new ItemMenuLateral("Fazendas", "FazendaHomePage"));
             lista.Add(new ItemMenuLateral("Talhões", "TalhaoHomePage"));
             //lista.Add(new ItemMenuLateral("Cadastrar Talhão", "TalhaoHomePage"));
-            lista.Add(new ItemMenuLateral("Semeadura", "SemeaduraPage"));
+            lista.Add(new ItemMenuLateral("Dados Pessoais", "ClienteUpdatePage"));
             lista.Add(new ItemMenuLateral("Sair", "LoginPage"));
 
             return lista;

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RegulaPrism.Views.CultivaresDoencasListPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="20, 0, 0, 0">
+                    <Grid x:Name="GridDoencas"></Grid>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid x:Name="GriCultivaresTolerancias">
+                        
+                    </Grid>
+                </StackLayout>
+                <!--<ListView HorizontalOptions="Center" ListView.HasUnevenRows="True" ItemsSource="{Binding Doencas}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                
+                            </ViewCell>
+                            <Label Text="Teste"></Label>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>-->
+                    <!--<Button Content="Refresh" Command="{Binding Source={StaticResource View},Path = GetFiles}" HorizontalAlignment="Left" Height="33" Margin="347,236,0,0" VerticalAlignment="Top" Width="139"/>-->
+                
+                <!--<Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <ListView ItemsSource="{Binding Doencas}" Grid.Row="0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="Teste"></TextCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>-->
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

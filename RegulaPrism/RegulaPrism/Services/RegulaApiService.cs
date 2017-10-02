@@ -243,7 +243,7 @@ namespace RegulaPrism.Services
 
         public List<EpocaSemeadura> GetEpocaSemeadura()
         {
-            return _dataBaseEpocaSemeadura.Listar();
+            return _dataBaseEpocaSemeadura.Listar().OrderBy(x => x.Id).ToList();
         }
 
         // -------------------

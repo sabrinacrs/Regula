@@ -144,6 +144,7 @@ namespace RegulaPrism.ViewModels
             if (_doencasSolo.Count() > 0)
             {
                 // vai para página com sliders
+                // página com tabela de cultivares recomendadas e doencas
                 _navigationService.NavigateAsync("CultivarDoencaToleranciaPage", _navigationParameters);
             }
             else
@@ -155,6 +156,7 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
+
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)

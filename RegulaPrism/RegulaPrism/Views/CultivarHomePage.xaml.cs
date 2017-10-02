@@ -7,6 +7,11 @@ namespace RegulaPrism.Views
         public CultivarHomePage()
         {
             InitializeComponent();
+
+            ListCultivares.Image = "list.png";
+            FilterCiclo.Image = "ciclo.png";
+            FilterRendimento.Image = "measure.png";
+            ButtonCultivaresRecomendadas.Image = "recommended.png";
         }
     }
 }

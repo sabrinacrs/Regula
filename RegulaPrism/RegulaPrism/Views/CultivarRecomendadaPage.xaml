@@ -14,8 +14,8 @@
                 <Label Text="Espaçamento (m)"></Label>
                 <Entry x:Name="Espacamento" Placeholder="Ex 0.8" Keyboard="Numeric" Text="{Binding Espacamento}"></Entry>
 
-                <Label Text="Metros Lineares"></Label>
-                <Entry x:Name="MetrosLineares" Text="{Binding MetrosLineares}" Keyboard="Numeric"></Entry>
+                <!--<Label Text="Metros Lineares"></Label>
+                <Entry x:Name="MetrosLineares" Text="{Binding MetrosLineares}" Keyboard="Numeric"></Entry>-->
 
                 <Label Text="Germinação (%)"></Label>
                 <Entry x:Name="Germinacao" Text="{Binding Germinacao}" Keyboard="Numeric"></Entry>
