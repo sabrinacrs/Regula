@@ -309,7 +309,7 @@ namespace RegulaPrism.Services
             return true;
         }
 
-        public List<CultivarDoenca> GetAll()
+        public List<CultivarDoenca> GetAllCultivarDoencas()
         {
             return _dataBaseCultivarDoenca.Listar();
         }

@@ -73,7 +73,7 @@ namespace RegulaPrism
 
         //Cultivares Doenças
         bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca);
-        List<CultivarDoenca> GetAll();
+        List<CultivarDoenca> GetAllCultivarDoencas();
         List<CultivarDoenca> GetCultivarDoencaCultivarId(int cultId);
         List<CultivarDoenca> GetCultivarDoencaDoencaId(int doeId);
         List<CultivarDoenca> GetCultivarDoencaToleranciaId(int tolId);

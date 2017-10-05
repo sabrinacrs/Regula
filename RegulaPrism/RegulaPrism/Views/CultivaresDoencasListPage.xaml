@@ -3,49 +3,89 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="RegulaPrism.Views.CultivaresDoencasListPage">
+             x:Class="RegulaPrism.Views.CultivaresDoencasListPage"
+             Title="Resultados">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout>
-                <StackLayout Padding="20, 0, 0, 0">
-                    <Grid x:Name="GridDoencas"></Grid>
-                </StackLayout>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Padding="20, 0, 0, 0">
+                <ScrollView Orientation="Horizontal">
+                    <Grid x:Name="GridCultivares" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
 
-                <StackLayout>
-                    <Grid x:Name="GriCultivaresTolerancias">
+                <ScrollView>
+                    <StackLayout>
+                        <!--<Frame>
+                            <Frame.Content>
+                                <StackLayout>
+                                    <Label Text="Doenças: " FontSize="Small" TextColor="Green"></Label>
+
+                                    <ListView x:Name="ListaDoencas" HasUnevenRows="True"  SeparatorVisibility="None" ItemsSource="{Binding DoencasLegenda}">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ViewCell>
+                                                    <StackLayout>
+                                                        <Grid>
+                                                            --><!--Row Definitions of Grid--><!--
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition Height="*"></RowDefinition>
+                                                            </Grid.RowDefinitions>
+
+                                                            --><!--Column Definitions of Grid--><!--
+                                                            <Grid.ColumnDefinitions >
+                                                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <Label x:Name="LabelDoencaIndex" Text="-" Grid.Row="0" Grid.Column="0"></Label>
+                                                            <Label x:Name="LabelDoencaDescricao" Text="{Binding Descricao}" Grid.Row="0" Grid.Column="1"></Label>
+
+                                                        </Grid>
+                                                    </StackLayout>
+                                                </ViewCell>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </StackLayout>
+                            </Frame.Content>
+                        </Frame>-->
                         
-                    </Grid>
-                </StackLayout>
-                <!--<ListView HorizontalOptions="Center" ListView.HasUnevenRows="True" ItemsSource="{Binding Doencas}" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <ViewCell>
-                                
-                            </ViewCell>
-                            <Label Text="Teste"></Label>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>-->
-                    <!--<Button Content="Refresh" Command="{Binding Source={StaticResource View},Path = GetFiles}" HorizontalAlignment="Left" Height="33" Margin="347,236,0,0" VerticalAlignment="Top" Width="139"/>-->
-                
-                <!--<Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
+                        <Frame>
+                            <Frame.Content>
+                                <StackLayout>
+                                    <Label Text="Tolerâncias: " FontSize="Small" TextColor="Green"></Label>
 
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                                    <ListView x:Name="ListaTolerancias" HasUnevenRows="True"  SeparatorVisibility="None" ItemsSource="{Binding Tolerancias}">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <ViewCell>
+                                                    <StackLayout>
+                                                        <Grid>
+                                                            <!--Row Definitions of Grid-->
+                                                            <Grid.RowDefinitions>
+                                                                <RowDefinition Height="*"></RowDefinition>
+                                                            </Grid.RowDefinitions>
 
-                    <ListView ItemsSource="{Binding Doencas}" Grid.Row="0">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <TextCell Text="Teste"></TextCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Grid>-->
-                
+                                                            <!--Column Definitions of Grid-->
+                                                            <Grid.ColumnDefinitions >
+                                                                <ColumnDefinition Width="40"></ColumnDefinition>
+                                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <Label x:Name="LabelToleranciaSigla" Text="{Binding Sigla}" Grid.Row="0" Grid.Column="0"></Label>
+                                                            <Label x:Name="LabelToleranciaDescricao" Text="{Binding Descricao}" Grid.Row="0" Grid.Column="1"></Label>
+
+                                                        </Grid>
+                                                    </StackLayout>
+                                                </ViewCell>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </StackLayout>
+                            </Frame.Content>
+                        </Frame>
+                        
+                    </StackLayout>
+                </ScrollView>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

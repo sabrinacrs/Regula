@@ -33,6 +33,7 @@ namespace RegulaPrism.ViewModels
 
         public DelegateCommand CultivarListCommand { get; private set; }
         public DelegateCommand CultivarCicloCommand { get; private set; }
+        public DelegateCommand CultivarDoencasCommand { get; private set; }
         public DelegateCommand CultivarRendimentoCommand { get; private set; }
         public DelegateCommand CultivarRecomendadaCommand { get; private set; }
 
@@ -46,6 +47,7 @@ namespace RegulaPrism.ViewModels
 
             CultivarListCommand = new DelegateCommand(CultivarList);
             CultivarCicloCommand = new DelegateCommand(CultivarCiclo);
+            CultivarDoencasCommand = new DelegateCommand(CultivarDoencas);
             CultivarRendimentoCommand = new DelegateCommand(CultivarRendimento);
             CultivarRecomendadaCommand = new DelegateCommand(CultivarRecomendadaExecute);
         }
@@ -66,6 +68,12 @@ namespace RegulaPrism.ViewModels
         {
             _navigationParameters.Add("cliente", _cliente);
             _navigationService.NavigateAsync("CultivarRendimentoFibraListPage", _navigationParameters);
+        }
+
+        private void CultivarDoencas()
+        {
+            _navigationParameters.Add("cliente", _cliente);
+            _navigationService.NavigateAsync("SelectDoencasPage", _navigationParameters);
         }
 
         private void CultivarRecomendadaExecute()

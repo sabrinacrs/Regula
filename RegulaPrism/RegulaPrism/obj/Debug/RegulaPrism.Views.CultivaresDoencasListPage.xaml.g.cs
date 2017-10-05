@@ -16,16 +16,16 @@ namespace RegulaPrism.Views {
     public partial class CultivaresDoencasListPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Grid GridDoencas;
+        private global::Xamarin.Forms.Grid GridCultivares;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Grid GriCultivaresTolerancias;
+        private global::Xamarin.Forms.ListView ListaTolerancias;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CultivaresDoencasListPage));
-            GridDoencas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "GridDoencas");
-            GriCultivaresTolerancias = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "GriCultivaresTolerancias");
+            GridCultivares = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "GridCultivares");
+            ListaTolerancias = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListaTolerancias");
         }
     }
 }

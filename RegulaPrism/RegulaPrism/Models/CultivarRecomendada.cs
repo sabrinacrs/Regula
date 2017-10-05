@@ -32,8 +32,6 @@ namespace RegulaPrism.Models
             set;
         }
 
-        
-
         public string Recomendacao
         {
             get;
