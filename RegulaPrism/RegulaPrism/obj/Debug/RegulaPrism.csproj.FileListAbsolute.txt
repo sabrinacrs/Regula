@@ -63,3 +63,4 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPris
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRendimentoFibraListPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivaresDoencasListPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SelectDoencasPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.InformacoesPage.xaml.g.cs

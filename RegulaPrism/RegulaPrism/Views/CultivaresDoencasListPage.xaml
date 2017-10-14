@@ -7,7 +7,7 @@
              Title="Resultados">
     <ContentPage.Content>
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <StackLayout Padding="20, 0, 0, 0">
+            <StackLayout>
                 <ScrollView Orientation="Horizontal">
                     <Grid x:Name="GridCultivares" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
                 </ScrollView>

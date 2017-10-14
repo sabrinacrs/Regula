@@ -57,6 +57,7 @@ namespace RegulaPrism
             Container.RegisterTypeForNavigation<CultivarRendimentoFibraListPage>();
             Container.RegisterTypeForNavigation<CultivaresDoencasListPage>();
             Container.RegisterTypeForNavigation<SelectDoencasPage>();
+            Container.RegisterTypeForNavigation<InformacoesPage>();
         }
     }
 }

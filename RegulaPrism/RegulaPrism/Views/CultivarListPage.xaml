@@ -26,13 +26,31 @@
                                             <ColumnDefinition Width="40" />
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="110" />
-                                            <ColumnDefinition Width="60" />
+                                            <ColumnDefinition Width="*">
+                                            </ColumnDefinition>
                                         </Grid.ColumnDefinitions>
 
                                         <Label Text="Ciclo: " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="0"></Label>
                                         <Label Text="{Binding Ciclo.Descricao}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="1"></Label>
                                         <Label Text="Rendimento (%): " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="2"></Label>
-                                        <Label Text="{Binding RendimentoFibraMaximo}" Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="3"></Label>
+                                        <StackLayout Grid.Row="0" Grid.Column="3">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"></RowDefinition>
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="30"></ColumnDefinition>
+                                                    <ColumnDefinition Width="10"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Text="{Binding RendimentoFibraMinimo}" Style="{StaticResource label-cultivares-list-detail}" HorizontalTextAlignment="End" Grid.Row="0" Grid.Column="0"></Label>
+                                                <Label Text=" - " Style="{StaticResource label-cultivares-list-detail}" Grid.Row="0" Grid.Column="1"></Label>
+                                                <Label Text="{Binding RendimentoFibraMaximo}" Style="{StaticResource label-cultivares-list-detail}" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2"></Label>
+                                            </Grid>
+                                        </StackLayout>
+                                        
                                     </Grid>
                                 </StackLayout>
                             </ViewCell>

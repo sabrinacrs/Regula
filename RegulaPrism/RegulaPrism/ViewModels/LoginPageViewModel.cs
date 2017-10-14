@@ -44,6 +44,8 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private ICloneDatabaseServer _cloneDatabaseServer;
 
         private IPageDialogService _dialogService;
@@ -52,8 +54,9 @@ namespace RegulaPrism.ViewModels
 
         public DelegateCommand NavigateToClienteCreatePageCommand { get; private set; }
         public DelegateCommand NavigateToHomeMasterDetailPageCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer)
+        public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer, IInformacoesManuais informacoesManuais)
         {
             // binding do título da página
             Title = "CottonApp";
@@ -62,12 +65,14 @@ namespace RegulaPrism.ViewModels
             _navigationParameters = new NavigationParameters();
             _navigationService = navigationService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _dialogService = dialogService;
             _cloneDatabaseServer = cloneDatabaseServer;
 
             // instanciar commands
             NavigateToClienteCreatePageCommand = new DelegateCommand(NavigateToClienteCreatePage);
             NavigateToHomeMasterDetailPageCommand = new DelegateCommand(NavigateToHomeMasterDetailPage);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void NavigateToClienteCreatePage()
@@ -117,6 +122,19 @@ namespace RegulaPrism.ViewModels
 
             //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute));
 
+        }
+
+        private void Informacoes()
+        {
+            // tela de informações de navegação
+            // recupera titulo e texto da interface IInformacoesManuais
+            // chama a mesma tela para exibir as coisas
+
+            InformacaoManual im = _informacoesManuais.InformacoesLogin();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

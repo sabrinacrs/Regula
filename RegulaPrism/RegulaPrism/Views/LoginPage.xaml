@@ -5,6 +5,9 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.LoginPage"
              Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Padding="30, 150, 30, 0" Spacing="20">
             <Entry Text="{Binding Login}" x:Name="Login" Placeholder="Login ou Email" />

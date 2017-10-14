@@ -4,28 +4,33 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.SemeaduraPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
 
     <ContentPage.Content>
-        <StackLayout Padding="20, 10, 20, 10">
-            <Label Text="Cultivar"></Label>
-            <Picker x:Name="CultivaresPicker" Title="Cultivar" SelectedIndex="{Binding CultivarSelectedIndex}" ItemsSource="{Binding Cultivares}" ItemDisplayBinding="{Binding Nome}" HorizontalOptions="FillAndExpand"></Picker>
+        <StackLayout>
+            <StackLayout Padding="30, 0, 30, 0" VerticalOptions="CenterAndExpand">
+                <Label Text="Cultivar"></Label>
+                <Picker x:Name="CultivaresPicker" Title="Cultivar" SelectedIndex="{Binding CultivarSelectedIndex}" ItemsSource="{Binding Cultivares}" ItemDisplayBinding="{Binding Nome}" HorizontalOptions="FillAndExpand"></Picker>
 
-            <Label Text="Época de Semeadura"></Label>
-            <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
+                <Label Text="Época de Semeadura"></Label>
+                <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
+
+                <Label Text="Espaçamento (m)"></Label>
+                <Entry x:Name="Espacamento" Placeholder="Ex 0.8" Keyboard="Numeric" Text="{Binding Espacamento}"></Entry>
+
+                <!--<Label Text="Metros Lineares"></Label>
+                <Entry x:Name="MetrosLineares" Text="{Binding MetrosLineares}" Keyboard="Numeric"></Entry>-->
+
+                <Label Text="Germinação (%)"></Label>
+                <Entry x:Name="Germinacao" Text="{Binding Germinacao}" Keyboard="Numeric"></Entry>
+            </StackLayout>
             
-            <Label Text="Espaçamento (m)"></Label>
-            <Entry x:Name="Espacamento" Placeholder="Ex 0.8" Keyboard="Numeric" Text="{Binding Espacamento}"></Entry>
-            
-            <!--<Label Text="Metros Lineares"></Label>
-            <Entry x:Name="MetrosLineares" Text="{Binding MetrosLineares}" Keyboard="Numeric"></Entry>-->
-            
-            <Label Text="Germinação (%)"></Label>
-            <Entry x:Name="Germinacao" Text="{Binding Germinacao}" Keyboard="Numeric"></Entry>
-            
-            <Button x:Name="Calcular" Text="Calcular" Style="{StaticResource button-save}" Command="{Binding SemeaduraCalculateCommand}"></Button>
+            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                <!-- bottom controls -->
+                <Button x:Name="Calcular" Text="Calcular" Style="{StaticResource button-save}" HorizontalOptions="FillAndExpand" Command="{Binding SemeaduraCalculateCommand}"></Button>
+            </StackLayout>
         </StackLayout>
-
     </ContentPage.Content>
     
 </ContentPage>

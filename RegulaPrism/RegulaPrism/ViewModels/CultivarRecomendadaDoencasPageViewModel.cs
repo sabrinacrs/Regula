@@ -102,9 +102,10 @@ namespace RegulaPrism.ViewModels
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
             _doencasSolo = new List<Doenca>();
+            _doencas = new List<Doenca>();
 
             // carrega lista de doencas
-            Doencas = _regulaApiService.GetDoenca();
+            loadDoencas();
 
             CultivarRecomendadaListCommand = new DelegateCommand(CultivarRecomendadaList);
             AddRemoveDoencaCommand = new DelegateCommand(AddRemoveDoenca);
@@ -151,6 +152,28 @@ namespace RegulaPrism.ViewModels
             {
                 // vai para cultivar list
                 _navigationService.NavigateAsync("CultivarListPage", _navigationParameters);
+            }
+        }
+
+        private void loadDoencas()
+        {
+            //Doencas = _regulaApiService.GetDoenca();
+
+            List<Doenca> doencasTable = _regulaApiService.GetDoenca();
+
+            // priorizar nematoides, ramularia e ramulose
+            foreach(var x in doencasTable)
+            {
+                if(x.Descricao.Contains("Nematoide") || x.Descricao.Contains("Ramulária") || x.Descricao.Contains("Ramulose"))
+                {
+                    _doencas.Add(x);
+                    doencasTable.Remove(x);
+                }
+            }
+
+            foreach (var x in doencasTable)
+            {
+                _doencas.Add(x);
             }
         }
 

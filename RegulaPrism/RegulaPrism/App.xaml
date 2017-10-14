@@ -73,7 +73,7 @@
         <Setter Property="TextColor" Value="#ffffff"/>
       </Style>
       <Style x:Key="button-menu-home-default" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#fafafa"/>
+        <Setter Property="BackgroundColor" Value="#ffffff"/>
         <Setter Property="TextColor" Value="#32b573"/>
       </Style>
       
@@ -125,6 +125,16 @@
       <Style x:Key="label-cultivares-list-detail" TargetType="Label">
         <Setter Property="TextColor" Value="#000000"></Setter>
       <Setter Property="FontSize" Value="Small"></Setter>
+      </Style>
+      
+      <!--Informações Manuais / Ajuda-->
+      <Style x:Key="label-info-title" TargetType="Label">
+        <Setter Property="Font" Value="Bold"/>
+        <Setter Property="TextColor" Value="#0b090c"></Setter>
+      </Style>
+      
+      <Style x:Key="label-info-text" TargetType="Label">
+        <Setter Property="TextColor" Value="##3b353d"></Setter>
       </Style>
       
       <!-- Entry Formulário Edição -->

@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.HomePage"
              Title="{Binding Title}"
+             BackgroundColor="White"
              ><!-- BackgroundColor="#4ba561" -->
     <ContentPage.Content>
         <StackLayout Padding="30, 20, 30, 10">
@@ -32,7 +33,7 @@
                 <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
                 
                 <!--Teste-->
-                <Button x:Name="ButtonTesteInterface" Text="Teste" Command="{Binding NavigateToCultivarDoencasPageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
+                <!--<Button x:Name="ButtonTesteInterface" Text="Teste" Command="{Binding NavigateToCultivarDoencasPageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>-->
             </Grid>
         </StackLayout>
         

@@ -64,6 +64,8 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private INavigationService _navigationService;
 
         private IPageDialogService _dialogService;
@@ -75,7 +77,9 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToFazendaContatoPageCommand { get; private set; }
         public DelegateCommand ClienteSaveCommand { get; private set; }
 
-        public ClienteCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer)
+        public DelegateCommand InfoCommand { get; private set; }
+
+        public ClienteCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer, IInformacoesManuais informacoesManuais)
         {
             // binding para titulo da pagina
             Title = "Cadastro Cliente";
@@ -83,10 +87,12 @@ namespace RegulaPrism.ViewModels
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _cloneDatabaseServer = cloneDatabaseServer;
             _navigationParameters = new NavigationParameters();
 
             ClienteSaveCommand = new DelegateCommand(ClienteSave);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void ClienteSave()
@@ -121,6 +127,19 @@ namespace RegulaPrism.ViewModels
             {
                 _dialogService.DisplayAlertAsync("Atenção", message , "OK");
             }
+        }
+
+        private void Informacoes()
+        {
+            // tela de informações de navegação
+            // recupera titulo e texto da interface IInformacoesManuais
+            // chama a mesma tela para exibir as coisas
+
+            InformacaoManual im = _informacoesManuais.InformacoesClienteCreate();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private string messageValidateFields()

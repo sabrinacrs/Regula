@@ -9,9 +9,6 @@ namespace RegulaPrism.Views
         public CultivarRecomendadaDoencasPage()
         {
             InitializeComponent();
-
-            // usar lista de doencas
-            
         }
 
         private void SwitchOnChanged(object sender, EventArgs e)

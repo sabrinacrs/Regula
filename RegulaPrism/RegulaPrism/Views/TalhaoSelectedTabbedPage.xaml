@@ -11,6 +11,6 @@
     <TabbedPage.Children>
         <local:TalhaoUpdatePage/> <!-- Lista de Semeaduras daquela fazenda -->
         <local:TalhaoListPage/> <!-- Lista de talhões da fazenda-->
-        <local:TalhaoListPage/>
+        <!--<local:TalhaoListPage/>-->
     </TabbedPage.Children>
 </TabbedPage>
