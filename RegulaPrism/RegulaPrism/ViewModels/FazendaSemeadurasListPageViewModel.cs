@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -77,20 +78,34 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand SemeaduraSelectedCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public FazendaSemeadurasListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public FazendaSemeadurasListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Semeaduras";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             SemeaduraSelectedCommand = new DelegateCommand(SemeaduraSelected);
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesFazendaSemeaduraList();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private void SemeaduraSelected()
@@ -146,17 +161,25 @@ namespace RegulaPrism.ViewModels
         public void OnNavigatedTo(NavigationParameters parameters)
         {
             Cliente = (Cliente)parameters["cliente"];
-            Fazenda = (Fazenda)parameters["fazenda"];
+            Fazenda f = (Fazenda)parameters["fazenda"];
 
-            carregaSemeaduras();
+            if (f != null)
+            {
+                Fazenda = (Fazenda)parameters["fazenda"];
+                carregaSemeaduras();
+            }
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
             Cliente = (Cliente)parameters["cliente"];
-            Fazenda = (Fazenda)parameters["fazenda"];
+            Fazenda f = (Fazenda)parameters["fazenda"];
 
-            carregaSemeaduras();
+            if(f != null)
+            {
+                Fazenda = (Fazenda)parameters["fazenda"];
+                carregaSemeaduras();
+            }
         }
     }
 }

@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -73,23 +74,36 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
         
-
         public DelegateCommand FazendaSelectedCommand { get; private set; }
         public DelegateCommand FazendaSearchCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public FazendaListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public FazendaListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Fazendas";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             FazendaSelectedCommand = new DelegateCommand(FazendaSelected);
             FazendaSearchCommand = new DelegateCommand(FazendaSearch);
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesFazendaList();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private void FazendaSelected()

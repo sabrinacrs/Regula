@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -78,18 +79,23 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand CultivarSelectedCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public CultivarListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public CultivarListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _informacoesManuais = informacoesManuais;
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
 
             CultivarSelectedCommand = new DelegateCommand(CultivarSelected);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void CultivarSelected()
@@ -106,6 +112,15 @@ namespace RegulaPrism.ViewModels
 
             // abre página com detalhes da cultivar
             _navigationService.NavigateAsync("CultivarSelectedPage", _navigationParameters);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesCultivarList();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

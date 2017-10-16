@@ -5,6 +5,9 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaSemeaduraSelectedPage"
              Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
@@ -108,7 +111,7 @@
                                             <ColumnDefinition Width="*"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
 
-                                        <Label x:Name="LabelSementesMetro" Text="Sementes (kg/m): " Grid.Row="0" Grid.Column="0"></Label>
+                                        <Label x:Name="LabelSementesMetro" Text="Sementes (m): " Grid.Row="0" Grid.Column="0"></Label>
                                         <Label x:Name="PesoSementesMetro" Text="{Binding CalculoSemeadura.QtdeSementesMetro}" Grid.Row="0" Grid.Column="1" Style="{StaticResource label-resultados-calculos}"></Label>
                                     </Grid>
                                 </StackLayout>

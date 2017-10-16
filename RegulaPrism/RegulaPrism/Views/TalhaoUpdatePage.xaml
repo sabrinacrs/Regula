@@ -5,6 +5,9 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TalhaoUpdatePage"
              Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="10, 10, 10, 10" Spacing="20">

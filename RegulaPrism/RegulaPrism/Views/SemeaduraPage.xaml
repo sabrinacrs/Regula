@@ -7,6 +7,9 @@
              Title="{Binding Title}"
              BackgroundColor="White">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="30, 0, 30, 0" VerticalOptions="CenterAndExpand">

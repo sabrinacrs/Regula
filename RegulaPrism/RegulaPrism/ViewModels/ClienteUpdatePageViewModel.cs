@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,22 +32,28 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand ClienteSaveCommand { get; private set; }
         public DelegateCommand ClienteDeleteCommand { get; private set; }
 
-        public ClienteUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public DelegateCommand InfoCommand { get; private set; }
+
+        public ClienteUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Dados Pessoais";
 
             _navigationService = navigationService;
             _regulaApiService = regulaApiService;
             _dialogService = dialogService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
             
             ClienteSaveCommand = new DelegateCommand(ClienteSave);
             ClienteDeleteCommand = new DelegateCommand(ClienteDelete);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void ClienteSave()
@@ -93,6 +100,15 @@ namespace RegulaPrism.ViewModels
                     await _dialogService.DisplayAlertAsync("", "Não foi possível deletar a conta", "OK");
                 }
             }
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesClienteUpdate();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private string validateFields()

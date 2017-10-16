@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -150,22 +151,36 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand CalcularSemeaduraCommand { get; private set; }
         public DelegateCommand NavigateToSemeaduraSaveCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public CalcularSemeaduraPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public CalcularSemeaduraPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Calcular Semeadura";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             CalcularSemeaduraCommand = new DelegateCommand(CalcularSemeadura);
             NavigateToSemeaduraSaveCommand = new DelegateCommand(NavigateToSemeaduraSave);
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesCalcularSemeadura();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private void NavigateToSemeaduraSave()
@@ -258,69 +273,81 @@ namespace RegulaPrism.ViewModels
         public void OnNavigatedTo(NavigationParameters parameters)
         {
             Cliente = (Cliente)parameters["cliente"];
+            
+            EpocaSemeadura ep = (EpocaSemeadura)parameters["epocaSemeadura"];
 
-            Cultivar = (Cultivar)parameters["cultivar"];
-            CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
-            EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
-            EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
-            EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
+            if (ep != null)
+            {
+                Cultivar = (Cultivar)parameters["cultivar"];
+                CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
 
-            Espacamento = (double)parameters["espacamento"];
-            MetrosLineares = (double)parameters["metrosLineares"];
-            Germinacao = (double)parameters["germinacao"];
+                EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
+                EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
+                EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
 
-            // pega número de plantas/ha
-            PlantasHectare = findCultivarEpocaSemeadura();
+                Espacamento = (double)parameters["espacamento"];
+                MetrosLineares = (double)parameters["metrosLineares"];
+                Germinacao = (double)parameters["germinacao"];
 
-            if (PlantasHectare == 0)
-                Recomendacao = "       * Semeadura não recomendada para a época \n" + _epocaSemeadura.Descricao;
-            else
-                Recomendacao = "";
+                // pega número de plantas/ha
+                PlantasHectare = findCultivarEpocaSemeadura();
 
-            // Peso Sementes Minimo
-            PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
+                if (PlantasHectare == 0)
+                    Recomendacao = "       * Semeadura não recomendada para a época \n" + _epocaSemeadura.Descricao;
+                else
+                    Recomendacao = "";
 
-            // Peso Sementes Maximo
-            PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+                // Peso Sementes Minimo
+                PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
 
-            // realiza calculos
-            calculoSementesMetro();
-            calculoSementesHectare();
-            calculoSementesAlqueire();
+                // Peso Sementes Maximo
+                PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+
+                // realiza calculos
+                calculoSementesMetro();
+                calculoSementesHectare();
+                calculoSementesAlqueire();
+            }
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
             Cliente = (Cliente)parameters["cliente"];
 
-            Cultivar = (Cultivar)parameters["cultivar"];
-            CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
-            EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
-            EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
-            EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
-            
-            Espacamento = (double)parameters["espacamento"];
-            MetrosLineares = (double)parameters["metrosLineares"];
-            Germinacao = (double)parameters["germinacao"];
+            EpocaSemeadura ep = (EpocaSemeadura)parameters["epocaSemeadura"];
 
-            // pega numero de plantas/ha
-            PlantasHectare = findCultivarEpocaSemeadura();
+            if(ep != null)
+            {
+                Cultivar = (Cultivar)parameters["cultivar"];
+                CultivarEpocasSemeadura = (List<CultivarEpocaSemeadura>)parameters["cultivarEpocasSemeadura"];
 
-            if (PlantasHectare == 0)
-                Recomendacao = "       * Não é recomendado realizar o plantio desta cultivar na época de " + _epocaSemeadura.Descricao;
-            else
-                Recomendacao = "";
+                EpocasSemeadura = (List<EpocaSemeadura>)parameters["epocasSemeadura"];
+                EpocaSemeadura = (EpocaSemeadura)parameters["epocaSemeadura"];
+                EpocaSemeaduraSelectedIndex = (int)parameters["epocaSemeaduraSelectedIndex"];
 
-            // Peso Sementes Minimo
-            PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
+                Espacamento = (double)parameters["espacamento"];
+                MetrosLineares = (double)parameters["metrosLineares"];
+                Germinacao = (double)parameters["germinacao"];
 
-            // Peso Sementes Maximo
-            PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+                // pega numero de plantas/ha
+                PlantasHectare = findCultivarEpocaSemeadura();
 
-            // realiza calculos
-            calculoSementesMetro();
-            calculoSementesHectare();
-            calculoSementesAlqueire();
+                if (PlantasHectare == 0)
+                    Recomendacao = "       * Não é recomendado realizar o plantio desta cultivar na época de " + _epocaSemeadura.Descricao;
+                else
+                    Recomendacao = "";
+
+                // Peso Sementes Minimo
+                PesoSementesMinimo = (double)_cultivar.PesoSementesMinimo;
+
+                // Peso Sementes Maximo
+                PesoSementesMaximo = (double)_cultivar.PesoSementesMaximo;
+
+                // realiza calculos
+                calculoSementesMetro();
+                calculoSementesHectare();
+                calculoSementesAlqueire();
+            }            
         }
     }
 }

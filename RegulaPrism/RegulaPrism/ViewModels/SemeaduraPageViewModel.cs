@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -108,18 +109,22 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand SemeaduraCalculateCommand { get; private set; }
         public DelegateCommand CultivarEpocaSemeaduraListCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public SemeaduraPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService) // 
+        public SemeaduraPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais) // 
         {
             Title = "Semeadura";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
             _cultivarSelectedIndex = -1;
             _epocaSemeaduraSelectedIndex = -1;
@@ -131,6 +136,16 @@ namespace RegulaPrism.ViewModels
 
             SemeaduraCalculateCommand = new DelegateCommand(SemeaduraCalculate);
             CultivarEpocaSemeaduraListCommand = new DelegateCommand(CultivarEpocaSemeaduraList);
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesSemeadura();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private void SemeaduraCalculate()

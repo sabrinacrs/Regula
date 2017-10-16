@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -45,19 +46,24 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand AddRemoveDoencaCommand { get; private set; }
 
         public DelegateCommand SelectDoencasCommand { get; private set; }
 
-        public SelectDoencasPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public DelegateCommand InfoCommand { get; private set; }
+
+        public SelectDoencasPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Selecionar Doencas do Solo";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
             _doencasSolo = new List<Doenca>();
 
@@ -66,6 +72,7 @@ namespace RegulaPrism.ViewModels
 
             AddRemoveDoencaCommand = new DelegateCommand(AddRemoveDoenca);
             SelectDoencasCommand = new DelegateCommand(SelectDoencas);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void AddRemoveDoenca()
@@ -93,6 +100,15 @@ namespace RegulaPrism.ViewModels
         {
             _navigationParameters.Add("doencas", _doencasSolo);
             _navigationService.NavigateAsync("CultivaresDoencasListPage", _navigationParameters);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesCultivarDoencas();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,22 +60,27 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand TalhaoUpdateCommand { get; private set; }
         public DelegateCommand TalhaoDeleteCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public TalhaoUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public TalhaoUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Atualizar Talhão";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _informacoesManuais = informacoesManuais;
             _regulaApiService = regulaApiService;
             _navigationParameters = new NavigationParameters();
 
             TalhaoUpdateCommand = new DelegateCommand(TalhaoUpdate);
             TalhaoDeleteCommand = new DelegateCommand(TalhaoDelete);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
         private void TalhaoUpdate()
         {
@@ -140,6 +146,15 @@ namespace RegulaPrism.ViewModels
             }
         }
 
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesTalhaoUpdate();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
+        }
+
         private string validateFields()
         {
             if (_fazendaSelectedIndex == -1)
@@ -164,20 +179,35 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            Talhao = (Talhao)parameters["talhao"];
-            Fazenda = (Fazenda)parameters["fazenda"];
             _cliente = (Cliente)parameters["cliente"];
-            Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
-            FazendaSelectedIndex = (int)parameters["fazendaSelectedIndex"];
+
+            Talhao t = (Talhao)parameters["talhao"];
+
+            if(t != null)
+            {
+                Talhao = (Talhao)parameters["talhao"];
+                Fazenda = (Fazenda)parameters["fazenda"];
+
+                Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
+                FazendaSelectedIndex = (int)parameters["fazendaSelectedIndex"];
+            }
+            
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            Talhao = (Talhao)parameters["talhao"];
-            Fazenda = (Fazenda)parameters["fazenda"];
             _cliente = (Cliente)parameters["cliente"];
-            Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
-            FazendaSelectedIndex = (int)parameters["fazendaSelectedIndex"];
+
+            Talhao t = (Talhao)parameters["talhao"];
+
+            if (t != null)
+            {
+                Talhao = (Talhao)parameters["talhao"];
+                Fazenda = (Fazenda)parameters["fazenda"];
+
+                Fazendas = _regulaApiService.GetFazendasByCliente(_cliente.Id);
+                FazendaSelectedIndex = (int)parameters["fazendaSelectedIndex"];
+            }
         }
     }
 }

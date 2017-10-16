@@ -18,6 +18,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _informacao, value); }
         }
 
+        private Cliente _cliente;
+        public Cliente Cliente
+        {
+            get { return _cliente; }
+            set { SetProperty(ref _cliente, value); }
+        }
+
         public InformacoesPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
 
@@ -25,16 +32,18 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
-            
+            parameters.Add("cliente", _cliente);
         }
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
+            _cliente = (Cliente)parameters["cliente"];
             Informacao = (InformacaoManual)parameters["informacao"];
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
+            _cliente = (Cliente)parameters["cliente"];
             Informacao = (InformacaoManual)parameters["informacao"];
         }
     }

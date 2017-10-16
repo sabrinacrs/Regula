@@ -6,6 +6,9 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.ClienteUpdatePage"
              Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content Title="Editar Perfil">
         <ScrollView>
             <StackLayout Spacing="10">

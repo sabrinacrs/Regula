@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,9 +57,13 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand CultivarSelectedCommand { get; private set; }
+
+        public DelegateCommand InfoCommand { get; private set; }
 
         private List<CultivarModel> _cultivares;
         public List<CultivarModel> Cultivares
@@ -67,19 +72,21 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivares, value); }
         }
 
-        public CultivarRendimentoFibraListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public CultivarRendimentoFibraListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Cultivares";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             Cultivares = new List<CultivarModel>();
             loadCultivares();
 
             CultivarSelectedCommand = new DelegateCommand(CultivarSelected);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void CultivarSelected()
@@ -96,6 +103,15 @@ namespace RegulaPrism.ViewModels
 
             // abre página com detalhes da cultivar
             _navigationService.NavigateAsync("CultivarSelectedPage", _navigationParameters);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesCultivarRendimento();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

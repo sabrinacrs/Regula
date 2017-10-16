@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -101,22 +102,28 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand NavigateToFazendaContatoPageCommand { get; private set; }
         public DelegateCommand FazendaSaveCommand { get; private set; }
 
-        public FazendaCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public DelegateCommand InfoCommand { get; private set; }
+
+        public FazendaCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Nova Fazenda";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             NavigateToFazendaContatoPageCommand = new DelegateCommand(NavigateToFazendaContatoPage);
             FazendaSaveCommand = new DelegateCommand(FazendaSave);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void NavigateToFazendaContatoPage()
@@ -152,6 +159,15 @@ namespace RegulaPrism.ViewModels
             {
                 _dialogService.DisplayAlertAsync("Atenção", message, "OK");
             }
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesFazendaCreate();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

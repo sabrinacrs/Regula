@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -94,18 +95,36 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
-        NavigationParameters _navigationParameters = new NavigationParameters();
+        private IInformacoesManuais _informacoesManuais;
 
-        public CultivarSelectedPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public DelegateCommand InfoCommand { get; private set; }
+
+        NavigationParameters _navigationParameters;
+        
+
+        public CultivarSelectedPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _informacoesManuais = informacoesManuais;
             _regulaApiService = regulaApiService;
+            _navigationParameters = new NavigationParameters();
 
             CultivarModel = new CultivarModel();
             Tolerancias = new List<Tolerancia>();
             Tolerancias = _regulaApiService.GetTolerancias();
             Tolerancias = Tolerancias.OrderBy(t => t.Sigla.Length).ToList();
+
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesCultivarSelected();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

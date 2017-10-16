@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using RegulaPrism.Views;
 using System;
 using System.Collections.Generic;
@@ -102,21 +103,26 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         NavigationParameters _navigationParameters = new NavigationParameters();
 
         public DelegateCommand FazendaUpdateCommand { get; private set; }
         public DelegateCommand FazendaDeleteCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public FazendaUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public FazendaUpdatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Informações";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
+            _informacoesManuais = informacoesManuais;
             _regulaApiService = regulaApiService;
 
             FazendaUpdateCommand = new DelegateCommand(FazendaUpdate);
             FazendaDeleteCommand = new DelegateCommand(FazendaDelete);
+            InfoCommand = new DelegateCommand(Informacoes);
         }
 
         private void FazendaUpdate()
@@ -179,6 +185,15 @@ namespace RegulaPrism.ViewModels
                 
         }
 
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesFazendaUpdate();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
+        }
+
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
             parameters.Add("fazenda", _fazenda);
@@ -188,14 +203,20 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            Fazenda = (Fazenda)parameters["fazenda"];
             Cliente = (Cliente)parameters["cliente"];
+            Fazenda f = (Fazenda)parameters["fazenda"];
+
+            if(f != null)
+                Fazenda = (Fazenda)parameters["fazenda"];
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            Fazenda = (Fazenda)parameters["fazenda"];
             Cliente = (Cliente)parameters["cliente"];
+            Fazenda f = (Fazenda)parameters["fazenda"];
+
+            if (f != null)
+                Fazenda = (Fazenda)parameters["fazenda"];
         }
 
         private string validateFields()

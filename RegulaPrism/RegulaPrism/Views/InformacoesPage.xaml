@@ -6,14 +6,16 @@
              x:Class="RegulaPrism.Views.InformacoesPage"
              Title="Ajuda">
     <ContentPage.Content>
-        <StackLayout Padding="20, 20, 20, 20">
-            <StackLayout>
-                <Label Text="{Binding Informacao.Titulo}" Style="{StaticResource label-info-title}"></Label>    
-            </StackLayout>
+        <ScrollView>
+            <StackLayout Padding="20, 20, 20, 20">
+                <StackLayout>
+                    <Label Text="{Binding Informacao.Titulo}" Style="{StaticResource label-info-title}"></Label>
+                </StackLayout>
 
-            <StackLayout>
-                <Label Text="{Binding Informacao.Texto}" Style="{StaticResource label-info-text}"></Label>
+                <StackLayout>
+                    <Label Text="{Binding Informacao.Texto}" Style="{StaticResource label-info-text}"></Label>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

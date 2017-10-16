@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -92,30 +93,47 @@ namespace RegulaPrism.ViewModels
 
         private IRegulaApiService _regulaApiService;
 
+        private IInformacoesManuais _informacoesManuais;
+
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand TalhaoSelectedCommand { get; private set; }
         public DelegateCommand TalhaoSearchCommand { get; private set; }
         public DelegateCommand FazendaSelectedCommand { get; private set; }
+        public DelegateCommand InfoCommand { get; private set; }
 
-        public TalhaoListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
+        public TalhaoListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
             Title = "Talhões";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
             _regulaApiService = regulaApiService;
+            _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
 
             TalhaoSelectedCommand = new DelegateCommand(TalhaoSelected);
             TalhaoSearchCommand = new DelegateCommand(TalhaoSearch);
             FazendaSelectedCommand = new DelegateCommand(FazendaSelected);
+            InfoCommand = new DelegateCommand(Informacoes);
+        }
+
+        private void Informacoes()
+        {
+            InformacaoManual im = _informacoesManuais.InformacoesTalhaoList();
+
+            _navigationParameters.Add("informacao", im);
+
+            _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
         private void FazendaSelected()
         {
-            _fazenda = Fazendas.ElementAt(_fazendaSelectedIndex);
-            Talhoes = _regulaApiService.GetTalhoesByFazenda(_fazenda.Id);
+            if(_fazendaSelectedIndex != -1)
+            {
+                _fazenda = Fazendas.ElementAt(_fazendaSelectedIndex);
+                Talhoes = _regulaApiService.GetTalhoesByFazenda(_fazenda.Id);
+            }
         }
 
         private void TalhaoSelected()
