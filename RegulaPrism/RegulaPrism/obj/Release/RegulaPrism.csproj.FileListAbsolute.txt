@@ -21,6 +21,7 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Platform.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Xaml.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Xaml.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.csprojResolveAssemblyReference.cache
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.App.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.MainPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.SpeakPage.xaml.g.cs
@@ -54,5 +55,12 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.RegistrarSemeaduraPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.FazendaSemeadurasListPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.FazendaSemeaduraSelectedPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivarHomePage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivarSelectedPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivarCicloPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivarRendimentoFibraListPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivaresDoencasListPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.SelectDoencasPage.xaml.g.cs
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.InformacoesPage.xaml.g.cs
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.pdb
