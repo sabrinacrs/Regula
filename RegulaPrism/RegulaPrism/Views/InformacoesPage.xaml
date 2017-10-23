@@ -11,9 +11,22 @@
                 <StackLayout>
                     <Label Text="{Binding Informacao.Titulo}" Style="{StaticResource label-info-title}"></Label>
                 </StackLayout>
-
                 <StackLayout>
                     <Label Text="{Binding Informacao.Texto}" Style="{StaticResource label-info-text}"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="{Binding Informacao.TitleFunctions}" Style="{StaticResource label-info-title}"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding Informacao.TextFunctions}" Style="{StaticResource label-info-text}"></Label>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="{Binding Informacao.TitleErrors}" Style="{StaticResource label-info-title}"></Label>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="{Binding Informacao.TextErrors}" Style="{StaticResource label-info-text}"></Label>
                 </StackLayout>
             </StackLayout>
         </ScrollView>

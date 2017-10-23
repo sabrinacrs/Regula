@@ -39,6 +39,15 @@ namespace RegulaPrism.Services
                         + "5. Confirmar Senha: Use o campo de confirmar senha para verificar se a senha definida foi digitada corretamete \n\n"
                         + "6. Salvar: O botão Salvar registra todas as informações digitadas e cria uma conta para o cliente \n\n";
 
+            im.TitleFunctions = "Cliente cadastrado";
+            im.TextFunctions = "Após cadastrar-se como cliente, poderá ter acesso à todas as funcionalidades da aplicação, registrar fazendas,"
+                + " talhões, realizar cálculos e registros de semeadura.";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
+
             return im;
         }
 
@@ -54,6 +63,15 @@ namespace RegulaPrism.Services
                         + "1.3 CPF: Se desejar, informe o número de seu CPF \n\n"
                         + "2. Dados de Localização: \n"
                         + "Você pode utilizar os campos para fornecer uma localização com bairro, cidade, CEP. \n\n";
+
+            im.TitleFunctions = "Cliente atualizado";
+            im.TextFunctions = "Ao realizar a atualização, todos os dados do cliente serão substituídos pelas"
+                + "informações que foram alteradas ou acrescentadas";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
 
             return im;
         }
@@ -77,6 +95,14 @@ namespace RegulaPrism.Services
                         + "Você pode utilizar os campos para fornecer uma localização com bairro, cidade, UF. \n\n"
                         + "4. Salvar: Botão para salvar todos os dados \n\n";
 
+            im.TitleFunctions = "Fazenda cadastrada";
+            im.TextFunctions = "Ter uma fazenda cadastrada no sistema é importante para cadastrar talhões, salvar cálculos das quantidades de sementes e registrar semeaduras.";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
+
             return im;
         }
 
@@ -99,6 +125,15 @@ namespace RegulaPrism.Services
                         + "4. Excluir Fazenda: Todos os dados da fazenda são deletados, impossibilitando a consulta e registro de semeaduras e talhões para a fazenda \n\n"
                         + "5. Salvar: Botão para salvar todos os dados \n\n";
 
+            im.TitleFunctions = "Fazenda atualizada";
+            im.TextFunctions = "Ao realizar a atualização, todos os dados da fazenda serão substituídos pelas"
+                + "informações que foram alteradas ou acrescentadas";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
+
             return im;
         }
 
@@ -111,6 +146,15 @@ namespace RegulaPrism.Services
                         + "1. Campo para digitar: Use o teclado virtual para digitar algum trecho do nome da fazenda \n\n"
                         + "2. Botão Buscar: Lista os resultados obtidos com base no que foi digitado no campo de texto \n\n"
                         + "3. Lista de Fazendas: Lista todas as fazendas registradas ou os resultados da busca. Toque na linha de determinada fazenda para obter mais detalhes sobre ela \n\n";
+
+            //im.TitleFunctions = "Fazenda atualizada";
+            //im.TextFunctions = "Ao realizar a atualização, todos os dados da fazenda serão substituídos pelas"
+            //    + "informações que foram alteradas ou acrescentadas";
+
+            //im.TitleErrors = "Mensagens de erro";
+            //im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: "
+            //              + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+            //              + "tela a respeito de qual informação encontra-se incorreta";
 
             return im;
         }
@@ -126,6 +170,14 @@ namespace RegulaPrism.Services
                         + "2. Descrição: Atribua uma descrição que permita identificar o talhão \n\n"
                         + "3. Tamanho: Informe o tamanho do talhão \n\n"
                         + "4. Salvar: Botão para salvar todos os dados \n\n";
+
+            im.TitleFunctions = "Talhão cadastrado";
+            im.TextFunctions = "Após registrar um talhão em uma fazenda, é possível usar as informações para os cálculos e registro de semeadura";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
 
             return im;
         }
@@ -156,6 +208,16 @@ namespace RegulaPrism.Services
                         + "4. Excluir Talhão: Todos os dados do talhão são deletados \n\n"
                         + "5. Salvar: Botão para salvar todos os dados \n\n";
 
+            im.TitleFunctions = "Talhão atualizada";
+            im.TextFunctions = "Ao realizar a atualização, todos os dados do talhão serão substituídos pelas"
+                + "informações que foram alteradas ou acrescentadas";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta"
+                          + "2. Não foi possível excluir o talhão. Neste caso, é necessário observar se o talhão possui semeaduras em aberto.";
+
             return im;
         }
 
@@ -171,6 +233,14 @@ namespace RegulaPrism.Services
                         + "3. Fazendas: Operações para registrar, listar ou alterar dados de uma fazenda \n\n"
                         + "4. Talhões: Operações para registrar, listar ou alterar dados de um talhão \n\n"
                         + "5. Usuário: Apresenta todos os dados do usuário \n\n";
+
+            im.TitleFunctions = "Funcionalidades da Aplicação";
+            im.TextFunctions = "Cultivares: Lista todas as cultivares do catálago, permite filtrar cultivares com base no ciclo, no rendimento da fibra e cultivares tolerantes às doenças presentes no solo do produtor. \n"
+                + "- Semeaduras: Permite fornecer as informações necessárias para realizar os cálculos da quantidade de sementes a semear. \n\n"
+                + "- Fazendas: Consulta e gerencia fazendas registradas; realiza buscas, alterações e exclusões de fazendas. \n\n"
+                + "- Talhões: Consulta e gerencia talhões registrados; realiza buscas, alterações e exclusões de talhões pertencentes à fazenda selecionada. \n\n"
+                + "- Cliente: Permite gerenciar a conta do cliente que faz uso da aplicação; alterar ou acrescentar informações. \n\n";
+
 
             return im;
         }
@@ -232,6 +302,11 @@ namespace RegulaPrism.Services
                      + "2. Quando o círculo contido no botão está no lado esquerdo significa que a doença não foi selecionada \n\n"
                      + "3. O botão Próximo levará à tela com a lista das variedades, as doenças selecionadas e tolerâncias \n\n";
 
+            im.TitleFunctions = "Funcionalidade do Filtro de Doenças";
+            im.TextFunctions = "As doenças selecionadas são utilizadas para realizar o cruzamento entre doenças, cultivares e tolerâncias. "
+                + "É importante selecionar doenças presentes no solo para retornar os resultados das tolerâncias entre as doenças selecionadas e a cultivar. "
+                + " Se nenhuma doenças for selecionada, a consulta não retornará nenhum resultado.";
+
             return im;
         }
 
@@ -247,6 +322,18 @@ namespace RegulaPrism.Services
                      + "3. Espaçamento: Utilize o teclado numérico para informar o espaçamento. Ele deve ser um valor decimal, como por exemplo: 0.8 \n\n"
                      + "4. Germinação: Utilize o teclado numérico para informar a taxa de germinação apresentada no saco de sementes \n\n"
                      + "5. Botão Calcular: Para visualizar o resultado de todos os cálculos, toque no botão calcular \n\n";
+
+            im.TitleFunctions = "Funcionalidade dos Cálculos";
+            im.TextFunctions = "As informações fornecidas são submetidas às fórmulas para obter as quantidades de sementes indicadas a cada unidade de medida.\n\n"
+                + "- Sementes por metro: (Plantas Hectare / Metros Lineares) / (Germinação / 100) \n\n"
+                + "- Sementes por hectare: (Sementes por metro * Metros Lineares) * (Peso Sementes / 100) / 1000 \n\n"
+                + "- Sementes por alqueire: (Sementes por hectare * 2.42) \n\n";
+
+            im.TitleErrors = "Mensagens de erro";
+            im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
+                          + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
+                          + "tela a respeito de qual informação encontra-se incorreta";
+
 
             return im;
         }
@@ -265,6 +352,12 @@ namespace RegulaPrism.Services
                      + "6. Sementes (kg/alq): Peso, em quilogramas, que deve ser semeado em cada alqueire \n\n"
                      + "7. Recomendação: Um rótulo em vermelho pode surgir quando a varidade de cultivar não é recomendada para a época de semeadura selecionada \n\n"
                      + "8. Botão Salvar: O Botão Salvar permite registrar todos os cálculos realizados \n\n";
+
+            im.TitleFunctions = "Funcionalidade dos Cálculos";
+            im.TextFunctions = "As informações fornecidas são submetidas às fórmulas para obter as quantidades de sementes indicadas a cada unidade de medida. \n"
+                + "Sementes por metro: (Plantas Hectare / Metros Lineares) / (Germinação / 100) \n\n"
+                + "Sementes por hectare: (Sementes por metro * Metros Lineares) * (Peso Sementes / 100) / 1000 \n\n"
+                + "Sementes por alqueire: (Sementes por hectare * 2.42) \n\n";
 
             return im;
         }

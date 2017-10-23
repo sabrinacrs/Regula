@@ -90,9 +90,9 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\up
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Release\RegulaPrism.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Release\RegulaPrism.Droid.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\FormsViewGroup.dll.mdb
-D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.ServiceLocation.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.Droid.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.ServiceLocation.dll.mdb
