@@ -109,8 +109,13 @@ namespace RegulaPrism.ViewModels
                         Cliente = cliente;
 
                         // clonar a base de dados
-                        if(_regulaApiService.GetCultivar().Count() <= 0)
-                            _cloneDatabaseServer.CloneDatabase(_regulaApiService);
+                        if (_regulaApiService.GetCultivar().Count() <= 0)
+                        {
+                            GetDatabases gdb = new GetDatabases();
+                            gdb.getDatabases(_regulaApiService);
+                        }
+                            //if(_regulaApiService.GetCultivar().Count() <= 0)
+                            //    _cloneDatabaseServer.CloneDatabase(_regulaApiService);
 
                         _navigationParameters.Add("cliente", _cliente);
                         _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
@@ -123,6 +128,14 @@ namespace RegulaPrism.ViewModels
             //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute));
 
         }
+
+        //async void getData()
+        //{
+        //    DataService ds = new DataService();
+        //    List<Cultivar> cs = await ds.GetCultivaresAsync();
+        //    int x = 0;
+        //    x++;
+        //}
 
         private void Informacoes()
         {

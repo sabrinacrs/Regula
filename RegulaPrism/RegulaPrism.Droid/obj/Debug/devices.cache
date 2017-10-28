@@ -2,6 +2,6 @@
 <Devices>
   <Device id="192.168.60.101:5555">
     <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>24</SdkVersion>
+    <SdkVersion>16</SdkVersion>
   </Device>
 </Devices>

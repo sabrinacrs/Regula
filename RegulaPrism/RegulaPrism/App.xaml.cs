@@ -12,7 +12,7 @@ namespace RegulaPrism
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/LoginPage"); // HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
+            NavigationService.NavigateAsync("NavigationPage/LoginPage"); //  HomeMasterDetailPage  MainPage?title=Hello%20from%20Xamarin.Forms
         }
 
         protected override void RegisterTypes()

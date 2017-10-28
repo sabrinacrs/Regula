@@ -18,7 +18,6 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Prism.Fo
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Prism.Unity.Forms.xml
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Core.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Core.xml
-D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Platform.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Xaml.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Xamarin.Forms.Xaml.xml
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.App.xaml.g.cs
@@ -64,3 +63,17 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPr
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.pdb
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.csprojResolveAssemblyReference.cache
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.config
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Microsoft.Threading.Tasks.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Microsoft.Threading.Tasks.Extensions.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Newtonsoft.Json.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.Extensions.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.Primitives.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Microsoft.Threading.Tasks.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Microsoft.Threading.Tasks.Extensions.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\Newtonsoft.Json.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.Extensions.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\System.Net.Http.Primitives.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.csproj.App.config

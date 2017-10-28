@@ -113,8 +113,11 @@ namespace RegulaPrism.ViewModels
                     _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
 
                     // clonar a base de dados
-                    //if (_regulaApiService.GetCultivar().Count() <= 0)
-                    //    _cloneDatabaseServer.CloneDatabase(_regulaApiService);
+                    if (_regulaApiService.GetCultivar().Count() <= 0)
+                    {
+                        GetDatabases gdb = new GetDatabases();
+                        gdb.getDatabases(_regulaApiService);
+                    }
 
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                 }

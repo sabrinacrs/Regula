@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TesteInterface">
     <ContentPage.Content>
-        <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding Cultivares}" SelectedItem="{Binding SelectedItem}">
+        <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding ListaCultivares}" SelectedItem="{Binding SelectedItem}">
             <ListView.ItemTemplate >
                 <DataTemplate>
                     <TextCell Text="{Binding Nome}" Detail="{Binding Nome}"/>

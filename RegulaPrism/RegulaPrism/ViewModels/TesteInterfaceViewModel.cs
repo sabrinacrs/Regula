@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Services;
 using RegulaPrism;
 using RegulaPrism.Models;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,12 +33,25 @@ namespace RegulaPrism.ViewModels
         //    set { SetProperty(ref _cultivares, value); }
         //}
 
+        private List<Cultivar> _listaCultivares;
+        public List<Cultivar> ListaCultivares
+        {
+            get { return _listaCultivares; }
+            set { SetProperty(ref _listaCultivares, value); }
+        }
+
+        public DataService dataService;
+
+        //async void AtualizaDados()
+        //{
+        //    List<Cultivar> produtos = await dataService.GetCultivaresAsync();
+        //    ListaCultivares = produtos.OrderBy(item => item.Nome).ToList();
+        //}
+
         public TesteInterfaceViewModel()
         {
-            // carrega lista de cultivares
-            var config = Xamarin.Forms.DependencyService.Get<IMySqlConnect>();
-
-            Cultivares = config.CarregaCultivares();
+            //dataService = new DataService();
+            //AtualizaDados();
         }
     }
 }
