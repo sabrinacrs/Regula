@@ -235,7 +235,7 @@ namespace RegulaPrism.Services
                         + "5. Usuário: Apresenta todos os dados do usuário \n\n";
 
             im.TitleFunctions = "Funcionalidades da Aplicação";
-            im.TextFunctions = "Cultivares: Lista todas as cultivares do catálago, permite filtrar cultivares com base no ciclo, no rendimento da fibra e cultivares tolerantes às doenças presentes no solo do produtor. \n"
+            im.TextFunctions = "- Cultivares: Lista todas as cultivares do catálago, permite filtrar cultivares com base no ciclo, no rendimento da fibra e cultivares tolerantes às doenças presentes no solo do produtor. \n\n"
                 + "- Semeaduras: Permite fornecer as informações necessárias para realizar os cálculos da quantidade de sementes a semear. \n\n"
                 + "- Fazendas: Consulta e gerencia fazendas registradas; realiza buscas, alterações e exclusões de fazendas. \n\n"
                 + "- Talhões: Consulta e gerencia talhões registrados; realiza buscas, alterações e exclusões de talhões pertencentes à fazenda selecionada. \n\n"

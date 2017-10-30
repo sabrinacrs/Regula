@@ -5,7 +5,8 @@
              xmlns:utils="clr-namespace:RegulaPrism.Utils"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaContatoPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="LabelInformacoesContato" Style="{StaticResource label-dados-pessoais}" Text="      Informações de Contato"></Label>

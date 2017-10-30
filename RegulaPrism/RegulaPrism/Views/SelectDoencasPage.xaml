@@ -4,7 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.SelectDoencasPage"
-             Title="Doenças do Solo">
+             Title="Doenças do Solo"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>

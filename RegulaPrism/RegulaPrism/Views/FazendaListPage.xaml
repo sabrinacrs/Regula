@@ -4,41 +4,49 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaListPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="10, 20, 10, 10" Spacing="20">
-                <Label Text="Buscar Fazenda" Grid.Row="0" Grid.Column="0"></Label>
-                <Grid>
-                    <!--Row Definitions of Grid-->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
-
-                    <!--Row Definitions of Grid-->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="90"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-
-                    <Entry x:Name="EntrySearchFazenda" Text="{Binding Filtro, Mode=TwoWay}"  Grid.Row="0" Grid.Column="0"></Entry>
-                    <Button x:Name="ButtonSearchFazenda" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaSearchCommand}"></Button>
-                </Grid>
-            </StackLayout>
-            
+        <ScrollView>
             <StackLayout>
-                <ListView x:Name="ListaFazendas" HasUnevenRows="True" ItemsSource="{Binding Fazendas}" SelectedItem="{Binding SelectedItem}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding Nome}" Detail="{Binding Hectares}"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <StackLayout Padding="20, 0, 20, 0" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Label Text="Buscar Fazenda" Grid.Row="0" Grid.Column="0"></Label>
+                        <Grid>
+                            <!--Row Definitions of Grid-->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!--Row Definitions of Grid-->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Entry x:Name="EntrySearchFazenda" Text="{Binding Filtro, Mode=TwoWay}" HorizontalOptions="FillAndExpand"  Grid.Row="0" Grid.Column="0"></Entry>
+                            <Button x:Name="ButtonSearchFazenda" Text="Buscar" HorizontalOptions="FillAndExpand" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaSearchCommand}"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Padding="20, 0, 20, 0" VerticalOptions="CenterAndExpand">
+                    <ScrollView>
+                        <StackLayout>
+                            <ListView x:Name="ListaFazendas" HasUnevenRows="True" ItemsSource="{Binding Fazendas}" SelectedItem="{Binding SelectedItem}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextCell Text="{Binding Nome}" Detail="{Binding Hectares}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

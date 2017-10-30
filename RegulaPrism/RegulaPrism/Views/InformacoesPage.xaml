@@ -4,7 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.InformacoesPage"
-             Title="Ajuda">
+             Title="Ajuda"
+             BackgroundColor="White">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Padding="20, 20, 20, 20">

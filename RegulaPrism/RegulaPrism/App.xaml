@@ -86,7 +86,7 @@
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
         <Setter Property="BackgroundColor" Value="#ededee"/> <!-- C6C6C7#dde0ec -->
-        <Setter Property="TextColor" Value="#3b3b3b"/> <!-- #989aa3 -->
+        <Setter Property="TextColor" Value="#0e4f34"/> <!-- #989aa3 -->
         <!--<Setter Property="FontSize" Value="Medium"/>-->
       </Style>
       
@@ -134,7 +134,7 @@
       </Style>
       
       <Style x:Key="label-info-text" TargetType="Label">
-        <Setter Property="TextColor" Value="##3b353d"></Setter>
+        <Setter Property="TextColor" Value="#3b353d"></Setter>
       </Style>
       
       <!-- Entry Formulário Edição -->

@@ -19,5 +19,6 @@ namespace RegulaPrism.Views
             ((SemeaduraPageViewModel)this.BindingContext).CultivarSelectedIndex = CultivaresPicker.SelectedIndex;
             ((SemeaduraPageViewModel)this.BindingContext).CultivarEpocaSemeaduraListCommand.Execute();
         }
+
     }
 }

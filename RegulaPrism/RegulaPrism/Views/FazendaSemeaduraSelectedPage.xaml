@@ -4,7 +4,8 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.FazendaSemeaduraSelectedPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>

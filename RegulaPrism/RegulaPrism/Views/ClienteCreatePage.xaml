@@ -5,29 +5,32 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              xmlns:utils="clr-namespace:RegulaPrism.Utils"
              x:Class="RegulaPrism.Views.ClienteCreatePage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Padding="40, 20, 40, 0">
-            <Label Text="Nome Completo"></Label>
-            <Entry Text="{Binding Nome, Mode=TwoWay}" x:Name="nome"/>
-            <Label Text="Email"></Label>
-            <Entry Text="{Binding Email, Mode=TwoWay}" Keyboard="Email" x:Name="email">
-                <Entry.Behaviors>
-                    <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
-                </Entry.Behaviors>
-            </Entry>
-            <!--<Label Style="{Binding Source={x:Reference emailValidator}, Path=IsValid, Converter={StaticResource boolToStyleEmail}}" />-->
-            <Label Text="Login"></Label>
-            <Entry Text="{Binding Login, Mode=TwoWay}" x:Name="login"></Entry>
-            <Label Text="Senha"></Label>
-            <Entry Text="{Binding Senha, Mode=TwoWay}" IsPassword="True" x:Name="senha"></Entry>
-            <Label Text="Confirmar Senha"></Label>
-            <Entry Text="{Binding ConfirmaSenha, Mode=TwoWay}" IsPassword="True" x:Name="confirmarSenha"></Entry>
-
-            <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Command="{Binding ClienteSaveCommand}"></Button>
+        <StackLayout>
+            <StackLayout Padding="40, 20, 40, 20">
+                <Label Text="Nome Completo"></Label>
+                <Entry Text="{Binding Nome, Mode=TwoWay}" x:Name="nome"/>
+                <Label Text="Email"></Label>
+                <Entry Text="{Binding Email, Mode=TwoWay}" Keyboard="Email" x:Name="email">
+                    <Entry.Behaviors>
+                        <utils:EmailValidatorBehavior x:Name="emailValidator"></utils:EmailValidatorBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+                <Label Text="Login"></Label>
+                <Entry Text="{Binding Login, Mode=TwoWay}" x:Name="login"></Entry>
+                <Label Text="Senha"></Label>
+                <Entry Text="{Binding Senha, Mode=TwoWay}" IsPassword="True" x:Name="senha"></Entry>
+                <Label Text="Confirmar Senha"></Label>
+                <Entry Text="{Binding ConfirmaSenha, Mode=TwoWay}" IsPassword="True" x:Name="confirmarSenha"></Entry>
+            </StackLayout>
+            <StackLayout Padding="40, 20, 40, 20" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" HorizontalOptions="FillAndExpand" Command="{Binding ClienteSaveCommand}"></Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

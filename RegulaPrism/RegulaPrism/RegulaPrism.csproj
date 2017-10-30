@@ -81,6 +81,7 @@
     <Compile Include="Services\RegulaApiService.cs" />
     <Compile Include="Utils\CEPValidatorBehavior.cs" />
     <Compile Include="Utils\CPFValidatorBehavior.cs" />
+    <Compile Include="Utils\CurrencyConverter.cs" />
     <Compile Include="Utils\EmailValidatorBehavior.cs" />
     <Compile Include="Utils\PickerValidatorBehavior.cs" />
     <Compile Include="Utils\TelefoneValidatorBehavior.cs" />

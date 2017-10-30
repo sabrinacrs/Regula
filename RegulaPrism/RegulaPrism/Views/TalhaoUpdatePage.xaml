@@ -4,46 +4,59 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TalhaoUpdatePage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="10, 10, 10, 10" Spacing="20">
-                <Label Text="Fazenda"></Label>
-                <Picker x:Name="FazendasPicker" 
+        <ScrollView>
+            <StackLayout>
+
+                <!--Content Center-->
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <StackLayout Padding="40, 0, 40, 0">
+                        <Label Text="Fazenda"></Label>
+                        <Picker x:Name="FazendasPicker" 
                         Title="Selecionar Fazenda"
                         SelectedIndex="{Binding FazendaSelectedIndex}"
                         ItemsSource="{Binding Fazendas}" 
                         ItemDisplayBinding="{Binding Nome}" 
                         HorizontalOptions="FillAndExpand">
-                </Picker>
-                <Label Text="Descrição"></Label>
-                <Entry Text="{Binding Talhao.Descricao}" x:Name="Descricao"></Entry>
-                <Label Text="Tamanho"></Label>
-                <Entry Text="{Binding Talhao.Tamanho}" x:Name="Tamanho" Keyboard="Numeric"></Entry>
-                <Label Text="Espaçamento"></Label>
-                <Entry Text="{Binding Talhao.Espacamento}" x:Name="Espacamento"></Entry>
-            </StackLayout>
-            <StackLayout>
-                <Grid>
-                    <!-- Row Definitions of Grid -->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
+                        </Picker>
+                        
+                        <Label Text="Descrição"></Label>
+                        <Entry Text="{Binding Talhao.Descricao}" x:Name="Descricao"></Entry>
 
-                    <!-- Row Definitions of Grid -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                        <Label Text="Tamanho"></Label>
+                        <Entry Text="{Binding Talhao.Tamanho}" x:Name="Tamanho" Keyboard="Numeric"></Entry>
 
-                    <Button x:Name="ButtonDeleteTalhao" Text="Excluir Talhão" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding TalhaoDeleteCommand}"></Button>
-                    <Button x:Name="UpdateTalhao" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoUpdateCommand}"></Button>
-                </Grid>
-                
+                        <Label Text="Espaçamento"></Label>
+                        <Entry Text="{Binding Talhao.Espacamento}" x:Name="Espacamento"></Entry>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--End-->
+                <StackLayout Padding="20, 0, 20, 0" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <!-- Row Definitions of Grid -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="ButtonDeleteTalhao" Text="Excluir Talhão" HorizontalOptions="FillAndExpand" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding TalhaoDeleteCommand}"></Button>
+                            <Button x:Name="UpdateTalhao" Text="Salvar" HorizontalOptions="FillAndExpand" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoUpdateCommand}"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

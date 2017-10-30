@@ -7,7 +7,8 @@
             x:Class="RegulaPrism.Views.FazendaSelectedTabbedPage"
             Title="{Binding Title}"
             BarBackgroundColor="#4ba561"
-            BarTextColor="White">
+            BarTextColor="White"
+            BackgroundColor="White">
     <TabbedPage.Children>
         <local:FazendaSemeadurasListPage/> <!-- Lista de Semeaduras daquela fazenda -->
         <local:TalhaoListPage/> <!-- Lista de talhões da fazenda-->

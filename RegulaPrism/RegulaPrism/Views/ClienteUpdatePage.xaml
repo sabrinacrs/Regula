@@ -5,71 +5,84 @@
              xmlns:utils="clr-namespace:RegulaPrism.Utils"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.ClienteUpdatePage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content Title="Editar Perfil">
         <ScrollView>
-            <StackLayout Spacing="10">
-                
-                <Label x:Name="LabelDadosPessoais" Style="{StaticResource label-dados-pessoais}" Text="      Dados Pessoais"></Label>
-                <StackLayout Padding="10, 5, 10, 0"><!--Spacing="10"-->
-                    <Label Text="Nome Completo"></Label>
-                    <Entry x:Name="Nome" Text="{Binding Cliente.Nome}" Style="{StaticResource entry-formulario}"></Entry>
-                    <Label Text="Telefone"></Label>
-                    <Entry x:Name="Telefone" Text="{Binding Cliente.Telefone}" Keyboard="Numeric" Style="{StaticResource entry-formulario}">
-                        <Entry.Behaviors>
-                            <utils:TelefoneValidatorBehavior x:Name="telefoneValidator"></utils:TelefoneValidatorBehavior>
-                        </Entry.Behaviors>
-                    </Entry>
-                    <Label Text="CPF"></Label>
-                    <Entry x:Name="CPF" Keyboard="Numeric" Text="{Binding Cliente.CPF}" Style="{StaticResource entry-formulario}">
-                        <Entry.Behaviors>
-                            <utils:CPFValidatorBehavior x:Name="cpfValidator"></utils:CPFValidatorBehavior>
-                        </Entry.Behaviors>
-                    </Entry>
-                </StackLayout>
-                
-                <Label x:Name="LabelDadosLocalizacao" Style="{StaticResource label-dados-pessoais}" Text="      Dados de Localização"></Label>
-                <StackLayout Padding="10, 5, 10, 20"><!--Spacing="10"-->
-                    <Label Text="Logradouro"></Label>
-                    <Entry x:Name="Logradouro" Text="{Binding Cliente.Logradouro}" Style="{StaticResource entry-formulario}"></Entry>
-                    <Label Text="Bairro"></Label>
-                    <Entry x:Name="Bairro" Text="{Binding Cliente.Bairro}" Style="{StaticResource entry-formulario}"></Entry>
-                    <Label Text="Número"></Label>
-                    <Entry x:Name="Numero" Text="{Binding Cliente.Numero}" Keyboard="Numeric" Style="{StaticResource entry-formulario}"></Entry>
-                    <Label Text="Cidade"></Label>
-                    <Entry x:Name="Cidade" Text="{Binding Cliente.Cidade}" Style="{StaticResource entry-formulario}"></Entry>
-                    <Label Text="CEP"></Label>
-                    <Entry x:Name="CEP" Text="{Binding Cliente.CEP}" Keyboard="Numeric" Style="{StaticResource entry-formulario}">
-                        <Entry.Behaviors>
-                            <utils:CEPValidatorBehavior x:Name="cepValidator"></utils:CEPValidatorBehavior>
-                        </Entry.Behaviors>
-                    </Entry>
-                    <Label Text="UF"></Label>
-                    <Entry x:Name="UF" Text="{Binding Cliente.UF}" Style="{StaticResource entry-formulario}">
-                        <Entry.Behaviors>
-                            <utils:UFValidatorBehavior x:Name="ufValidator"></utils:UFValidatorBehavior>
-                        </Entry.Behaviors>
-                    </Entry>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        
+                        <!--Dados Pessoais-->
+                        <Label x:Name="LabelDadosPessoais" Style="{StaticResource label-dados-pessoais}" Text="      Dados Pessoais"></Label>
+                        <StackLayout Padding="30, 0, 30, 0">
+                            <!--Spacing="10"-->
+                            <Label Text="Nome Completo"></Label>
+                            <Entry x:Name="Nome" Text="{Binding Cliente.Nome}" Style="{StaticResource entry-formulario}"></Entry>
+                            <Label Text="Telefone"></Label>
+                            <Entry x:Name="Telefone" Text="{Binding Cliente.Telefone}" Keyboard="Numeric" Style="{StaticResource entry-formulario}">
+                                <Entry.Behaviors>
+                                    <utils:TelefoneValidatorBehavior x:Name="telefoneValidator"></utils:TelefoneValidatorBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                            <Label Text="CPF"></Label>
+                            <Entry x:Name="CPF" Keyboard="Numeric" Text="{Binding Cliente.CPF}" Style="{StaticResource entry-formulario}">
+                                <Entry.Behaviors>
+                                    <utils:CPFValidatorBehavior x:Name="cpfValidator"></utils:CPFValidatorBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </StackLayout>
+                        
+                        <!--Localização-->
+                        <Label x:Name="LabelDadosLocalizacao" Style="{StaticResource label-dados-pessoais}" Text="      Dados de Localização"></Label>
+                        <StackLayout Padding="30, 0, 30, 0">
+                            <!--Spacing="10"-->
+                            <Label Text="Logradouro"></Label>
+                            <Entry x:Name="Logradouro" Text="{Binding Cliente.Logradouro}" Style="{StaticResource entry-formulario}"></Entry>
+                            <Label Text="Bairro"></Label>
+                            <Entry x:Name="Bairro" Text="{Binding Cliente.Bairro}" Style="{StaticResource entry-formulario}"></Entry>
+                            <Label Text="Número"></Label>
+                            <Entry x:Name="Numero" Text="{Binding Cliente.Numero}" Keyboard="Numeric" Style="{StaticResource entry-formulario}"></Entry>
+                            <Label Text="Cidade"></Label>
+                            <Entry x:Name="Cidade" Text="{Binding Cliente.Cidade}" Style="{StaticResource entry-formulario}"></Entry>
+                            <Label Text="CEP"></Label>
+                            <Entry x:Name="CEP" Text="{Binding Cliente.CEP}" Keyboard="Numeric" Style="{StaticResource entry-formulario}">
+                                <Entry.Behaviors>
+                                    <utils:CEPValidatorBehavior x:Name="cepValidator"></utils:CEPValidatorBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                            <Label Text="UF"></Label>
+                            <Entry x:Name="UF" Text="{Binding Cliente.UF}" Style="{StaticResource entry-formulario}">
+                                <Entry.Behaviors>
+                                    <utils:UFValidatorBehavior x:Name="ufValidator"></utils:UFValidatorBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </StackLayout>
+                    </StackLayout>
                 </StackLayout>
 
-                <Grid>
-                    <!-- Row Definitions of Grid -->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
-                    
-                    <!-- Row Definitions of Grid -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                <StackLayout Padding="20, 0, 20, 0" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
 
-                    <Button x:Name="ExcluirConta" Text="Excluir Conta" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding ClienteDeleteCommand}"></Button>
-                    <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding ClienteSaveCommand}"></Button>
-                </Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="ExcluirConta" Text="Excluir Conta" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding ClienteDeleteCommand}"></Button>
+                            <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding ClienteSaveCommand}"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

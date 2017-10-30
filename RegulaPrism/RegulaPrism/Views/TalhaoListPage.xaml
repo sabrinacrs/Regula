@@ -4,48 +4,57 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TalhaoListPage"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Padding="10, 20, 10, 10">
-                <Label Text="Fazenda" Grid.Row="0" Grid.Column="0"></Label>
-                <Picker x:Name="FazendasPicker" 
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="20, 0, 20, 0" Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand">
+                        <Label Text="Fazenda" Grid.Row="0" Grid.Column="0"></Label>
+                        <Picker x:Name="FazendasPicker" 
                         Title="Selecionar Fazenda"
                         SelectedIndex="{Binding FazendaSelectedIndex}"
                         ItemsSource="{Binding Fazendas}" 
                         ItemDisplayBinding="{Binding Nome}" 
                         HorizontalOptions="FillAndExpand">
-                </Picker>
-                <Label Text="Buscar Talhão" Grid.Row="0" Grid.Column="0"></Label>
-                <Grid>
-                    <!-- Row Definitions of Grid -->
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"></RowDefinition>
-                    </Grid.RowDefinitions>
+                        </Picker>
+                        <Label Text="Buscar Talhão" Grid.Row="0" Grid.Column="0"></Label>
+                        <Grid>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
 
-                    <!-- Row Definitions of Grid -->
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"></ColumnDefinition>
-                        <ColumnDefinition Width="90"></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
+                            <!-- Row Definitions of Grid -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="90"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
 
-                    <Entry Text="{Binding Filtro}" x:Name="EntrySearchTalhao" Grid.Row="0" Grid.Column="0"></Entry>
-                    <Button x:Name="ButtonSearchTalhao" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoSearchCommand}"></Button>
-                </Grid>
+                            <Entry Text="{Binding Filtro}" x:Name="EntrySearchTalhao" Grid.Row="0" Grid.Column="0"></Entry>
+                            <Button x:Name="ButtonSearchTalhao" Text="Buscar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding TalhaoSearchCommand}"></Button>
+                        </Grid>
+                    </StackLayout>
+                </StackLayout>
 
+                <StackLayout Padding="20, 0, 20, 0" VerticalOptions="CenterAndExpand">
+                    <ScrollView>
+                        <StackLayout>
+                            <ListView x:Name="ListaTalhoes" HasUnevenRows="True" HorizontalOptions="FillAndExpand" ItemsSource="{Binding Talhoes}" SelectedItem="{Binding SelectedItem}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextCell Text="{Binding Descricao}" Detail="{Binding Tamanho}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
             </StackLayout>
-            <StackLayout>
-                <ListView x:Name="ListaTalhoes" HasUnevenRows="True" ItemsSource="{Binding Talhoes}" SelectedItem="{Binding SelectedItem}">
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <TextCell Text="{Binding Descricao}" Detail="{Binding Tamanho}"/>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
