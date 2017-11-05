@@ -70,6 +70,8 @@ namespace RegulaPrism.ViewModels
             // carrega lista de doencas
             Doencas = _regulaApiService.GetDoenca();
 
+            orderedDoencas();
+
             AddRemoveDoencaCommand = new DelegateCommand(AddRemoveDoenca);
             SelectDoencasCommand = new DelegateCommand(SelectDoencas);
             InfoCommand = new DelegateCommand(Informacoes);
@@ -94,6 +96,66 @@ namespace RegulaPrism.ViewModels
             {
                 _doencasSolo.Add(doe);
             }
+        }
+
+        private void orderedDoencas()
+        {
+            List<Doenca> doencas = new List<Doenca>();
+
+            List<Doenca> ds = new List<Doenca>();
+
+            // Procurar por nematoides
+            ds = _doencas.Where(x => x.Descricao.Contains("Nematoide")).ToList();
+            if (ds.Count > 0)
+            {
+                // adiciona resultados à lista de doencas
+                for(int i = 0; i < ds.Count(); i++)
+                {
+                    doencas.Add(ds.ElementAt(i));
+
+                    // remove da lista de doencas original
+                    _doencas.Remove(ds.ElementAt(i));
+                }
+                    
+            }
+
+            // Procurar por Ramularia
+            ds = _doencas.Where(x => x.Descricao.Contains("Ramulária")).ToList();
+            if (ds.Count > 0)
+            {
+                for (int i = 0; i < ds.Count; i++)
+                {
+                    doencas.Add(ds.ElementAt(i));
+
+                    // remove da lista de doencas original
+                    _doencas.Remove(ds.ElementAt(i));
+                }
+
+            }
+            else
+            {
+                ds = _doencas.Where(x => x.Descricao.Contains("Ramularia")).ToList();
+                if (ds.Count > 0)
+                {
+                    for (int i = 0; i < ds.Count; i++)
+                    {
+                        doencas.Add(ds.ElementAt(i));
+
+                        // remove da lista de doencas original
+                        _doencas.Remove(ds.ElementAt(i));
+                    }
+                        
+                }
+            }
+
+            // adiciona todas as demais doencas
+            for(int i = 0; i < _doencas.Count; i++)
+            {
+                doencas.Add(_doencas.ElementAt(i));
+            }
+
+            // atribui subs à _doencas
+            _doencas = doencas;
         }
 
         private void SelectDoencas()
