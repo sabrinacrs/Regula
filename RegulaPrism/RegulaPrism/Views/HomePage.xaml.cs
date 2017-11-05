@@ -8,13 +8,12 @@ namespace RegulaPrism.Views
         {
             InitializeComponent();
 
-            ButtonHomeCultivares.Image = "cultivaricon.png";//"iconcultivar.jpg";
-            ButtonHomeFazenda.Image = "farmicon.png";//"iconfazenda.png";
-            ButtonHomeUsuario.Image = "usericonresize.png";//"iconuser.png";
-            ButtonHomeSemeadura.Image = "semeaduraicon.png";//"iconsemeadura.png";
-            ButtonHomeTalhao.Image = "icontalhaoresize.png";
-            //ButtonHomeCultivares.BorderRadius = Device.OnPlatform(88, 88, 88);
-            //ButtonHomeCultivares.BorderWidth = 1;
+            ButtonHomeCultivares.Image = "cultivar_white.png";
+            ButtonHomeFazenda.Image = "farms_white.png";
+            ButtonHomeSemeadura.Image = "semeadura_white.png";
+            ButtonHomeTalhao.Image = "talhao_white_2.png";
+            ButtonHomeUsuario.Image = "user_white.png";
+            ButtonHomeHelp.Image = "help_white_2.png";
         }
     }
 }

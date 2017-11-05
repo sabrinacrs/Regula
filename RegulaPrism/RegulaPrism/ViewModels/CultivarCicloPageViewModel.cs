@@ -91,6 +91,9 @@ namespace RegulaPrism.ViewModels
 
             Ciclos = _regulaApiService.GetCiclos();
 
+            // ordenar ciclo do precoce ao tardio
+            Ciclos = Ciclos.OrderBy(x => x.Id).ToList();
+
             CicloSelectedCommand = new DelegateCommand(CicloSelected);
             InfoCommand = new DelegateCommand(Informacoes);
         }
@@ -127,6 +130,25 @@ namespace RegulaPrism.ViewModels
             _navigationParameters.Add("informacao", im);
 
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
+        }
+
+        private void orderedCiclos()
+        {
+            //List<string> orderPreview = new List<string>();
+
+            //orderPreview.Add("Precoce");
+            //orderPreview.Add("Precoce/Médio");
+            //orderPreview.Add("Médio");
+            //orderPreview.Add("Médio/Tardio");
+            //orderPreview.Add("Tardio");
+            //orderPreview.Add("Longo");
+
+            //List<Ciclo> ciclos = new List<Ciclo>();
+
+            //for(int i = 0; i < Ciclos.Count(); i++)
+            //    ciclos.Add(new Ciclo());
+
+            
         }
 
         private void loadCultivares(List<Cultivar> cultivares)

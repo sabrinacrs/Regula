@@ -12,7 +12,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                
+
                 <!-- top controls -->
                 <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
 
@@ -138,35 +138,8 @@
                 <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
                     <Button x:Name="ButtonSaveSemeadura" Text="Salvar" Style="{StaticResource button-save}" HorizontalOptions="FillAndExpand" Command="{Binding NavigateToSemeaduraSaveCommand}"></Button>
                 </StackLayout>
-                
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
-
-
-
-<!--Peso de Sementes por grama--><!--
-<Label x:Name="LabelPesoSementesGramas" Style="{StaticResource label-dados-pessoais}" Text="    Peso de 100 sementes (g)"></Label>
-<StackLayout Padding="40, 10, 20, 10">
-    <Grid>
-        --><!-- Row Definitions of Grid --><!--
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-
-        --><!-- Row Definitions of Grid --><!--
-        <Grid.ColumnDefinitions >
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-
-        <Label Text="Mínimo: " Grid.Row="0" Grid.Column="0"></Label>
-        <Label x:Name="PesoSementesGramasMinimo" Text="{Binding PesoSementesMinimo}" Style="{StaticResource label-resultados-calculos}" Grid.Row="0" Grid.Column="1"></Label>
-
-        <Label Text="Máximo: " Grid.Row="0" Grid.Column="2"></Label>
-        <Label x:Name="PesoSementesGramasMaximo" Text="{Binding PesoSementesMaximo}" Style="{StaticResource label-resultados-calculos}" Grid.Row="0" Grid.Column="3"></Label>
-    </Grid>
-</StackLayout>-->

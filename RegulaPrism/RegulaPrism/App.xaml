@@ -9,7 +9,7 @@
 
       <!-- Color Header Bar -->
       <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="#4ba561"/><!--8fd08f-->
+        <Setter Property="BarBackgroundColor" Value="#378251"/><!--#4ba561 8fd08f-->
         <Setter Property="BarTextColor" Value="Color.White"/>
       </Style>
 
@@ -17,7 +17,7 @@
       <Style x:Key="button-save" TargetType="Button">
         <Setter Property="BorderColor" Value="Blue"/>
         <Setter Property="TextColor" Value="#ffffff"/>
-        <Setter Property="BackgroundColor" Value="#60BD60"/>
+        <Setter Property="BackgroundColor" Value="#60BD60"/><!-- 016D72 60BD60-->
         <!--<Setter Property="BorderWidth" Value="10"/>-->
         <!--<Setter Property="BorderRadius" Value="-20"/>-->
       </Style>
@@ -25,7 +25,7 @@
       <!-- Button Delete Style -->
       <Style x:Key="button-delete" TargetType="Button">
         <Setter Property="TextColor" Value="#ffffff"/>
-        <Setter Property="BackgroundColor" Value="#E82929"/>
+        <Setter Property="BackgroundColor" Value="#FF0700"/> <!--E82929-->
       </Style>
 
       <!-- Button Edit Style -->
@@ -74,18 +74,19 @@
       </Style>
       <Style x:Key="button-menu-home-default" TargetType="Button">
         <Setter Property="BackgroundColor" Value="#ffffff"/>
-        <Setter Property="TextColor" Value="#32b573"/>
+        <Setter Property="BorderColor" Value="#000000"/>
+        <Setter Property="TextColor" Value="#282425"/>
       </Style>
       
       <!--Button HomePage Fazenda Tahao-->
       <Style x:Key="button-menu-home-fazenda" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#fafafa"/>
+        <Setter Property="BackgroundColor" Value="#ffffff"/>
         <Setter Property="TextColor" Value="#000000"/>
       </Style>
 
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
-        <Setter Property="BackgroundColor" Value="#ededee"/> <!-- C6C6C7#dde0ec -->
+        <Setter Property="BackgroundColor" Value="#D2D7DF"/> <!-- C6C6C7#dde0ec  #ededee -->
         <Setter Property="TextColor" Value="#0e4f34"/> <!-- #989aa3 -->
         <!--<Setter Property="FontSize" Value="Medium"/>-->
       </Style>
@@ -119,11 +120,11 @@
       <!--Cultivar List-->
       <Style x:Key="label-cultivares-list-title" TargetType="Label">
         <Setter Property="Font" Value="Bold"/>
-        <Setter Property="TextColor" Value="#b9d334"></Setter>
+        <Setter Property="TextColor" Value="#000000"></Setter> <!--b9d334-->
       </Style>
       
       <Style x:Key="label-cultivares-list-detail" TargetType="Label">
-        <Setter Property="TextColor" Value="#000000"></Setter>
+        <Setter Property="TextColor" Value="#323232"></Setter>
       <Setter Property="FontSize" Value="Small"></Setter>
       </Style>
       

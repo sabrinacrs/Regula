@@ -6,7 +6,7 @@
                   x:Class="RegulaPrism.Views.HomeMasterDetailPage"
                   Title="{Binding Title}">
     <MasterDetailPage.Master>
-        <ContentPage Title="Default" BackgroundColor="#4ba561">
+        <ContentPage Title="Default" BackgroundColor="#5e9b73">
             <StackLayout Padding="5, 20, 5, 5">
                 <ListView x:Name="ItemsMenuLateral" HasUnevenRows="True" ItemsSource="{Binding Itens}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>

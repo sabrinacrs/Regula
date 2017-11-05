@@ -73,6 +73,16 @@ namespace RegulaPrism.ViewModels
             NavigateToClienteCreatePageCommand = new DelegateCommand(NavigateToClienteCreatePage);
             NavigateToHomeMasterDetailPageCommand = new DelegateCommand(NavigateToHomeMasterDetailPage);
             InfoCommand = new DelegateCommand(Informacoes);
+
+            // verifica se ja tem usuario cadastrado
+            if (_regulaApiService.GetClientes().Count() > 0 && Login == null && Senha == null)
+            {
+                Cliente c = new Cliente();
+                c = _regulaApiService.GetClientes().ElementAt(0);
+
+                Login = c.Login;
+                Senha = c.Senha;
+            }
         }
 
         private void NavigateToClienteCreatePage()
@@ -83,13 +93,6 @@ namespace RegulaPrism.ViewModels
 
         private void NavigateToHomeMasterDetailPage()
         {
-            // poupa tempo
-            if (Login == null && Senha == null)
-            {
-                Login = "sabrinacr";
-                Senha = "eitagiovana";
-            }
-
             // validações do login
             var cliente = _regulaApiService.GetClienteByEmail(Login);
             if (cliente == null)
@@ -114,8 +117,6 @@ namespace RegulaPrism.ViewModels
                             GetDatabases gdb = new GetDatabases();
                             gdb.getDatabases(_regulaApiService);
                         }
-                            //if(_regulaApiService.GetCultivar().Count() <= 0)
-                            //    _cloneDatabaseServer.CloneDatabase(_regulaApiService);
 
                         _navigationParameters.Add("cliente", _cliente);
                         _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
@@ -125,24 +126,10 @@ namespace RegulaPrism.ViewModels
                     _dialogService.DisplayAlertAsync("", "Conta desativada", "OK");
             }
 
-            //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute));
-
         }
-
-        //async void getData()
-        //{
-        //    DataService ds = new DataService();
-        //    List<Cultivar> cs = await ds.GetCultivaresAsync();
-        //    int x = 0;
-        //    x++;
-        //}
 
         private void Informacoes()
         {
-            // tela de informações de navegação
-            // recupera titulo e texto da interface IInformacoesManuais
-            // chama a mesma tela para exibir as coisas
-
             InformacaoManual im = _informacoesManuais.InformacoesLogin();
 
             _navigationParameters.Add("informacao", im);
@@ -157,13 +144,11 @@ namespace RegulaPrism.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            //parameters.Add("cliente", _cliente);
             _cliente = (Cliente)parameters["cliente"];
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
-            //parameters.Add("cliente", _cliente);
             _cliente = (Cliente)parameters["cliente"];
         }
     }
