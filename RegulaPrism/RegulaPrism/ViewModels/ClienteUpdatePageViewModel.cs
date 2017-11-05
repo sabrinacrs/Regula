@@ -38,6 +38,7 @@ namespace RegulaPrism.ViewModels
 
         public DelegateCommand ClienteSaveCommand { get; private set; }
         public DelegateCommand ClienteDeleteCommand { get; private set; }
+        public DelegateCommand ClienteDisableCommand { get; private set; }
 
         public DelegateCommand InfoCommand { get; private set; }
 
@@ -53,6 +54,7 @@ namespace RegulaPrism.ViewModels
             
             ClienteSaveCommand = new DelegateCommand(ClienteSave);
             ClienteDeleteCommand = new DelegateCommand(ClienteDelete);
+            ClienteDisableCommand = new DelegateCommand(ClienteDisable);
             InfoCommand = new DelegateCommand(Informacoes);
         }
 
@@ -82,6 +84,31 @@ namespace RegulaPrism.ViewModels
             }
         }
 
+        private async void ClienteDisable()
+        {
+            // desativar conta do usuário
+            // mensagem de confirmação de exclusão
+            var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Tem certeza que deseja desativar sua conta?", "Desativar", "Cancelar");
+
+            if (choise)
+            {
+                _cliente.Status = "I";
+
+                if (_regulaApiService.UpdateCliente(_cliente))
+                {
+                    _navigationParameters.Add("cliente", _cliente);
+
+                    await _dialogService.DisplayAlertAsync("", "Sua conta foi desativada", "OK");
+                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute), _navigationParameters);
+                }
+                else
+                {
+                    await _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado. Tente novamente em alguns instantes.", "OK");
+                }
+            }
+                
+        }
+
         private async void ClienteDelete()
         {
             // mensagem de confirmação de exclusão
@@ -90,7 +117,7 @@ namespace RegulaPrism.ViewModels
             if (choise)
             {
                 // exclusão logica
-                if (_regulaApiService.DeleteLogicalCliente(_cliente))
+                if (_regulaApiService.DeleteCliente(_cliente)) //_regulaApiService.DeleteLogicalCliente(_cliente)
                 {
                     _dialogService.DisplayAlertAsync("", "Conta deletada com sucesso", "OK");
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));

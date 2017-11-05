@@ -31,13 +31,6 @@ namespace RegulaPrism.Models
             set;
         }
 
-        [NotNull]
-        public decimal Espacamento
-        {
-            get;
-            set;
-        }
-
         public DateTime DataDesativacao
         {
             get;

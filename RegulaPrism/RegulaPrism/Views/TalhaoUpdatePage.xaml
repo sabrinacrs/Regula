@@ -30,9 +30,6 @@
 
                         <Label Text="Tamanho"></Label>
                         <Entry Text="{Binding Talhao.Tamanho}" x:Name="Tamanho" Keyboard="Numeric"></Entry>
-
-                        <Label Text="Espaçamento"></Label>
-                        <Entry Text="{Binding Talhao.Espacamento}" x:Name="Espacamento"></Entry>
                     </StackLayout>
                 </StackLayout>
 

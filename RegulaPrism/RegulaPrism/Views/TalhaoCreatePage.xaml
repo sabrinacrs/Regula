@@ -24,9 +24,6 @@
 
                         <Label Text="Tamanho"></Label>
                         <Entry Text="{Binding Tamanho}" x:Name="Tamanho" Keyboard="Numeric"></Entry>
-
-                        <Label Text="Espaçamento"></Label>
-                        <Entry Text="{Binding Espacamento}" x:Name="Espacamento" Keyboard="Numeric"></Entry>
                     </StackLayout>
                 </StackLayout>
 

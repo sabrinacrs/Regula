@@ -105,6 +105,12 @@ namespace RegulaPrism.Models
             set;
         }
 
+        public string Status
+        {
+            get;
+            set;
+        }
+
         public override string ToString()
         {
             return string.Format("Nome={0}, Email={1}, Telefone={2}", Nome, Email, Telefone);

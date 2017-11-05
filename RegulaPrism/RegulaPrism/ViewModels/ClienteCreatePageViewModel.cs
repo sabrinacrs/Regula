@@ -185,6 +185,7 @@ namespace RegulaPrism.ViewModels
             cliente.Email = Email;
             cliente.Login = Login;
             cliente.Senha = Senha;
+            cliente.Status = "A";
 
             return cliente;
         }

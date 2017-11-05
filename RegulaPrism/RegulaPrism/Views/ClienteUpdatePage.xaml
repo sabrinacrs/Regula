@@ -76,10 +76,12 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
 
-                            <Button x:Name="ExcluirConta" Text="Excluir Conta" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding ClienteDeleteCommand}"></Button>
-                            <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="1" Command="{Binding ClienteSaveCommand}"></Button>
+                            <Button x:Name="ExcluirConta" Text="Excluir" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="0" Command="{Binding ClienteDeleteCommand}"></Button>
+                            <Button x:Name="DesativarConta" Text="Desativar" Style="{StaticResource button-delete}" Grid.Row="0" Grid.Column="1" Command="{Binding ClienteDisableCommand}"></Button>
+                            <Button x:Name="Salvar" Text="Salvar" Style="{StaticResource button-save}" Grid.Row="0" Grid.Column="2" Command="{Binding ClienteSaveCommand}"></Button>
                         </Grid>
                     </StackLayout>
                 </StackLayout>

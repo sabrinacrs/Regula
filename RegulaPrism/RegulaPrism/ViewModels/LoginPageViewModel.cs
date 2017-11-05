@@ -91,21 +91,37 @@ namespace RegulaPrism.ViewModels
             //_navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/ClienteCreatePage", UriKind.Absolute));
         }
 
-        private void NavigateToHomeMasterDetailPage()
+        private async void NavigateToHomeMasterDetailPage()
         {
             // validações do login
             var cliente = _regulaApiService.GetClienteByEmail(Login);
+
             if (cliente == null)
                 cliente = _regulaApiService.GetClienteByLogin(Login);
 
+            // cliente não encontrado
             if (cliente == null)
-                _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
+            {
+                await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
+            }
+            else if (cliente.Status.Equals("I"))
+            {
+                // conta desativada
+                var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativa. Deseja reativá-la?", "Sim", "Não");
+
+                if (choise)
+                {
+                    cliente.Status = "A";
+                    _regulaApiService.UpdateCliente(cliente);
+                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
+                }
+            }
             else
             {
                 if(cliente.DataDesativacao.Year == 1)
                 {
                     if (!Senha.Equals(cliente.Senha) || Senha == null)
-                        _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
+                        await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
                     else
                     {
                         Cliente = new Cliente();
@@ -119,11 +135,11 @@ namespace RegulaPrism.ViewModels
                         }
 
                         _navigationParameters.Add("cliente", _cliente);
-                        _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                        await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                     }
                 }
                 else
-                    _dialogService.DisplayAlertAsync("", "Conta desativada", "OK");
+                    await _dialogService.DisplayAlertAsync("", "Conta desativada", "OK");
             }
 
         }

@@ -163,8 +163,6 @@ namespace RegulaPrism.ViewModels
                 return "Informe uma descrição para identificar o talhão";
             else if (Talhao.Tamanho == 0 || Talhao.Tamanho < 0)
                 return "Informe o tamanho do talhão";
-            else if (Talhao.Espacamento == 0 || Talhao.Espacamento < 0)
-                return "Informe o espaçamento entre as carretilhas";
 
             return "";
         }

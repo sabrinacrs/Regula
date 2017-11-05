@@ -33,13 +33,6 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _tamanho, value); }
         }
 
-        private double _espacamento;
-        public double Espacamento
-        {
-            get { return _espacamento; }
-            set { SetProperty(ref _espacamento, value); }
-        }
-
         private int _fazendaSelectedIndex;
         public int FazendaSelectedIndex
         {
@@ -188,8 +181,6 @@ namespace RegulaPrism.ViewModels
                 return "Informe uma descrição para identificar o talhão";
             else if (Tamanho == 0 || Tamanho < 0)
                 return "Informe o tamanho do talhão";
-            else if (Espacamento == 0 || Espacamento < 0)
-                return "Informe o espaçamento entre as carretilhas";
 
             return "";
         }
@@ -199,7 +190,6 @@ namespace RegulaPrism.ViewModels
             Talhao talhaoView = new Talhao();
 
             talhaoView.Descricao = Descricao;
-            talhaoView.Espacamento = (decimal)Espacamento;
             talhaoView.Tamanho = (decimal)Tamanho;
 
             return talhaoView;
