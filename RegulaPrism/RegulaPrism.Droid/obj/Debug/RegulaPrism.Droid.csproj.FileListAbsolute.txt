@@ -135,3 +135,5 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\help_white_2.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable-hdpi\help_white_2.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable-xhdpi\help_white_2.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\DLToolkit.Forms.Controls.FlowListView.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\DLToolkit.Forms.Controls.FlowListView.xml

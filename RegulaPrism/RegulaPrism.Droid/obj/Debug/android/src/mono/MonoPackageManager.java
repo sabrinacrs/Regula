@@ -99,6 +99,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "RegulaPrism.Droid.dll" comes first in this list. */
 		"RegulaPrism.Droid.dll",
+		"DLToolkit.Forms.Controls.FlowListView.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Practices.ServiceLocation.dll",
 		"Microsoft.Practices.Unity.dll",

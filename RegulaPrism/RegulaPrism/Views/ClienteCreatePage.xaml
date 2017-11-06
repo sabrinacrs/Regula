@@ -13,6 +13,9 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Padding="40, 20, 40, 20">
+
+                <ActivityIndicator x:Name="actInd" IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" Color="Red"/>
+                
                 <Label Text="Nome Completo"></Label>
                 <Entry Text="{Binding Nome, Mode=TwoWay}" x:Name="nome"/>
                 <Label Text="Email"></Label>

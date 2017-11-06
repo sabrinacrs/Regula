@@ -15,6 +15,8 @@
             <Entry Text="{Binding Senha}" x:Name="Senha" Placeholder="Senha" IsPassword="True" />
             <Label x:Name="Registrar" Text="       Não possui usuário registrado? Cadastre-se" />
 
+            <ActivityIndicator x:Name="actInd" IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" Color="Red"/>
+            
             <Button x:Name="Entrar" Text="Entrar" Style="{StaticResource button-save}" Command="{Binding NavigateToHomeMasterDetailPageCommand}"/>
         </StackLayout>
     </ContentPage.Content>

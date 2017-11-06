@@ -7,6 +7,7 @@ using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RegulaPrism.ViewModels
 {
@@ -17,6 +18,20 @@ namespace RegulaPrism.ViewModels
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
+        }
+
+        private bool _isLoading;
+        public bool IsLoading
+        {
+            get
+            {
+                return this._isLoading;
+            }
+            set
+            {
+                this._isLoading = value;
+                RaisePropertyChanged("IsLoading");
+            }
         }
 
         private string _login;
@@ -68,6 +83,9 @@ namespace RegulaPrism.ViewModels
             _informacoesManuais = informacoesManuais;
             _dialogService = dialogService;
             _cloneDatabaseServer = cloneDatabaseServer;
+
+            // teste
+            _isLoading = false;
 
             // instanciar commands
             NavigateToClienteCreatePageCommand = new DelegateCommand(NavigateToClienteCreatePage);
@@ -130,11 +148,31 @@ namespace RegulaPrism.ViewModels
                         // clonar a base de dados
                         if (_regulaApiService.GetCultivar().Count() <= 0)
                         {
-                            GetDatabases gdb = new GetDatabases();
-                            gdb.getDatabases(_regulaApiService);
+                            //GetDatabases gdb = new GetDatabases();
+                            //gdb.getDatabases(_regulaApiService);
+
+                            // teste
+                            try
+                            {
+                                // teste
+                                _isLoading = true;
+
+                                GetDatabases gdb = new GetDatabases();
+                                gdb.getDatabases(_regulaApiService);
+
+                                await Task.Delay(4000);
+
+                                _isLoading = false;
+                            }
+                            catch (Exception ex)
+                            {
+                                _isLoading = false;
+                                await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
+                            }
                         }
 
                         _navigationParameters.Add("cliente", _cliente);
+
                         await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                     }
                 }

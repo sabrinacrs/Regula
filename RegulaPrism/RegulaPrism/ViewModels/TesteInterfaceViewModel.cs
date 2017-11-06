@@ -1,5 +1,6 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism;
 using RegulaPrism.Models;
@@ -26,6 +27,13 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _cultivares, value); }
         }
 
+        private List<Tolerancia> _tolerancias;
+        public List<Tolerancia> Tolerancias
+        {
+            get { return _tolerancias; }
+            set { SetProperty(ref _tolerancias, value); }
+        }
+
         //private List<string> _cultivares;
         //public List<string> Cultivares
         //{
@@ -42,16 +50,25 @@ namespace RegulaPrism.ViewModels
 
         public DataService dataService;
 
-        //async void AtualizaDados()
-        //{
-        //    List<Cultivar> produtos = await dataService.GetCultivaresAsync();
-        //    ListaCultivares = produtos.OrderBy(item => item.Nome).ToList();
-        //}
+        private INavigationService _navigationService;
 
-        public TesteInterfaceViewModel()
+        private IPageDialogService _dialogService;
+
+        private IRegulaApiService _regulaApiService;
+
+        private IInformacoesManuais _informacoesManuais;
+
+        private NavigationParameters _navigationParameters;
+
+        public TesteInterfaceViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
-            //dataService = new DataService();
-            //AtualizaDados();
+            //
+            _navigationService = navigationService;
+            _dialogService = dialogService;
+            _regulaApiService = regulaApiService;
+            _navigationParameters = new NavigationParameters();
+
+            Tolerancias = _regulaApiService.GetTolerancias().OrderBy(t => t.Sigla.Length).ToList();
         }
     }
 }

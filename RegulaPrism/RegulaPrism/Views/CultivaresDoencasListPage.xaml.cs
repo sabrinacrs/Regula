@@ -42,7 +42,7 @@ namespace RegulaPrism.Views
                 HorizontalTextAlignment = TextAlignment.Center
             };
 
-
+            // define linhas do header
             GridCultivares.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             GridCultivares.Children.Add(labelHeader, 1, 0);
 
@@ -55,6 +55,7 @@ namespace RegulaPrism.Views
                 HorizontalTextAlignment = TextAlignment.Center
             }, 0, 0);
 
+            // Linha de doenças
             Grid.SetColumnSpan(labelHeader, lengthDoencas);
 
             GridCultivares.Children.Add(new Label
@@ -66,9 +67,11 @@ namespace RegulaPrism.Views
                 HorizontalTextAlignment = TextAlignment.Center
             }, 0, 1);
 
+            // adiciona cultivares e tolerancias às doenças
             int j = 2;
             foreach (var x in cultivares)
             {
+                // linha com cultivar
                 GridCultivares.RowDefinitions.Add(new RowDefinition { Height = new GridLength(40) });
 
                 GridCultivares.Children.Add(new Label
@@ -79,6 +82,7 @@ namespace RegulaPrism.Views
                     HorizontalTextAlignment = TextAlignment.Center
                 }, 0, j);
 
+                // colunas de doencas e tolerancias
                 int l = 1;
                 foreach (var k in x.DoencasTolerancias)
                 {
@@ -90,7 +94,7 @@ namespace RegulaPrism.Views
                         if (dtl == null)
                             ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Add(doe);
 
-
+                        // coluna com número da doença
                         GridCultivares.Children.Add(new Label
                         {
                             Text = "" + l,
@@ -100,6 +104,7 @@ namespace RegulaPrism.Views
                             HorizontalTextAlignment = TextAlignment.Center
                         }, l, 1);
 
+                        // coluna com tolerância
                         GridCultivares.Children.Add(new Label
                         {
                             Text = k.Tolerancia.Sigla,
@@ -113,6 +118,71 @@ namespace RegulaPrism.Views
                 }
 
                 j++;
+            }
+
+            // ------ Terminar
+            //// stack layout com legendas
+            //var stackLayout = new StackLayout();
+            //stackLayout.Spacing = 3;
+            //stackLayout.BackgroundColor = Color.White;
+
+            //// linha de separação
+            //var boxLine = new BoxView();
+            //boxLine.HeightRequest = 1;
+            //boxLine.BackgroundColor = Color.Green;
+            //boxLine.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+            //var scrollTolerancia = new ScrollView();
+            //scrollTolerancia.Orientation = ScrollOrientation.Horizontal;
+
+            //var GridDoencas = new Grid();
+            //GridDoencas.RowSpacing = 1;
+            //GridDoencas.ColumnSpacing = 2;
+            //GridDoencas.HorizontalOptions = LayoutOptions.StartAndExpand;
+            // -------------------------
+
+
+            //Legenda de Tolerâncias
+            List<Tolerancia> tolerancias = ((CultivaresDoencasListPageViewModel)this.BindingContext).Tolerancias;
+
+            // Grid Tolerancias
+            GridTolerancias.RowDefinitions = new RowDefinitionCollection();
+            GridTolerancias.ColumnDefinitions = new ColumnDefinitionCollection();
+
+            GridTolerancias.RowDefinitions.Add(new RowDefinition { Height = new GridLength(60) });
+
+            int col = 0;
+            foreach (var x in tolerancias)
+            {
+                GridTolerancias.Children.Add(new Label
+                {
+                    Text = x.Sigla + "\n" + x.Descricao,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    HorizontalTextAlignment = TextAlignment.Center
+                }, col, 0);
+
+                col++;
+            }
+
+            List<Doenca> doencasLegenda = ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda;
+
+            // Grid Legenda Doenças
+            GridDoencas.RowDefinitions = new RowDefinitionCollection();
+            GridDoencas.ColumnDefinitions = new ColumnDefinitionCollection();
+
+            GridDoencas.RowDefinitions.Add(new RowDefinition { Height = new GridLength(60) });
+
+            col = 0;
+            foreach (var x in doencasLegenda)
+            {
+                GridDoencas.Children.Add(new Label
+                {
+                    Text = (col + 1) + "\n" + x.Descricao,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    HorizontalTextAlignment = TextAlignment.Center
+                }, col, 0);
+
+                col++;
             }
         }
 

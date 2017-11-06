@@ -2,15 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.TesteInterface">
     <ContentPage.Content>
-        <ListView x:Name="ListaCultivares" HasUnevenRows="True" ItemsSource="{Binding ListaCultivares}" SelectedItem="{Binding SelectedItem}">
+        <!--<ScrollView>
+            <StackLayout>
+                <ScrollView Orientation="Horizontal">
+                    <Grid x:Name="GridTolerancias" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>-->
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand">
+            <StackLayout>
+                <ScrollView Orientation="Horizontal">
+                    <Grid x:Name="GridTolerancias" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+
+
+
+        <!--<ListView x:Name="ListaTolerancias" HasUnevenRows="True" ItemsSource="{Binding Tolerancias}" SelectedItem="{Binding SelectedItem}">
             <ListView.ItemTemplate >
                 <DataTemplate>
-                    <TextCell Text="{Binding Nome}" Detail="{Binding Nome}"/>
+                    <TextCell Text="{Binding Descricao}" Detail="{Binding Descricao}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
-        </ListView>
+        </ListView>-->
+        <!--<ScrollView HorizontalOptions="FillAndExpand">
+            <StackLayout HorizontalOptions="FillAndExpand">
+                <ScrollView Orientation="Horizontal">
+                    <flv:FlowListView x:Name="lstFlowList" FlowColumnCount="100" SeparatorVisibility="None"
+                      HasUnevenRows="true" FlowItemsSource="{Binding Tolerancias}" 
+                      FlowColumnMinWidth="100">
+                    --><!--<flv:FlowListView SeparatorVisibility="None"
+	                FlowItemsSource="{Binding Tolerancias}" FlowColumnMinWidth="100" HorizontalOptions="StartAndExpand" >--><!--
+
+                        <flv:FlowListView.FlowColumnTemplate>
+                            <DataTemplate>
+                                --><!--<TextCell Text="{Binding Sigla}" Detail="{Binding Descricao}"/>--><!--
+                                <Label HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+				XAlign="Center" YAlign="Center" Text="{Binding Descricao}"/>
+                            </DataTemplate>
+                        </flv:FlowListView.FlowColumnTemplate>
+
+                    </flv:FlowListView>
+                </ScrollView>
+                
+            </StackLayout>
+        </ScrollView>-->
+        
+
     </ContentPage.Content>
 </ContentPage>
