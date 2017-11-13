@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
 using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
@@ -120,45 +121,65 @@ namespace RegulaPrism.ViewModels
             {
                 Cliente cliente = clienteView();
 
-                if (_regulaApiService.InsertCliente(cliente))
+                GetDatabases gdb = new GetDatabases();
+                // envia cliente para servidor e recebe id do cliente no servidor
+                ClienteJson clienteJson = gdb.SendClienteToServer(cliente);
+
+                if (clienteJson == null)
                 {
-                    // passa parametro navigationaware
-                    _navigationParameters.Add("cliente", cliente);
-
-                    _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
-
-                    // clonar a base de dados
-                    if (_regulaApiService.GetCultivar().Count() <= 0)
-                    {
-                        GetDatabases gdb = new GetDatabases();
-                        gdb.getDatabases(_regulaApiService);
-
-                        //// teste
-                        //try
-                        //{
-                        //    // teste
-                        //    _isLoading = true;
-
-                        //    GetDatabases gdb = new GetDatabases();
-                        //    gdb.getDatabases(_regulaApiService);
-
-                        //    await Task.Delay(4000);
-
-                        //    _isLoading = false;
-                        //}
-                        //catch (Exception ex)
-                        //{
-                        //    _isLoading = false;
-                        //    await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
-                        //}
-                    }
-
-                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                    _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
                 }
                 else
                 {
-                    _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado durante a tentativa de cadastro. Verifique seus dados e tente novamente.", "OK");
+                    cliente.Id = clienteJson.id;
+
+                    // insere no banco local
+                    if (_regulaApiService.InsertCliente(cliente))
+                    {
+                        // passa parametro navigationaware
+                        _navigationParameters.Add("cliente", cliente);
+                        _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
+
+                        // clonar a base de dados
+                        if (_regulaApiService.GetCultivar().Count() <= 0)
+                        {
+                            //GetDatabases gdb = new GetDatabases();
+
+                            // faz download da base de dados
+                            gdb.getDatabases(_regulaApiService);
+
+                            //// envia cliente para servidor
+                            //gdb.SendClienteToServer(cliente);
+
+                            //// teste
+                            //try
+                            //{
+                            //    // teste
+                            //    _isLoading = true;
+
+                            //    GetDatabases gdb = new GetDatabases();
+                            //    gdb.getDatabases(_regulaApiService);
+
+                            //    await Task.Delay(4000);
+
+                            //    _isLoading = false;
+                            //}
+                            //catch (Exception ex)
+                            //{
+                            //    _isLoading = false;
+                            //    await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
+                            //}
+                        }
+
+                        _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                    }
+                    else
+                    {
+                        _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado durante a tentativa de cadastro. Verifique seus dados e tente novamente.", "OK");
+                    }
                 }
+
+                
             }
             else
             {

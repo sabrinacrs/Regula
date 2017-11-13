@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RegulaPrism.Models;
 using RegulaPrism.Models.Json;
 using System;
@@ -194,6 +195,155 @@ namespace RegulaPrism.Services
             }
 
             return cultivaresEpocaSemeadura;
+        }
+
+
+        // Cliente
+        public ClienteJson AddClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/cliente";
+
+                ClienteJson cj = loadClienteJson(cliente);
+
+                var uri = new Uri(string.Format(url, cj.id));
+                var data = JsonConvert.SerializeObject(cj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                //HttpResponseMessage response = null;
+                //response = await client.PostAsync(uri, content);
+                var response = client.PostAsync(uri, content).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var clienteServer = JsonConvert.DeserializeObject<ClienteJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Diagnostics.Debug.WriteLine(response);
+                    //var t = response.RequestMessage;
+                    //throw new Exception("Erro ao incluir cliente");
+                    return null;
+                }
+                else
+                    return clienteServer;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public ClienteJson GetClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/cliente/{0}";
+
+                ClienteJson cj = loadClienteJson(cliente);
+
+                var uri = new Uri(string.Format(url, cj.id));
+                var data = JsonConvert.SerializeObject(cj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var response = client.GetAsync(uri).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var clienteServer = JsonConvert.DeserializeObject<ClienteJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    //throw new Exception("Erro ao atualizar cliente");
+                    return null;
+                }
+                else
+                    return clienteServer;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public void UpdateClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/cliente/{0}";
+
+                ClienteJson cj = loadClienteJson(cliente);
+
+                var uri = new Uri(string.Format(url, cj.id));
+                var data = JsonConvert.SerializeObject(cj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = null;
+                //response = await client.PostAsync(uri, content);
+                response = client.PutAsync(uri, content).Result;
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    throw new Exception("Erro ao atualizar cliente");
+                }
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+            }
+        }
+
+        public void DeleteClienteAsync(Cliente cliente)
+        {
+            string url = "http://www.cottonappadm.xyz/testeapi/cliente/{0}";
+            var uri = new Uri(string.Format(url, cliente.Id));
+            var response = client.DeleteAsync(uri).Result;
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Erro ao deletar cliente");
+            }
+            //await client.DeleteAsync(uri);
+        }
+
+
+        public void PostLoginAsync()
+        {
+            var formcontent = new FormUrlEncodedContent(new[]{
+                new KeyValuePair<string, string>("nome", "nomeUser"),
+                new KeyValuePair<string, string>("email", "email"),
+                new KeyValuePair<string, string>("login", "senha"),
+                new KeyValuePair<string, string>("senha", "senha")
+                });
+
+            var request = client.PostAsync("http://www.cottonappadm.xyz/testeapi/cliente", formcontent).Result;
+
+            request.EnsureSuccessStatusCode();
+
+            var response = request.Content.ReadAsStringAsync().Result;
+
+            var login = JObject.Parse(response).ToObject<Cliente>();
+
+            //return login;
+        }
+
+        private ClienteJson loadClienteJson(Cliente cliente)
+        {
+            ClienteJson cj = new ClienteJson();
+
+            cj.id = cliente.Id;
+            cj.nome = cliente.Nome;
+            cj.email = cliente.Email;
+            cj.login = cliente.Login;
+            cj.senha = cliente.Senha;
+            cj.telefone = cliente.Telefone;
+            cj.cidade = cliente.Cidade;
+            cj.uf = cliente.UF;
+            cj.cep = cliente.CEP;
+            cj.logradouro = cliente.Logradouro;
+            cj.numero = cliente.Numero;
+            cj.bairro = cliente.Bairro;
+            cj.cpf = cliente.CPF;
+            cj.data_desativacao = "";//cliente.DataDesativacao.ToString();
+            cj.status = cliente.Status;
+
+            return cj;
         }
     }
 }

@@ -15,6 +15,14 @@ namespace RegulaPrism.Views
             InitializeComponent();
         }
 
+        private void SwitchOnChanged(object sender, EventArgs e)
+        {
+            var switchCell = (Switch)sender;
+
+            ((CultivaresDoencasListPageViewModel)this.BindingContext).EnableDisableLegendaCommand.Execute();
+            
+        }
+
         public void OnNavigatedFrom(NavigationParameters parameters)
         {
         }
@@ -120,26 +128,46 @@ namespace RegulaPrism.Views
                 j++;
             }
 
-            // ------ Terminar
-            //// stack layout com legendas
-            //var stackLayout = new StackLayout();
-            //stackLayout.Spacing = 3;
-            //stackLayout.BackgroundColor = Color.White;
 
-            //// linha de separação
-            //var boxLine = new BoxView();
-            //boxLine.HeightRequest = 1;
-            //boxLine.BackgroundColor = Color.Green;
-            //boxLine.HorizontalOptions = LayoutOptions.FillAndExpand;
+            //------------ LEGENDAS --------------------
 
-            //var scrollTolerancia = new ScrollView();
-            //scrollTolerancia.Orientation = ScrollOrientation.Horizontal;
+            //Grid for enable disable legendas
+            GridEnableLegendas.RowDefinitions = new RowDefinitionCollection();
+            //GridEnableLegendas.ColumnDefinitions = new ColumnDefinitionCollection();
 
-            //var GridDoencas = new Grid();
-            //GridDoencas.RowSpacing = 1;
-            //GridDoencas.ColumnSpacing = 2;
-            //GridDoencas.HorizontalOptions = LayoutOptions.StartAndExpand;
-            // -------------------------
+            // atribui tamanho 100 para coluna 1
+            ColumnDefinition column1 = new ColumnDefinition();
+            column1.Width = new GridLength(15, GridUnitType.Star);
+
+            // atribui tamanho 100 para coluna 2
+            ColumnDefinition column2 = new ColumnDefinition();
+            column2.Width = new GridLength(10, GridUnitType.Star);
+
+            //Definitions for column and row
+            GridEnableLegendas.ColumnDefinitions.Add(column1);
+            GridEnableLegendas.ColumnDefinitions.Add(column2);
+            GridEnableLegendas.RowDefinitions.Add(new RowDefinition { Height = new GridLength(30) });
+
+            // add label in grid enable
+            Label label = new Label();
+            label.ClassId = "labelEnableDisable";
+            label.FontSize = 14;
+            label.FontAttributes = FontAttributes.Italic;
+            label.TextColor = Color.DimGray;
+            label.Margin = new Thickness(0, 5, 0, 5);
+            label.SetBinding(Label.TextProperty, "TextoToggleLegenda");
+            label.BindingContext = new { ((CultivaresDoencasListPageViewModel)this.BindingContext).TextoToggleLegenda };
+            //label.Text = ((CultivaresDoencasListPageViewModel)this.BindingContext).TextoToggleLegenda;
+
+            // add label in grid enable
+            GridEnableLegendas.Children.Add(label, 0, 0);
+
+            Switch s = new Switch();
+            s.IsToggled = false;
+            s.Toggled += SwitchOnChanged;
+
+            // add switch in grid enable
+            GridEnableLegendas.Children.Add(s, 0, 0);
 
 
             //Legenda de Tolerâncias

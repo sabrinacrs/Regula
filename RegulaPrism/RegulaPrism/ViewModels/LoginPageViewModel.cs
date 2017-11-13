@@ -3,6 +3,7 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
 using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
@@ -98,9 +99,54 @@ namespace RegulaPrism.ViewModels
                 Cliente c = new Cliente();
                 c = _regulaApiService.GetClientes().ElementAt(0);
 
-                Login = c.Login;
-                Senha = c.Senha;
+                if (c != null)
+                {
+                    // verifica status desse login no servidor
+                    GetDatabases gdb = new GetDatabases();
+                    ClienteJson cj = gdb.GetClienteServer(c);
+
+                    if(c.Status.Equals("IA"))
+                    {
+                        if(cj != null && !cj.status.Equals("IA"))
+                        {
+                            c.Status = cj.status;
+                            _regulaApiService.UpdateCliente(c);
+
+                            Login = c.Login;
+                            Senha = c.Senha;
+                        }
+                    }
+                    else if (!c.Status.Equals("I"))
+                    {
+                        // se não econtrou cliente, adm excluiu o cliente
+                        if (cj != null)
+                        {
+                            if (!clienteIsDisable(cj))
+                            {
+                                Login = c.Login;
+                                Senha = c.Senha;
+                            }
+                            else
+                            {
+                                c.Status = cj.status;
+                                _regulaApiService.UpdateCliente(c);
+                            }
+                        }
+                        else
+                        {
+                            // exclui cliente do banco local
+                            _regulaApiService.DeleteCliente(c);
+                        }
+                    }
+                }
             }
+        }
+
+        private bool clienteIsDisable(ClienteJson cliente)
+        {
+            if (cliente.status.Equals("IA"))
+                return true;
+            return false;
         }
 
         private void NavigateToClienteCreatePage()
@@ -133,6 +179,11 @@ namespace RegulaPrism.ViewModels
                     _regulaApiService.UpdateCliente(cliente);
                     await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
                 }
+            }
+            else if (cliente.Status.Equals("IA"))
+            {
+                // conta desativada
+                await _dialogService.DisplayAlertAsync("", "Esta conta foi desativada pelo administrador do sistema.", "OK");
             }
             else
             {

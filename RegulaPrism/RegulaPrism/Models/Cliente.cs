@@ -9,7 +9,7 @@ namespace RegulaPrism.Models
 {
     public class Cliente
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey] // AutoIncrement
         public int Id
         {
             get;

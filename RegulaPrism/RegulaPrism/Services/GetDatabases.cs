@@ -1,4 +1,5 @@
 ﻿using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,11 @@ namespace RegulaPrism.Services
     {
         private IRegulaApiService _regulaApiService;
         public DataService _dataService;
+
+        public GetDatabases()
+        {
+            _dataService = new DataService();
+        }
 
         public void getDatabases(IRegulaApiService regulaApiService)
         {
@@ -47,6 +53,29 @@ namespace RegulaPrism.Services
 
             // save cultivar epocas semeadura
             SaveCultivarEpocaSemeadura();
+        }
+
+        // TESTE
+        public ClienteJson SendClienteToServer(Cliente cliente)
+        {
+            return _dataService.AddClienteAsync(cliente);
+            //_dataService.PostLoginAsync();
+        }
+
+        public ClienteJson GetClienteServer(Cliente cliente)
+        {
+            return _dataService.GetClienteAsync(cliente);
+            //_dataService.PostLoginAsync();
+        }
+
+        public void UpdateClienteOnServer(Cliente cliente)
+        {
+            _dataService.UpdateClienteAsync(cliente);
+        }
+
+        public void DeleteClienteOnServer(Cliente cliente)
+        {
+            _dataService.DeleteClienteAsync(cliente);
         }
 
         private async void SaveCultivar()

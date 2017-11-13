@@ -8,10 +8,11 @@ namespace RegulaPrism.Views
         {
             InitializeComponent();
 
-            ListCultivares.Image = "list.png";
-            FilterCiclo.Image = "ciclo.png";
+            ListCultivares.Image = "listrounded_1.png";
+            FilterCiclo.Image = "reload.png";
             FilterRendimento.Image = "measure.png";
-            ButtonCultivaresRecomendadas.Image = "recommended.png";
+            FilterDoencas.Image = "leafdamaged.png";
+            //ButtonCultivaresRecomendadas.Image = "recommended.png";
         }
     }
 }

@@ -70,6 +70,10 @@ namespace RegulaPrism.ViewModels
                 {
                     _navigationParameters.Add("cliente", _cliente);
 
+                    // atualiza cliente no servidor
+                    GetDatabases gdb = new GetDatabases();
+                    gdb.UpdateClienteOnServer(_cliente);
+
                     _dialogService.DisplayAlertAsync("", "Seus dados foram atualizados", "OK");
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                 }
@@ -98,8 +102,12 @@ namespace RegulaPrism.ViewModels
                 {
                     _navigationParameters.Add("cliente", _cliente);
 
-                    await _dialogService.DisplayAlertAsync("", "Sua conta foi desativada", "OK");
-                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute), _navigationParameters);
+                    // atualiza cliente no servidor
+                    GetDatabases gdb = new GetDatabases();
+                    gdb.UpdateClienteOnServer(_cliente);
+
+                    _dialogService.DisplayAlertAsync("", "Sua conta foi desativada", "OK");
+                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute), _navigationParameters);
                 }
                 else
                 {
@@ -116,7 +124,11 @@ namespace RegulaPrism.ViewModels
 
             if (choise)
             {
-                // exclusão logica
+                // deleta cliente da tabela no servidor
+                GetDatabases gdb = new GetDatabases();
+                gdb.getDatabases(_regulaApiService);
+                gdb.DeleteClienteOnServer(_cliente);
+
                 if (_regulaApiService.DeleteCliente(_cliente)) //_regulaApiService.DeleteLogicalCliente(_cliente)
                 {
                     _dialogService.DisplayAlertAsync("", "Conta deletada com sucesso", "OK");

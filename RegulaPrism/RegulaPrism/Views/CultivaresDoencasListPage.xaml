@@ -8,24 +8,29 @@
              BackgroundColor="#e0e0e0">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout>
-                <StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start">
-                    <ScrollView Orientation="Both" IsClippedToBounds="True">
-                        <Grid x:Name="GridCultivares" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
-                    </ScrollView>
-                </StackLayout>
-
-                <StackLayout Spacing="3" BackgroundColor="#ffffff">
-                    <BoxView HeightRequest="1" BackgroundColor="Green" HorizontalOptions="FillAndExpand" />
-                    <ScrollView Padding="10, 0, 0, 20" Orientation="Horizontal">
-                        <Grid x:Name="GridDoencas" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
-                    </ScrollView>
-                    <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
-                    <ScrollView Padding="10, 0, 0, 20" Orientation="Horizontal">
-                        <Grid x:Name="GridTolerancias" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
-                    </ScrollView>
-                </StackLayout>
+            <StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start">
+                <ScrollView Orientation="Both" IsClippedToBounds="True">
+                    <Grid x:Name="GridCultivares" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
             </StackLayout>
+
+            <!--Habilitar / desabilitar legendas-->
+            <StackLayout Padding="10, 0, 0, 0">
+                <Grid x:Name="GridEnableLegendas" RowSpacing="1" ColumnSpacing="2"></Grid>
+            </StackLayout>
+                
+            <!--Legendas-->
+            <StackLayout Spacing="3" BackgroundColor="#ffffff" IsVisible="{Binding Legenda}">
+                <BoxView HeightRequest="1" BackgroundColor="Green" HorizontalOptions="FillAndExpand" />
+                <ScrollView Padding="10, 0, 0, 20" Orientation="Horizontal">
+                    <Grid x:Name="GridDoencas" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+                <BoxView HeightRequest="1" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" />
+                <ScrollView Padding="10, 0, 0, 20" Orientation="Horizontal">
+                    <Grid x:Name="GridTolerancias" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

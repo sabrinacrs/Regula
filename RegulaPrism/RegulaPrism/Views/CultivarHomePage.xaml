@@ -7,28 +7,25 @@
              Title="{Binding Title}"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout Padding="20, 20, 20, 20">
+        <StackLayout Padding="30, 20, 30, 20">
             <Grid>
                 <!-- Row Definitions of Grid -->
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="150"></RowDefinition>
+                    <RowDefinition Height="150"></RowDefinition>
                 </Grid.RowDefinitions>
 
                 <!-- Column Definitions of Grid -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
-                    <!--<ColumnDefinition Width="*"></ColumnDefinition>-->
+                    <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="ListCultivares" Text="Listar Cultivares" Grid.Row="0" Grid.Column="0" Command="{Binding CultivarListCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
-                <Button x:Name="FilterCiclo" Text="Filtrar por Ciclo" Grid.Row="1" Grid.Column="0" Command="{Binding CultivarCicloCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
-                <Button x:Name="FilterRendimento" Text="Filtrar por Rendimento" Grid.Row="2" Grid.Column="0" Command="{Binding CultivarRendimentoCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
-                <Button x:Name="FilterDoencas" Text="Filtrar por Doenças" Grid.Row="3" Grid.Column="0" Command="{Binding CultivarDoencasCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
-                <Button x:Name="ButtonCultivaresRecomendadas" Text="Filtrar Cultivar Recomendada" Grid.Row="4" Grid.Column="0" Command="{Binding CultivarRecomendadaCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>
+                <Button x:Name="ListCultivares" Text="Listar Cultivares" Grid.Row="0" Grid.Column="0" Command="{Binding CultivarListCommand}" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0" HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="FilterCiclo" Text="Filtrar por Ciclo" Grid.Row="0" Grid.Column="1" Command="{Binding CultivarCicloCommand}" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0" HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="FilterRendimento" Text="Filtrar por Rendimento" Grid.Row="1" Grid.Column="0" Command="{Binding CultivarRendimentoCommand}" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0" HorizontalOptions="FillAndExpand"></Button>
+                <Button x:Name="FilterDoencas" Text="Filtrar por Doenças" Grid.Row="1" Grid.Column="1" Command="{Binding CultivarDoencasCommand}" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0" HorizontalOptions="FillAndExpand"></Button>
+                <!--<Button x:Name="ButtonCultivaresRecomendadas" Text="Filtrar Cultivar Recomendada" Grid.Row="4" Grid.Column="0" Command="{Binding CultivarRecomendadaCommand}" Style="{StaticResource button-menu-home-fazenda}"></Button>-->
                 <!-- FIltar por doenças-->
                 <!--<Button x:Name="UpdateFazenda" Text="Atualizar Fazenda" Grid.Row="0" Grid.Column="1" Command="{Binding FazendaUpdateCommand}"></Button>-->
             </Grid>

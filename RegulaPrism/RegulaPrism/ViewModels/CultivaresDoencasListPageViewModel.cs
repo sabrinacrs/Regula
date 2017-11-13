@@ -13,6 +13,20 @@ namespace RegulaPrism.ViewModels
 {
     public class CultivaresDoencasListPageViewModel : BindableBase, INavigationAware
     {
+        private bool _legenda;
+        public bool Legenda
+        {
+            get { return _legenda; }
+            set { SetProperty(ref _legenda, value); }
+        }
+
+        private string _textoToggleLegenda;
+        public string TextoToggleLegenda
+        {
+            get { return _textoToggleLegenda; }
+            set { SetProperty(ref _textoToggleLegenda, value); }
+        }
+
         private List<Doenca> _doencas;
         public List<Doenca> Doencas
         {
@@ -59,6 +73,7 @@ namespace RegulaPrism.ViewModels
         private NavigationParameters _navigationParameters;
 
         public DelegateCommand InfoCommand { get; private set; }
+        public DelegateCommand EnableDisableLegendaCommand { get; private set; }
 
         public CultivaresDoencasListPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
@@ -74,7 +89,20 @@ namespace RegulaPrism.ViewModels
             // carrega lista de tolerancias para legenda
             Tolerancias = _regulaApiService.GetTolerancias().OrderBy(t=> t.Sigla.Length).ToList();
 
+            TextoToggleLegenda = "Habilitar legendas";
+
             InfoCommand = new DelegateCommand(Informacoes);
+            EnableDisableLegendaCommand = new DelegateCommand(EnableDisableLegenda);
+        }
+
+        private void EnableDisableLegenda()
+        {
+            Legenda = !Legenda;
+
+            if (Legenda)
+                TextoToggleLegenda = "Desabilitar legendas";
+            else
+                TextoToggleLegenda = "Habilitar legendas";
         }
 
         private void Informacoes()
