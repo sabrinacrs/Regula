@@ -55,6 +55,7 @@
     <Compile Include="Models\Fazenda.cs" />
     <Compile Include="Models\InformacaoManual.cs" />
     <Compile Include="Models\ItemMenuLateral.cs" />
+    <Compile Include="Models\Json\SemeaduraJson.cs" />
     <Compile Include="Models\Semeadura.cs" />
     <Compile Include="Models\SemeaduraModel.cs" />
     <Compile Include="Models\Tolerancia.cs" />

@@ -198,7 +198,7 @@ namespace RegulaPrism.Services
         }
 
 
-        // Cliente
+        // ---------------- Clientes ------------------------------
         public ClienteJson AddClienteAsync(Cliente cliente)
         {
             try
@@ -344,6 +344,59 @@ namespace RegulaPrism.Services
             cj.status = cliente.Status;
 
             return cj;
+        }
+
+
+        // ---------------- Semeaduras ---------------------------------- //
+        public SemeaduraJson AddSemeaduraAsync(Semeadura semeadura)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/semeadura";
+
+                SemeaduraJson sj = loadSemeaduraJson(semeadura);
+
+                var uri = new Uri(string.Format(url, sj.id));
+                var data = JsonConvert.SerializeObject(sj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                //HttpResponseMessage response = null;
+                //response = await client.PostAsync(uri, content);
+                var response = client.PostAsync(uri, content).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var semeaduraServer = JsonConvert.DeserializeObject<SemeaduraJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Diagnostics.Debug.WriteLine(response);
+                    //var t = response.RequestMessage;
+                    //throw new Exception("Erro ao incluir cliente");
+                    return null;
+                }
+                else
+                    return semeaduraServer;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        private SemeaduraJson loadSemeaduraJson(Semeadura semeadura)
+        {
+            SemeaduraJson sj = new SemeaduraJson();
+
+            sj.id = semeadura.Id;
+            sj.quilos_sementes = semeadura.QuilosSementes;
+            sj.germinacao = semeadura.Germinacao;
+            sj.metros_lineares = semeadura.MetrosLineares;
+            sj.talhao_id = semeadura.TalhaoId;
+            sj.cultivar_id = semeadura.CultivarEpocaSemeaduraCultId;
+            sj.epoca_semeadura_id = semeadura.CultivarEpocaSemeaduraEpId;
+            sj.data = semeadura.Data.ToString();
+            //cliente.DataDesativacao.ToString();
+
+            return sj;
         }
     }
 }

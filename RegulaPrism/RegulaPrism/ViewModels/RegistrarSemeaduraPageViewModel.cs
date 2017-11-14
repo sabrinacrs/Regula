@@ -3,6 +3,8 @@ using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
+using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -240,6 +242,10 @@ namespace RegulaPrism.ViewModels
                     if (saveCalculosSemeadura(s.Id))
                     {
                         _dialogService.DisplayAlertAsync("", "Semeadura e cálculos salvos com sucesso!", "OK");
+
+                        // adiciona semeadura ao servidor
+                        GetDatabases gdb = new GetDatabases();
+                        SemeaduraJson sj = gdb.SendSemeaduraToServer(semeadura);
 
                         // redirecionar para página de semeaduras da fazenda
                         _navigationParameters.Add("cliente", _cliente);

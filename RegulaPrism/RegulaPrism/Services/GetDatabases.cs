@@ -55,17 +55,15 @@ namespace RegulaPrism.Services
             SaveCultivarEpocaSemeadura();
         }
 
-        // TESTE
+        // Cliente
         public ClienteJson SendClienteToServer(Cliente cliente)
         {
             return _dataService.AddClienteAsync(cliente);
-            //_dataService.PostLoginAsync();
         }
 
         public ClienteJson GetClienteServer(Cliente cliente)
         {
             return _dataService.GetClienteAsync(cliente);
-            //_dataService.PostLoginAsync();
         }
 
         public void UpdateClienteOnServer(Cliente cliente)
@@ -76,6 +74,12 @@ namespace RegulaPrism.Services
         public void DeleteClienteOnServer(Cliente cliente)
         {
             _dataService.DeleteClienteAsync(cliente);
+        }
+
+        // Semeadura
+        public SemeaduraJson SendSemeaduraToServer(Semeadura semeadura)
+        {
+            return _dataService.AddSemeaduraAsync(semeadura);
         }
 
         private async void SaveCultivar()

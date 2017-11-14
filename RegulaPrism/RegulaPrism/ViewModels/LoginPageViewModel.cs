@@ -163,27 +163,47 @@ namespace RegulaPrism.ViewModels
             if (cliente == null)
                 cliente = _regulaApiService.GetClienteByLogin(Login);
 
+            // verifica status desse login no servidor
+            GetDatabases gdb = new GetDatabases();
+            ClienteJson cj = gdb.GetClienteServer(cliente);
+            
             // cliente não encontrado
             if (cliente == null)
             {
                 await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
             }
+            // conta desativada pelo adms
+            else if (cliente.Status.Equals("IA"))
+            {
+                if(cj != null && !cj.status.Equals("IA"))
+                {
+                    cliente.Status = cj.status;
+                    _regulaApiService.UpdateCliente(cliente);
+
+                    consumeAPI();
+
+                    _navigationParameters.Add("cliente", _cliente);
+                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                }
+                else
+                {
+                    // conta desativada
+                    await _dialogService.DisplayAlertAsync("", "Esta conta foi desativada pelo administrador do sistema.", "OK");
+                }
+            }
             else if (cliente.Status.Equals("I"))
             {
                 // conta desativada
-                var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativa. Deseja reativá-la?", "Sim", "Não");
+                var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
 
                 if (choise)
                 {
                     cliente.Status = "A";
-                    _regulaApiService.UpdateCliente(cliente);
+                    if(_regulaApiService.UpdateCliente(cliente))
+                        gdb.UpdateClienteOnServer(cliente);
+
                     await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
                 }
-            }
-            else if (cliente.Status.Equals("IA"))
-            {
-                // conta desativada
-                await _dialogService.DisplayAlertAsync("", "Esta conta foi desativada pelo administrador do sistema.", "OK");
             }
             else
             {
@@ -193,35 +213,11 @@ namespace RegulaPrism.ViewModels
                         await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
                     else
                     {
+                        // carregar dados do servidor p/ app
+                        consumeAPI();
+
                         Cliente = new Cliente();
                         Cliente = cliente;
-
-                        // clonar a base de dados
-                        if (_regulaApiService.GetCultivar().Count() <= 0)
-                        {
-                            //GetDatabases gdb = new GetDatabases();
-                            //gdb.getDatabases(_regulaApiService);
-
-                            // teste
-                            try
-                            {
-                                // teste
-                                _isLoading = true;
-
-                                GetDatabases gdb = new GetDatabases();
-                                gdb.getDatabases(_regulaApiService);
-
-                                await Task.Delay(4000);
-
-                                _isLoading = false;
-                            }
-                            catch (Exception ex)
-                            {
-                                _isLoading = false;
-                                await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
-                            }
-                        }
-
                         _navigationParameters.Add("cliente", _cliente);
 
                         await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
@@ -231,6 +227,32 @@ namespace RegulaPrism.ViewModels
                     await _dialogService.DisplayAlertAsync("", "Conta desativada", "OK");
             }
 
+        }
+
+        private async void consumeAPI()
+        {
+            // clonar a base de dados
+            if (_regulaApiService.GetCultivar().Count() <= 0)
+            {
+                // teste
+                try
+                {
+                    // teste
+                    //_isLoading = true;
+
+                    GetDatabases gdb = new GetDatabases();
+                    gdb.getDatabases(_regulaApiService);
+
+                    //await Task.Delay(4000);
+
+                    //_isLoading = false;
+                }
+                catch (Exception ex)
+                {
+                    //_isLoading = false;
+                    await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
+                }
+            }
         }
 
         private void Informacoes()
