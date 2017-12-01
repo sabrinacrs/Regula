@@ -15,12 +15,12 @@ namespace RegulaPrism.Services
     public class DataService
     {
         HttpClient client = new HttpClient();
-        public async Task<List<Cultivar>> GetCultivaresAsync()
+        public List<Cultivar> GetCultivaresAsync()
         {
             try
             {
                 string url = "http://www.cottonappadm.xyz/api/cultivares";
-                var response = await client.GetStringAsync(url);
+                var response = client.GetStringAsync(url).Result;
                 var cultivaresJson = JsonConvert.DeserializeObject<List<CultivarJson>>(response);
 
                 return loadCultivares(cultivaresJson);
@@ -397,6 +397,35 @@ namespace RegulaPrism.Services
             //cliente.DataDesativacao.ToString();
 
             return sj;
+        }
+
+
+        // ---------------- Histórico Atualização ---------------------------------- //
+        public HistoricoAtualizacao GetLastReleaseAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/releases/lastrelease";
+                var response = client.GetStringAsync(url);
+                var lastReleaseJson = JsonConvert.DeserializeObject<HistoricoAtualizacaoJson>(response.Result);
+
+                return loadHistoricoAtualizacao(lastReleaseJson);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private HistoricoAtualizacao loadHistoricoAtualizacao(HistoricoAtualizacaoJson lastReleaseJson)
+        {
+            HistoricoAtualizacao lastRelease = new HistoricoAtualizacao();
+
+            lastRelease.DataAtualizacao = lastReleaseJson.data_atualizacao;
+            lastRelease.Id = lastReleaseJson.his_id;
+            lastRelease.Status = lastReleaseJson.status;
+
+            return lastRelease;
         }
     }
 }

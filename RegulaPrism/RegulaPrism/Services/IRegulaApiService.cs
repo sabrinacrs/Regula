@@ -44,35 +44,41 @@ namespace RegulaPrism
 
         //Cultivares
         bool InsertCultivar(Cultivar cultivar);
+        bool UpdateCultivar(Cultivar cultivar);
         Cultivar GetCultivarById(int id);
         List<Cultivar> GetCultivar();
         List<Cultivar> GetCultivarByCiclo(int cicloId);
 
         //Doenças
         bool InsertDoenca(Doenca doenca);
+        bool UpdateDoenca(Doenca doenca);
         Doenca GetDoencaById(int id);
         Doenca GetDoencaByDescricao(string descricao);
         List<Doenca> GetDoenca();
 
         //Épocas Semeadura
         bool InsertEpocaSemeadura(EpocaSemeadura epocaSemeadura);
+        bool UpdateEpocaSemeadura(EpocaSemeadura epocaSemeadura);
         EpocaSemeadura GetEpocaSemeaduraById(int id);
         List<EpocaSemeadura> GetEpocaSemeadura();
 
         //Tolerâncias
         bool InsertTolerancia(Tolerancia tolerancia);
+        bool UpdateTolerancia(Tolerancia tolerancia);
         Tolerancia GetToleranciaById(int id);
         Tolerancia GetToleranciaByDescricao(string descricao);
         List<Tolerancia> GetTolerancias();
 
         //Ciclos
         bool InsertCiclo(Ciclo ciclo);
+        bool UpdateCiclo(Ciclo ciclo);
         Ciclo GetCicloById(int id);
         Ciclo GetCicloByDescricao(string descricao);
         List<Ciclo> GetCiclos();
 
         //Cultivares Doenças
         bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca);
+        bool UpdateCultivarDoenca(CultivarDoenca cultivarDoenca);
         List<CultivarDoenca> GetAllCultivarDoencas();
         List<CultivarDoenca> GetCultivarDoencaCultivarId(int cultId);
         List<CultivarDoenca> GetCultivarDoencaDoencaId(int doeId);
@@ -82,6 +88,7 @@ namespace RegulaPrism
 
         //Cultivares Épocas Semeadura
         bool InsertCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
+        bool UpdateCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeadura();
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraEpocaId(int epocaId);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarId(int cultId);
@@ -102,5 +109,9 @@ namespace RegulaPrism
         CalculosSemeadura GetCalculosSemeaduraById(int id);
         CalculosSemeadura GetCalculosSemeaduraBySemeaduraId(int semeaduraId);
         List<CalculosSemeadura> GetCalculosSemeaduras();
+
+        // Histórico Atualizacao
+        bool InsertHistoricoAtualizacao(HistoricoAtualizacao historicoAtualizacao);
+        HistoricoAtualizacao GetLastHistoricoAtualizacao();
     }
 }

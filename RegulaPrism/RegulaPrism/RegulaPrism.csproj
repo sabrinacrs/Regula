@@ -43,6 +43,7 @@
     <Compile Include="Models\Cultivar.cs" />
     <Compile Include="Models\CultivarDoenca.cs" />
     <Compile Include="Models\CultivarEpocaSemeadura.cs" />
+    <Compile Include="Models\HistoricoAtualizacao.cs" />
     <Compile Include="Models\Json\ClienteJson.cs" />
     <Compile Include="Models\Json\CultivarDoencaJson.cs" />
     <Compile Include="Models\Json\CultivarEpocaSemeaduraJson.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Models\Fazenda.cs" />
     <Compile Include="Models\InformacaoManual.cs" />
     <Compile Include="Models\ItemMenuLateral.cs" />
+    <Compile Include="Models\Json\HistoricoAtualizacaoJson.cs" />
     <Compile Include="Models\Json\SemeaduraJson.cs" />
     <Compile Include="Models\Semeadura.cs" />
     <Compile Include="Models\SemeaduraModel.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Services\GetDatabaseDoenca.cs" />
     <Compile Include="Services\GetDatabaseEpocaSemeadura.cs" />
     <Compile Include="Services\GetDatabaseFazenda.cs" />
+    <Compile Include="Services\GetDataBaseHistoricoAtualizacao.cs" />
     <Compile Include="Services\GetDatabases.cs" />
     <Compile Include="Services\GetDatabaseSemeadura.cs" />
     <Compile Include="Services\GetDatabaseTalhao.cs" />

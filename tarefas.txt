@@ -1,2 +1,5 @@
 - criar tabela historico com epoca de semeadura, espaçamento, etc
 e armazenar cálculos
+- data de plantio na interface do talhao para data que ele efetivamente plantou;
+sem ser a data de registro do cálculo
+- relatório de talhao e cultivar que plantou em qual talhão

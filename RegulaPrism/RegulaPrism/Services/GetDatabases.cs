@@ -37,22 +37,22 @@ namespace RegulaPrism.Services
             SaveCultivar();
 
             // save doencas
-            SaveDoenca();
+            //SaveDoenca();
 
             // save tolerancias
-            SaveTolerancia();
+            //SaveTolerancia();
 
             // save epocas semeadura
-            SaveEpocaSemeadura();
+            //SaveEpocaSemeadura();
 
             // save ciclos
-            SaveCiclo();
+            //SaveCiclo();
 
             // save cultivar doencas
-            SaveCultivarDoenca();
+            //SaveCultivarDoenca();
 
             // save cultivar epocas semeadura
-            SaveCultivarEpocaSemeadura();
+            //SaveCultivarEpocaSemeadura();
         }
 
         // Cliente
@@ -82,13 +82,25 @@ namespace RegulaPrism.Services
             return _dataService.AddSemeaduraAsync(semeadura);
         }
 
-        private async void SaveCultivar()
+        // Historico Atualizacao
+        public HistoricoAtualizacao GetLastRelease()
         {
-            List<Cultivar> cultivaresBD = await _dataService.GetCultivaresAsync();
+            return _dataService.GetLastReleaseAsync();
+        }
 
-            foreach (Cultivar c in cultivaresBD)
+
+        // 
+        private void SaveCultivar()
+        {
+            List<Cultivar> cultivaresServer = _dataService.GetCultivaresAsync();
+            List<Cultivar> cultivaresSQLite = _regulaApiService.GetCultivar();
+
+            foreach (Cultivar c in cultivaresServer)
             {
-                _regulaApiService.InsertCultivar(c);
+                if (cultivaresSQLite.Any(x => x.Nome == c.Nome))
+                    _regulaApiService.UpdateCultivar(c);
+                else
+                    _regulaApiService.InsertCultivar(c);
             }
         }
 
@@ -151,5 +163,8 @@ namespace RegulaPrism.Services
                 _regulaApiService.InsertCultivarDoenca(cd);
             }
         }
+
+        //  Historico de Atualização
+
     }
 }

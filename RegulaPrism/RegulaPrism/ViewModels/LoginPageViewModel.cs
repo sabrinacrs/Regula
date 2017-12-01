@@ -68,6 +68,8 @@ namespace RegulaPrism.ViewModels
 
         private NavigationParameters _navigationParameters;
 
+        private GetDatabases _databaseServer;
+
         public DelegateCommand NavigateToClienteCreatePageCommand { get; private set; }
         public DelegateCommand NavigateToHomeMasterDetailPageCommand { get; private set; }
         public DelegateCommand InfoCommand { get; private set; }
@@ -79,6 +81,7 @@ namespace RegulaPrism.ViewModels
 
             // services
             _navigationParameters = new NavigationParameters();
+            _databaseServer = new GetDatabases();
             _navigationService = navigationService;
             _regulaApiService = regulaApiService;
             _informacoesManuais = informacoesManuais;
@@ -162,10 +165,10 @@ namespace RegulaPrism.ViewModels
 
             if (cliente == null)
                 cliente = _regulaApiService.GetClienteByLogin(Login);
+            // antes de verificar o login, verifica se tem algum usuário com esse login
 
             // verifica status desse login no servidor
-            GetDatabases gdb = new GetDatabases();
-            ClienteJson cj = gdb.GetClienteServer(cliente);
+            ClienteJson cj = _databaseServer.GetClienteServer(cliente);
             
             // cliente não encontrado
             if (cliente == null)
@@ -173,14 +176,14 @@ namespace RegulaPrism.ViewModels
                 await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
             }
             // conta desativada pelo adms
-            else if (cliente.Status.Equals("IA"))
+            else if (cliente.Status.Equals("IA")) // IA - inativado pelo administrador
             {
                 if(cj != null && !cj.status.Equals("IA"))
                 {
                     cliente.Status = cj.status;
                     _regulaApiService.UpdateCliente(cliente);
 
-                    consumeAPI();
+                    //consumeAPI();
 
                     _navigationParameters.Add("cliente", _cliente);
                     await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
@@ -200,7 +203,7 @@ namespace RegulaPrism.ViewModels
                 {
                     cliente.Status = "A";
                     if(_regulaApiService.UpdateCliente(cliente))
-                        gdb.UpdateClienteOnServer(cliente);
+                        _databaseServer.UpdateClienteOnServer(cliente);
 
                     await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
                 }
@@ -214,7 +217,7 @@ namespace RegulaPrism.ViewModels
                     else
                     {
                         // carregar dados do servidor p/ app
-                        consumeAPI();
+                        //consumeAPI();
 
                         Cliente = new Cliente();
                         Cliente = cliente;
@@ -229,31 +232,7 @@ namespace RegulaPrism.ViewModels
 
         }
 
-        private async void consumeAPI()
-        {
-            // clonar a base de dados
-            if (_regulaApiService.GetCultivar().Count() <= 0)
-            {
-                // teste
-                try
-                {
-                    // teste
-                    //_isLoading = true;
-
-                    GetDatabases gdb = new GetDatabases();
-                    gdb.getDatabases(_regulaApiService);
-
-                    //await Task.Delay(4000);
-
-                    //_isLoading = false;
-                }
-                catch (Exception ex)
-                {
-                    //_isLoading = false;
-                    await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
-                }
-            }
-        }
+        
 
         private void Informacoes()
         {
@@ -278,5 +257,33 @@ namespace RegulaPrism.ViewModels
         {
             _cliente = (Cliente)parameters["cliente"];
         }
+
+
+        //private async void consumeAPI()
+        //{
+        //    // clonar a base de dados
+        //    if (_regulaApiService.GetCultivar().Count() <= 0)
+        //    {
+        //        try
+        //        {
+        //            GetDatabases gdb = new GetDatabases();
+        //            gdb.getDatabases(_regulaApiService);
+
+        //            // insere historico atualizacao no sqlite
+        //            HistoricoAtualizacao ha = new HistoricoAtualizacao();
+        //            ha.DataAtualizacao = DateTime.Now.Date.ToString();
+        //            ha.Status = "D";
+
+        //            if (!_regulaApiService.InsertHistoricoAtualizacao(ha))
+        //            {
+        //                await _dialogService.DisplayAlertAsync("", "Ocorreu um erro ao sicronizar a base de dados. Verifique sua conexão e tente novamente", "OK");
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
+        //        }
+        //    }
+        //}
     }
 }

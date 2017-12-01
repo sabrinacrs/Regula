@@ -90,6 +90,8 @@ namespace RegulaPrism.ViewModels
 
         private NavigationParameters _navigationParameters;
 
+        private GetDatabases _databaseServer;
+
         public DelegateCommand NavigateToFazendaContatoPageCommand { get; private set; }
         public DelegateCommand ClienteSaveCommand { get; private set; }
 
@@ -106,6 +108,7 @@ namespace RegulaPrism.ViewModels
             _informacoesManuais = informacoesManuais;
             _cloneDatabaseServer = cloneDatabaseServer;
             _navigationParameters = new NavigationParameters();
+            _databaseServer = new GetDatabases();
 
             ClienteSaveCommand = new DelegateCommand(ClienteSave);
             InfoCommand = new DelegateCommand(Informacoes);
@@ -121,9 +124,8 @@ namespace RegulaPrism.ViewModels
             {
                 Cliente cliente = clienteView();
 
-                GetDatabases gdb = new GetDatabases();
                 // envia cliente para servidor e recebe id do cliente no servidor
-                ClienteJson clienteJson = gdb.SendClienteToServer(cliente);
+                ClienteJson clienteJson = _databaseServer.SendClienteToServer(cliente);
 
                 if (clienteJson == null)
                 {
@@ -140,37 +142,6 @@ namespace RegulaPrism.ViewModels
                         _navigationParameters.Add("cliente", cliente);
                         _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
 
-                        // clonar a base de dados
-                        if (_regulaApiService.GetCultivar().Count() <= 0)
-                        {
-                            //GetDatabases gdb = new GetDatabases();
-
-                            // faz download da base de dados
-                            gdb.getDatabases(_regulaApiService);
-
-                            //// envia cliente para servidor
-                            //gdb.SendClienteToServer(cliente);
-
-                            //// teste
-                            //try
-                            //{
-                            //    // teste
-                            //    _isLoading = true;
-
-                            //    GetDatabases gdb = new GetDatabases();
-                            //    gdb.getDatabases(_regulaApiService);
-
-                            //    await Task.Delay(4000);
-
-                            //    _isLoading = false;
-                            //}
-                            //catch (Exception ex)
-                            //{
-                            //    _isLoading = false;
-                            //    await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
-                            //}
-                        }
-
                         _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                     }
                     else
@@ -178,8 +149,6 @@ namespace RegulaPrism.ViewModels
                         _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado durante a tentativa de cadastro. Verifique seus dados e tente novamente.", "OK");
                     }
                 }
-
-                
             }
             else
             {
@@ -189,14 +158,8 @@ namespace RegulaPrism.ViewModels
 
         private void Informacoes()
         {
-            // tela de informações de navegação
-            // recupera titulo e texto da interface IInformacoesManuais
-            // chama a mesma tela para exibir as coisas
-
             InformacaoManual im = _informacoesManuais.InformacoesClienteCreate();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 

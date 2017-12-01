@@ -18,6 +18,7 @@ namespace RegulaPrism.Services
         GetDatabaseTalhao _dataBaseTalhao = new GetDatabaseTalhao();
         GetDatabaseSemeadura _dataBaseSemeadura = new GetDatabaseSemeadura();
         GetDataBaseCalculosSemeadura _dataBaseCalculoSemeadura = new GetDataBaseCalculosSemeadura();
+        GetDataBaseHistoricoAtualizacao _dataBaseHistoricoAtualizacao = new GetDataBaseHistoricoAtualizacao();
 
         // clone database server
         GetDatabaseCultivar _dataBaseCultivar = new GetDatabaseCultivar();
@@ -209,6 +210,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool UpdateCultivar(Cultivar cultivar)
+        {
+            if (_dataBaseCultivar.Update(cultivar) <= 0)
+                return false;
+            return true;
+        }
+
         // Obter Cultivar por Id
         public Cultivar GetCultivarById(int id)
         {
@@ -235,6 +243,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool UpdateEpocaSemeadura(EpocaSemeadura epocaSemeadura)
+        {
+            if (_dataBaseEpocaSemeadura.Update(epocaSemeadura) <= 0)
+                return false;
+            return true;
+        }
+
         public EpocaSemeadura GetEpocaSemeaduraById(int id)
         {
             EpocaSemeadura ep = _dataBaseEpocaSemeadura.ObterPorID(id);
@@ -251,6 +266,13 @@ namespace RegulaPrism.Services
         public bool InsertCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca)
         {
             if (_dataBaseCultivarEpocaSemeadura.Insert(cultivarEpoca) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool UpdateCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca)
+        {
+            if (_dataBaseCultivarEpocaSemeadura.Update(cultivarEpoca) <= 0)
                 return false;
             return true;
         }
@@ -284,6 +306,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool UpdateDoenca(Doenca doenca)
+        {
+            if (_dataBaseDoenca.Update(doenca) <= 0)
+                return false;
+            return true;
+        }
+
         public Doenca GetDoencaById(int id)
         {
             Doenca d = _dataBaseDoenca.ObterPorID(id);
@@ -305,6 +334,13 @@ namespace RegulaPrism.Services
         public bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca)
         {
             if (_dataBaseCultivarDoenca.Insert(cultivarDoenca) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool UpdateCultivarDoenca(CultivarDoenca cultivarDoenca)
+        {
+            if (_dataBaseCultivarDoenca.Update(cultivarDoenca) <= 0)
                 return false;
             return true;
         }
@@ -348,6 +384,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool UpdateCiclo(Ciclo ciclo)
+        {
+            if (_dataBaseCiclo.Update(ciclo) <= 0)
+                return false;
+            return true;
+        }
+
         public Ciclo GetCicloById(int id)
         {
             Ciclo c = _dataBaseCiclo.ObterPorID(id);
@@ -372,6 +415,14 @@ namespace RegulaPrism.Services
                 return false;
             return true;
         }
+
+        public bool UpdateTolerancia(Tolerancia tolerancia)
+        {
+            if (_dataBaseTolerancia.Update(tolerancia) <= 0)
+                return false;
+            return true;
+        }
+
         public Tolerancia GetToleranciaById(int id)
         {
             Tolerancia t = _dataBaseTolerancia.ObterPorID(id);
@@ -462,6 +513,19 @@ namespace RegulaPrism.Services
         public List<CalculosSemeadura> GetCalculosSemeaduras()
         {
             return _dataBaseCalculoSemeadura.Listar();
+        }
+
+        // historico atualização
+        public HistoricoAtualizacao GetLastHistoricoAtualizacao()
+        {
+            return _dataBaseHistoricoAtualizacao.GetLastHistoricoAtualizacao();
+        }
+
+        public bool InsertHistoricoAtualizacao(HistoricoAtualizacao historicoAtualizacao)
+        {
+            if (_dataBaseHistoricoAtualizacao.Insert(historicoAtualizacao) <= 0)
+                return false;
+            return true;
         }
     }
 }
