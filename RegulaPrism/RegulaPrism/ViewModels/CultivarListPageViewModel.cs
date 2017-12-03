@@ -203,6 +203,7 @@ namespace RegulaPrism.ViewModels
                 cm.ResistenciaMaximo = x.ResistenciaMaximo;
                 cm.ResistenciaMinimo = x.ResistenciaMinimo;
                 cm.Ciclo = _regulaApiService.GetCicloById(x.CicloId);
+                cm.Status = x.Status;
 
                 Cultivares.Add(cm);
             }

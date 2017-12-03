@@ -6,6 +6,8 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\an
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Threading.Tasks.Extensions.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\MySql.Data.CF.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Newtonsoft.Json.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.Abstractions.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Forms.dll
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Unity.Forms.dll

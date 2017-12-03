@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
@@ -71,9 +72,12 @@ namespace RegulaPrism.ViewModels
                     _navigationParameters.Add("cliente", _cliente);
 
                     // atualiza cliente no servidor
-                    GetDatabases gdb = new GetDatabases();
-                    gdb.UpdateClienteOnServer(_cliente);
-
+                    if (CrossConnectivity.Current.IsConnected)
+                    {
+                        GetDatabases gdb = new GetDatabases();
+                        gdb.UpdateClienteOnServer(_cliente);
+                    }
+                        
                     _dialogService.DisplayAlertAsync("", "Seus dados foram atualizados", "OK");
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
                 }
@@ -103,9 +107,12 @@ namespace RegulaPrism.ViewModels
                     _navigationParameters.Add("cliente", _cliente);
 
                     // atualiza cliente no servidor
-                    GetDatabases gdb = new GetDatabases();
-                    gdb.UpdateClienteOnServer(_cliente);
-
+                    if (CrossConnectivity.Current.IsConnected)
+                    {
+                        GetDatabases gdb = new GetDatabases();
+                        gdb.UpdateClienteOnServer(_cliente);
+                    }
+                        
                     _dialogService.DisplayAlertAsync("", "Sua conta foi desativada", "OK");
                     _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute), _navigationParameters);
                 }
@@ -125,14 +132,21 @@ namespace RegulaPrism.ViewModels
             if (choise)
             {
                 // deleta cliente da tabela no servidor
-                GetDatabases gdb = new GetDatabases();
-                gdb.getDatabases(_regulaApiService);
-                gdb.DeleteClienteOnServer(_cliente);
-
-                if (_regulaApiService.DeleteCliente(_cliente)) //_regulaApiService.DeleteLogicalCliente(_cliente)
+                if (CrossConnectivity.Current.IsConnected)
                 {
-                    _dialogService.DisplayAlertAsync("", "Conta deletada com sucesso", "OK");
-                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
+                    GetDatabases gdb = new GetDatabases();
+                    gdb.getDatabases(_regulaApiService);
+                    gdb.DeleteClienteOnServer(_cliente);
+
+                    if (_regulaApiService.DeleteCliente(_cliente)) //_regulaApiService.DeleteLogicalCliente(_cliente)
+                    {
+                        _dialogService.DisplayAlertAsync("", "Conta deletada com sucesso", "OK");
+                        _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
+                    }
+                    else
+                    {
+                        await _dialogService.DisplayAlertAsync("", "Não foi possível deletar a conta", "OK");
+                    }
                 }
                 else
                 {
@@ -144,9 +158,7 @@ namespace RegulaPrism.ViewModels
         private void Informacoes()
         {
             InformacaoManual im = _informacoesManuais.InformacoesClienteUpdate();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 

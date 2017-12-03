@@ -17,9 +17,6 @@ namespace RegulaPrism.Services
             var config = DependencyService.Get<IConfig>();
             _conexao = new SQLite.Net.SQLiteConnection(config.Plataforma, System.IO.Path.Combine(config.DiretorioDB, "reguladb.db3"));
 
-            // drop old table
-            //_conexao.DropTable<Ciclo>();
-
             // create new table
             _conexao.CreateTable<Ciclo>();
         }
@@ -53,6 +50,11 @@ namespace RegulaPrism.Services
         public List<Ciclo> Listar()
         {
             return _conexao.Table<Ciclo>().Where(d => d.DataDesativacao == DateTime.MinValue).OrderBy(d => d.Descricao).ToList();
+        }
+
+        public List<Ciclo> ListarTodos()
+        {
+            return _conexao.Table<Ciclo>().OrderBy(d => d.Descricao).ToList();
         }
 
         public void Dispose()

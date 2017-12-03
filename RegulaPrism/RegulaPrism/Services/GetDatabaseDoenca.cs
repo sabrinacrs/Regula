@@ -55,6 +55,12 @@ namespace RegulaPrism.Services
             return _conexao.Table<Doenca>().Where(d => d.DataDesativacao == DateTime.MinValue).OrderBy(d => d.Descricao).ToList();
         }
 
+        public List<Doenca> ListarTodas()
+        {
+            //
+            return _conexao.Table<Doenca>().OrderBy(x => x.Id).ToList();
+        }
+
         public void Dispose()
         {
             _conexao.Dispose();

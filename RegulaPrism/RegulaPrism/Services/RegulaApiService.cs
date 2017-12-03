@@ -217,6 +217,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool DeleteCultivar(Cultivar cultivar)
+        {
+            if (_dataBaseCultivar.Delete(cultivar) < 0)
+                return false;
+            return true;
+        }
+
         // Obter Cultivar por Id
         public Cultivar GetCultivarById(int id)
         {
@@ -227,6 +234,11 @@ namespace RegulaPrism.Services
         public List<Cultivar> GetCultivar()
         {
             return _dataBaseCultivar.Listar();
+        }
+
+        public List<Cultivar> GetAllCultivar()
+        {
+            return _dataBaseCultivar.ListarTodas();
         }
 
         public List<Cultivar> GetCultivarByCiclo(int cicloId)
@@ -250,6 +262,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool DeleteEpocaSemeadura(EpocaSemeadura epocaSemeadura)
+        {
+            if (_dataBaseEpocaSemeadura.Delete(epocaSemeadura) < 0)
+                return false;
+            return true;
+        }
+
         public EpocaSemeadura GetEpocaSemeaduraById(int id)
         {
             EpocaSemeadura ep = _dataBaseEpocaSemeadura.ObterPorID(id);
@@ -259,6 +278,11 @@ namespace RegulaPrism.Services
         public List<EpocaSemeadura> GetEpocaSemeadura()
         {
             return _dataBaseEpocaSemeadura.Listar().OrderBy(x => x.Id).ToList();
+        }
+
+        public List<EpocaSemeadura> GetAllEpocaSemeadura()
+        {
+            return _dataBaseEpocaSemeadura.ListarTodas();
         }
 
         // -------------------
@@ -273,6 +297,13 @@ namespace RegulaPrism.Services
         public bool UpdateCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca)
         {
             if (_dataBaseCultivarEpocaSemeadura.Update(cultivarEpoca) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool DeleteCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca)
+        {
+            if (_dataBaseCultivarEpocaSemeadura.Delete(cultivarEpoca) < 0)
                 return false;
             return true;
         }
@@ -313,6 +344,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool DeleteDoenca(Doenca doenca)
+        {
+            if (_dataBaseDoenca.Delete(doenca) < 0)
+                return false;
+            return true;
+        }
+
         public Doenca GetDoencaById(int id)
         {
             Doenca d = _dataBaseDoenca.ObterPorID(id);
@@ -329,6 +367,11 @@ namespace RegulaPrism.Services
             return _dataBaseDoenca.Listar();
         }
 
+        public List<Doenca> GetAllDoenca()
+        {
+            return _dataBaseDoenca.ListarTodas();
+        }
+
         // -------------------
         // CULTIVAR DOENÇA OPERATIONS
         public bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca)
@@ -341,6 +384,13 @@ namespace RegulaPrism.Services
         public bool UpdateCultivarDoenca(CultivarDoenca cultivarDoenca)
         {
             if (_dataBaseCultivarDoenca.Update(cultivarDoenca) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool DeleteCultivarDoenca(CultivarDoenca cultivarDoenca)
+        {
+            if (_dataBaseCultivarDoenca.Delete(cultivarDoenca) < 0)
                 return false;
             return true;
         }
@@ -391,6 +441,13 @@ namespace RegulaPrism.Services
             return true;
         }
 
+        public bool DeleteCiclo(Ciclo ciclo)
+        {
+            if (_dataBaseCiclo.Delete(ciclo) < 0)
+                return false;
+            return true;
+        }
+
         public Ciclo GetCicloById(int id)
         {
             Ciclo c = _dataBaseCiclo.ObterPorID(id);
@@ -407,6 +464,11 @@ namespace RegulaPrism.Services
             return _dataBaseCiclo.Listar();
         }
 
+        public List<Ciclo> GetAllCiclo()
+        {
+            return _dataBaseCiclo.ListarTodos();
+        }
+
         // -------------------
         // TOLERÂNCIA OPERATIONS
         public bool InsertTolerancia(Tolerancia tolerancia)
@@ -419,6 +481,13 @@ namespace RegulaPrism.Services
         public bool UpdateTolerancia(Tolerancia tolerancia)
         {
             if (_dataBaseTolerancia.Update(tolerancia) <= 0)
+                return false;
+            return true;
+        }
+
+        public bool DeleteTolerancia(Tolerancia tolerancia)
+        {
+            if (_dataBaseTolerancia.Delete(tolerancia) < 0)
                 return false;
             return true;
         }
@@ -438,6 +507,12 @@ namespace RegulaPrism.Services
         {
             return _dataBaseTolerancia.Listar();
         }
+
+        public List<Tolerancia> GetAllTolerancia()
+        {
+            return _dataBaseTolerancia.ListarTodas();
+        }
+
 
         // -------------------
         // SEMEADURA OPERATIONS

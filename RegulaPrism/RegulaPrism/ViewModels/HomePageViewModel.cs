@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
@@ -70,7 +71,8 @@ namespace RegulaPrism.ViewModels
             NavigateToCultivarDoencasPageCommand = new DelegateCommand(NavigateToCultivarDoencasPage);
 
             // check release
-            CheckRelease();
+            if(CrossConnectivity.Current.IsConnected)
+                CheckRelease();
         }
 
         private void NavigateToCultivarListPage()
@@ -168,11 +170,8 @@ namespace RegulaPrism.ViewModels
             // pega ultima atualizacao do sqlite
             HistoricoAtualizacao lastReleaseSqlite = _regulaApiService.GetLastHistoricoAtualizacao();
 
-            if(lastReleaseSqlite == null) // primeiro acesso
-            {
-                return true;
-            }
-            else
+            // quando lastReleaseSqlite == null é primeiro acesso
+            if (lastReleaseSqlite != null) 
             {
                 // converter string datas para comparar
                 DateTime dataReleaseServer = Convert.ToDateTime(lastReleaseServer.DataAtualizacao);

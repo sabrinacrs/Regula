@@ -146,3 +146,13 @@ D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable\leafdamaged.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable-hdpi\leafdamaged.png
 D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\res\drawable-xhdpi\leafdamaged.png
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.Abstractions.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.dll
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.pdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.Abstractions.xml
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.dll.mdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\Plugin.Connectivity.Abstractions.dll.mdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Plugin.Connectivity.Abstractions.dll.mdb
+D:\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb

@@ -50,6 +50,11 @@ namespace RegulaPrism.Services
             return _conexao.Table<EpocaSemeadura>().Where(ep => ep.DataDesativacao == DateTime.MinValue).OrderBy(ep => ep.Descricao).ToList<EpocaSemeadura>();
         }
 
+        public List<EpocaSemeadura> ListarTodas()
+        {
+            return _conexao.Table<EpocaSemeadura>().OrderBy(ep => ep.Descricao).ToList();
+        }
+
         public void Dispose()
         {
             _conexao.Dispose();

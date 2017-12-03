@@ -106,6 +106,8 @@ class MonoPackageManager_Resources {
 		"Microsoft.Threading.Tasks.Extensions.dll",
 		"MySql.Data.CF.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Connectivity.Abstractions.dll",
+		"Plugin.Connectivity.dll",
 		"Prism.dll",
 		"Prism.Forms.dll",
 		"Prism.Unity.Forms.dll",

@@ -15,12 +15,13 @@ namespace RegulaPrism.Services
     public class DataService
     {
         HttpClient client = new HttpClient();
-        public List<Cultivar> GetCultivaresAsync()
+
+        public async Task<List<Cultivar>> GetCultivaresAsync()
         {
             try
             {
                 string url = "http://www.cottonappadm.xyz/api/cultivares";
-                var response = client.GetStringAsync(url).Result;
+                var response = await client.GetStringAsync(url);
                 var cultivaresJson = JsonConvert.DeserializeObject<List<CultivarJson>>(response);
 
                 return loadCultivares(cultivaresJson);
@@ -154,6 +155,7 @@ namespace RegulaPrism.Services
                 cm.ResistenciaMaximo = x.resistencia_maximo;
                 cm.ResistenciaMinimo = x.resistencia_minimo;
                 cm.CicloId = x.cic_id;
+                cm.Status = x.status;
 
                 cultivares.Add(cm);
             }

@@ -54,7 +54,12 @@ namespace RegulaPrism.Services
         {
             //
             return _conexao.Table<Cultivar>().Where(c => !c.Status.Equals("I")).OrderBy(c => c.Id).ToList();
-            //return _conexao.Table<Cultivar>().Where(c => c.DataDesativacao == DateTime.MinValue).OrderBy(c => c.Id).ToList();
+        }
+
+        public List<Cultivar> ListarTodas()
+        {
+            //
+            return _conexao.Table<Cultivar>().OrderBy(c => c.Id).ToList();
         }
 
         public void Dispose()

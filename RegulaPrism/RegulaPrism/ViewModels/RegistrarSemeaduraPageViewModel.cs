@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
@@ -244,8 +245,11 @@ namespace RegulaPrism.ViewModels
                         _dialogService.DisplayAlertAsync("", "Semeadura e cálculos salvos com sucesso!", "OK");
 
                         // adiciona semeadura ao servidor
-                        GetDatabases gdb = new GetDatabases();
-                        SemeaduraJson sj = gdb.SendSemeaduraToServer(semeadura);
+                        if(CrossConnectivity.Current.IsConnected)
+                        {
+                            GetDatabases gdb = new GetDatabases();
+                            SemeaduraJson sj = gdb.SendSemeaduraToServer(semeadura);
+                        }
 
                         // redirecionar para página de semeaduras da fazenda
                         _navigationParameters.Add("cliente", _cliente);

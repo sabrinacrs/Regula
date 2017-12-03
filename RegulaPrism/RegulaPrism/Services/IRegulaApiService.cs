@@ -45,40 +45,51 @@ namespace RegulaPrism
         //Cultivares
         bool InsertCultivar(Cultivar cultivar);
         bool UpdateCultivar(Cultivar cultivar);
+        bool DeleteCultivar(Cultivar cultivar);
         Cultivar GetCultivarById(int id);
         List<Cultivar> GetCultivar();
+        List<Cultivar> GetAllCultivar();
         List<Cultivar> GetCultivarByCiclo(int cicloId);
 
         //Doenças
         bool InsertDoenca(Doenca doenca);
         bool UpdateDoenca(Doenca doenca);
+        bool DeleteDoenca(Doenca doenca);
         Doenca GetDoencaById(int id);
         Doenca GetDoencaByDescricao(string descricao);
         List<Doenca> GetDoenca();
+        List<Doenca> GetAllDoenca();
 
         //Épocas Semeadura
         bool InsertEpocaSemeadura(EpocaSemeadura epocaSemeadura);
         bool UpdateEpocaSemeadura(EpocaSemeadura epocaSemeadura);
+        bool DeleteEpocaSemeadura(EpocaSemeadura epocaSemeadura);
         EpocaSemeadura GetEpocaSemeaduraById(int id);
         List<EpocaSemeadura> GetEpocaSemeadura();
+        List<EpocaSemeadura> GetAllEpocaSemeadura();
 
         //Tolerâncias
         bool InsertTolerancia(Tolerancia tolerancia);
         bool UpdateTolerancia(Tolerancia tolerancia);
+        bool DeleteTolerancia(Tolerancia tolerancia);
         Tolerancia GetToleranciaById(int id);
         Tolerancia GetToleranciaByDescricao(string descricao);
         List<Tolerancia> GetTolerancias();
+        List<Tolerancia> GetAllTolerancia();
 
         //Ciclos
         bool InsertCiclo(Ciclo ciclo);
         bool UpdateCiclo(Ciclo ciclo);
+        bool DeleteCiclo(Ciclo ciclo);
         Ciclo GetCicloById(int id);
         Ciclo GetCicloByDescricao(string descricao);
         List<Ciclo> GetCiclos();
+        List<Ciclo> GetAllCiclo();
 
         //Cultivares Doenças
         bool InsertCultivarDoenca(CultivarDoenca cultivarDoenca);
         bool UpdateCultivarDoenca(CultivarDoenca cultivarDoenca);
+        bool DeleteCultivarDoenca(CultivarDoenca cultivarDoenca);
         List<CultivarDoenca> GetAllCultivarDoencas();
         List<CultivarDoenca> GetCultivarDoencaCultivarId(int cultId);
         List<CultivarDoenca> GetCultivarDoencaDoencaId(int doeId);
@@ -89,6 +100,7 @@ namespace RegulaPrism
         //Cultivares Épocas Semeadura
         bool InsertCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
         bool UpdateCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
+        bool DeleteCultivarEpocaSemeadura(CultivarEpocaSemeadura cultivarEpoca);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeadura();
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraEpocaId(int epocaId);
         List<CultivarEpocaSemeadura> GetCultivarEpocaSemeaduraCultivarId(int cultId);
