@@ -27,9 +27,36 @@ namespace RegulaPrism.Views
         {
         }
 
-        public void OnNavigatedTo(NavigationParameters parameters)
+        public async void OnNavigatedTo(NavigationParameters parameters)
         {
-            // Doencas
+            try
+            {
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsLoading = true;
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsVisible = false;
+
+                //Chame sua função aqui
+                await Task.Delay(4000);
+                makeGrid();
+
+
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsLoading = false;
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsVisible = true;
+            }
+            catch (Exception ex)
+            {
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsLoading = false;
+                ((CultivaresDoencasListPageViewModel)this.BindingContext).IsVisible = true;
+                if (ex != null)
+                {
+                    //Trate seu erro aqui
+                    int i = 0;
+                }
+            }
+        }
+
+        private async void makeGrid()
+        {
+            //Doencas
             int lengthDoencas = ((CultivaresDoencasListPageViewModel)this.BindingContext).Doencas.Count;
             List<Doenca> doencas = ((CultivaresDoencasListPageViewModel)this.BindingContext).Doencas;
 
@@ -92,15 +119,19 @@ namespace RegulaPrism.Views
 
                 // colunas de doencas e tolerancias
                 int l = 1;
-                foreach (var k in x.DoencasTolerancias)
+                //foreach (var k in x.DoencasTolerancias)
+                foreach (var k in doencas)
                 {
-                    Doenca doe = doencas.Find(d => d.Id == k.Doenca.Id);
+                    DoencaTolerancia doe = x.DoencasTolerancias.Find(d => d.Doenca.Id == k.Id);
                     if (doe != null)
                     {
-                        Doenca dtl = ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Find(v => v.Id == doe.Id);
+                        Doenca dtl = ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Find(v => v.Id == doe.Doenca.Id);
+
+                        // adiciona na lista de doencas selecionadas para compor a legenda
+                        Doenca doeLegenda = doe.Doenca;
 
                         if (dtl == null)
-                            ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Add(doe);
+                            ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Add(doeLegenda);
 
                         // coluna com número da doença
                         GridCultivares.Children.Add(new Label
@@ -115,7 +146,7 @@ namespace RegulaPrism.Views
                         // coluna com tolerância
                         GridCultivares.Children.Add(new Label
                         {
-                            Text = k.Tolerancia.Sigla,
+                            Text = doe.Tolerancia.Sigla,
                             VerticalTextAlignment = TextAlignment.Center,
                             BackgroundColor = Color.White,
                             HorizontalTextAlignment = TextAlignment.Center
@@ -127,7 +158,6 @@ namespace RegulaPrism.Views
 
                 j++;
             }
-
 
             //------------ LEGENDAS --------------------
 
@@ -206,12 +236,16 @@ namespace RegulaPrism.Views
                 GridDoencas.Children.Add(new Label
                 {
                     Text = (col + 1) + "\n" + x.Descricao,
+                    //TextColor = Color.White,
                     VerticalTextAlignment = TextAlignment.Center,
                     HorizontalTextAlignment = TextAlignment.Center
                 }, col, 0);
 
                 col++;
             }
+
+            ((CultivaresDoencasListPageViewModel)this.BindingContext).IsLoading = false;
+            ((CultivaresDoencasListPageViewModel)this.BindingContext).IsVisible = true;
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
@@ -305,3 +339,99 @@ namespace RegulaPrism.Views
         }
     }
 }
+
+
+//// Grid Cultivares
+//GridCultivares.RowDefinitions = new RowDefinitionCollection();
+//GridCultivares.ColumnDefinitions = new ColumnDefinitionCollection();
+
+//int lengthCultivares = ((CultivaresDoencasListPageViewModel)this.BindingContext).Cultivares.Count;
+//List<CultivarModel> cultivares = ((CultivaresDoencasListPageViewModel)this.BindingContext).Cultivares;
+
+//// header
+//Label labelHeader = new Label
+//{
+//    Text = "Doenças Selecionadas",
+//    TextColor = Color.White,
+//    VerticalTextAlignment = TextAlignment.Center,
+//    BackgroundColor = Color.Green,
+//    HorizontalTextAlignment = TextAlignment.Center
+//};
+
+//// define linhas do header
+//GridCultivares.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+//            GridCultivares.Children.Add(labelHeader, 1, 0);
+
+//            GridCultivares.Children.Add(new Label
+//            {
+//                Text = "Cultivares",
+//                TextColor = Color.White,
+//                VerticalTextAlignment = TextAlignment.Center,
+//                BackgroundColor = Color.Green,
+//                HorizontalTextAlignment = TextAlignment.Center
+//            }, 0, 0);
+
+//            // Linha de doenças
+//            Grid.SetColumnSpan(labelHeader, lengthDoencas);
+
+//            GridCultivares.Children.Add(new Label
+//            {
+//                Text = " ",
+//                TextColor = Color.White,
+//                VerticalTextAlignment = TextAlignment.Center,
+//                BackgroundColor = Color.LawnGreen,
+//                HorizontalTextAlignment = TextAlignment.Center
+//            }, 0, 1);
+
+//            // adiciona cultivares e tolerancias às doenças
+//            int j = 2;
+//            foreach (var x in cultivares)
+//            {
+//                // linha com cultivar
+//                GridCultivares.RowDefinitions.Add(new RowDefinition { Height = new GridLength(40) });
+
+//                GridCultivares.Children.Add(new Label
+//                {
+//                    Text = x.Nome,
+//                    VerticalTextAlignment = TextAlignment.Center,
+//                    BackgroundColor = Color.White,
+//                    HorizontalTextAlignment = TextAlignment.Center
+//                }, 0, j);
+
+//                // colunas de doencas e tolerancias
+//                int l = 1;
+//                foreach (var k in x.DoencasTolerancias)
+//                {
+//                    Doenca doe = doencas.Find(d => d.Id == k.Doenca.Id);
+//                    if (doe != null)
+//                    {
+//                        Doenca dtl = ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Find(v => v.Id == doe.Id);
+
+//                        if (dtl == null)
+//                            ((CultivaresDoencasListPageViewModel)this.BindingContext).DoencasLegenda.Add(doe);
+
+//// coluna com número da doença
+//GridCultivares.Children.Add(new Label
+//                        {
+//                            Text = "" + l,
+//                            BackgroundColor = Color.LawnGreen,
+//                            VerticalTextAlignment = TextAlignment.Center,
+//                            TextColor = Color.White,
+//                            HorizontalTextAlignment = TextAlignment.Center
+//                        }, l, 1);
+
+//                        // coluna com tolerância
+//                        GridCultivares.Children.Add(new Label
+//                        {
+//                            Text = k.Tolerancia.Sigla,
+//                            VerticalTextAlignment = TextAlignment.Center,
+//                            BackgroundColor = Color.White,
+//                            HorizontalTextAlignment = TextAlignment.Center
+//                        }, l, j);
+
+//                        l++;
+//                    }
+//                }
+
+//                j++;
+//            }

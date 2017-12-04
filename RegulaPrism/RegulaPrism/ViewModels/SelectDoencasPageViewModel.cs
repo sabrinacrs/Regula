@@ -58,7 +58,7 @@ namespace RegulaPrism.ViewModels
 
         public SelectDoencasPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
-            Title = "Selecionar Doencas do Solo";
+            Title = "Doenças";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
@@ -167,9 +167,7 @@ namespace RegulaPrism.ViewModels
         private void Informacoes()
         {
             InformacaoManual im = _informacoesManuais.InformacoesCultivarDoencas();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 

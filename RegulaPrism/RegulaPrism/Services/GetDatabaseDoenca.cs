@@ -52,7 +52,7 @@ namespace RegulaPrism.Services
 
         public List<Doenca> Listar()
         {
-            return _conexao.Table<Doenca>().Where(d => d.DataDesativacao == DateTime.MinValue).OrderBy(d => d.Descricao).ToList();
+            return _conexao.Table<Doenca>().Where(d => !d.Status.Equals("I")).OrderBy(d => d.Descricao).ToList();
         }
 
         public List<Doenca> ListarTodas()

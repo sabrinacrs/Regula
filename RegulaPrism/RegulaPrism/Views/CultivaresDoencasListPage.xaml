@@ -8,9 +8,42 @@
              BackgroundColor="#e0e0e0">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start">
+            <!--<StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start">
                 <ScrollView Orientation="Both" IsClippedToBounds="True">
                     <Grid x:Name="GridCultivares" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+            </StackLayout>-->
+
+            <StackLayout VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+                <Grid x:Name="loadingOverlay" VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+                    <ActivityIndicator Color="Green" IsRunning="{Binding IsLoading}"></ActivityIndicator>
+                </Grid>
+                <Grid VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+                    <!-- Row Definitions of Grid -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <!-- Column Definitions of Grid -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Green" Text="Carregando ..." Grid.Row="0" Grid.Column="0"></Label>
+                </Grid>
+            </StackLayout>
+
+            <!--Grid Doencas Legenda-->
+            <StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start" IsVisible="{Binding IsVisible}">
+                <ScrollView Orientation="Both" IsClippedToBounds="True" IsVisible="{Binding IsVisible}">
+                    <Grid x:Name="GridDoencasHeader" IsVisible="{Binding IsVisible}" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
+                </ScrollView>
+            </StackLayout>
+
+            <!--Grid Cultivares / Doencas / Tolerancias -->
+            <StackLayout Padding="10, 0, 0, 3" VerticalOptions="Start" IsVisible="{Binding IsVisible}">
+                <ScrollView Orientation="Both" IsClippedToBounds="True" IsVisible="{Binding IsVisible}">
+                    <Grid x:Name="GridCultivares" IsVisible="{Binding IsVisible}" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
                 </ScrollView>
             </StackLayout>
 
@@ -30,7 +63,6 @@
                     <Grid x:Name="GridTolerancias" RowSpacing="1" ColumnSpacing="2" HorizontalOptions="StartAndExpand"></Grid>
                 </ScrollView>
             </StackLayout>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

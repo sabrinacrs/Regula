@@ -52,7 +52,7 @@ namespace RegulaPrism.Services
 
         public List<Tolerancia> Listar()
         {
-            return _conexao.Table<Tolerancia>().Where(t => t.DataDesativacao == DateTime.MinValue).OrderBy(t => t.Descricao).ToList();
+            return _conexao.Table<Tolerancia>().Where(t => !t.Status.Equals("I")).OrderBy(t => t.Descricao).ToList();
         }
 
         public List<Tolerancia> ListarTodas()

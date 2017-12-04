@@ -49,7 +49,7 @@ namespace RegulaPrism.Services
 
         public List<Ciclo> Listar()
         {
-            return _conexao.Table<Ciclo>().Where(d => d.DataDesativacao == DateTime.MinValue).OrderBy(d => d.Descricao).ToList();
+            return _conexao.Table<Ciclo>().Where(c => !c.Status.Equals("I")).OrderBy(d => d.Descricao).ToList();
         }
 
         public List<Ciclo> ListarTodos()

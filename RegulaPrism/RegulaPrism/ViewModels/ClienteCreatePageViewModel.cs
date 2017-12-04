@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
@@ -124,31 +125,40 @@ namespace RegulaPrism.ViewModels
             {
                 Cliente cliente = clienteView();
 
-                // envia cliente para servidor e recebe id do cliente no servidor
-                ClienteJson clienteJson = _databaseServer.SendClienteToServer(cliente);
-
-                if (clienteJson == null)
+                // verifica conexão
+                if (CrossConnectivity.Current.IsConnected)
                 {
-                    _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
-                }
-                else
-                {
-                    cliente.Id = clienteJson.id;
+                    // envia cliente para servidor e recebe id do cliente no servidor
+                    ClienteJson clienteJson = _databaseServer.SendClienteToServer(cliente);
 
-                    // insere no banco local
-                    if (_regulaApiService.InsertCliente(cliente))
+                    if (clienteJson == null)
                     {
-                        // passa parametro navigationaware
-                        _navigationParameters.Add("cliente", cliente);
-                        _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
-
-                        _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                        _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
                     }
                     else
                     {
-                        _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado durante a tentativa de cadastro. Verifique seus dados e tente novamente.", "OK");
+                        cliente.Id = clienteJson.id;
+
+                        // insere no banco local
+                        if (_regulaApiService.InsertCliente(cliente))
+                        {
+                            // passa parametro navigationaware
+                            _navigationParameters.Add("cliente", cliente);
+                            _dialogService.DisplayAlertAsync("Bem-Vindo(a)!", "Sua conta foi criada com sucesso", "OK");
+
+                            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                        }
+                        else
+                        {
+                            _dialogService.DisplayAlertAsync("Alerta", "Algo deu errado durante a tentativa de cadastro. Verifique seus dados e tente novamente.", "OK");
+                        }
                     }
                 }
+                else
+                {
+                    _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
+                }
+
             }
             else
             {

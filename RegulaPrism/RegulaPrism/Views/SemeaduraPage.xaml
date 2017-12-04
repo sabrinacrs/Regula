@@ -26,8 +26,8 @@
                     <Label Text="Época de Semeadura"></Label>
                     <Picker x:Name="EpocaSemeaduraPicker" Title="Época Semeadura" SelectedIndex="{Binding EpocaSemeaduraSelectedIndex}" ItemsSource="{Binding EpocasSemeadura}" ItemDisplayBinding="{Binding Descricao}" HorizontalOptions="FillAndExpand"></Picker>
 
-                    <Label Text="Espaçamento (m)"></Label>
-                    <Entry x:Name="Espacamento" Placeholder="Ex 0,8" Text="{Binding Espacamento, Converter={StaticResource currencyConverter}}" Keyboard="Numeric"></Entry>
+                    <Label Text="Espaçamento (cm)"></Label>
+                    <Entry x:Name="Espacamento" Placeholder="" Text="{Binding Espacamento, Converter={StaticResource currencyConverter}}" Keyboard="Numeric"></Entry>
 
                     <Label Text="Germinação (%)"></Label>
                     <Entry x:Name="Germinacao" Text="{Binding Germinacao, Converter={StaticResource currencyConverter}}}" Keyboard="Numeric"></Entry>

@@ -20,6 +20,20 @@ namespace RegulaPrism.ViewModels
             set { SetProperty(ref _legenda, value); }
         }
 
+        private bool _isLoading;
+        public bool IsLoading
+        {
+            get { return _isLoading; }
+            set { SetProperty(ref _isLoading, value); }
+        }
+
+        private bool _isVisible;
+        public bool IsVisible
+        {
+            get { return _isVisible; }
+            set { SetProperty(ref _isVisible, value); }
+        }
+
         private string _textoToggleLegenda;
         public string TextoToggleLegenda
         {
@@ -108,9 +122,7 @@ namespace RegulaPrism.ViewModels
         private void Informacoes()
         {
             InformacaoManual im = _informacoesManuais.InformacoesClienteCreate();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
@@ -118,25 +130,25 @@ namespace RegulaPrism.ViewModels
         {
             CultivarModel cm = new CultivarModel();
 
-            cm.AlturaPlanta = x.AlturaPlanta;
-            cm.ComprimentoFibraMaximo = x.ComprimentoFibraMaximo;
-            cm.ComprimentoFibraMinimo = x.ComprimentoFibraMinimo;
-            cm.DataDesativacao = x.DataDesativacao;
-            cm.Fertilidade = x.Fertilidade;
+            //cm.AlturaPlanta = x.AlturaPlanta;
+            //cm.ComprimentoFibraMaximo = x.ComprimentoFibraMaximo;
+            //cm.ComprimentoFibraMinimo = x.ComprimentoFibraMinimo;
+            //cm.DataDesativacao = x.DataDesativacao;
+            //cm.Fertilidade = x.Fertilidade;
             cm.Id = x.Id;
-            cm.MicronaireMaximo = x.MicronaireMaximo;
-            cm.MicronaireMinimo = x.MicronaireMinimo;
+            //cm.MicronaireMaximo = x.MicronaireMaximo;
+            //cm.MicronaireMinimo = x.MicronaireMinimo;
             cm.Nome = x.Nome;
-            cm.PesoMedioCapulhoMaximo = x.PesoMedioCapulhoMaximo;
-            cm.PesoMedioCapulhoMinimo = x.PesoMedioCapulhoMinimo;
-            cm.PesoSementesMaximo = x.PesoSementesMaximo;
-            cm.PesoSementesMinimo = x.PesoSementesMinimo;
-            cm.Regulador = x.Regulador;
-            cm.RendimentoFibraMaximo = x.RendimentoFibraMaximo;
-            cm.RendimentoFibraMinimo = x.RendimentoFibraMinimo;
-            cm.ResistenciaMaximo = x.ResistenciaMaximo;
-            cm.ResistenciaMinimo = x.ResistenciaMinimo;
-            cm.Ciclo = _regulaApiService.GetCicloById(x.CicloId);
+            //cm.PesoMedioCapulhoMaximo = x.PesoMedioCapulhoMaximo;
+            //cm.PesoMedioCapulhoMinimo = x.PesoMedioCapulhoMinimo;
+            //cm.PesoSementesMaximo = x.PesoSementesMaximo;
+            //cm.PesoSementesMinimo = x.PesoSementesMinimo;
+            //cm.Regulador = x.Regulador;
+            //cm.RendimentoFibraMaximo = x.RendimentoFibraMaximo;
+            //cm.RendimentoFibraMinimo = x.RendimentoFibraMinimo;
+            //cm.ResistenciaMaximo = x.ResistenciaMaximo;
+            //cm.ResistenciaMinimo = x.ResistenciaMinimo;
+            //cm.Ciclo = _regulaApiService.GetCicloById(x.CicloId);
             cm.DoencasTolerancias = new List<DoencaTolerancia>();
 
             return cm;
@@ -150,66 +162,38 @@ namespace RegulaPrism.ViewModels
         public void OnNavigatedTo(NavigationParameters parameters)
         {
             Doencas = (List<Doenca>)parameters["doencas"];
-
-            // Carregar Cultivares, Doencas, Tolerancias
-            _cultivaresDoencas = _regulaApiService.GetAllCultivarDoencas();
-
-            List<Cultivar> cultivaresTable = _regulaApiService.GetCultivar();
-
-            // Cultivar, Doenca, Tolerancia Model
-            foreach (var x in cultivaresTable)
-            {
-                CultivarModel cm = loadCultivar(x);
-
-                foreach (var k in _cultivaresDoencas)
-                {
-                    if (k.CultivarId == cm.Id)
-                    {
-                        Doenca d = _regulaApiService.GetDoencaById(k.DoencaId);
-                        Tolerancia t = _regulaApiService.GetToleranciaById(k.ToleranciaId);
-
-                        DoencaTolerancia dt = new DoencaTolerancia();
-                        dt.Doenca = d;
-                        dt.Tolerancia = t;
-
-                        cm.DoencasTolerancias.Add(dt);
-                    }
-                }
-
-                _cultivares.Add(cm);
-            }
+            loadCultivaresDoencas();
         }
 
         public void OnNavigatingTo(NavigationParameters parameters)
         {
             Doencas = (List<Doenca>)parameters["doencas"];
+        }
 
+        private void loadCultivaresDoencas()
+        {
             // Carregar Cultivares, Doencas, Tolerancias
             _cultivaresDoencas = _regulaApiService.GetAllCultivarDoencas();
+            List<Cultivar> cultivares = _regulaApiService.GetCultivar();
 
-            List<Cultivar> cultivaresTable = _regulaApiService.GetCultivar();
-
-            // Cultivar, Doenca, Tolerancia Model
-            foreach (var x in cultivaresTable)
+            foreach (var cultivar in cultivares)
             {
-                CultivarModel cm = loadCultivar(x);
+                CultivarModel cultivarModel = loadCultivar(cultivar);
 
-                foreach (var k in _cultivaresDoencas)
+                // atribui doenca e tolerancia
+                foreach(var doenca in _doencas)
                 {
-                    if (k.CultivarId == cm.Id)
+                    var cultivarDoencaTolerancia = _cultivaresDoencas.Find(cdt => cdt.DoencaId == doenca.Id && cdt.CultivarId == cultivar.Id);
+                    if(cultivarDoencaTolerancia != null)
                     {
-                        Doenca d = _regulaApiService.GetDoencaById(k.DoencaId);
-                        Tolerancia t = _regulaApiService.GetToleranciaById(k.ToleranciaId);
-
                         DoencaTolerancia dt = new DoencaTolerancia();
-                        dt.Doenca = d;
-                        dt.Tolerancia = t;
-
-                        cm.DoencasTolerancias.Add(dt);
+                        dt.Doenca = doenca;
+                        dt.Tolerancia = _regulaApiService.GetToleranciaById(cultivarDoencaTolerancia.ToleranciaId);
+                        cultivarModel.DoencasTolerancias.Add(dt);
                     }
                 }
 
-                _cultivares.Add(cm);
+                _cultivares.Add(cultivarModel);
             }
         }
     }

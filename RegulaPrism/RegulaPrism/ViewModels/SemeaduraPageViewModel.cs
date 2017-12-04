@@ -142,9 +142,7 @@ namespace RegulaPrism.ViewModels
         private void Informacoes()
         {
             InformacaoManual im = _informacoesManuais.InformacoesSemeadura();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 
@@ -155,6 +153,9 @@ namespace RegulaPrism.ViewModels
 
             if(message.Equals(""))
             {
+                // converte espaçamento de centímetros para metros
+                _espacamento = _espacamento / 100;
+
                 // pega cultivar selecionada
                 _cultivar = Cultivares.ElementAt(_cultivarSelectedIndex);
 
@@ -189,7 +190,6 @@ namespace RegulaPrism.ViewModels
         {
             // carrega vínculo cultivar e época de semeadura
             Cultivar = Cultivares.ElementAt(_cultivarSelectedIndex);
-
             CultivarEpocasSemeadura = _regulaApiService.GetCultivarEpocaSemeaduraCultivarId(_cultivar.Id);
         }
 

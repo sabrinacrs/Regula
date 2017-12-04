@@ -95,7 +95,7 @@ namespace RegulaPrism.ViewModels
 
         public CultivarRecomendadaDoencasPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService)
         {
-            Title = "Doenças do Solo";
+            Title = "Doenças";
 
             _navigationService = navigationService;
             _dialogService = dialogService;
