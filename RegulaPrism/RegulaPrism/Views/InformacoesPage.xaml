@@ -29,6 +29,10 @@
                 <StackLayout>
                     <Label Text="{Binding Informacao.TextErrors}" Style="{StaticResource label-info-text}"></Label>
                 </StackLayout>
+                <StackLayout>
+                    <Label Text="Para mais informações, acesse:" Style="{StaticResource label-info-text}"></Label>
+                    <Label x:Name="HelpOnline" TextColor="Blue" Text="Ajuda Online" Style="{StaticResource label-info-text}"></Label>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

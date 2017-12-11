@@ -8,6 +8,7 @@ using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Forms;
 
 namespace RegulaPrism.ViewModels
 {
@@ -44,6 +45,7 @@ namespace RegulaPrism.ViewModels
         public DelegateCommand NavigateToFazendaHomePageCommand { get; private set; }
         public DelegateCommand NavigateToTalhaoHomePageCommand { get; private set; }
         public DelegateCommand NavigateToClienteUpdatePageCommand { get; private set; }
+        public DelegateCommand NavigateToAjudaPageCommand { get; private set; }
         public DelegateCommand InfoCommand { get; private set; }
 
         // teste
@@ -65,6 +67,7 @@ namespace RegulaPrism.ViewModels
             NavigateToFazendaHomePageCommand = new DelegateCommand(NavigateToFazendaHomePage);
             NavigateToTalhaoHomePageCommand = new DelegateCommand(NavigateToTalhaoHomePage);
             NavigateToClienteUpdatePageCommand = new DelegateCommand(NavigateToClienteUpdatePage);
+            NavigateToAjudaPageCommand = new DelegateCommand(NavigateToAjudaPage);
             InfoCommand = new DelegateCommand(Informacoes);
 
             // teste
@@ -110,6 +113,19 @@ namespace RegulaPrism.ViewModels
         {
             _navigationParameters.Add("cliente", _cliente);
             _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/CultivaresDoencasListPage", UriKind.Absolute), _navigationParameters);
+        }
+
+        private void NavigateToAjudaPage()
+        {
+            if (CrossConnectivity.Current.IsConnected)
+            {
+                if (CrossConnectivity.Current.IsConnected)
+                    Device.OpenUri(new Uri("http://www.cottonappadm.xyz/help"));
+            }
+            else
+            {
+                _dialogService.DisplayAlertAsync("", "Não foi possível acessar a página. Verifique sua conexão e tente novamente.", "OK");
+            }
         }
 
         private void Informacoes()

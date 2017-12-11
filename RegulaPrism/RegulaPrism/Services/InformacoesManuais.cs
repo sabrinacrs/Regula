@@ -21,7 +21,7 @@ namespace RegulaPrism.Services
                         + "1. Login ou E-mail: Use o teclado virtual para digitar o login ou e-mail do cliente cadastrado \n\n"
                         + "2. Senha: Digite a senha do cliente \n\n"
                         + "3. Entrar: Use o botão entrar para checar as informações fornecidas e acessar o menu principal do aplicativo \n\n";
-
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#login";
             return im;
         }
 
@@ -47,7 +47,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
-
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#clientecreate";
             return im;
         }
 
@@ -72,6 +72,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#clienteupdate";
 
             return im;
         }
@@ -102,6 +103,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#fazendacreate";
 
             return im;
         }
@@ -133,6 +135,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#fazendaupdate";
 
             return im;
         }
@@ -146,7 +149,7 @@ namespace RegulaPrism.Services
                         + "1. Campo para digitar: Use o teclado virtual para digitar algum trecho do nome da fazenda \n\n"
                         + "2. Botão Buscar: Lista os resultados obtidos com base no que foi digitado no campo de texto \n\n"
                         + "3. Lista de Fazendas: Lista todas as fazendas registradas ou os resultados da busca. Toque na linha de determinada fazenda para obter mais detalhes sobre ela \n\n";
-
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#fazendalist";
             //im.TitleFunctions = "Fazenda atualizada";
             //im.TextFunctions = "Ao realizar a atualização, todos os dados da fazenda serão substituídos pelas"
             //    + "informações que foram alteradas ou acrescentadas";
@@ -178,6 +181,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#talhaocreate";
 
             return im;
         }
@@ -192,6 +196,7 @@ namespace RegulaPrism.Services
                         + "2. Campo para digitar: Use o teclado virtual para digitar algum trecho do nome do talhão \n\n"
                         + "3. Botão Buscar: Lista os resultados obtidos com base no que foi digitado no campo de texto \n\n"
                         + "4. Lista de Talhões: Lista todos os talhões registrados ou os resultados da busca. Toque na linha de determinado talhão para obter mais detalhes sobre ele \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#talhaolist";
 
             return im;
         }
@@ -217,6 +222,7 @@ namespace RegulaPrism.Services
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta"
                           + "2. Não foi possível excluir o talhão. Neste caso, é necessário observar se o talhão possui semeaduras em aberto.";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#talhaolist";
 
             return im;
         }
@@ -240,7 +246,7 @@ namespace RegulaPrism.Services
                 + "- Fazendas: Consulta e gerencia fazendas registradas; realiza buscas, alterações e exclusões de fazendas. \n\n"
                 + "- Talhões: Consulta e gerencia talhões registrados; realiza buscas, alterações e exclusões de talhões pertencentes à fazenda selecionada. \n\n"
                 + "- Cliente: Permite gerenciar a conta do cliente que faz uso da aplicação; alterar ou acrescentar informações. \n\n";
-
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#homepage";
 
             return im;
         }
@@ -253,6 +259,7 @@ namespace RegulaPrism.Services
             im.Titulo = "Lista de cultivares";
             im.Texto = "Lista todas as variedades de cultivares.\n"
                      + "Para ver detalhes da variedade basta tocar na linha em que ela se encontra. Feito isso, uma nova tela com todas as características será exibida \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#cultivarlist";
 
             return im;
         }
@@ -265,6 +272,7 @@ namespace RegulaPrism.Services
             im.Texto = "Exibe todas as características da variedade selecionada.\n"
                      + "Lista todas as doenças e a respectiva tolerância. \n"
                      + "As tolerâncias são representadas por siglas.\n Cada sigla pode ter seu significado consultado na legenda que fica no rodapé da tela. \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#cultivarselected";
 
             return im;
         }
@@ -276,6 +284,7 @@ namespace RegulaPrism.Services
             im.Titulo = "Filtrar variedades de cultivar por meio do ciclo";
             im.Texto = "Todos os ciclos são listados na tela.\n"
                      + "Selecione um ciclo para listar as variedades que pertencem à ele. \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#cultivaresciclolist";
 
             return im;
         }
@@ -287,7 +296,8 @@ namespace RegulaPrism.Services
             im.Titulo = "Lista de cultivares";
             im.Texto = "Lista todas as variedades de cultivares ordenadas pelo maior rendimento de fibra.\n"
                      + "Para ver detalhes da variedade basta tocar na linha em que ela se encontra. Feito isso, uma nova tela com todas as características será exibida \n\n";
-
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#cultivaresrendimentolist";
+        
             return im;
         }
 
@@ -306,6 +316,7 @@ namespace RegulaPrism.Services
             im.TextFunctions = "As doenças selecionadas são utilizadas para realizar o cruzamento entre doenças, cultivares e tolerâncias. "
                 + "É importante selecionar doenças presentes no solo para retornar os resultados das tolerâncias entre as doenças selecionadas e a cultivar. "
                 + " Se nenhuma doenças for selecionada, a consulta não retornará nenhum resultado.";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#cultivaresdoencaslist";
 
             return im;
         }
@@ -333,6 +344,7 @@ namespace RegulaPrism.Services
             im.TextErrors = "Possíveis mensagens de erros podem ser exibidas caso: \n"
                           + "1. Campos do formulário não estejam preenchidos corretamente. Neste caso, um alerta será exibido na "
                           + "tela a respeito de qual informação encontra-se incorreta";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#semeadura";
 
 
             return im;
@@ -358,6 +370,7 @@ namespace RegulaPrism.Services
                 + "Sementes por metro: (Plantas Hectare / Metros Lineares) / (Germinação / 100) \n\n"
                 + "Sementes por hectare: (Sementes por metro * Metros Lineares) * (Peso Sementes / 100) / 1000 \n\n"
                 + "Sementes por alqueire: (Sementes por hectare * 2.42) \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#semeaduraresultados";
 
             return im;
         }
@@ -369,6 +382,7 @@ namespace RegulaPrism.Services
             im.Titulo = "Lista de semeaduras/cálculos realizados";
             im.Texto = "Lista todos os cálculos realizados que foram salvos. \n\n"
                      + "Para ver detalhes e resultados do cálculo, basta tocar na linha de determinado talhão ou data e hora. Feito isso, uma nova tela com todos os resultados será exibida \n\n";
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#consultarsemeadura";
 
             return im;
         }
@@ -386,7 +400,8 @@ namespace RegulaPrism.Services
                      + "5. Sementes (m): Quantidade de sementes para semear em cada metro \n\n"
                      + "6. Sementes (kg/ha): Peso mínimo e máximo, em quilogramas, que deve ser semeado em cada hectare \n\n"
                      + "7. Sementes (kg/alq): Peso mínimo e máximo, em quilogramas, que deve ser semeado em cada alqueire \n\n";
-                     
+            im.LinkHelpOnline = "http://www.cottonappadm.xyz/help#consultarsemeadura";
+
             return im;
         }
     }

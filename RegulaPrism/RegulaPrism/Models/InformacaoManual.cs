@@ -21,6 +21,7 @@ namespace RegulaPrism.Models
         public string TextErrors { get; set; }
         public string TitleFunctions { get; set; }
         public string TextFunctions { get; set; }
+        public string LinkHelpOnline { get; set; }
 
         public string Resultados { get; set; }
     }

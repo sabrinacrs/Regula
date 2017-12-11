@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="RegulaPrism.RegulaPrism" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk />
-	<application android:label="CottonApp" android:theme="@style/MyTheme" android:icon="@drawable/regula"></application>
+	<application android:label="CottonApp" android:theme="@style/MyTheme"></application>
 </manifest>
