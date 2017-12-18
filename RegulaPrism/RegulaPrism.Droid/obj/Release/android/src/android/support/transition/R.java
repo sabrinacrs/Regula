@@ -2830,225 +2830,226 @@ containing a value of this type.
         public static final int abc_vector_test=0x7f020052;
         public static final int add=0x7f020053;
         public static final int avd_hide_password=0x7f020054;
-        public static final int avd_hide_password_1=0x7f02012a;
-        public static final int avd_hide_password_2=0x7f02012b;
-        public static final int avd_hide_password_3=0x7f02012c;
+        public static final int avd_hide_password_1=0x7f02012b;
+        public static final int avd_hide_password_2=0x7f02012c;
+        public static final int avd_hide_password_3=0x7f02012d;
         public static final int avd_show_password=0x7f020055;
-        public static final int avd_show_password_1=0x7f02012d;
-        public static final int avd_show_password_2=0x7f02012e;
-        public static final int avd_show_password_3=0x7f02012f;
+        public static final int avd_show_password_1=0x7f02012e;
+        public static final int avd_show_password_2=0x7f02012f;
+        public static final int avd_show_password_3=0x7f020130;
         public static final int ciclo=0x7f020056;
-        public static final int cultivar=0x7f020057;
-        public static final int cultivar_white=0x7f020058;
-        public static final int cultivaricon=0x7f020059;
-        public static final int design_bottom_navigation_item_background=0x7f02005a;
-        public static final int design_fab_background=0x7f02005b;
-        public static final int design_ic_visibility=0x7f02005c;
-        public static final int design_ic_visibility_off=0x7f02005d;
-        public static final int design_password_eye=0x7f02005e;
-        public static final int design_snackbar_background=0x7f02005f;
-        public static final int farmicon=0x7f020060;
-        public static final int farms=0x7f020061;
-        public static final int farms_white=0x7f020062;
-        public static final int help_white=0x7f020063;
-        public static final int help_white_2=0x7f020064;
-        public static final int home=0x7f020065;
-        public static final int ic_audiotrack_dark=0x7f020066;
-        public static final int ic_audiotrack_light=0x7f020067;
-        public static final int ic_dialog_close_dark=0x7f020068;
-        public static final int ic_dialog_close_light=0x7f020069;
-        public static final int ic_group_collapse_00=0x7f02006a;
-        public static final int ic_group_collapse_01=0x7f02006b;
-        public static final int ic_group_collapse_02=0x7f02006c;
-        public static final int ic_group_collapse_03=0x7f02006d;
-        public static final int ic_group_collapse_04=0x7f02006e;
-        public static final int ic_group_collapse_05=0x7f02006f;
-        public static final int ic_group_collapse_06=0x7f020070;
-        public static final int ic_group_collapse_07=0x7f020071;
-        public static final int ic_group_collapse_08=0x7f020072;
-        public static final int ic_group_collapse_09=0x7f020073;
-        public static final int ic_group_collapse_10=0x7f020074;
-        public static final int ic_group_collapse_11=0x7f020075;
-        public static final int ic_group_collapse_12=0x7f020076;
-        public static final int ic_group_collapse_13=0x7f020077;
-        public static final int ic_group_collapse_14=0x7f020078;
-        public static final int ic_group_collapse_15=0x7f020079;
-        public static final int ic_group_expand_00=0x7f02007a;
-        public static final int ic_group_expand_01=0x7f02007b;
-        public static final int ic_group_expand_02=0x7f02007c;
-        public static final int ic_group_expand_03=0x7f02007d;
-        public static final int ic_group_expand_04=0x7f02007e;
-        public static final int ic_group_expand_05=0x7f02007f;
-        public static final int ic_group_expand_06=0x7f020080;
-        public static final int ic_group_expand_07=0x7f020081;
-        public static final int ic_group_expand_08=0x7f020082;
-        public static final int ic_group_expand_09=0x7f020083;
-        public static final int ic_group_expand_10=0x7f020084;
-        public static final int ic_group_expand_11=0x7f020085;
-        public static final int ic_group_expand_12=0x7f020086;
-        public static final int ic_group_expand_13=0x7f020087;
-        public static final int ic_group_expand_14=0x7f020088;
-        public static final int ic_group_expand_15=0x7f020089;
-        public static final int ic_media_pause_dark=0x7f02008a;
-        public static final int ic_media_pause_light=0x7f02008b;
-        public static final int ic_media_play_dark=0x7f02008c;
-        public static final int ic_media_play_light=0x7f02008d;
-        public static final int ic_media_stop_dark=0x7f02008e;
-        public static final int ic_media_stop_light=0x7f02008f;
-        public static final int ic_mr_button_connected_00_dark=0x7f020090;
-        public static final int ic_mr_button_connected_00_light=0x7f020091;
-        public static final int ic_mr_button_connected_01_dark=0x7f020092;
-        public static final int ic_mr_button_connected_01_light=0x7f020093;
-        public static final int ic_mr_button_connected_02_dark=0x7f020094;
-        public static final int ic_mr_button_connected_02_light=0x7f020095;
-        public static final int ic_mr_button_connected_03_dark=0x7f020096;
-        public static final int ic_mr_button_connected_03_light=0x7f020097;
-        public static final int ic_mr_button_connected_04_dark=0x7f020098;
-        public static final int ic_mr_button_connected_04_light=0x7f020099;
-        public static final int ic_mr_button_connected_05_dark=0x7f02009a;
-        public static final int ic_mr_button_connected_05_light=0x7f02009b;
-        public static final int ic_mr_button_connected_06_dark=0x7f02009c;
-        public static final int ic_mr_button_connected_06_light=0x7f02009d;
-        public static final int ic_mr_button_connected_07_dark=0x7f02009e;
-        public static final int ic_mr_button_connected_07_light=0x7f02009f;
-        public static final int ic_mr_button_connected_08_dark=0x7f0200a0;
-        public static final int ic_mr_button_connected_08_light=0x7f0200a1;
-        public static final int ic_mr_button_connected_09_dark=0x7f0200a2;
-        public static final int ic_mr_button_connected_09_light=0x7f0200a3;
-        public static final int ic_mr_button_connected_10_dark=0x7f0200a4;
-        public static final int ic_mr_button_connected_10_light=0x7f0200a5;
-        public static final int ic_mr_button_connected_11_dark=0x7f0200a6;
-        public static final int ic_mr_button_connected_11_light=0x7f0200a7;
-        public static final int ic_mr_button_connected_12_dark=0x7f0200a8;
-        public static final int ic_mr_button_connected_12_light=0x7f0200a9;
-        public static final int ic_mr_button_connected_13_dark=0x7f0200aa;
-        public static final int ic_mr_button_connected_13_light=0x7f0200ab;
-        public static final int ic_mr_button_connected_14_dark=0x7f0200ac;
-        public static final int ic_mr_button_connected_14_light=0x7f0200ad;
-        public static final int ic_mr_button_connected_15_dark=0x7f0200ae;
-        public static final int ic_mr_button_connected_15_light=0x7f0200af;
-        public static final int ic_mr_button_connected_16_dark=0x7f0200b0;
-        public static final int ic_mr_button_connected_16_light=0x7f0200b1;
-        public static final int ic_mr_button_connected_17_dark=0x7f0200b2;
-        public static final int ic_mr_button_connected_17_light=0x7f0200b3;
-        public static final int ic_mr_button_connected_18_dark=0x7f0200b4;
-        public static final int ic_mr_button_connected_18_light=0x7f0200b5;
-        public static final int ic_mr_button_connected_19_dark=0x7f0200b6;
-        public static final int ic_mr_button_connected_19_light=0x7f0200b7;
-        public static final int ic_mr_button_connected_20_dark=0x7f0200b8;
-        public static final int ic_mr_button_connected_20_light=0x7f0200b9;
-        public static final int ic_mr_button_connected_21_dark=0x7f0200ba;
-        public static final int ic_mr_button_connected_21_light=0x7f0200bb;
-        public static final int ic_mr_button_connected_22_dark=0x7f0200bc;
-        public static final int ic_mr_button_connected_22_light=0x7f0200bd;
-        public static final int ic_mr_button_connecting_00_dark=0x7f0200be;
-        public static final int ic_mr_button_connecting_00_light=0x7f0200bf;
-        public static final int ic_mr_button_connecting_01_dark=0x7f0200c0;
-        public static final int ic_mr_button_connecting_01_light=0x7f0200c1;
-        public static final int ic_mr_button_connecting_02_dark=0x7f0200c2;
-        public static final int ic_mr_button_connecting_02_light=0x7f0200c3;
-        public static final int ic_mr_button_connecting_03_dark=0x7f0200c4;
-        public static final int ic_mr_button_connecting_03_light=0x7f0200c5;
-        public static final int ic_mr_button_connecting_04_dark=0x7f0200c6;
-        public static final int ic_mr_button_connecting_04_light=0x7f0200c7;
-        public static final int ic_mr_button_connecting_05_dark=0x7f0200c8;
-        public static final int ic_mr_button_connecting_05_light=0x7f0200c9;
-        public static final int ic_mr_button_connecting_06_dark=0x7f0200ca;
-        public static final int ic_mr_button_connecting_06_light=0x7f0200cb;
-        public static final int ic_mr_button_connecting_07_dark=0x7f0200cc;
-        public static final int ic_mr_button_connecting_07_light=0x7f0200cd;
-        public static final int ic_mr_button_connecting_08_dark=0x7f0200ce;
-        public static final int ic_mr_button_connecting_08_light=0x7f0200cf;
-        public static final int ic_mr_button_connecting_09_dark=0x7f0200d0;
-        public static final int ic_mr_button_connecting_09_light=0x7f0200d1;
-        public static final int ic_mr_button_connecting_10_dark=0x7f0200d2;
-        public static final int ic_mr_button_connecting_10_light=0x7f0200d3;
-        public static final int ic_mr_button_connecting_11_dark=0x7f0200d4;
-        public static final int ic_mr_button_connecting_11_light=0x7f0200d5;
-        public static final int ic_mr_button_connecting_12_dark=0x7f0200d6;
-        public static final int ic_mr_button_connecting_12_light=0x7f0200d7;
-        public static final int ic_mr_button_connecting_13_dark=0x7f0200d8;
-        public static final int ic_mr_button_connecting_13_light=0x7f0200d9;
-        public static final int ic_mr_button_connecting_14_dark=0x7f0200da;
-        public static final int ic_mr_button_connecting_14_light=0x7f0200db;
-        public static final int ic_mr_button_connecting_15_dark=0x7f0200dc;
-        public static final int ic_mr_button_connecting_15_light=0x7f0200dd;
-        public static final int ic_mr_button_connecting_16_dark=0x7f0200de;
-        public static final int ic_mr_button_connecting_16_light=0x7f0200df;
-        public static final int ic_mr_button_connecting_17_dark=0x7f0200e0;
-        public static final int ic_mr_button_connecting_17_light=0x7f0200e1;
-        public static final int ic_mr_button_connecting_18_dark=0x7f0200e2;
-        public static final int ic_mr_button_connecting_18_light=0x7f0200e3;
-        public static final int ic_mr_button_connecting_19_dark=0x7f0200e4;
-        public static final int ic_mr_button_connecting_19_light=0x7f0200e5;
-        public static final int ic_mr_button_connecting_20_dark=0x7f0200e6;
-        public static final int ic_mr_button_connecting_20_light=0x7f0200e7;
-        public static final int ic_mr_button_connecting_21_dark=0x7f0200e8;
-        public static final int ic_mr_button_connecting_21_light=0x7f0200e9;
-        public static final int ic_mr_button_connecting_22_dark=0x7f0200ea;
-        public static final int ic_mr_button_connecting_22_light=0x7f0200eb;
-        public static final int ic_mr_button_disabled_dark=0x7f0200ec;
-        public static final int ic_mr_button_disabled_light=0x7f0200ed;
-        public static final int ic_mr_button_disconnected_dark=0x7f0200ee;
-        public static final int ic_mr_button_disconnected_light=0x7f0200ef;
-        public static final int ic_mr_button_grey=0x7f0200f0;
-        public static final int ic_vol_type_speaker_dark=0x7f0200f1;
-        public static final int ic_vol_type_speaker_group_dark=0x7f0200f2;
-        public static final int ic_vol_type_speaker_group_light=0x7f0200f3;
-        public static final int ic_vol_type_speaker_light=0x7f0200f4;
-        public static final int ic_vol_type_tv_dark=0x7f0200f5;
-        public static final int ic_vol_type_tv_light=0x7f0200f6;
-        public static final int icon=0x7f0200f7;
-        public static final int icontalhao=0x7f0200f8;
-        public static final int icontalhaoo=0x7f0200f9;
-        public static final int icontalhaoresize=0x7f0200fa;
-        public static final int leafdamaged=0x7f0200fb;
-        public static final int list=0x7f0200fc;
-        public static final int listrounded_1=0x7f0200fd;
-        public static final int measure=0x7f0200fe;
-        public static final int mr_button_connected_dark=0x7f0200ff;
-        public static final int mr_button_connected_light=0x7f020100;
-        public static final int mr_button_connecting_dark=0x7f020101;
-        public static final int mr_button_connecting_light=0x7f020102;
-        public static final int mr_button_dark=0x7f020103;
-        public static final int mr_button_light=0x7f020104;
-        public static final int mr_dialog_close_dark=0x7f020105;
-        public static final int mr_dialog_close_light=0x7f020106;
-        public static final int mr_dialog_material_background_dark=0x7f020107;
-        public static final int mr_dialog_material_background_light=0x7f020108;
-        public static final int mr_group_collapse=0x7f020109;
-        public static final int mr_group_expand=0x7f02010a;
-        public static final int mr_media_pause_dark=0x7f02010b;
-        public static final int mr_media_pause_light=0x7f02010c;
-        public static final int mr_media_play_dark=0x7f02010d;
-        public static final int mr_media_play_light=0x7f02010e;
-        public static final int mr_media_stop_dark=0x7f02010f;
-        public static final int mr_media_stop_light=0x7f020110;
-        public static final int mr_vol_type_audiotrack_dark=0x7f020111;
-        public static final int mr_vol_type_audiotrack_light=0x7f020112;
-        public static final int navigation_empty_icon=0x7f020113;
-        public static final int notification_action_background=0x7f020114;
-        public static final int notification_bg=0x7f020115;
-        public static final int notification_bg_low=0x7f020116;
-        public static final int notification_bg_low_normal=0x7f020117;
-        public static final int notification_bg_low_pressed=0x7f020118;
-        public static final int notification_bg_normal=0x7f020119;
-        public static final int notification_bg_normal_pressed=0x7f02011a;
-        public static final int notification_icon_background=0x7f02011b;
-        public static final int notification_template_icon_bg=0x7f020128;
-        public static final int notification_template_icon_low_bg=0x7f020129;
-        public static final int notification_tile_bg=0x7f02011c;
-        public static final int notify_panel_notification_icon_bg=0x7f02011d;
-        public static final int recommended=0x7f02011e;
-        public static final int regula=0x7f02011f;
-        public static final int reload=0x7f020120;
-        public static final int semeadura=0x7f020121;
-        public static final int semeadura_white=0x7f020122;
-        public static final int semeaduraicon=0x7f020123;
-        public static final int talhao_white=0x7f020124;
-        public static final int talhao_white_2=0x7f020125;
-        public static final int user=0x7f020126;
-        public static final int user_white=0x7f020127;
+        public static final int cultivacotton=0x7f020057;
+        public static final int cultivar=0x7f020058;
+        public static final int cultivar_white=0x7f020059;
+        public static final int cultivaricon=0x7f02005a;
+        public static final int design_bottom_navigation_item_background=0x7f02005b;
+        public static final int design_fab_background=0x7f02005c;
+        public static final int design_ic_visibility=0x7f02005d;
+        public static final int design_ic_visibility_off=0x7f02005e;
+        public static final int design_password_eye=0x7f02005f;
+        public static final int design_snackbar_background=0x7f020060;
+        public static final int farmicon=0x7f020061;
+        public static final int farms=0x7f020062;
+        public static final int farms_white=0x7f020063;
+        public static final int help_white=0x7f020064;
+        public static final int help_white_2=0x7f020065;
+        public static final int home=0x7f020066;
+        public static final int ic_audiotrack_dark=0x7f020067;
+        public static final int ic_audiotrack_light=0x7f020068;
+        public static final int ic_dialog_close_dark=0x7f020069;
+        public static final int ic_dialog_close_light=0x7f02006a;
+        public static final int ic_group_collapse_00=0x7f02006b;
+        public static final int ic_group_collapse_01=0x7f02006c;
+        public static final int ic_group_collapse_02=0x7f02006d;
+        public static final int ic_group_collapse_03=0x7f02006e;
+        public static final int ic_group_collapse_04=0x7f02006f;
+        public static final int ic_group_collapse_05=0x7f020070;
+        public static final int ic_group_collapse_06=0x7f020071;
+        public static final int ic_group_collapse_07=0x7f020072;
+        public static final int ic_group_collapse_08=0x7f020073;
+        public static final int ic_group_collapse_09=0x7f020074;
+        public static final int ic_group_collapse_10=0x7f020075;
+        public static final int ic_group_collapse_11=0x7f020076;
+        public static final int ic_group_collapse_12=0x7f020077;
+        public static final int ic_group_collapse_13=0x7f020078;
+        public static final int ic_group_collapse_14=0x7f020079;
+        public static final int ic_group_collapse_15=0x7f02007a;
+        public static final int ic_group_expand_00=0x7f02007b;
+        public static final int ic_group_expand_01=0x7f02007c;
+        public static final int ic_group_expand_02=0x7f02007d;
+        public static final int ic_group_expand_03=0x7f02007e;
+        public static final int ic_group_expand_04=0x7f02007f;
+        public static final int ic_group_expand_05=0x7f020080;
+        public static final int ic_group_expand_06=0x7f020081;
+        public static final int ic_group_expand_07=0x7f020082;
+        public static final int ic_group_expand_08=0x7f020083;
+        public static final int ic_group_expand_09=0x7f020084;
+        public static final int ic_group_expand_10=0x7f020085;
+        public static final int ic_group_expand_11=0x7f020086;
+        public static final int ic_group_expand_12=0x7f020087;
+        public static final int ic_group_expand_13=0x7f020088;
+        public static final int ic_group_expand_14=0x7f020089;
+        public static final int ic_group_expand_15=0x7f02008a;
+        public static final int ic_media_pause_dark=0x7f02008b;
+        public static final int ic_media_pause_light=0x7f02008c;
+        public static final int ic_media_play_dark=0x7f02008d;
+        public static final int ic_media_play_light=0x7f02008e;
+        public static final int ic_media_stop_dark=0x7f02008f;
+        public static final int ic_media_stop_light=0x7f020090;
+        public static final int ic_mr_button_connected_00_dark=0x7f020091;
+        public static final int ic_mr_button_connected_00_light=0x7f020092;
+        public static final int ic_mr_button_connected_01_dark=0x7f020093;
+        public static final int ic_mr_button_connected_01_light=0x7f020094;
+        public static final int ic_mr_button_connected_02_dark=0x7f020095;
+        public static final int ic_mr_button_connected_02_light=0x7f020096;
+        public static final int ic_mr_button_connected_03_dark=0x7f020097;
+        public static final int ic_mr_button_connected_03_light=0x7f020098;
+        public static final int ic_mr_button_connected_04_dark=0x7f020099;
+        public static final int ic_mr_button_connected_04_light=0x7f02009a;
+        public static final int ic_mr_button_connected_05_dark=0x7f02009b;
+        public static final int ic_mr_button_connected_05_light=0x7f02009c;
+        public static final int ic_mr_button_connected_06_dark=0x7f02009d;
+        public static final int ic_mr_button_connected_06_light=0x7f02009e;
+        public static final int ic_mr_button_connected_07_dark=0x7f02009f;
+        public static final int ic_mr_button_connected_07_light=0x7f0200a0;
+        public static final int ic_mr_button_connected_08_dark=0x7f0200a1;
+        public static final int ic_mr_button_connected_08_light=0x7f0200a2;
+        public static final int ic_mr_button_connected_09_dark=0x7f0200a3;
+        public static final int ic_mr_button_connected_09_light=0x7f0200a4;
+        public static final int ic_mr_button_connected_10_dark=0x7f0200a5;
+        public static final int ic_mr_button_connected_10_light=0x7f0200a6;
+        public static final int ic_mr_button_connected_11_dark=0x7f0200a7;
+        public static final int ic_mr_button_connected_11_light=0x7f0200a8;
+        public static final int ic_mr_button_connected_12_dark=0x7f0200a9;
+        public static final int ic_mr_button_connected_12_light=0x7f0200aa;
+        public static final int ic_mr_button_connected_13_dark=0x7f0200ab;
+        public static final int ic_mr_button_connected_13_light=0x7f0200ac;
+        public static final int ic_mr_button_connected_14_dark=0x7f0200ad;
+        public static final int ic_mr_button_connected_14_light=0x7f0200ae;
+        public static final int ic_mr_button_connected_15_dark=0x7f0200af;
+        public static final int ic_mr_button_connected_15_light=0x7f0200b0;
+        public static final int ic_mr_button_connected_16_dark=0x7f0200b1;
+        public static final int ic_mr_button_connected_16_light=0x7f0200b2;
+        public static final int ic_mr_button_connected_17_dark=0x7f0200b3;
+        public static final int ic_mr_button_connected_17_light=0x7f0200b4;
+        public static final int ic_mr_button_connected_18_dark=0x7f0200b5;
+        public static final int ic_mr_button_connected_18_light=0x7f0200b6;
+        public static final int ic_mr_button_connected_19_dark=0x7f0200b7;
+        public static final int ic_mr_button_connected_19_light=0x7f0200b8;
+        public static final int ic_mr_button_connected_20_dark=0x7f0200b9;
+        public static final int ic_mr_button_connected_20_light=0x7f0200ba;
+        public static final int ic_mr_button_connected_21_dark=0x7f0200bb;
+        public static final int ic_mr_button_connected_21_light=0x7f0200bc;
+        public static final int ic_mr_button_connected_22_dark=0x7f0200bd;
+        public static final int ic_mr_button_connected_22_light=0x7f0200be;
+        public static final int ic_mr_button_connecting_00_dark=0x7f0200bf;
+        public static final int ic_mr_button_connecting_00_light=0x7f0200c0;
+        public static final int ic_mr_button_connecting_01_dark=0x7f0200c1;
+        public static final int ic_mr_button_connecting_01_light=0x7f0200c2;
+        public static final int ic_mr_button_connecting_02_dark=0x7f0200c3;
+        public static final int ic_mr_button_connecting_02_light=0x7f0200c4;
+        public static final int ic_mr_button_connecting_03_dark=0x7f0200c5;
+        public static final int ic_mr_button_connecting_03_light=0x7f0200c6;
+        public static final int ic_mr_button_connecting_04_dark=0x7f0200c7;
+        public static final int ic_mr_button_connecting_04_light=0x7f0200c8;
+        public static final int ic_mr_button_connecting_05_dark=0x7f0200c9;
+        public static final int ic_mr_button_connecting_05_light=0x7f0200ca;
+        public static final int ic_mr_button_connecting_06_dark=0x7f0200cb;
+        public static final int ic_mr_button_connecting_06_light=0x7f0200cc;
+        public static final int ic_mr_button_connecting_07_dark=0x7f0200cd;
+        public static final int ic_mr_button_connecting_07_light=0x7f0200ce;
+        public static final int ic_mr_button_connecting_08_dark=0x7f0200cf;
+        public static final int ic_mr_button_connecting_08_light=0x7f0200d0;
+        public static final int ic_mr_button_connecting_09_dark=0x7f0200d1;
+        public static final int ic_mr_button_connecting_09_light=0x7f0200d2;
+        public static final int ic_mr_button_connecting_10_dark=0x7f0200d3;
+        public static final int ic_mr_button_connecting_10_light=0x7f0200d4;
+        public static final int ic_mr_button_connecting_11_dark=0x7f0200d5;
+        public static final int ic_mr_button_connecting_11_light=0x7f0200d6;
+        public static final int ic_mr_button_connecting_12_dark=0x7f0200d7;
+        public static final int ic_mr_button_connecting_12_light=0x7f0200d8;
+        public static final int ic_mr_button_connecting_13_dark=0x7f0200d9;
+        public static final int ic_mr_button_connecting_13_light=0x7f0200da;
+        public static final int ic_mr_button_connecting_14_dark=0x7f0200db;
+        public static final int ic_mr_button_connecting_14_light=0x7f0200dc;
+        public static final int ic_mr_button_connecting_15_dark=0x7f0200dd;
+        public static final int ic_mr_button_connecting_15_light=0x7f0200de;
+        public static final int ic_mr_button_connecting_16_dark=0x7f0200df;
+        public static final int ic_mr_button_connecting_16_light=0x7f0200e0;
+        public static final int ic_mr_button_connecting_17_dark=0x7f0200e1;
+        public static final int ic_mr_button_connecting_17_light=0x7f0200e2;
+        public static final int ic_mr_button_connecting_18_dark=0x7f0200e3;
+        public static final int ic_mr_button_connecting_18_light=0x7f0200e4;
+        public static final int ic_mr_button_connecting_19_dark=0x7f0200e5;
+        public static final int ic_mr_button_connecting_19_light=0x7f0200e6;
+        public static final int ic_mr_button_connecting_20_dark=0x7f0200e7;
+        public static final int ic_mr_button_connecting_20_light=0x7f0200e8;
+        public static final int ic_mr_button_connecting_21_dark=0x7f0200e9;
+        public static final int ic_mr_button_connecting_21_light=0x7f0200ea;
+        public static final int ic_mr_button_connecting_22_dark=0x7f0200eb;
+        public static final int ic_mr_button_connecting_22_light=0x7f0200ec;
+        public static final int ic_mr_button_disabled_dark=0x7f0200ed;
+        public static final int ic_mr_button_disabled_light=0x7f0200ee;
+        public static final int ic_mr_button_disconnected_dark=0x7f0200ef;
+        public static final int ic_mr_button_disconnected_light=0x7f0200f0;
+        public static final int ic_mr_button_grey=0x7f0200f1;
+        public static final int ic_vol_type_speaker_dark=0x7f0200f2;
+        public static final int ic_vol_type_speaker_group_dark=0x7f0200f3;
+        public static final int ic_vol_type_speaker_group_light=0x7f0200f4;
+        public static final int ic_vol_type_speaker_light=0x7f0200f5;
+        public static final int ic_vol_type_tv_dark=0x7f0200f6;
+        public static final int ic_vol_type_tv_light=0x7f0200f7;
+        public static final int icon=0x7f0200f8;
+        public static final int icontalhao=0x7f0200f9;
+        public static final int icontalhaoo=0x7f0200fa;
+        public static final int icontalhaoresize=0x7f0200fb;
+        public static final int leafdamaged=0x7f0200fc;
+        public static final int list=0x7f0200fd;
+        public static final int listrounded_1=0x7f0200fe;
+        public static final int measure=0x7f0200ff;
+        public static final int mr_button_connected_dark=0x7f020100;
+        public static final int mr_button_connected_light=0x7f020101;
+        public static final int mr_button_connecting_dark=0x7f020102;
+        public static final int mr_button_connecting_light=0x7f020103;
+        public static final int mr_button_dark=0x7f020104;
+        public static final int mr_button_light=0x7f020105;
+        public static final int mr_dialog_close_dark=0x7f020106;
+        public static final int mr_dialog_close_light=0x7f020107;
+        public static final int mr_dialog_material_background_dark=0x7f020108;
+        public static final int mr_dialog_material_background_light=0x7f020109;
+        public static final int mr_group_collapse=0x7f02010a;
+        public static final int mr_group_expand=0x7f02010b;
+        public static final int mr_media_pause_dark=0x7f02010c;
+        public static final int mr_media_pause_light=0x7f02010d;
+        public static final int mr_media_play_dark=0x7f02010e;
+        public static final int mr_media_play_light=0x7f02010f;
+        public static final int mr_media_stop_dark=0x7f020110;
+        public static final int mr_media_stop_light=0x7f020111;
+        public static final int mr_vol_type_audiotrack_dark=0x7f020112;
+        public static final int mr_vol_type_audiotrack_light=0x7f020113;
+        public static final int navigation_empty_icon=0x7f020114;
+        public static final int notification_action_background=0x7f020115;
+        public static final int notification_bg=0x7f020116;
+        public static final int notification_bg_low=0x7f020117;
+        public static final int notification_bg_low_normal=0x7f020118;
+        public static final int notification_bg_low_pressed=0x7f020119;
+        public static final int notification_bg_normal=0x7f02011a;
+        public static final int notification_bg_normal_pressed=0x7f02011b;
+        public static final int notification_icon_background=0x7f02011c;
+        public static final int notification_template_icon_bg=0x7f020129;
+        public static final int notification_template_icon_low_bg=0x7f02012a;
+        public static final int notification_tile_bg=0x7f02011d;
+        public static final int notify_panel_notification_icon_bg=0x7f02011e;
+        public static final int recommended=0x7f02011f;
+        public static final int regula=0x7f020120;
+        public static final int reload=0x7f020121;
+        public static final int semeadura=0x7f020122;
+        public static final int semeadura_white=0x7f020123;
+        public static final int semeaduraicon=0x7f020124;
+        public static final int talhao_white=0x7f020125;
+        public static final int talhao_white_2=0x7f020126;
+        public static final int user=0x7f020127;
+        public static final int user_white=0x7f020128;
     }
     public static final class id {
         public static final int action0=0x7f08009e;
@@ -3796,35 +3797,35 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background RegulaPrism.RegulaPrism:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit RegulaPrism.RegulaPrism:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked RegulaPrism.RegulaPrism:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd RegulaPrism.RegulaPrism:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions RegulaPrism.RegulaPrism:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft RegulaPrism.RegulaPrism:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight RegulaPrism.RegulaPrism:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart RegulaPrism.RegulaPrism:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation RegulaPrism.RegulaPrism:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout RegulaPrism.RegulaPrism:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions RegulaPrism.RegulaPrism:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider RegulaPrism.RegulaPrism:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height RegulaPrism.RegulaPrism:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll RegulaPrism.RegulaPrism:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator RegulaPrism.RegulaPrism:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout RegulaPrism.RegulaPrism:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon RegulaPrism.RegulaPrism:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle RegulaPrism.RegulaPrism:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding RegulaPrism.RegulaPrism:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo RegulaPrism.RegulaPrism:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode RegulaPrism.RegulaPrism:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme RegulaPrism.RegulaPrism:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding RegulaPrism.RegulaPrism:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle RegulaPrism.RegulaPrism:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle RegulaPrism.RegulaPrism:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle RegulaPrism.RegulaPrism:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title RegulaPrism.RegulaPrism:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle RegulaPrism.RegulaPrism:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background Cultiva_Cotton.Cultiva_Cotton:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit Cultiva_Cotton.Cultiva_Cotton:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked Cultiva_Cotton.Cultiva_Cotton:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd Cultiva_Cotton.Cultiva_Cotton:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEndWithActions Cultiva_Cotton.Cultiva_Cotton:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft Cultiva_Cotton.Cultiva_Cotton:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight Cultiva_Cotton.Cultiva_Cotton:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart Cultiva_Cotton.Cultiva_Cotton:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation Cultiva_Cotton.Cultiva_Cotton:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout Cultiva_Cotton.Cultiva_Cotton:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions Cultiva_Cotton.Cultiva_Cotton:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider Cultiva_Cotton.Cultiva_Cotton:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height Cultiva_Cotton.Cultiva_Cotton:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll Cultiva_Cotton.Cultiva_Cotton:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator Cultiva_Cotton.Cultiva_Cotton:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout Cultiva_Cotton.Cultiva_Cotton:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon Cultiva_Cotton.Cultiva_Cotton:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle Cultiva_Cotton.Cultiva_Cotton:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding Cultiva_Cotton.Cultiva_Cotton:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo Cultiva_Cotton.Cultiva_Cotton:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode Cultiva_Cotton.Cultiva_Cotton:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme Cultiva_Cotton.Cultiva_Cotton:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding Cultiva_Cotton.Cultiva_Cotton:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle Cultiva_Cotton.Cultiva_Cotton:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle Cultiva_Cotton.Cultiva_Cotton:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle Cultiva_Cotton.Cultiva_Cotton:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title Cultiva_Cotton.Cultiva_Cotton:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle Cultiva_Cotton.Cultiva_Cotton:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -3867,17 +3868,17 @@ containing a value of this type.
             0x7f010079
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#background}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:background
+          @attr name Cultiva_Cotton.Cultiva_Cotton:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3885,11 +3886,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:backgroundSplit
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3897,11 +3898,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:backgroundStacked
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3913,11 +3914,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3929,11 +3930,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetEndWithActions
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetEndWithActions
         */
         public static final int ActionBar_contentInsetEndWithActions = 25;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3945,11 +3946,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetLeft
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3961,11 +3962,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetRight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3977,11 +3978,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -3993,21 +3994,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetStartWithNavigation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetStartWithNavigation
         */
         public static final int ActionBar_contentInsetStartWithNavigation = 24;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:customNavigationLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4025,21 +4026,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:displayOptions
+          @attr name Cultiva_Cotton.Cultiva_Cotton:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#divider}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:divider
+          @attr name Cultiva_Cotton.Cultiva_Cotton:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4051,11 +4052,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int ActionBar_elevation = 26;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#height}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4067,11 +4068,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:height
+          @attr name Cultiva_Cotton.Cultiva_Cotton:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4081,51 +4082,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:hideOnContentScroll
+          @attr name Cultiva_Cotton.Cultiva_Cotton:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:homeAsUpIndicator
+          @attr name Cultiva_Cotton.Cultiva_Cotton:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 28;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:homeLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#icon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:icon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:indeterminateProgressStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4137,21 +4138,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:itemPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#logo}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:logo
+          @attr name Cultiva_Cotton.Cultiva_Cotton:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4165,21 +4166,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:navigationMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:popupTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:popupTheme
         */
         public static final int ActionBar_popupTheme = 27;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4191,21 +4192,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:progressBarPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:progressBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4215,21 +4216,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:subtitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:subtitleTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#title}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -4239,17 +4240,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:title
+          @attr name Cultiva_Cotton.Cultiva_Cotton:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:titleTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -4301,12 +4302,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background RegulaPrism.RegulaPrism:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit RegulaPrism.RegulaPrism:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout RegulaPrism.RegulaPrism:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height RegulaPrism.RegulaPrism:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle RegulaPrism.RegulaPrism:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle RegulaPrism.RegulaPrism:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background Cultiva_Cotton.Cultiva_Cotton:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit Cultiva_Cotton.Cultiva_Cotton:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout Cultiva_Cotton.Cultiva_Cotton:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height Cultiva_Cotton.Cultiva_Cotton:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle Cultiva_Cotton.Cultiva_Cotton:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle Cultiva_Cotton.Cultiva_Cotton:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -4320,17 +4321,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01002a, 0x7f01003a
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#background}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:background
+          @attr name Cultiva_Cotton.Cultiva_Cotton:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4338,21 +4339,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:backgroundSplit
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:closeItemLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#height}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -4364,27 +4365,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:height
+          @attr name Cultiva_Cotton.Cultiva_Cotton:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:subtitleTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:titleTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -4393,8 +4394,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable RegulaPrism.RegulaPrism:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount RegulaPrism.RegulaPrism:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable Cultiva_Cotton.Cultiva_Cotton:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount Cultiva_Cotton.Cultiva_Cotton:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -4403,17 +4404,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01003b, 0x7f01003c
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:expandActivityOverflowButtonDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -4423,7 +4424,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:initialActivityCount
+          @attr name Cultiva_Cotton.Cultiva_Cotton:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a AlertDialog.
@@ -4433,12 +4434,12 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout RegulaPrism.RegulaPrism:buttonPanelSideLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listItemLayout RegulaPrism.RegulaPrism:listItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_listLayout RegulaPrism.RegulaPrism:listLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout RegulaPrism.RegulaPrism:multiChoiceItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_showTitle RegulaPrism.RegulaPrism:showTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout RegulaPrism.RegulaPrism:singleChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout Cultiva_Cotton.Cultiva_Cotton:buttonPanelSideLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listItemLayout Cultiva_Cotton.Cultiva_Cotton:listItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_listLayout Cultiva_Cotton.Cultiva_Cotton:listLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout Cultiva_Cotton.Cultiva_Cotton:multiChoiceItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_showTitle Cultiva_Cotton.Cultiva_Cotton:showTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout Cultiva_Cotton.Cultiva_Cotton:singleChoiceItemLayout}</code></td><td></td></tr>
            </table>
            @see #AlertDialog_android_layout
            @see #AlertDialog_buttonPanelSideLayout
@@ -4459,47 +4460,47 @@ containing a value of this type.
         */
         public static final int AlertDialog_android_layout = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonPanelSideLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonPanelSideLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonPanelSideLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonPanelSideLayout
         */
         public static final int AlertDialog_buttonPanelSideLayout = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listItemLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listItemLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listItemLayout
         */
         public static final int AlertDialog_listItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listLayout
         */
         public static final int AlertDialog_listLayout = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#multiChoiceItemLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#multiChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:multiChoiceItemLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:multiChoiceItemLayout
         */
         public static final int AlertDialog_multiChoiceItemLayout = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#showTitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#showTitle}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
@@ -4509,17 +4510,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:showTitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:showTitle
         */
         public static final int AlertDialog_showTitle = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#singleChoiceItemLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#singleChoiceItemLayout}
           attribute's value can be found in the {@link #AlertDialog} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:singleChoiceItemLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:singleChoiceItemLayout
         */
         public static final int AlertDialog_singleChoiceItemLayout = 4;
         /** Attributes that can be used with a AppBarLayout.
@@ -4529,8 +4530,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_expanded RegulaPrism.RegulaPrism:expanded}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_expanded Cultiva_Cotton.Cultiva_Cotton:expanded}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_android_background
            @see #AppBarLayout_elevation
@@ -4546,7 +4547,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppBarLayout_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4558,11 +4559,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int AppBarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expanded}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expanded}
           attribute's value can be found in the {@link #AppBarLayout} array.
 
 
@@ -4572,7 +4573,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expanded
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expanded
         */
         public static final int AppBarLayout_expanded = 2;
         /** Attributes that can be used with a AppBarLayoutStates.
@@ -4581,8 +4582,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed RegulaPrism.RegulaPrism:state_collapsed}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible RegulaPrism.RegulaPrism:state_collapsible}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsed Cultiva_Cotton.Cultiva_Cotton:state_collapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayoutStates_state_collapsible Cultiva_Cotton.Cultiva_Cotton:state_collapsible}</code></td><td></td></tr>
            </table>
            @see #AppBarLayoutStates_state_collapsed
            @see #AppBarLayoutStates_state_collapsible
@@ -4591,7 +4592,7 @@ containing a value of this type.
             0x7f010104, 0x7f010105
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#state_collapsed}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#state_collapsed}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4601,11 +4602,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:state_collapsed
+          @attr name Cultiva_Cotton.Cultiva_Cotton:state_collapsed
         */
         public static final int AppBarLayoutStates_state_collapsed = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#state_collapsible}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#state_collapsible}
           attribute's value can be found in the {@link #AppBarLayoutStates} array.
 
 
@@ -4615,7 +4616,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:state_collapsible
+          @attr name Cultiva_Cotton.Cultiva_Cotton:state_collapsible
         */
         public static final int AppBarLayoutStates_state_collapsible = 1;
         /** Attributes that can be used with a AppBarLayout_Layout.
@@ -4624,8 +4625,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags RegulaPrism.RegulaPrism:layout_scrollFlags}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator RegulaPrism.RegulaPrism:layout_scrollInterpolator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags Cultiva_Cotton.Cultiva_Cotton:layout_scrollFlags}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator Cultiva_Cotton.Cultiva_Cotton:layout_scrollInterpolator}</code></td><td></td></tr>
            </table>
            @see #AppBarLayout_Layout_layout_scrollFlags
            @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -4634,7 +4635,7 @@ containing a value of this type.
             0x7f010106, 0x7f010107
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_scrollFlags}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_scrollFlags}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
@@ -4650,17 +4651,17 @@ containing a value of this type.
 <tr><td><code>enterAlwaysCollapsed</code></td><td>0x8</td><td></td></tr>
 <tr><td><code>snap</code></td><td>0x10</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:layout_scrollFlags
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_scrollFlags
         */
         public static final int AppBarLayout_Layout_layout_scrollFlags = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_scrollInterpolator}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_scrollInterpolator}
           attribute's value can be found in the {@link #AppBarLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:layout_scrollInterpolator
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_scrollInterpolator
         */
         public static final int AppBarLayout_Layout_layout_scrollInterpolator = 1;
         /** Attributes that can be used with a AppCompatImageView.
@@ -4670,9 +4671,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_srcCompat RegulaPrism.RegulaPrism:srcCompat}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tint RegulaPrism.RegulaPrism:tint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatImageView_tintMode RegulaPrism.RegulaPrism:tintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_srcCompat Cultiva_Cotton.Cultiva_Cotton:srcCompat}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tint Cultiva_Cotton.Cultiva_Cotton:tint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatImageView_tintMode Cultiva_Cotton.Cultiva_Cotton:tintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatImageView_android_src
            @see #AppCompatImageView_srcCompat
@@ -4689,17 +4690,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatImageView_android_src = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#srcCompat}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#srcCompat}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:srcCompat
+          @attr name Cultiva_Cotton.Cultiva_Cotton:srcCompat
         */
         public static final int AppCompatImageView_srcCompat = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tint}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -4710,11 +4711,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tint
         */
         public static final int AppCompatImageView_tint = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tintMode}
           attribute's value can be found in the {@link #AppCompatImageView} array.
 
 
@@ -4730,7 +4731,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:tintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tintMode
         */
         public static final int AppCompatImageView_tintMode = 3;
         /** Attributes that can be used with a AppCompatSeekBar.
@@ -4740,9 +4741,9 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMark RegulaPrism.RegulaPrism:tickMark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint RegulaPrism.RegulaPrism:tickMarkTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode RegulaPrism.RegulaPrism:tickMarkTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMark Cultiva_Cotton.Cultiva_Cotton:tickMark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint Cultiva_Cotton.Cultiva_Cotton:tickMarkTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode Cultiva_Cotton.Cultiva_Cotton:tickMarkTintMode}</code></td><td></td></tr>
            </table>
            @see #AppCompatSeekBar_android_thumb
            @see #AppCompatSeekBar_tickMark
@@ -4759,17 +4760,17 @@ containing a value of this type.
         */
         public static final int AppCompatSeekBar_android_thumb = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tickMark}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tickMark}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:tickMark
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tickMark
         */
         public static final int AppCompatSeekBar_tickMark = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tickMarkTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tickMarkTint}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4780,11 +4781,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tickMarkTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tickMarkTint
         */
         public static final int AppCompatSeekBar_tickMarkTint = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tickMarkTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tickMarkTintMode}
           attribute's value can be found in the {@link #AppCompatSeekBar} array.
 
 
@@ -4801,7 +4802,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:tickMarkTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tickMarkTintMode
         */
         public static final int AppCompatSeekBar_tickMarkTintMode = 3;
         /** Attributes that can be used with a AppCompatTextHelper.
@@ -4879,7 +4880,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTextView_textAllCaps RegulaPrism.RegulaPrism:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTextView_textAllCaps Cultiva_Cotton.Cultiva_Cotton:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #AppCompatTextView_android_textAppearance
            @see #AppCompatTextView_textAllCaps
@@ -4894,14 +4895,14 @@ containing a value of this type.
         */
         public static final int AppCompatTextView_android_textAppearance = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAllCaps}
           attribute's value can be found in the {@link #AppCompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name RegulaPrism.RegulaPrism:textAllCaps
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAllCaps
         */
         public static final int AppCompatTextView_textAllCaps = 1;
         /** Attributes that can be used with a AppCompatTheme.
@@ -4910,122 +4911,122 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarDivider RegulaPrism.RegulaPrism:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground RegulaPrism.RegulaPrism:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme RegulaPrism.RegulaPrism:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSize RegulaPrism.RegulaPrism:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle RegulaPrism.RegulaPrism:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarStyle RegulaPrism.RegulaPrism:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle RegulaPrism.RegulaPrism:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle RegulaPrism.RegulaPrism:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle RegulaPrism.RegulaPrism:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarTheme RegulaPrism.RegulaPrism:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme RegulaPrism.RegulaPrism:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle RegulaPrism.RegulaPrism:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle RegulaPrism.RegulaPrism:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance RegulaPrism.RegulaPrism:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor RegulaPrism.RegulaPrism:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeBackground RegulaPrism.RegulaPrism:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle RegulaPrism.RegulaPrism:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable RegulaPrism.RegulaPrism:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable RegulaPrism.RegulaPrism:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable RegulaPrism.RegulaPrism:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable RegulaPrism.RegulaPrism:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable RegulaPrism.RegulaPrism:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle RegulaPrism.RegulaPrism:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable RegulaPrism.RegulaPrism:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable RegulaPrism.RegulaPrism:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground RegulaPrism.RegulaPrism:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeStyle RegulaPrism.RegulaPrism:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable RegulaPrism.RegulaPrism:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle RegulaPrism.RegulaPrism:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle RegulaPrism.RegulaPrism:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle RegulaPrism.RegulaPrism:activityChooserViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle RegulaPrism.RegulaPrism:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons RegulaPrism.RegulaPrism:alertDialogCenterButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle RegulaPrism.RegulaPrism:alertDialogStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme RegulaPrism.RegulaPrism:alertDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarDivider Cultiva_Cotton.Cultiva_Cotton:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground Cultiva_Cotton.Cultiva_Cotton:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme Cultiva_Cotton.Cultiva_Cotton:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSize Cultiva_Cotton.Cultiva_Cotton:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle Cultiva_Cotton.Cultiva_Cotton:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarStyle Cultiva_Cotton.Cultiva_Cotton:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle Cultiva_Cotton.Cultiva_Cotton:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle Cultiva_Cotton.Cultiva_Cotton:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle Cultiva_Cotton.Cultiva_Cotton:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarTheme Cultiva_Cotton.Cultiva_Cotton:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme Cultiva_Cotton.Cultiva_Cotton:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionButtonStyle Cultiva_Cotton.Cultiva_Cotton:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle Cultiva_Cotton.Cultiva_Cotton:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance Cultiva_Cotton.Cultiva_Cotton:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor Cultiva_Cotton.Cultiva_Cotton:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeBackground Cultiva_Cotton.Cultiva_Cotton:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle Cultiva_Cotton.Cultiva_Cotton:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable Cultiva_Cotton.Cultiva_Cotton:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle Cultiva_Cotton.Cultiva_Cotton:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground Cultiva_Cotton.Cultiva_Cotton:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeStyle Cultiva_Cotton.Cultiva_Cotton:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable Cultiva_Cotton.Cultiva_Cotton:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle Cultiva_Cotton.Cultiva_Cotton:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle Cultiva_Cotton.Cultiva_Cotton:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle Cultiva_Cotton.Cultiva_Cotton:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle Cultiva_Cotton.Cultiva_Cotton:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons Cultiva_Cotton.Cultiva_Cotton:alertDialogCenterButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogStyle Cultiva_Cotton.Cultiva_Cotton:alertDialogStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_alertDialogTheme Cultiva_Cotton.Cultiva_Cotton:alertDialogTheme}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle RegulaPrism.RegulaPrism:autoCompleteTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle RegulaPrism.RegulaPrism:borderlessButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle RegulaPrism.RegulaPrism:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle RegulaPrism.RegulaPrism:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle RegulaPrism.RegulaPrism:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle RegulaPrism.RegulaPrism:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle RegulaPrism.RegulaPrism:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyle RegulaPrism.RegulaPrism:buttonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall RegulaPrism.RegulaPrism:buttonStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkboxStyle RegulaPrism.RegulaPrism:checkboxStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle RegulaPrism.RegulaPrism:checkedTextViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorAccent RegulaPrism.RegulaPrism:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating RegulaPrism.RegulaPrism:colorBackgroundFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal RegulaPrism.RegulaPrism:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlActivated RegulaPrism.RegulaPrism:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight RegulaPrism.RegulaPrism:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorControlNormal RegulaPrism.RegulaPrism:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimary RegulaPrism.RegulaPrism:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark RegulaPrism.RegulaPrism:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal RegulaPrism.RegulaPrism:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_controlBackground RegulaPrism.RegulaPrism:controlBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding RegulaPrism.RegulaPrism:dialogPreferredPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dialogTheme RegulaPrism.RegulaPrism:dialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal RegulaPrism.RegulaPrism:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dividerVertical RegulaPrism.RegulaPrism:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle RegulaPrism.RegulaPrism:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight RegulaPrism.RegulaPrism:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextBackground RegulaPrism.RegulaPrism:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextColor RegulaPrism.RegulaPrism:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_editTextStyle RegulaPrism.RegulaPrism:editTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator RegulaPrism.RegulaPrism:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle RegulaPrism.RegulaPrism:imageButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator RegulaPrism.RegulaPrism:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog RegulaPrism.RegulaPrism:listDividerAlertDialog}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle RegulaPrism.RegulaPrism:listMenuViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle RegulaPrism.RegulaPrism:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight RegulaPrism.RegulaPrism:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge RegulaPrism.RegulaPrism:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall RegulaPrism.RegulaPrism:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft RegulaPrism.RegulaPrism:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight RegulaPrism.RegulaPrism:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelBackground RegulaPrism.RegulaPrism:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme RegulaPrism.RegulaPrism:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth RegulaPrism.RegulaPrism:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle RegulaPrism.RegulaPrism:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle RegulaPrism.RegulaPrism:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle RegulaPrism.RegulaPrism:radioButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle RegulaPrism.RegulaPrism:ratingBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator RegulaPrism.RegulaPrism:ratingBarStyleIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall RegulaPrism.RegulaPrism:ratingBarStyleSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_searchViewStyle RegulaPrism.RegulaPrism:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_seekBarStyle RegulaPrism.RegulaPrism:seekBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground RegulaPrism.RegulaPrism:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless RegulaPrism.RegulaPrism:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle RegulaPrism.RegulaPrism:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_spinnerStyle RegulaPrism.RegulaPrism:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_switchStyle RegulaPrism.RegulaPrism:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu RegulaPrism.RegulaPrism:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem RegulaPrism.RegulaPrism:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary RegulaPrism.RegulaPrism:textAppearanceListItemSecondary}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall RegulaPrism.RegulaPrism:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader RegulaPrism.RegulaPrism:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle RegulaPrism.RegulaPrism:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle RegulaPrism.RegulaPrism:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu RegulaPrism.RegulaPrism:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem RegulaPrism.RegulaPrism:textColorAlertDialogListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl RegulaPrism.RegulaPrism:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle RegulaPrism.RegulaPrism:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_toolbarStyle RegulaPrism.RegulaPrism:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBar RegulaPrism.RegulaPrism:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay RegulaPrism.RegulaPrism:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay RegulaPrism.RegulaPrism:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor RegulaPrism.RegulaPrism:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor RegulaPrism.RegulaPrism:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor RegulaPrism.RegulaPrism:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor RegulaPrism.RegulaPrism:windowFixedWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor RegulaPrism.RegulaPrism:windowMinWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor RegulaPrism.RegulaPrism:windowMinWidthMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #AppCompatTheme_windowNoTitle RegulaPrism.RegulaPrism:windowNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle Cultiva_Cotton.Cultiva_Cotton:autoCompleteTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle Cultiva_Cotton.Cultiva_Cotton:borderlessButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle Cultiva_Cotton.Cultiva_Cotton:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle Cultiva_Cotton.Cultiva_Cotton:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle Cultiva_Cotton.Cultiva_Cotton:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle Cultiva_Cotton.Cultiva_Cotton:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonBarStyle Cultiva_Cotton.Cultiva_Cotton:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyle Cultiva_Cotton.Cultiva_Cotton:buttonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall Cultiva_Cotton.Cultiva_Cotton:buttonStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkboxStyle Cultiva_Cotton.Cultiva_Cotton:checkboxStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle Cultiva_Cotton.Cultiva_Cotton:checkedTextViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorAccent Cultiva_Cotton.Cultiva_Cotton:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating Cultiva_Cotton.Cultiva_Cotton:colorBackgroundFloating}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorButtonNormal Cultiva_Cotton.Cultiva_Cotton:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlActivated Cultiva_Cotton.Cultiva_Cotton:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlHighlight Cultiva_Cotton.Cultiva_Cotton:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorControlNormal Cultiva_Cotton.Cultiva_Cotton:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimary Cultiva_Cotton.Cultiva_Cotton:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark Cultiva_Cotton.Cultiva_Cotton:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal Cultiva_Cotton.Cultiva_Cotton:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_controlBackground Cultiva_Cotton.Cultiva_Cotton:controlBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding Cultiva_Cotton.Cultiva_Cotton:dialogPreferredPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dialogTheme Cultiva_Cotton.Cultiva_Cotton:dialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerHorizontal Cultiva_Cotton.Cultiva_Cotton:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dividerVertical Cultiva_Cotton.Cultiva_Cotton:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle Cultiva_Cotton.Cultiva_Cotton:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight Cultiva_Cotton.Cultiva_Cotton:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextBackground Cultiva_Cotton.Cultiva_Cotton:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextColor Cultiva_Cotton.Cultiva_Cotton:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_editTextStyle Cultiva_Cotton.Cultiva_Cotton:editTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator Cultiva_Cotton.Cultiva_Cotton:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_imageButtonStyle Cultiva_Cotton.Cultiva_Cotton:imageButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator Cultiva_Cotton.Cultiva_Cotton:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog Cultiva_Cotton.Cultiva_Cotton:listDividerAlertDialog}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle Cultiva_Cotton.Cultiva_Cotton:listMenuViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle Cultiva_Cotton.Cultiva_Cotton:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft Cultiva_Cotton.Cultiva_Cotton:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight Cultiva_Cotton.Cultiva_Cotton:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelBackground Cultiva_Cotton.Cultiva_Cotton:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme Cultiva_Cotton.Cultiva_Cotton:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth Cultiva_Cotton.Cultiva_Cotton:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupMenuStyle Cultiva_Cotton.Cultiva_Cotton:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_popupWindowStyle Cultiva_Cotton.Cultiva_Cotton:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_radioButtonStyle Cultiva_Cotton.Cultiva_Cotton:radioButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyle Cultiva_Cotton.Cultiva_Cotton:ratingBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator Cultiva_Cotton.Cultiva_Cotton:ratingBarStyleIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall Cultiva_Cotton.Cultiva_Cotton:ratingBarStyleSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_searchViewStyle Cultiva_Cotton.Cultiva_Cotton:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_seekBarStyle Cultiva_Cotton.Cultiva_Cotton:seekBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackground Cultiva_Cotton.Cultiva_Cotton:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless Cultiva_Cotton.Cultiva_Cotton:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle Cultiva_Cotton.Cultiva_Cotton:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_spinnerStyle Cultiva_Cotton.Cultiva_Cotton:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_switchStyle Cultiva_Cotton.Cultiva_Cotton:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu Cultiva_Cotton.Cultiva_Cotton:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItemSecondary}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader Cultiva_Cotton.Cultiva_Cotton:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle Cultiva_Cotton.Cultiva_Cotton:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle Cultiva_Cotton.Cultiva_Cotton:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu Cultiva_Cotton.Cultiva_Cotton:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem Cultiva_Cotton.Cultiva_Cotton:textColorAlertDialogListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl Cultiva_Cotton.Cultiva_Cotton:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle Cultiva_Cotton.Cultiva_Cotton:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_toolbarStyle Cultiva_Cotton.Cultiva_Cotton:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBar Cultiva_Cotton.Cultiva_Cotton:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay Cultiva_Cotton.Cultiva_Cotton:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay Cultiva_Cotton.Cultiva_Cotton:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor Cultiva_Cotton.Cultiva_Cotton:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor Cultiva_Cotton.Cultiva_Cotton:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor Cultiva_Cotton.Cultiva_Cotton:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor Cultiva_Cotton.Cultiva_Cotton:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor Cultiva_Cotton.Cultiva_Cotton:windowMinWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor Cultiva_Cotton.Cultiva_Cotton:windowMinWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #AppCompatTheme_windowNoTitle Cultiva_Cotton.Cultiva_Cotton:windowNoTitle}</code></td><td></td></tr>
            </table>
            @see #AppCompatTheme_actionBarDivider
            @see #AppCompatTheme_actionBarItemBackground
@@ -5176,37 +5177,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100b8, 0x7f0100b9, 0x7f0100ba, 0x7f0100bb
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarDivider
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarDivider
         */
         public static final int AppCompatTheme_actionBarDivider = 23;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarItemBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarItemBackground
         */
         public static final int AppCompatTheme_actionBarItemBackground = 24;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarPopupTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarPopupTheme
         */
         public static final int AppCompatTheme_actionBarPopupTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarSize}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5226,111 +5227,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:actionBarSize
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarSize
         */
         public static final int AppCompatTheme_actionBarSize = 22;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarSplitStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarSplitStyle
         */
         public static final int AppCompatTheme_actionBarSplitStyle = 19;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarStyle
         */
         public static final int AppCompatTheme_actionBarStyle = 18;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarTabBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarTabBarStyle
         */
         public static final int AppCompatTheme_actionBarTabBarStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarTabStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarTabStyle
         */
         public static final int AppCompatTheme_actionBarTabStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarTabTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarTabTextStyle
         */
         public static final int AppCompatTheme_actionBarTabTextStyle = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarTheme
         */
         public static final int AppCompatTheme_actionBarTheme = 20;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionBarWidgetTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionBarWidgetTheme
         */
         public static final int AppCompatTheme_actionBarWidgetTheme = 21;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionButtonStyle
         */
         public static final int AppCompatTheme_actionButtonStyle = 50;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionDropDownStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionDropDownStyle
         */
         public static final int AppCompatTheme_actionDropDownStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionMenuTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionMenuTextAppearance
         */
         public static final int AppCompatTheme_actionMenuTextAppearance = 25;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5338,181 +5339,181 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionMenuTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionMenuTextColor
         */
         public static final int AppCompatTheme_actionMenuTextColor = 26;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeBackground
         */
         public static final int AppCompatTheme_actionModeBackground = 29;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeCloseButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeCloseButtonStyle
         */
         public static final int AppCompatTheme_actionModeCloseButtonStyle = 28;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeCloseDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeCloseDrawable
         */
         public static final int AppCompatTheme_actionModeCloseDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeCopyDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeCopyDrawable
         */
         public static final int AppCompatTheme_actionModeCopyDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeCutDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeCutDrawable
         */
         public static final int AppCompatTheme_actionModeCutDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeFindDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeFindDrawable
         */
         public static final int AppCompatTheme_actionModeFindDrawable = 37;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModePasteDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModePasteDrawable
         */
         public static final int AppCompatTheme_actionModePasteDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModePopupWindowStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModePopupWindowStyle
         */
         public static final int AppCompatTheme_actionModePopupWindowStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeSelectAllDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeSelectAllDrawable
         */
         public static final int AppCompatTheme_actionModeSelectAllDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeShareDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeShareDrawable
         */
         public static final int AppCompatTheme_actionModeShareDrawable = 36;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeSplitBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeSplitBackground
         */
         public static final int AppCompatTheme_actionModeSplitBackground = 30;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeStyle
         */
         public static final int AppCompatTheme_actionModeStyle = 27;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionModeWebSearchDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionModeWebSearchDrawable
         */
         public static final int AppCompatTheme_actionModeWebSearchDrawable = 38;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionOverflowButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionOverflowButtonStyle
         */
         public static final int AppCompatTheme_actionOverflowButtonStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionOverflowMenuStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionOverflowMenuStyle
         */
         public static final int AppCompatTheme_actionOverflowMenuStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:activityChooserViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:activityChooserViewStyle
         */
         public static final int AppCompatTheme_activityChooserViewStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#alertDialogButtonGroupStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#alertDialogButtonGroupStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:alertDialogButtonGroupStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:alertDialogButtonGroupStyle
         */
         public static final int AppCompatTheme_alertDialogButtonGroupStyle = 95;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#alertDialogCenterButtons}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#alertDialogCenterButtons}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5522,27 +5523,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:alertDialogCenterButtons
+          @attr name Cultiva_Cotton.Cultiva_Cotton:alertDialogCenterButtons
         */
         public static final int AppCompatTheme_alertDialogCenterButtons = 96;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#alertDialogStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#alertDialogStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:alertDialogStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:alertDialogStyle
         */
         public static final int AppCompatTheme_alertDialogStyle = 94;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#alertDialogTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#alertDialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:alertDialogTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:alertDialogTheme
         */
         public static final int AppCompatTheme_alertDialogTheme = 97;
         /**
@@ -5558,117 +5559,117 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int AppCompatTheme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#autoCompleteTextViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#autoCompleteTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:autoCompleteTextViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:autoCompleteTextViewStyle
         */
         public static final int AppCompatTheme_autoCompleteTextViewStyle = 102;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#borderlessButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#borderlessButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:borderlessButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:borderlessButtonStyle
         */
         public static final int AppCompatTheme_borderlessButtonStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonBarButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonBarButtonStyle
         */
         public static final int AppCompatTheme_buttonBarButtonStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonBarNegativeButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonBarNegativeButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonBarNegativeButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonBarNegativeButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNegativeButtonStyle = 100;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonBarNeutralButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonBarNeutralButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonBarNeutralButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonBarNeutralButtonStyle
         */
         public static final int AppCompatTheme_buttonBarNeutralButtonStyle = 101;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonBarPositiveButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonBarPositiveButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonBarPositiveButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonBarPositiveButtonStyle
         */
         public static final int AppCompatTheme_buttonBarPositiveButtonStyle = 99;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonBarStyle
         */
         public static final int AppCompatTheme_buttonBarStyle = 51;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonStyle
         */
         public static final int AppCompatTheme_buttonStyle = 103;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonStyleSmall}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:buttonStyleSmall
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonStyleSmall
         */
         public static final int AppCompatTheme_buttonStyleSmall = 104;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#checkboxStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#checkboxStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:checkboxStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:checkboxStyle
         */
         public static final int AppCompatTheme_checkboxStyle = 105;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#checkedTextViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#checkedTextViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:checkedTextViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:checkedTextViewStyle
         */
         public static final int AppCompatTheme_checkedTextViewStyle = 106;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorAccent}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5679,11 +5680,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorAccent
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorAccent
         */
         public static final int AppCompatTheme_colorAccent = 86;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorBackgroundFloating}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorBackgroundFloating}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5694,11 +5695,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorBackgroundFloating
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorBackgroundFloating
         */
         public static final int AppCompatTheme_colorBackgroundFloating = 93;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5709,11 +5710,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorButtonNormal
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorButtonNormal
         */
         public static final int AppCompatTheme_colorButtonNormal = 90;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5724,11 +5725,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorControlActivated
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorControlActivated
         */
         public static final int AppCompatTheme_colorControlActivated = 88;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5739,11 +5740,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorControlHighlight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorControlHighlight
         */
         public static final int AppCompatTheme_colorControlHighlight = 89;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5754,11 +5755,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorControlNormal
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorControlNormal
         */
         public static final int AppCompatTheme_colorControlNormal = 87;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorPrimary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5769,11 +5770,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorPrimary
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorPrimary
         */
         public static final int AppCompatTheme_colorPrimary = 84;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5784,11 +5785,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorPrimaryDark
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorPrimaryDark
         */
         public static final int AppCompatTheme_colorPrimaryDark = 85;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5799,21 +5800,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:colorSwitchThumbNormal
+          @attr name Cultiva_Cotton.Cultiva_Cotton:colorSwitchThumbNormal
         */
         public static final int AppCompatTheme_colorSwitchThumbNormal = 91;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#controlBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#controlBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:controlBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:controlBackground
         */
         public static final int AppCompatTheme_controlBackground = 92;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dialogPreferredPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dialogPreferredPadding}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5825,51 +5826,51 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:dialogPreferredPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dialogPreferredPadding
         */
         public static final int AppCompatTheme_dialogPreferredPadding = 44;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dialogTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dialogTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:dialogTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dialogTheme
         */
         public static final int AppCompatTheme_dialogTheme = 43;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:dividerHorizontal
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dividerHorizontal
         */
         public static final int AppCompatTheme_dividerHorizontal = 57;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dividerVertical}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:dividerVertical
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dividerVertical
         */
         public static final int AppCompatTheme_dividerVertical = 56;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:dropDownListViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dropDownListViewStyle
         */
         public static final int AppCompatTheme_dropDownListViewStyle = 75;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5881,21 +5882,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:dropdownListPreferredItemHeight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dropdownListPreferredItemHeight
         */
         public static final int AppCompatTheme_dropdownListPreferredItemHeight = 47;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#editTextBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:editTextBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:editTextBackground
         */
         public static final int AppCompatTheme_editTextBackground = 64;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#editTextColor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5903,81 +5904,81 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:editTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:editTextColor
         */
         public static final int AppCompatTheme_editTextColor = 63;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#editTextStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#editTextStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:editTextStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:editTextStyle
         */
         public static final int AppCompatTheme_editTextStyle = 107;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:homeAsUpIndicator
+          @attr name Cultiva_Cotton.Cultiva_Cotton:homeAsUpIndicator
         */
         public static final int AppCompatTheme_homeAsUpIndicator = 49;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#imageButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#imageButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:imageButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:imageButtonStyle
         */
         public static final int AppCompatTheme_imageButtonStyle = 65;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listChoiceBackgroundIndicator
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listChoiceBackgroundIndicator
         */
         public static final int AppCompatTheme_listChoiceBackgroundIndicator = 83;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listDividerAlertDialog}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listDividerAlertDialog}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listDividerAlertDialog
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listDividerAlertDialog
         */
         public static final int AppCompatTheme_listDividerAlertDialog = 45;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listMenuViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listMenuViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listMenuViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listMenuViewStyle
         */
         public static final int AppCompatTheme_listMenuViewStyle = 115;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:listPopupWindowStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPopupWindowStyle
         */
         public static final int AppCompatTheme_listPopupWindowStyle = 76;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -5989,11 +5990,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:listPreferredItemHeight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeight
         */
         public static final int AppCompatTheme_listPreferredItemHeight = 70;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6005,11 +6006,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:listPreferredItemHeightLarge
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeightLarge
         */
         public static final int AppCompatTheme_listPreferredItemHeightLarge = 72;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6021,11 +6022,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:listPreferredItemHeightSmall
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPreferredItemHeightSmall
         */
         public static final int AppCompatTheme_listPreferredItemHeightSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6037,11 +6038,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:listPreferredItemPaddingLeft
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPreferredItemPaddingLeft
         */
         public static final int AppCompatTheme_listPreferredItemPaddingLeft = 73;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6053,31 +6054,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:listPreferredItemPaddingRight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:listPreferredItemPaddingRight
         */
         public static final int AppCompatTheme_listPreferredItemPaddingRight = 74;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#panelBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:panelBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:panelBackground
         */
         public static final int AppCompatTheme_panelBackground = 80;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:panelMenuListTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:panelMenuListTheme
         */
         public static final int AppCompatTheme_panelMenuListTheme = 82;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6089,221 +6090,221 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:panelMenuListWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:panelMenuListWidth
         */
         public static final int AppCompatTheme_panelMenuListWidth = 81;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:popupMenuStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:popupMenuStyle
         */
         public static final int AppCompatTheme_popupMenuStyle = 61;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:popupWindowStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:popupWindowStyle
         */
         public static final int AppCompatTheme_popupWindowStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#radioButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#radioButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:radioButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:radioButtonStyle
         */
         public static final int AppCompatTheme_radioButtonStyle = 108;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#ratingBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#ratingBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:ratingBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:ratingBarStyle
         */
         public static final int AppCompatTheme_ratingBarStyle = 109;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#ratingBarStyleIndicator}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#ratingBarStyleIndicator}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:ratingBarStyleIndicator
+          @attr name Cultiva_Cotton.Cultiva_Cotton:ratingBarStyleIndicator
         */
         public static final int AppCompatTheme_ratingBarStyleIndicator = 110;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#ratingBarStyleSmall}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#ratingBarStyleSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:ratingBarStyleSmall
+          @attr name Cultiva_Cotton.Cultiva_Cotton:ratingBarStyleSmall
         */
         public static final int AppCompatTheme_ratingBarStyleSmall = 111;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:searchViewStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:searchViewStyle
         */
         public static final int AppCompatTheme_searchViewStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#seekBarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#seekBarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:seekBarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:seekBarStyle
         */
         public static final int AppCompatTheme_seekBarStyle = 112;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:selectableItemBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:selectableItemBackground
         */
         public static final int AppCompatTheme_selectableItemBackground = 53;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:selectableItemBackgroundBorderless
+          @attr name Cultiva_Cotton.Cultiva_Cotton:selectableItemBackgroundBorderless
         */
         public static final int AppCompatTheme_selectableItemBackgroundBorderless = 54;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:spinnerDropDownItemStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:spinnerDropDownItemStyle
         */
         public static final int AppCompatTheme_spinnerDropDownItemStyle = 48;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:spinnerStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:spinnerStyle
         */
         public static final int AppCompatTheme_spinnerStyle = 113;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#switchStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:switchStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:switchStyle
         */
         public static final int AppCompatTheme_switchStyle = 114;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceLargePopupMenu
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceLargePopupMenu
         */
         public static final int AppCompatTheme_textAppearanceLargePopupMenu = 40;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceListItem
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItem
         */
         public static final int AppCompatTheme_textAppearanceListItem = 77;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceListItemSecondary}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceListItemSecondary}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceListItemSecondary
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItemSecondary
         */
         public static final int AppCompatTheme_textAppearanceListItemSecondary = 78;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceListItemSmall
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceListItemSmall
         */
         public static final int AppCompatTheme_textAppearanceListItemSmall = 79;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearancePopupMenuHeader}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearancePopupMenuHeader}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearancePopupMenuHeader
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearancePopupMenuHeader
         */
         public static final int AppCompatTheme_textAppearancePopupMenuHeader = 42;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceSearchResultSubtitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceSearchResultSubtitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultSubtitle = 67;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceSearchResultTitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceSearchResultTitle
         */
         public static final int AppCompatTheme_textAppearanceSearchResultTitle = 66;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textAppearanceSmallPopupMenu
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAppearanceSmallPopupMenu
         */
         public static final int AppCompatTheme_textAppearanceSmallPopupMenu = 41;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textColorAlertDialogListItem}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textColorAlertDialogListItem}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6311,11 +6312,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textColorAlertDialogListItem
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textColorAlertDialogListItem
         */
         public static final int AppCompatTheme_textColorAlertDialogListItem = 98;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6323,31 +6324,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:textColorSearchUrl
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textColorSearchUrl
         */
         public static final int AppCompatTheme_textColorSearchUrl = 68;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:toolbarNavigationButtonStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:toolbarNavigationButtonStyle
         */
         public static final int AppCompatTheme_toolbarNavigationButtonStyle = 60;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:toolbarStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:toolbarStyle
         */
         public static final int AppCompatTheme_toolbarStyle = 59;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowActionBar}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6357,11 +6358,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowActionBar
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowActionBar
         */
         public static final int AppCompatTheme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6371,11 +6372,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowActionBarOverlay
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowActionBarOverlay
         */
         public static final int AppCompatTheme_windowActionBarOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6385,11 +6386,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowActionModeOverlay
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowActionModeOverlay
         */
         public static final int AppCompatTheme_windowActionModeOverlay = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6404,11 +6405,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowFixedHeightMajor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowFixedHeightMajor
         */
         public static final int AppCompatTheme_windowFixedHeightMajor = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6423,11 +6424,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowFixedHeightMinor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowFixedHeightMinor
         */
         public static final int AppCompatTheme_windowFixedHeightMinor = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6442,11 +6443,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowFixedWidthMajor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowFixedWidthMajor
         */
         public static final int AppCompatTheme_windowFixedWidthMajor = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6461,11 +6462,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowFixedWidthMinor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowFixedWidthMinor
         */
         public static final int AppCompatTheme_windowFixedWidthMinor = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowMinWidthMajor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowMinWidthMajor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6480,11 +6481,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowMinWidthMajor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowMinWidthMajor
         */
         public static final int AppCompatTheme_windowMinWidthMajor = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowMinWidthMinor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowMinWidthMinor}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6499,11 +6500,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowMinWidthMinor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowMinWidthMinor
         */
         public static final int AppCompatTheme_windowMinWidthMinor = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#windowNoTitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#windowNoTitle}
           attribute's value can be found in the {@link #AppCompatTheme} array.
 
 
@@ -6513,7 +6514,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:windowNoTitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:windowNoTitle
         */
         public static final int AppCompatTheme_windowNoTitle = 3;
         /** Attributes that can be used with a BottomNavigationView.
@@ -6522,11 +6523,11 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomNavigationView_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemBackground RegulaPrism.RegulaPrism:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemIconTint RegulaPrism.RegulaPrism:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_itemTextColor RegulaPrism.RegulaPrism:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomNavigationView_menu RegulaPrism.RegulaPrism:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemBackground Cultiva_Cotton.Cultiva_Cotton:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemIconTint Cultiva_Cotton.Cultiva_Cotton:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_itemTextColor Cultiva_Cotton.Cultiva_Cotton:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomNavigationView_menu Cultiva_Cotton.Cultiva_Cotton:menu}</code></td><td></td></tr>
            </table>
            @see #BottomNavigationView_elevation
            @see #BottomNavigationView_itemBackground
@@ -6539,7 +6540,7 @@ containing a value of this type.
             0x7f010131
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6551,21 +6552,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int BottomNavigationView_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemBackground}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:itemBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemBackground
         */
         public static final int BottomNavigationView_itemBackground = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemIconTint}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6576,11 +6577,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:itemIconTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemIconTint
         */
         public static final int BottomNavigationView_itemIconTint = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemTextColor}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
@@ -6591,17 +6592,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:itemTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemTextColor
         */
         public static final int BottomNavigationView_itemTextColor = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#menu}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#menu}
           attribute's value can be found in the {@link #BottomNavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:menu
+          @attr name Cultiva_Cotton.Cultiva_Cotton:menu
         */
         public static final int BottomNavigationView_menu = 1;
         /** Attributes that can be used with a BottomSheetBehavior_Layout.
@@ -6610,9 +6611,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable RegulaPrism.RegulaPrism:behavior_hideable}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight RegulaPrism.RegulaPrism:behavior_peekHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed RegulaPrism.RegulaPrism:behavior_skipCollapsed}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable Cultiva_Cotton.Cultiva_Cotton:behavior_hideable}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight Cultiva_Cotton.Cultiva_Cotton:behavior_peekHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed Cultiva_Cotton.Cultiva_Cotton:behavior_skipCollapsed}</code></td><td></td></tr>
            </table>
            @see #BottomSheetBehavior_Layout_behavior_hideable
            @see #BottomSheetBehavior_Layout_behavior_peekHeight
@@ -6622,7 +6623,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010108, 0x7f010109, 0x7f01010a
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#behavior_hideable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#behavior_hideable}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6632,11 +6633,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:behavior_hideable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:behavior_hideable
         */
         public static final int BottomSheetBehavior_Layout_behavior_hideable = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#behavior_peekHeight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#behavior_peekHeight}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6656,11 +6657,11 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>auto</code></td><td>-1</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:behavior_peekHeight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:behavior_peekHeight
         */
         public static final int BottomSheetBehavior_Layout_behavior_peekHeight = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#behavior_skipCollapsed}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#behavior_skipCollapsed}
           attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
 
 
@@ -6670,7 +6671,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:behavior_skipCollapsed
+          @attr name Cultiva_Cotton.Cultiva_Cotton:behavior_skipCollapsed
         */
         public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed = 2;
         /** Attributes that can be used with a ButtonBarLayout.
@@ -6679,7 +6680,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ButtonBarLayout_allowStacking RegulaPrism.RegulaPrism:allowStacking}</code></td><td></td></tr>
+           <tr><td><code>{@link #ButtonBarLayout_allowStacking Cultiva_Cotton.Cultiva_Cotton:allowStacking}</code></td><td></td></tr>
            </table>
            @see #ButtonBarLayout_allowStacking
          */
@@ -6687,7 +6688,7 @@ containing a value of this type.
             0x7f0100bc
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#allowStacking}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#allowStacking}
           attribute's value can be found in the {@link #ButtonBarLayout} array.
 
 
@@ -6697,7 +6698,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:allowStacking
+          @attr name Cultiva_Cotton.Cultiva_Cotton:allowStacking
         */
         public static final int ButtonBarLayout_allowStacking = 0;
         /** Attributes that can be used with a CardView.
@@ -6708,17 +6709,17 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardBackgroundColor RegulaPrism.RegulaPrism:cardBackgroundColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardCornerRadius RegulaPrism.RegulaPrism:cardCornerRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardElevation RegulaPrism.RegulaPrism:cardElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardMaxElevation RegulaPrism.RegulaPrism:cardMaxElevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardPreventCornerOverlap RegulaPrism.RegulaPrism:cardPreventCornerOverlap}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_cardUseCompatPadding RegulaPrism.RegulaPrism:cardUseCompatPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPadding RegulaPrism.RegulaPrism:contentPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingBottom RegulaPrism.RegulaPrism:contentPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingLeft RegulaPrism.RegulaPrism:contentPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingRight RegulaPrism.RegulaPrism:contentPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #CardView_contentPaddingTop RegulaPrism.RegulaPrism:contentPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor Cultiva_Cotton.Cultiva_Cotton:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius Cultiva_Cotton.Cultiva_Cotton:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation Cultiva_Cotton.Cultiva_Cotton:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation Cultiva_Cotton.Cultiva_Cotton:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap Cultiva_Cotton.Cultiva_Cotton:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding Cultiva_Cotton.Cultiva_Cotton:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding Cultiva_Cotton.Cultiva_Cotton:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom Cultiva_Cotton.Cultiva_Cotton:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft Cultiva_Cotton.Cultiva_Cotton:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight Cultiva_Cotton.Cultiva_Cotton:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop Cultiva_Cotton.Cultiva_Cotton:contentPaddingTop}</code></td><td></td></tr>
            </table>
            @see #CardView_android_minHeight
            @see #CardView_android_minWidth
@@ -6753,7 +6754,7 @@ containing a value of this type.
         */
         public static final int CardView_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardBackgroundColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardBackgroundColor}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6764,11 +6765,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardBackgroundColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardBackgroundColor
         */
         public static final int CardView_cardBackgroundColor = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardCornerRadius}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardCornerRadius}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6780,11 +6781,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardCornerRadius
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardCornerRadius
         */
         public static final int CardView_cardCornerRadius = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardElevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6796,11 +6797,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardElevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardElevation
         */
         public static final int CardView_cardElevation = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardMaxElevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardMaxElevation}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6812,11 +6813,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardMaxElevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardMaxElevation
         */
         public static final int CardView_cardMaxElevation = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardPreventCornerOverlap}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardPreventCornerOverlap}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6826,11 +6827,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardPreventCornerOverlap
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardPreventCornerOverlap
         */
         public static final int CardView_cardPreventCornerOverlap = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#cardUseCompatPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#cardUseCompatPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6840,11 +6841,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:cardUseCompatPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:cardUseCompatPadding
         */
         public static final int CardView_cardUseCompatPadding = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentPadding}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6856,11 +6857,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentPadding
         */
         public static final int CardView_contentPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentPaddingBottom}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentPaddingBottom}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6872,11 +6873,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentPaddingBottom
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentPaddingBottom
         */
         public static final int CardView_contentPaddingBottom = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentPaddingLeft}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentPaddingLeft}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6888,11 +6889,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentPaddingLeft
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentPaddingLeft
         */
         public static final int CardView_contentPaddingLeft = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentPaddingRight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentPaddingRight}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6904,11 +6905,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentPaddingRight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentPaddingRight
         */
         public static final int CardView_contentPaddingRight = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentPaddingTop}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentPaddingTop}
           attribute's value can be found in the {@link #CardView} array.
 
 
@@ -6920,7 +6921,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentPaddingTop
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 11;
         /** Attributes that can be used with a CollapsingToolbarLayout.
@@ -6929,22 +6930,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity RegulaPrism.RegulaPrism:collapsedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance RegulaPrism.RegulaPrism:collapsedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim RegulaPrism.RegulaPrism:contentScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity RegulaPrism.RegulaPrism:expandedTitleGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin RegulaPrism.RegulaPrism:expandedTitleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom RegulaPrism.RegulaPrism:expandedTitleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd RegulaPrism.RegulaPrism:expandedTitleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart RegulaPrism.RegulaPrism:expandedTitleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop RegulaPrism.RegulaPrism:expandedTitleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance RegulaPrism.RegulaPrism:expandedTitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration RegulaPrism.RegulaPrism:scrimAnimationDuration}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger RegulaPrism.RegulaPrism:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim RegulaPrism.RegulaPrism:statusBarScrim}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_title RegulaPrism.RegulaPrism:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled RegulaPrism.RegulaPrism:titleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId RegulaPrism.RegulaPrism:toolbarId}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity Cultiva_Cotton.Cultiva_Cotton:collapsedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance Cultiva_Cotton.Cultiva_Cotton:collapsedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim Cultiva_Cotton.Cultiva_Cotton:contentScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity Cultiva_Cotton.Cultiva_Cotton:expandedTitleGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin Cultiva_Cotton.Cultiva_Cotton:expandedTitleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance Cultiva_Cotton.Cultiva_Cotton:expandedTitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration Cultiva_Cotton.Cultiva_Cotton:scrimAnimationDuration}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger Cultiva_Cotton.Cultiva_Cotton:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim Cultiva_Cotton.Cultiva_Cotton:statusBarScrim}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_title Cultiva_Cotton.Cultiva_Cotton:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled Cultiva_Cotton.Cultiva_Cotton:titleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId Cultiva_Cotton.Cultiva_Cotton:toolbarId}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_collapsedTitleGravity
            @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -6970,7 +6971,7 @@ containing a value of this type.
             0x7f010116, 0x7f010117, 0x7f010118, 0x7f010119
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#collapsedTitleGravity}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#collapsedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -6991,21 +6992,21 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:collapsedTitleGravity
+          @attr name Cultiva_Cotton.Cultiva_Cotton:collapsedTitleGravity
         */
         public static final int CollapsingToolbarLayout_collapsedTitleGravity = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#collapsedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#collapsedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:collapsedTitleTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:collapsedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentScrim}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7016,11 +7017,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentScrim
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentScrim
         */
         public static final int CollapsingToolbarLayout_contentScrim = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleGravity}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleGravity}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7041,11 +7042,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:expandedTitleGravity
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleGravity
         */
         public static final int CollapsingToolbarLayout_expandedTitleGravity = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleMargin}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleMargin}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7057,11 +7058,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expandedTitleMargin
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleMargin
         */
         public static final int CollapsingToolbarLayout_expandedTitleMargin = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleMarginBottom}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleMarginBottom}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7073,11 +7074,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expandedTitleMarginBottom
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginBottom
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginBottom = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleMarginEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleMarginEnd}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7089,11 +7090,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expandedTitleMarginEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginEnd
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginEnd = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleMarginStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleMarginStart}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7105,11 +7106,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expandedTitleMarginStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginStart
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginStart = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleMarginTop}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleMarginTop}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7121,21 +7122,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:expandedTitleMarginTop
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleMarginTop
         */
         public static final int CollapsingToolbarLayout_expandedTitleMarginTop = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#expandedTitleTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#expandedTitleTextAppearance}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:expandedTitleTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:expandedTitleTextAppearance
         */
         public static final int CollapsingToolbarLayout_expandedTitleTextAppearance = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#scrimAnimationDuration}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#scrimAnimationDuration}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7145,11 +7146,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:scrimAnimationDuration
+          @attr name Cultiva_Cotton.Cultiva_Cotton:scrimAnimationDuration
         */
         public static final int CollapsingToolbarLayout_scrimAnimationDuration = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#scrimVisibleHeightTrigger}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#scrimVisibleHeightTrigger}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7161,11 +7162,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:scrimVisibleHeightTrigger
+          @attr name Cultiva_Cotton.Cultiva_Cotton:scrimVisibleHeightTrigger
         */
         public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#statusBarScrim}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#statusBarScrim}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7176,11 +7177,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:statusBarScrim
+          @attr name Cultiva_Cotton.Cultiva_Cotton:statusBarScrim
         */
         public static final int CollapsingToolbarLayout_statusBarScrim = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#title}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#title}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7190,11 +7191,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:title
+          @attr name Cultiva_Cotton.Cultiva_Cotton:title
         */
         public static final int CollapsingToolbarLayout_title = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleEnabled}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
@@ -7204,17 +7205,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleEnabled
         */
         public static final int CollapsingToolbarLayout_titleEnabled = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#toolbarId}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#toolbarId}
           attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:toolbarId
+          @attr name Cultiva_Cotton.Cultiva_Cotton:toolbarId
         */
         public static final int CollapsingToolbarLayout_toolbarId = 10;
         /** Attributes that can be used with a CollapsingToolbarLayout_Layout.
@@ -7223,8 +7224,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode RegulaPrism.RegulaPrism:layout_collapseMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier RegulaPrism.RegulaPrism:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode Cultiva_Cotton.Cultiva_Cotton:layout_collapseMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier Cultiva_Cotton.Cultiva_Cotton:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
            </table>
            @see #CollapsingToolbarLayout_Layout_layout_collapseMode
            @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -7233,7 +7234,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01011a, 0x7f01011b
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_collapseMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_collapseMode}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7247,11 +7248,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>pin</code></td><td>1</td><td></td></tr>
 <tr><td><code>parallax</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:layout_collapseMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_collapseMode
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseMode = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_collapseParallaxMultiplier}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_collapseParallaxMultiplier}
           attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
 
 
@@ -7261,7 +7262,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:layout_collapseParallaxMultiplier
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_collapseParallaxMultiplier
         */
         public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = 1;
         /** Attributes that can be used with a ColorStateListItem.
@@ -7270,7 +7271,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ColorStateListItem_alpha RegulaPrism.RegulaPrism:alpha}</code></td><td></td></tr>
+           <tr><td><code>{@link #ColorStateListItem_alpha Cultiva_Cotton.Cultiva_Cotton:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
            <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
            </table>
@@ -7282,7 +7283,7 @@ containing a value of this type.
             0x010101a5, 0x0101031f, 0x7f0100bd
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#alpha}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#alpha}
           attribute's value can be found in the {@link #ColorStateListItem} array.
 
 
@@ -7292,7 +7293,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:alpha
+          @attr name Cultiva_Cotton.Cultiva_Cotton:alpha
         */
         public static final int ColorStateListItem_alpha = 2;
         /**
@@ -7314,8 +7315,8 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTint RegulaPrism.RegulaPrism:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #CompoundButton_buttonTintMode RegulaPrism.RegulaPrism:buttonTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTint Cultiva_Cotton.Cultiva_Cotton:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompoundButton_buttonTintMode Cultiva_Cotton.Cultiva_Cotton:buttonTintMode}</code></td><td></td></tr>
            </table>
            @see #CompoundButton_android_button
            @see #CompoundButton_buttonTint
@@ -7331,7 +7332,7 @@ containing a value of this type.
         */
         public static final int CompoundButton_android_button = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonTint}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7342,11 +7343,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:buttonTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonTint
         */
         public static final int CompoundButton_buttonTint = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonTintMode}
           attribute's value can be found in the {@link #CompoundButton} array.
 
 
@@ -7362,7 +7363,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:buttonTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonTintMode
         */
         public static final int CompoundButton_buttonTintMode = 2;
         /** Attributes that can be used with a CoordinatorLayout.
@@ -7371,8 +7372,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CoordinatorLayout_keylines RegulaPrism.RegulaPrism:keylines}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground RegulaPrism.RegulaPrism:statusBarBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_keylines Cultiva_Cotton.Cultiva_Cotton:keylines}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_statusBarBackground Cultiva_Cotton.Cultiva_Cotton:statusBarBackground}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_keylines
            @see #CoordinatorLayout_statusBarBackground
@@ -7381,23 +7382,23 @@ containing a value of this type.
             0x7f01011c, 0x7f01011d
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#keylines}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#keylines}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:keylines
+          @attr name Cultiva_Cotton.Cultiva_Cotton:keylines
         */
         public static final int CoordinatorLayout_keylines = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#statusBarBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#statusBarBackground}
           attribute's value can be found in the {@link #CoordinatorLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:statusBarBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:statusBarBackground
         */
         public static final int CoordinatorLayout_statusBarBackground = 1;
         /** Attributes that can be used with a CoordinatorLayout_Layout.
@@ -7407,12 +7408,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor RegulaPrism.RegulaPrism:layout_anchor}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity RegulaPrism.RegulaPrism:layout_anchorGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior RegulaPrism.RegulaPrism:layout_behavior}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges RegulaPrism.RegulaPrism:layout_dodgeInsetEdges}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge RegulaPrism.RegulaPrism:layout_insetEdge}</code></td><td></td></tr>
-           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline RegulaPrism.RegulaPrism:layout_keyline}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor Cultiva_Cotton.Cultiva_Cotton:layout_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity Cultiva_Cotton.Cultiva_Cotton:layout_anchorGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior Cultiva_Cotton.Cultiva_Cotton:layout_behavior}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges Cultiva_Cotton.Cultiva_Cotton:layout_dodgeInsetEdges}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge Cultiva_Cotton.Cultiva_Cotton:layout_insetEdge}</code></td><td></td></tr>
+           <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline Cultiva_Cotton.Cultiva_Cotton:layout_keyline}</code></td><td></td></tr>
            </table>
            @see #CoordinatorLayout_Layout_android_layout_gravity
            @see #CoordinatorLayout_Layout_layout_anchor
@@ -7433,17 +7434,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int CoordinatorLayout_Layout_android_layout_gravity = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_anchor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_anchor}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:layout_anchor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_anchor
         */
         public static final int CoordinatorLayout_Layout_layout_anchor = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_anchorGravity}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_anchorGravity}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7468,11 +7469,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:layout_anchorGravity
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_anchorGravity
         */
         public static final int CoordinatorLayout_Layout_layout_anchorGravity = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_behavior}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_behavior}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7482,11 +7483,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:layout_behavior
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_behavior
         */
         public static final int CoordinatorLayout_Layout_layout_behavior = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_dodgeInsetEdges}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_dodgeInsetEdges}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7505,11 +7506,11 @@ containing a value of this type.
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 <tr><td><code>all</code></td><td>0x77</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:layout_dodgeInsetEdges
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_dodgeInsetEdges
         */
         public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_insetEdge}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_insetEdge}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7527,11 +7528,11 @@ containing a value of this type.
 <tr><td><code>start</code></td><td>0x00800003</td><td></td></tr>
 <tr><td><code>end</code></td><td>0x00800005</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:layout_insetEdge
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_insetEdge
         */
         public static final int CoordinatorLayout_Layout_layout_insetEdge = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout_keyline}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout_keyline}
           attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
 
 
@@ -7541,7 +7542,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:layout_keyline
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout_keyline
         */
         public static final int CoordinatorLayout_Layout_layout_keyline = 3;
         /** Attributes that can be used with a DesignTheme.
@@ -7550,9 +7551,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme RegulaPrism.RegulaPrism:bottomSheetDialogTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_bottomSheetStyle RegulaPrism.RegulaPrism:bottomSheetStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #DesignTheme_textColorError RegulaPrism.RegulaPrism:textColorError}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme Cultiva_Cotton.Cultiva_Cotton:bottomSheetDialogTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_bottomSheetStyle Cultiva_Cotton.Cultiva_Cotton:bottomSheetStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #DesignTheme_textColorError Cultiva_Cotton.Cultiva_Cotton:textColorError}</code></td><td></td></tr>
            </table>
            @see #DesignTheme_bottomSheetDialogTheme
            @see #DesignTheme_bottomSheetStyle
@@ -7562,27 +7563,27 @@ containing a value of this type.
             0x7f010124, 0x7f010125, 0x7f010126
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#bottomSheetDialogTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#bottomSheetDialogTheme}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:bottomSheetDialogTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:bottomSheetDialogTheme
         */
         public static final int DesignTheme_bottomSheetDialogTheme = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#bottomSheetStyle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#bottomSheetStyle}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:bottomSheetStyle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:bottomSheetStyle
         */
         public static final int DesignTheme_bottomSheetStyle = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textColorError}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textColorError}
           attribute's value can be found in the {@link #DesignTheme} array.
 
 
@@ -7593,7 +7594,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:textColorError
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textColorError
         */
         public static final int DesignTheme_textColorError = 2;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -7602,14 +7603,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength RegulaPrism.RegulaPrism:arrowHeadLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength RegulaPrism.RegulaPrism:arrowShaftLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barLength RegulaPrism.RegulaPrism:barLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color RegulaPrism.RegulaPrism:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize RegulaPrism.RegulaPrism:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars RegulaPrism.RegulaPrism:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars RegulaPrism.RegulaPrism:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness RegulaPrism.RegulaPrism:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength Cultiva_Cotton.Cultiva_Cotton:arrowHeadLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength Cultiva_Cotton.Cultiva_Cotton:arrowShaftLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barLength Cultiva_Cotton.Cultiva_Cotton:barLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color Cultiva_Cotton.Cultiva_Cotton:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize Cultiva_Cotton.Cultiva_Cotton:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars Cultiva_Cotton.Cultiva_Cotton:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars Cultiva_Cotton.Cultiva_Cotton:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness Cultiva_Cotton.Cultiva_Cotton:thickness}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_arrowHeadLength
            @see #DrawerArrowToggle_arrowShaftLength
@@ -7625,7 +7626,7 @@ containing a value of this type.
             0x7f0100c4, 0x7f0100c5, 0x7f0100c6, 0x7f0100c7
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#arrowHeadLength}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#arrowHeadLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7637,11 +7638,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:arrowHeadLength
+          @attr name Cultiva_Cotton.Cultiva_Cotton:arrowHeadLength
         */
         public static final int DrawerArrowToggle_arrowHeadLength = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#arrowShaftLength}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#arrowShaftLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7653,11 +7654,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:arrowShaftLength
+          @attr name Cultiva_Cotton.Cultiva_Cotton:arrowShaftLength
         */
         public static final int DrawerArrowToggle_arrowShaftLength = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#barLength}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#barLength}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7669,11 +7670,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:barLength
+          @attr name Cultiva_Cotton.Cultiva_Cotton:barLength
         */
         public static final int DrawerArrowToggle_barLength = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#color}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7684,11 +7685,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:color
+          @attr name Cultiva_Cotton.Cultiva_Cotton:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7700,11 +7701,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:drawableSize
+          @attr name Cultiva_Cotton.Cultiva_Cotton:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7716,11 +7717,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:gapBetweenBars
+          @attr name Cultiva_Cotton.Cultiva_Cotton:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7730,11 +7731,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:spinBars
+          @attr name Cultiva_Cotton.Cultiva_Cotton:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#thickness}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -7746,7 +7747,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:thickness
+          @attr name Cultiva_Cotton.Cultiva_Cotton:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /** Attributes that can be used with a FloatingActionButton.
@@ -7755,14 +7756,14 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTint RegulaPrism.RegulaPrism:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode RegulaPrism.RegulaPrism:backgroundTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_borderWidth RegulaPrism.RegulaPrism:borderWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_fabSize RegulaPrism.RegulaPrism:fabSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ RegulaPrism.RegulaPrism:pressedTranslationZ}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_rippleColor RegulaPrism.RegulaPrism:rippleColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #FloatingActionButton_useCompatPadding RegulaPrism.RegulaPrism:useCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTint Cultiva_Cotton.Cultiva_Cotton:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_backgroundTintMode Cultiva_Cotton.Cultiva_Cotton:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_borderWidth Cultiva_Cotton.Cultiva_Cotton:borderWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_fabSize Cultiva_Cotton.Cultiva_Cotton:fabSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ Cultiva_Cotton.Cultiva_Cotton:pressedTranslationZ}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_rippleColor Cultiva_Cotton.Cultiva_Cotton:rippleColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_useCompatPadding Cultiva_Cotton.Cultiva_Cotton:useCompatPadding}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_backgroundTint
            @see #FloatingActionButton_backgroundTintMode
@@ -7778,7 +7779,7 @@ containing a value of this type.
             0x7f010128, 0x7f010129, 0x7f01012a, 0x7f01012b
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundTint}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7789,11 +7790,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:backgroundTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundTint
         */
         public static final int FloatingActionButton_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7809,11 +7810,11 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:backgroundTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundTintMode
         */
         public static final int FloatingActionButton_backgroundTintMode = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#borderWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#borderWidth}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7825,11 +7826,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:borderWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:borderWidth
         */
         public static final int FloatingActionButton_borderWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7841,11 +7842,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int FloatingActionButton_elevation = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#fabSize}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#fabSize}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7859,11 +7860,11 @@ containing a value of this type.
 <tr><td><code>normal</code></td><td>0</td><td></td></tr>
 <tr><td><code>mini</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:fabSize
+          @attr name Cultiva_Cotton.Cultiva_Cotton:fabSize
         */
         public static final int FloatingActionButton_fabSize = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#pressedTranslationZ}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#pressedTranslationZ}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7875,11 +7876,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:pressedTranslationZ
+          @attr name Cultiva_Cotton.Cultiva_Cotton:pressedTranslationZ
         */
         public static final int FloatingActionButton_pressedTranslationZ = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#rippleColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#rippleColor}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7890,11 +7891,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:rippleColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:rippleColor
         */
         public static final int FloatingActionButton_rippleColor = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#useCompatPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#useCompatPadding}
           attribute's value can be found in the {@link #FloatingActionButton} array.
 
 
@@ -7904,7 +7905,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:useCompatPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:useCompatPadding
         */
         public static final int FloatingActionButton_useCompatPadding = 7;
         /** Attributes that can be used with a FloatingActionButton_Behavior_Layout.
@@ -7913,7 +7914,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide RegulaPrism.RegulaPrism:behavior_autoHide}</code></td><td></td></tr>
+           <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide Cultiva_Cotton.Cultiva_Cotton:behavior_autoHide}</code></td><td></td></tr>
            </table>
            @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
          */
@@ -7921,7 +7922,7 @@ containing a value of this type.
             0x7f01012c
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#behavior_autoHide}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#behavior_autoHide}
           attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
 
 
@@ -7931,7 +7932,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:behavior_autoHide
+          @attr name Cultiva_Cotton.Cultiva_Cotton:behavior_autoHide
         */
         public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide = 0;
         /** Attributes that can be used with a ForegroundLinearLayout.
@@ -7942,7 +7943,7 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
            <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding RegulaPrism.RegulaPrism:foregroundInsidePadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding Cultiva_Cotton.Cultiva_Cotton:foregroundInsidePadding}</code></td><td></td></tr>
            </table>
            @see #ForegroundLinearLayout_android_foreground
            @see #ForegroundLinearLayout_android_foregroundGravity
@@ -7964,7 +7965,7 @@ containing a value of this type.
         */
         public static final int ForegroundLinearLayout_android_foregroundGravity = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#foregroundInsidePadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#foregroundInsidePadding}
           attribute's value can be found in the {@link #ForegroundLinearLayout} array.
 
 
@@ -7974,7 +7975,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:foregroundInsidePadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:foregroundInsidePadding
         */
         public static final int ForegroundLinearLayout_foregroundInsidePadding = 2;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -7988,10 +7989,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider RegulaPrism.RegulaPrism:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding RegulaPrism.RegulaPrism:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild RegulaPrism.RegulaPrism:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers RegulaPrism.RegulaPrism:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider Cultiva_Cotton.Cultiva_Cotton:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding Cultiva_Cotton.Cultiva_Cotton:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild Cultiva_Cotton.Cultiva_Cotton:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers Cultiva_Cotton.Cultiva_Cotton:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -8039,17 +8040,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#divider}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:divider
+          @attr name Cultiva_Cotton.Cultiva_Cotton:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8061,11 +8062,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:dividerPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8075,11 +8076,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:measureWithLargestChild
+          @attr name Cultiva_Cotton.Cultiva_Cotton:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -8094,7 +8095,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:showDividers
+          @attr name Cultiva_Cotton.Cultiva_Cotton:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -8175,8 +8176,8 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minHeight android:minHeight}</code></td><td></td></tr>
            <tr><td><code>{@link #MediaRouteButton_android_minWidth android:minWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_buttonTint RegulaPrism.RegulaPrism:buttonTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable RegulaPrism.RegulaPrism:externalRouteEnabledDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_buttonTint Cultiva_Cotton.Cultiva_Cotton:buttonTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #MediaRouteButton_externalRouteEnabledDrawable Cultiva_Cotton.Cultiva_Cotton:externalRouteEnabledDrawable}</code></td><td></td></tr>
            </table>
            @see #MediaRouteButton_android_minHeight
            @see #MediaRouteButton_android_minWidth
@@ -8199,7 +8200,7 @@ containing a value of this type.
         */
         public static final int MediaRouteButton_android_minWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonTint}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
@@ -8210,17 +8211,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:buttonTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonTint
         */
         public static final int MediaRouteButton_buttonTint = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#externalRouteEnabledDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#externalRouteEnabledDrawable}
           attribute's value can be found in the {@link #MediaRouteButton} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:externalRouteEnabledDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:externalRouteEnabledDrawable
         */
         public static final int MediaRouteButton_externalRouteEnabledDrawable = 2;
         /** Attributes that can be used with a MenuGroup.
@@ -8289,9 +8290,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout RegulaPrism.RegulaPrism:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass RegulaPrism.RegulaPrism:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass RegulaPrism.RegulaPrism:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout Cultiva_Cotton.Cultiva_Cotton:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass Cultiva_Cotton.Cultiva_Cotton:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass Cultiva_Cotton.Cultiva_Cotton:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -8305,7 +8306,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction RegulaPrism.RegulaPrism:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction Cultiva_Cotton.Cultiva_Cotton:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -8333,17 +8334,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100ce
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:actionLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8353,11 +8354,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:actionProviderClass
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8367,7 +8368,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:actionViewClass
+          @attr name Cultiva_Cotton.Cultiva_Cotton:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -8449,7 +8450,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -8465,7 +8466,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:showAsAction
+          @attr name Cultiva_Cotton.Cultiva_Cotton:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -8481,8 +8482,8 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing RegulaPrism.RegulaPrism:preserveIconSpacing}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_subMenuArrow RegulaPrism.RegulaPrism:subMenuArrow}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing Cultiva_Cotton.Cultiva_Cotton:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_subMenuArrow Cultiva_Cotton.Cultiva_Cotton:subMenuArrow}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -8542,7 +8543,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -8552,17 +8553,17 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:preserveIconSpacing
+          @attr name Cultiva_Cotton.Cultiva_Cotton:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subMenuArrow}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subMenuArrow}
           attribute's value can be found in the {@link #MenuView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:subMenuArrow
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
         /** Attributes that can be used with a NavigationView.
@@ -8574,13 +8575,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
            <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_headerLayout RegulaPrism.RegulaPrism:headerLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemBackground RegulaPrism.RegulaPrism:itemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemIconTint RegulaPrism.RegulaPrism:itemIconTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextAppearance RegulaPrism.RegulaPrism:itemTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_itemTextColor RegulaPrism.RegulaPrism:itemTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #NavigationView_menu RegulaPrism.RegulaPrism:menu}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_headerLayout Cultiva_Cotton.Cultiva_Cotton:headerLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemBackground Cultiva_Cotton.Cultiva_Cotton:itemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemIconTint Cultiva_Cotton.Cultiva_Cotton:itemIconTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextAppearance Cultiva_Cotton.Cultiva_Cotton:itemTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_itemTextColor Cultiva_Cotton.Cultiva_Cotton:itemTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #NavigationView_menu Cultiva_Cotton.Cultiva_Cotton:menu}</code></td><td></td></tr>
            </table>
            @see #NavigationView_android_background
            @see #NavigationView_android_fitsSystemWindows
@@ -8617,7 +8618,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int NavigationView_android_maxWidth = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8629,31 +8630,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int NavigationView_elevation = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#headerLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#headerLayout}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:headerLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:headerLayout
         */
         public static final int NavigationView_headerLayout = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemBackground}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:itemBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemBackground
         */
         public static final int NavigationView_itemBackground = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemIconTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemIconTint}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8664,21 +8665,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:itemIconTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemIconTint
         */
         public static final int NavigationView_itemIconTint = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemTextAppearance}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:itemTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemTextAppearance
         */
         public static final int NavigationView_itemTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#itemTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#itemTextColor}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
@@ -8689,17 +8690,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:itemTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:itemTextColor
         */
         public static final int NavigationView_itemTextColor = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#menu}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#menu}
           attribute's value can be found in the {@link #NavigationView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:menu
+          @attr name Cultiva_Cotton.Cultiva_Cotton:menu
         */
         public static final int NavigationView_menu = 4;
         /** Attributes that can be used with a PopupWindow.
@@ -8710,7 +8711,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor RegulaPrism.RegulaPrism:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor Cultiva_Cotton.Cultiva_Cotton:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupAnimationStyle
            @see #PopupWindow_android_popupBackground
@@ -8732,7 +8733,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -8742,7 +8743,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:overlapAnchor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 2;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -8751,7 +8752,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor RegulaPrism.RegulaPrism:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor Cultiva_Cotton.Cultiva_Cotton:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -8759,7 +8760,7 @@ containing a value of this type.
             0x7f0100d2
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -8769,7 +8770,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:state_above_anchor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a RecycleListView.
@@ -8778,8 +8779,8 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons RegulaPrism.RegulaPrism:paddingBottomNoButtons}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle RegulaPrism.RegulaPrism:paddingTopNoTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons Cultiva_Cotton.Cultiva_Cotton:paddingBottomNoButtons}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecycleListView_paddingTopNoTitle Cultiva_Cotton.Cultiva_Cotton:paddingTopNoTitle}</code></td><td></td></tr>
            </table>
            @see #RecycleListView_paddingBottomNoButtons
            @see #RecycleListView_paddingTopNoTitle
@@ -8788,7 +8789,7 @@ containing a value of this type.
             0x7f0100d3, 0x7f0100d4
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#paddingBottomNoButtons}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#paddingBottomNoButtons}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -8800,11 +8801,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:paddingBottomNoButtons
+          @attr name Cultiva_Cotton.Cultiva_Cotton:paddingBottomNoButtons
         */
         public static final int RecycleListView_paddingBottomNoButtons = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#paddingTopNoTitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#paddingTopNoTitle}
           attribute's value can be found in the {@link #RecycleListView} array.
 
 
@@ -8816,7 +8817,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:paddingTopNoTitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:paddingTopNoTitle
         */
         public static final int RecycleListView_paddingTopNoTitle = 1;
         /** Attributes that can be used with a RecyclerView.
@@ -8827,10 +8828,10 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
            <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_layoutManager RegulaPrism.RegulaPrism:layoutManager}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_reverseLayout RegulaPrism.RegulaPrism:reverseLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_spanCount RegulaPrism.RegulaPrism:spanCount}</code></td><td></td></tr>
-           <tr><td><code>{@link #RecyclerView_stackFromEnd RegulaPrism.RegulaPrism:stackFromEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_layoutManager Cultiva_Cotton.Cultiva_Cotton:layoutManager}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_reverseLayout Cultiva_Cotton.Cultiva_Cotton:reverseLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_spanCount Cultiva_Cotton.Cultiva_Cotton:spanCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #RecyclerView_stackFromEnd Cultiva_Cotton.Cultiva_Cotton:stackFromEnd}</code></td><td></td></tr>
            </table>
            @see #RecyclerView_android_descendantFocusability
            @see #RecyclerView_android_orientation
@@ -8856,7 +8857,7 @@ containing a value of this type.
         */
         public static final int RecyclerView_android_orientation = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layoutManager}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layoutManager}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8866,11 +8867,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:layoutManager
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layoutManager
         */
         public static final int RecyclerView_layoutManager = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#reverseLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8880,11 +8881,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:reverseLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:reverseLayout
         */
         public static final int RecyclerView_reverseLayout = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#spanCount}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8894,11 +8895,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:spanCount
+          @attr name Cultiva_Cotton.Cultiva_Cotton:spanCount
         */
         public static final int RecyclerView_spanCount = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#stackFromEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
 
 
@@ -8908,7 +8909,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:stackFromEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:stackFromEnd
         */
         public static final int RecyclerView_stackFromEnd = 5;
         /** Attributes that can be used with a ScrimInsetsFrameLayout.
@@ -8917,7 +8918,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground RegulaPrism.RegulaPrism:insetForeground}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground Cultiva_Cotton.Cultiva_Cotton:insetForeground}</code></td><td></td></tr>
            </table>
            @see #ScrimInsetsFrameLayout_insetForeground
          */
@@ -8925,7 +8926,7 @@ containing a value of this type.
             0x7f010134
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#insetForeground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#insetForeground}
           attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
 
 
@@ -8933,7 +8934,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name RegulaPrism.RegulaPrism:insetForeground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:insetForeground
         */
         public static final int ScrimInsetsFrameLayout_insetForeground = 0;
         /** Attributes that can be used with a ScrollingViewBehavior_Layout.
@@ -8942,7 +8943,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop RegulaPrism.RegulaPrism:behavior_overlapTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop Cultiva_Cotton.Cultiva_Cotton:behavior_overlapTop}</code></td><td></td></tr>
            </table>
            @see #ScrollingViewBehavior_Layout_behavior_overlapTop
          */
@@ -8950,7 +8951,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010135
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#behavior_overlapTop}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#behavior_overlapTop}
           attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
 
 
@@ -8962,7 +8963,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:behavior_overlapTop
+          @attr name Cultiva_Cotton.Cultiva_Cotton:behavior_overlapTop
         */
         public static final int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
         /** Attributes that can be used with a SearchView.
@@ -8975,19 +8976,19 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon RegulaPrism.RegulaPrism:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon RegulaPrism.RegulaPrism:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_defaultQueryHint RegulaPrism.RegulaPrism:defaultQueryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon RegulaPrism.RegulaPrism:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault RegulaPrism.RegulaPrism:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout RegulaPrism.RegulaPrism:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground RegulaPrism.RegulaPrism:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint RegulaPrism.RegulaPrism:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchHintIcon RegulaPrism.RegulaPrism:searchHintIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon RegulaPrism.RegulaPrism:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground RegulaPrism.RegulaPrism:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout RegulaPrism.RegulaPrism:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon RegulaPrism.RegulaPrism:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon Cultiva_Cotton.Cultiva_Cotton:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon Cultiva_Cotton.Cultiva_Cotton:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_defaultQueryHint Cultiva_Cotton.Cultiva_Cotton:defaultQueryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon Cultiva_Cotton.Cultiva_Cotton:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault Cultiva_Cotton.Cultiva_Cotton:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout Cultiva_Cotton.Cultiva_Cotton:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground Cultiva_Cotton.Cultiva_Cotton:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint Cultiva_Cotton.Cultiva_Cotton:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchHintIcon Cultiva_Cotton.Cultiva_Cotton:searchHintIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon Cultiva_Cotton.Cultiva_Cotton:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground Cultiva_Cotton.Cultiva_Cotton:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout Cultiva_Cotton.Cultiva_Cotton:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon Cultiva_Cotton.Cultiva_Cotton:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -9039,27 +9040,27 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:closeIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:closeIcon
         */
         public static final int SearchView_closeIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:commitIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:commitIcon
         */
         public static final int SearchView_commitIcon = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#defaultQueryHint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#defaultQueryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9069,21 +9070,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:defaultQueryHint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:defaultQueryHint
         */
         public static final int SearchView_defaultQueryHint = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:goIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:goIcon
         */
         public static final int SearchView_goIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9093,31 +9094,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:iconifiedByDefault
+          @attr name Cultiva_Cotton.Cultiva_Cotton:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#layout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:layout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:queryBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:queryBackground
         */
         public static final int SearchView_queryBackground = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -9127,57 +9128,57 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:queryHint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#searchHintIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#searchHintIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:searchHintIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:searchHintIcon
         */
         public static final int SearchView_searchHintIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:searchIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:searchIcon
         */
         public static final int SearchView_searchIcon = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:submitBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:submitBackground
         */
         public static final int SearchView_submitBackground = 16;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:suggestionRowLayout
+          @attr name Cultiva_Cotton.Cultiva_Cotton:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:voiceIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:voiceIcon
         */
         public static final int SearchView_voiceIcon = 12;
         /** Attributes that can be used with a SnackbarLayout.
@@ -9187,8 +9188,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_elevation RegulaPrism.RegulaPrism:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth RegulaPrism.RegulaPrism:maxActionInlineWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_elevation Cultiva_Cotton.Cultiva_Cotton:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth Cultiva_Cotton.Cultiva_Cotton:maxActionInlineWidth}</code></td><td></td></tr>
            </table>
            @see #SnackbarLayout_android_maxWidth
            @see #SnackbarLayout_elevation
@@ -9204,7 +9205,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SnackbarLayout_android_maxWidth = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#elevation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#elevation}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9216,11 +9217,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:elevation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:elevation
         */
         public static final int SnackbarLayout_elevation = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#maxActionInlineWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#maxActionInlineWidth}
           attribute's value can be found in the {@link #SnackbarLayout} array.
 
 
@@ -9232,7 +9233,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:maxActionInlineWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:maxActionInlineWidth
         */
         public static final int SnackbarLayout_maxActionInlineWidth = 2;
         /** Attributes that can be used with a Spinner.
@@ -9245,7 +9246,7 @@ containing a value of this type.
            <tr><td><code>{@link #Spinner_android_entries android:entries}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupTheme RegulaPrism.RegulaPrism:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupTheme Cultiva_Cotton.Cultiva_Cotton:popupTheme}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_dropDownWidth
            @see #Spinner_android_entries
@@ -9282,13 +9283,13 @@ containing a value of this type.
         */
         public static final int Spinner_android_prompt = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#popupTheme}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:popupTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:popupTheme
         */
         public static final int Spinner_popupTheme = 4;
         /** Attributes that can be used with a SwitchCompat.
@@ -9300,17 +9301,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText RegulaPrism.RegulaPrism:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack RegulaPrism.RegulaPrism:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth RegulaPrism.RegulaPrism:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding RegulaPrism.RegulaPrism:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance RegulaPrism.RegulaPrism:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding RegulaPrism.RegulaPrism:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTint RegulaPrism.RegulaPrism:thumbTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTintMode RegulaPrism.RegulaPrism:thumbTintMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track RegulaPrism.RegulaPrism:track}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTint RegulaPrism.RegulaPrism:trackTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_trackTintMode RegulaPrism.RegulaPrism:trackTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText Cultiva_Cotton.Cultiva_Cotton:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack Cultiva_Cotton.Cultiva_Cotton:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth Cultiva_Cotton.Cultiva_Cotton:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding Cultiva_Cotton.Cultiva_Cotton:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance Cultiva_Cotton.Cultiva_Cotton:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding Cultiva_Cotton.Cultiva_Cotton:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTint Cultiva_Cotton.Cultiva_Cotton:thumbTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTintMode Cultiva_Cotton.Cultiva_Cotton:thumbTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track Cultiva_Cotton.Cultiva_Cotton:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTint Cultiva_Cotton.Cultiva_Cotton:trackTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_trackTintMode Cultiva_Cotton.Cultiva_Cotton:trackTintMode}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -9352,7 +9353,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#showText}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9362,11 +9363,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:showText
+          @attr name Cultiva_Cotton.Cultiva_Cotton:showText
         */
         public static final int SwitchCompat_showText = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9376,11 +9377,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:splitTrack
+          @attr name Cultiva_Cotton.Cultiva_Cotton:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9392,11 +9393,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:switchMinWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9408,21 +9409,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:switchPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:switchTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9434,11 +9435,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:thumbTextPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#thumbTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#thumbTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9449,11 +9450,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:thumbTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:thumbTint
         */
         public static final int SwitchCompat_thumbTint = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#thumbTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#thumbTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9470,21 +9471,21 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:thumbTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:thumbTintMode
         */
         public static final int SwitchCompat_thumbTintMode = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#track}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:track
+          @attr name Cultiva_Cotton.Cultiva_Cotton:track
         */
         public static final int SwitchCompat_track = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#trackTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#trackTint}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9495,11 +9496,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:trackTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:trackTint
         */
         public static final int SwitchCompat_trackTint = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#trackTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#trackTintMode}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -9516,7 +9517,7 @@ containing a value of this type.
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 <tr><td><code>add</code></td><td>16</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:trackTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:trackTintMode
         */
         public static final int SwitchCompat_trackTintMode = 7;
         /** Attributes that can be used with a TabItem.
@@ -9560,22 +9561,22 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TabLayout_tabBackground RegulaPrism.RegulaPrism:tabBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabContentStart RegulaPrism.RegulaPrism:tabContentStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabGravity RegulaPrism.RegulaPrism:tabGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorColor RegulaPrism.RegulaPrism:tabIndicatorColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabIndicatorHeight RegulaPrism.RegulaPrism:tabIndicatorHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMaxWidth RegulaPrism.RegulaPrism:tabMaxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMinWidth RegulaPrism.RegulaPrism:tabMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabMode RegulaPrism.RegulaPrism:tabMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPadding RegulaPrism.RegulaPrism:tabPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingBottom RegulaPrism.RegulaPrism:tabPaddingBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingEnd RegulaPrism.RegulaPrism:tabPaddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingStart RegulaPrism.RegulaPrism:tabPaddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabPaddingTop RegulaPrism.RegulaPrism:tabPaddingTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabSelectedTextColor RegulaPrism.RegulaPrism:tabSelectedTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextAppearance RegulaPrism.RegulaPrism:tabTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TabLayout_tabTextColor RegulaPrism.RegulaPrism:tabTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabBackground Cultiva_Cotton.Cultiva_Cotton:tabBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabContentStart Cultiva_Cotton.Cultiva_Cotton:tabContentStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabGravity Cultiva_Cotton.Cultiva_Cotton:tabGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorColor Cultiva_Cotton.Cultiva_Cotton:tabIndicatorColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabIndicatorHeight Cultiva_Cotton.Cultiva_Cotton:tabIndicatorHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMaxWidth Cultiva_Cotton.Cultiva_Cotton:tabMaxWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMinWidth Cultiva_Cotton.Cultiva_Cotton:tabMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabMode Cultiva_Cotton.Cultiva_Cotton:tabMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPadding Cultiva_Cotton.Cultiva_Cotton:tabPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingBottom Cultiva_Cotton.Cultiva_Cotton:tabPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingEnd Cultiva_Cotton.Cultiva_Cotton:tabPaddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingStart Cultiva_Cotton.Cultiva_Cotton:tabPaddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabPaddingTop Cultiva_Cotton.Cultiva_Cotton:tabPaddingTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabSelectedTextColor Cultiva_Cotton.Cultiva_Cotton:tabSelectedTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextAppearance Cultiva_Cotton.Cultiva_Cotton:tabTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TabLayout_tabTextColor Cultiva_Cotton.Cultiva_Cotton:tabTextColor}</code></td><td></td></tr>
            </table>
            @see #TabLayout_tabBackground
            @see #TabLayout_tabContentStart
@@ -9601,17 +9602,17 @@ containing a value of this type.
             0x7f010143, 0x7f010144, 0x7f010145, 0x7f010146
         };
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabBackground}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabBackground}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:tabBackground
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabBackground
         */
         public static final int TabLayout_tabBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabContentStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabContentStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9623,11 +9624,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabContentStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabContentStart
         */
         public static final int TabLayout_tabContentStart = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabGravity}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabGravity}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9640,11 +9641,11 @@ containing a value of this type.
 <tr><td><code>fill</code></td><td>0</td><td></td></tr>
 <tr><td><code>center</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:tabGravity
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabGravity
         */
         public static final int TabLayout_tabGravity = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabIndicatorColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabIndicatorColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9655,11 +9656,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabIndicatorColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabIndicatorColor
         */
         public static final int TabLayout_tabIndicatorColor = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabIndicatorHeight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabIndicatorHeight}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9671,11 +9672,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabIndicatorHeight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabIndicatorHeight
         */
         public static final int TabLayout_tabIndicatorHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabMaxWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabMaxWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9687,11 +9688,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabMaxWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabMaxWidth
         */
         public static final int TabLayout_tabMaxWidth = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabMinWidth}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabMinWidth}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9703,11 +9704,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabMinWidth
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabMinWidth
         */
         public static final int TabLayout_tabMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabMode}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9720,11 +9721,11 @@ containing a value of this type.
 <tr><td><code>scrollable</code></td><td>0</td><td></td></tr>
 <tr><td><code>fixed</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:tabMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabMode
         */
         public static final int TabLayout_tabMode = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabPadding}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabPadding}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9736,11 +9737,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabPadding
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabPadding
         */
         public static final int TabLayout_tabPadding = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabPaddingBottom}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabPaddingBottom}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9752,11 +9753,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabPaddingBottom
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabPaddingBottom
         */
         public static final int TabLayout_tabPaddingBottom = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabPaddingEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabPaddingEnd}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9768,11 +9769,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabPaddingEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabPaddingEnd
         */
         public static final int TabLayout_tabPaddingEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabPaddingStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabPaddingStart}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9784,11 +9785,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabPaddingStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabPaddingStart
         */
         public static final int TabLayout_tabPaddingStart = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabPaddingTop}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabPaddingTop}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9800,11 +9801,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabPaddingTop
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabPaddingTop
         */
         public static final int TabLayout_tabPaddingTop = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabSelectedTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabSelectedTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9815,21 +9816,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabSelectedTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabSelectedTextColor
         */
         public static final int TabLayout_tabSelectedTextColor = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabTextAppearance}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:tabTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabTextAppearance
         */
         public static final int TabLayout_tabTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#tabTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#tabTextColor}
           attribute's value can be found in the {@link #TabLayout} array.
 
 
@@ -9840,7 +9841,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:tabTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:tabTextColor
         */
         public static final int TabLayout_tabTextColor = 9;
         /** Attributes that can be used with a TextAppearance.
@@ -9858,7 +9859,7 @@ containing a value of this type.
            <tr><td><code>{@link #TextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_textStyle android:textStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #TextAppearance_android_typeface android:typeface}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextAppearance_textAllCaps RegulaPrism.RegulaPrism:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextAppearance_textAllCaps Cultiva_Cotton.Cultiva_Cotton:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #TextAppearance_android_shadowColor
            @see #TextAppearance_android_shadowDx
@@ -9931,14 +9932,14 @@ containing a value of this type.
         */
         public static final int TextAppearance_android_typeface = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#textAllCaps}
           attribute's value can be found in the {@link #TextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name RegulaPrism.RegulaPrism:textAllCaps
+          @attr name Cultiva_Cotton.Cultiva_Cotton:textAllCaps
         */
         public static final int TextAppearance_textAllCaps = 9;
         /** Attributes that can be used with a TextInputLayout.
@@ -9949,20 +9950,20 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
            <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterEnabled RegulaPrism.RegulaPrism:counterEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterMaxLength RegulaPrism.RegulaPrism:counterMaxLength}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance RegulaPrism.RegulaPrism:counterOverflowTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_counterTextAppearance RegulaPrism.RegulaPrism:counterTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorEnabled RegulaPrism.RegulaPrism:errorEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_errorTextAppearance RegulaPrism.RegulaPrism:errorTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled RegulaPrism.RegulaPrism:hintAnimationEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintEnabled RegulaPrism.RegulaPrism:hintEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_hintTextAppearance RegulaPrism.RegulaPrism:hintTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription RegulaPrism.RegulaPrism:passwordToggleContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable RegulaPrism.RegulaPrism:passwordToggleDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled RegulaPrism.RegulaPrism:passwordToggleEnabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTint RegulaPrism.RegulaPrism:passwordToggleTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode RegulaPrism.RegulaPrism:passwordToggleTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterEnabled Cultiva_Cotton.Cultiva_Cotton:counterEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterMaxLength Cultiva_Cotton.Cultiva_Cotton:counterMaxLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance Cultiva_Cotton.Cultiva_Cotton:counterOverflowTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_counterTextAppearance Cultiva_Cotton.Cultiva_Cotton:counterTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorEnabled Cultiva_Cotton.Cultiva_Cotton:errorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_errorTextAppearance Cultiva_Cotton.Cultiva_Cotton:errorTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled Cultiva_Cotton.Cultiva_Cotton:hintAnimationEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintEnabled Cultiva_Cotton.Cultiva_Cotton:hintEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_hintTextAppearance Cultiva_Cotton.Cultiva_Cotton:hintTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription Cultiva_Cotton.Cultiva_Cotton:passwordToggleContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable Cultiva_Cotton.Cultiva_Cotton:passwordToggleDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled Cultiva_Cotton.Cultiva_Cotton:passwordToggleEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTint Cultiva_Cotton.Cultiva_Cotton:passwordToggleTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode Cultiva_Cotton.Cultiva_Cotton:passwordToggleTintMode}</code></td><td></td></tr>
            </table>
            @see #TextInputLayout_android_hint
            @see #TextInputLayout_android_textColorHint
@@ -10000,7 +10001,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int TextInputLayout_android_textColorHint = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#counterEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#counterEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10010,11 +10011,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:counterEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:counterEnabled
         */
         public static final int TextInputLayout_counterEnabled = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#counterMaxLength}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#counterMaxLength}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10024,31 +10025,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:counterMaxLength
+          @attr name Cultiva_Cotton.Cultiva_Cotton:counterMaxLength
         */
         public static final int TextInputLayout_counterMaxLength = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#counterOverflowTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#counterOverflowTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:counterOverflowTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:counterOverflowTextAppearance
         */
         public static final int TextInputLayout_counterOverflowTextAppearance = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#counterTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#counterTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:counterTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:counterTextAppearance
         */
         public static final int TextInputLayout_counterTextAppearance = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#errorEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#errorEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10058,21 +10059,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:errorEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:errorEnabled
         */
         public static final int TextInputLayout_errorEnabled = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#errorTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#errorTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:errorTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:errorTextAppearance
         */
         public static final int TextInputLayout_errorTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#hintAnimationEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#hintAnimationEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10082,11 +10083,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:hintAnimationEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:hintAnimationEnabled
         */
         public static final int TextInputLayout_hintAnimationEnabled = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#hintEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#hintEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10096,21 +10097,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:hintEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:hintEnabled
         */
         public static final int TextInputLayout_hintEnabled = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#hintTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#hintTextAppearance}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:hintTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:hintTextAppearance
         */
         public static final int TextInputLayout_hintTextAppearance = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#passwordToggleContentDescription}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#passwordToggleContentDescription}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10120,21 +10121,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:passwordToggleContentDescription
+          @attr name Cultiva_Cotton.Cultiva_Cotton:passwordToggleContentDescription
         */
         public static final int TextInputLayout_passwordToggleContentDescription = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#passwordToggleDrawable}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#passwordToggleDrawable}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:passwordToggleDrawable
+          @attr name Cultiva_Cotton.Cultiva_Cotton:passwordToggleDrawable
         */
         public static final int TextInputLayout_passwordToggleDrawable = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#passwordToggleEnabled}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#passwordToggleEnabled}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10144,11 +10145,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:passwordToggleEnabled
+          @attr name Cultiva_Cotton.Cultiva_Cotton:passwordToggleEnabled
         */
         public static final int TextInputLayout_passwordToggleEnabled = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#passwordToggleTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#passwordToggleTint}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10159,11 +10160,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:passwordToggleTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:passwordToggleTint
         */
         public static final int TextInputLayout_passwordToggleTint = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#passwordToggleTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#passwordToggleTintMode}
           attribute's value can be found in the {@link #TextInputLayout} array.
 
 
@@ -10179,7 +10180,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:passwordToggleTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:passwordToggleTintMode
         */
         public static final int TextInputLayout_passwordToggleTintMode = 15;
         /** Attributes that can be used with a Toolbar.
@@ -10190,33 +10191,33 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_buttonGravity RegulaPrism.RegulaPrism:buttonGravity}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription RegulaPrism.RegulaPrism:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon RegulaPrism.RegulaPrism:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd RegulaPrism.RegulaPrism:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions RegulaPrism.RegulaPrism:contentInsetEndWithActions}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft RegulaPrism.RegulaPrism:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight RegulaPrism.RegulaPrism:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart RegulaPrism.RegulaPrism:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation RegulaPrism.RegulaPrism:contentInsetStartWithNavigation}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logo RegulaPrism.RegulaPrism:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_logoDescription RegulaPrism.RegulaPrism:logoDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight RegulaPrism.RegulaPrism:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription RegulaPrism.RegulaPrism:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon RegulaPrism.RegulaPrism:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme RegulaPrism.RegulaPrism:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle RegulaPrism.RegulaPrism:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance RegulaPrism.RegulaPrism:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextColor RegulaPrism.RegulaPrism:subtitleTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title RegulaPrism.RegulaPrism:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargin RegulaPrism.RegulaPrism:titleMargin}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom RegulaPrism.RegulaPrism:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd RegulaPrism.RegulaPrism:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart RegulaPrism.RegulaPrism:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop RegulaPrism.RegulaPrism:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins RegulaPrism.RegulaPrism:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance RegulaPrism.RegulaPrism:titleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextColor RegulaPrism.RegulaPrism:titleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_buttonGravity Cultiva_Cotton.Cultiva_Cotton:buttonGravity}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription Cultiva_Cotton.Cultiva_Cotton:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon Cultiva_Cotton.Cultiva_Cotton:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd Cultiva_Cotton.Cultiva_Cotton:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEndWithActions Cultiva_Cotton.Cultiva_Cotton:contentInsetEndWithActions}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft Cultiva_Cotton.Cultiva_Cotton:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight Cultiva_Cotton.Cultiva_Cotton:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart Cultiva_Cotton.Cultiva_Cotton:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation Cultiva_Cotton.Cultiva_Cotton:contentInsetStartWithNavigation}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logo Cultiva_Cotton.Cultiva_Cotton:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_logoDescription Cultiva_Cotton.Cultiva_Cotton:logoDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight Cultiva_Cotton.Cultiva_Cotton:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription Cultiva_Cotton.Cultiva_Cotton:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon Cultiva_Cotton.Cultiva_Cotton:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme Cultiva_Cotton.Cultiva_Cotton:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle Cultiva_Cotton.Cultiva_Cotton:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance Cultiva_Cotton.Cultiva_Cotton:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextColor Cultiva_Cotton.Cultiva_Cotton:subtitleTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title Cultiva_Cotton.Cultiva_Cotton:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargin Cultiva_Cotton.Cultiva_Cotton:titleMargin}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom Cultiva_Cotton.Cultiva_Cotton:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd Cultiva_Cotton.Cultiva_Cotton:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart Cultiva_Cotton.Cultiva_Cotton:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop Cultiva_Cotton.Cultiva_Cotton:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins Cultiva_Cotton.Cultiva_Cotton:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance Cultiva_Cotton.Cultiva_Cotton:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextColor Cultiva_Cotton.Cultiva_Cotton:titleTextColor}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -10271,7 +10272,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#buttonGravity}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#buttonGravity}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10284,11 +10285,11 @@ containing a value of this type.
 <tr><td><code>top</code></td><td>0x30</td><td></td></tr>
 <tr><td><code>bottom</code></td><td>0x50</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:buttonGravity
+          @attr name Cultiva_Cotton.Cultiva_Cotton:buttonGravity
         */
         public static final int Toolbar_buttonGravity = 21;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10298,21 +10299,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:collapseContentDescription
+          @attr name Cultiva_Cotton.Cultiva_Cotton:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 23;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:collapseIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 22;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10324,11 +10325,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 6;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetEndWithActions}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetEndWithActions}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10340,11 +10341,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetEndWithActions
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetEndWithActions
         */
         public static final int Toolbar_contentInsetEndWithActions = 10;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10356,11 +10357,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetLeft
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 7;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10372,11 +10373,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetRight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 8;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10388,11 +10389,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 5;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#contentInsetStartWithNavigation}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#contentInsetStartWithNavigation}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10404,21 +10405,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:contentInsetStartWithNavigation
+          @attr name Cultiva_Cotton.Cultiva_Cotton:contentInsetStartWithNavigation
         */
         public static final int Toolbar_contentInsetStartWithNavigation = 9;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#logo}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#logo}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:logo
+          @attr name Cultiva_Cotton.Cultiva_Cotton:logo
         */
         public static final int Toolbar_logo = 4;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#logoDescription}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#logoDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10428,11 +10429,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:logoDescription
+          @attr name Cultiva_Cotton.Cultiva_Cotton:logoDescription
         */
         public static final int Toolbar_logoDescription = 26;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10444,11 +10445,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:maxButtonHeight
+          @attr name Cultiva_Cotton.Cultiva_Cotton:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 20;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10458,31 +10459,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:navigationContentDescription
+          @attr name Cultiva_Cotton.Cultiva_Cotton:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 25;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:navigationIcon
+          @attr name Cultiva_Cotton.Cultiva_Cotton:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 24;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:popupTheme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:popupTheme
         */
         public static final int Toolbar_popupTheme = 11;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10492,21 +10493,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:subtitle
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:subtitleTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 13;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#subtitleTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#subtitleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10517,11 +10518,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:subtitleTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:subtitleTextColor
         */
         public static final int Toolbar_subtitleTextColor = 28;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#title}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10531,11 +10532,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:title
+          @attr name Cultiva_Cotton.Cultiva_Cotton:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMargin}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMargin}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10547,11 +10548,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMargin
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMargin
         */
         public static final int Toolbar_titleMargin = 14;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10563,11 +10564,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMarginBottom
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 18;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10579,11 +10580,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMarginEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 16;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10595,11 +10596,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMarginStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 15;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10611,11 +10612,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMarginTop
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 17;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10627,21 +10628,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleMargins
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleMargins
         */
         public static final int Toolbar_titleMargins = 19;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:titleTextAppearance
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 12;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#titleTextColor}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#titleTextColor}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -10652,7 +10653,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:titleTextColor
+          @attr name Cultiva_Cotton.Cultiva_Cotton:titleTextColor
         */
         public static final int Toolbar_titleTextColor = 27;
         /** Attributes that can be used with a View.
@@ -10663,9 +10664,9 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
            <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd RegulaPrism.RegulaPrism:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart RegulaPrism.RegulaPrism:paddingStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_theme RegulaPrism.RegulaPrism:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd Cultiva_Cotton.Cultiva_Cotton:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart Cultiva_Cotton.Cultiva_Cotton:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_theme Cultiva_Cotton.Cultiva_Cotton:theme}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_android_theme
@@ -10690,7 +10691,7 @@ containing a value of this type.
         */
         public static final int View_android_theme = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10702,11 +10703,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:paddingEnd
+          @attr name Cultiva_Cotton.Cultiva_Cotton:paddingEnd
         */
         public static final int View_paddingEnd = 3;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -10718,17 +10719,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:paddingStart
+          @attr name Cultiva_Cotton.Cultiva_Cotton:paddingStart
         */
         public static final int View_paddingStart = 2;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#theme}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#theme}
           attribute's value can be found in the {@link #View} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name RegulaPrism.RegulaPrism:theme
+          @attr name Cultiva_Cotton.Cultiva_Cotton:theme
         */
         public static final int View_theme = 4;
         /** Attributes that can be used with a ViewBackgroundHelper.
@@ -10738,8 +10739,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint RegulaPrism.RegulaPrism:backgroundTint}</code></td><td></td></tr>
-           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode RegulaPrism.RegulaPrism:backgroundTintMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint Cultiva_Cotton.Cultiva_Cotton:backgroundTint}</code></td><td></td></tr>
+           <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode Cultiva_Cotton.Cultiva_Cotton:backgroundTintMode}</code></td><td></td></tr>
            </table>
            @see #ViewBackgroundHelper_android_background
            @see #ViewBackgroundHelper_backgroundTint
@@ -10755,7 +10756,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int ViewBackgroundHelper_android_background = 0;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundTint}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundTint}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10766,11 +10767,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name RegulaPrism.RegulaPrism:backgroundTint
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundTint
         */
         public static final int ViewBackgroundHelper_backgroundTint = 1;
         /**
-          <p>This symbol is the offset where the {@link RegulaPrism.RegulaPrism.R.attr#backgroundTintMode}
+          <p>This symbol is the offset where the {@link Cultiva_Cotton.Cultiva_Cotton.R.attr#backgroundTintMode}
           attribute's value can be found in the {@link #ViewBackgroundHelper} array.
 
 
@@ -10786,7 +10787,7 @@ containing a value of this type.
 <tr><td><code>multiply</code></td><td>14</td><td></td></tr>
 <tr><td><code>screen</code></td><td>15</td><td></td></tr>
 </table>
-          @attr name RegulaPrism.RegulaPrism:backgroundTintMode
+          @attr name Cultiva_Cotton.Cultiva_Cotton:backgroundTintMode
         */
         public static final int ViewBackgroundHelper_backgroundTintMode = 2;
         /** Attributes that can be used with a ViewStubCompat.
