@@ -16,6 +16,7 @@ namespace RegulaPrism.Services
     {
         HttpClient client = new HttpClient();
 
+        #region Cultivares
         public async Task<List<Cultivar>> GetCultivaresAsync()
         {
             try
@@ -25,102 +26,6 @@ namespace RegulaPrism.Services
                 var cultivaresJson = JsonConvert.DeserializeObject<List<CultivarJson>>(response);
 
                 return loadCultivares(cultivaresJson);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<Doenca>> GetDoencasAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/doencas";
-                var response = await client.GetStringAsync(url);
-                var doencas = JsonConvert.DeserializeObject<List<Doenca>>(response);
-
-                return doencas;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<EpocaSemeadura>> GetEpocasSemeaduraAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/epocassemeaduras";
-                var response = await client.GetStringAsync(url);
-                var es = JsonConvert.DeserializeObject<List<EpocaSemeadura>>(response);
-
-                return es;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<Ciclo>> GetCiclosAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/ciclos";
-                var response = await client.GetStringAsync(url);
-                var ciclos = JsonConvert.DeserializeObject<List<Ciclo>>(response);
-
-                return ciclos;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<Tolerancia>> GetToleranciasAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/tolerancias";
-                var response = await client.GetStringAsync(url);
-                var tolerancias = JsonConvert.DeserializeObject<List<Tolerancia>>(response);
-
-                return tolerancias;
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<CultivarDoenca>> GetCultivarDoencasAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/cultivaresdoencas";
-                var response = await client.GetStringAsync(url);
-                var cd = JsonConvert.DeserializeObject<List<CultivarDoencaJson>>(response);
-
-                return loadCultivaresDoencas(cd);
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
-
-        public async Task<List<CultivarEpocaSemeadura>> GetCultivarEpocaSemeaduraAsync()
-        {
-            try
-            {
-                string url = "http://www.cottonappadm.xyz/api/cultivaresepocasemeadura";
-                var response = await client.GetStringAsync(url);
-                var cep = JsonConvert.DeserializeObject<List<CultivarEpocaSemeaduraJson>>(response);
-
-                return loadCultivaresEpocaSemeadura(cep);
             }
             catch (Exception ex)
             {
@@ -162,6 +67,96 @@ namespace RegulaPrism.Services
 
             return cultivares;
         }
+        #endregion
+
+        #region Doencas
+        public async Task<List<Doenca>> GetDoencasAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/doencas";
+                var response = await client.GetStringAsync(url);
+                var doencas = JsonConvert.DeserializeObject<List<Doenca>>(response);
+
+                return doencas;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region EpocasSemeadura
+        public async Task<List<EpocaSemeadura>> GetEpocasSemeaduraAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/epocassemeaduras";
+                var response = await client.GetStringAsync(url);
+                var es = JsonConvert.DeserializeObject<List<EpocaSemeadura>>(response);
+
+                return es;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Ciclos
+        public async Task<List<Ciclo>> GetCiclosAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/ciclos";
+                var response = await client.GetStringAsync(url);
+                var ciclos = JsonConvert.DeserializeObject<List<Ciclo>>(response);
+
+                return ciclos;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Tolerancias
+        public async Task<List<Tolerancia>> GetToleranciasAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/tolerancias";
+                var response = await client.GetStringAsync(url);
+                var tolerancias = JsonConvert.DeserializeObject<List<Tolerancia>>(response);
+
+                return tolerancias;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        #endregion
+
+        #region Cultivares e Doenças
+        public async Task<List<CultivarDoenca>> GetCultivarDoencasAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/cultivaresdoencas";
+                var response = await client.GetStringAsync(url);
+                var cd = JsonConvert.DeserializeObject<List<CultivarDoencaJson>>(response);
+
+                return loadCultivaresDoencas(cd);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         private List<CultivarDoenca> loadCultivaresDoencas(List<CultivarDoencaJson> cultivaresDoencasJson)
         {
@@ -179,6 +174,25 @@ namespace RegulaPrism.Services
             }
 
             return cultivaresDoencas;
+        }
+        #endregion
+
+        #region Cultivares e Epocas de Semeadura
+
+        public async Task<List<CultivarEpocaSemeadura>> GetCultivarEpocaSemeaduraAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/cultivaresepocasemeadura";
+                var response = await client.GetStringAsync(url);
+                var cep = JsonConvert.DeserializeObject<List<CultivarEpocaSemeaduraJson>>(response);
+
+                return loadCultivaresEpocaSemeadura(cep);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         private List<CultivarEpocaSemeadura> loadCultivaresEpocaSemeadura(List<CultivarEpocaSemeaduraJson> cultivaresEpocaSemeaduraJson)
@@ -199,8 +213,9 @@ namespace RegulaPrism.Services
             return cultivaresEpocaSemeadura;
         }
 
+        #endregion
 
-        // ---------------- Clientes ------------------------------
+        #region Clientes
         public ClienteJson AddClienteAsync(Cliente cliente)
         {
             try
@@ -347,9 +362,9 @@ namespace RegulaPrism.Services
 
             return cj;
         }
+        #endregion
 
-
-        // ---------------- Semeaduras ---------------------------------- //
+        #region Semeadura
         public SemeaduraJson AddSemeaduraAsync(Semeadura semeadura)
         {
             try
@@ -400,9 +415,181 @@ namespace RegulaPrism.Services
 
             return sj;
         }
+        #endregion
 
+        #region Fazendas
+        public FazendaJson AddFazendaAsync(Fazenda fazenda)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/fazenda";
 
-        // ---------------- Histórico Atualização ---------------------------------- //
+                FazendaJson sj = loadFazendaJson(fazenda);
+
+                var uri = new Uri(string.Format(url, sj.id));
+                var data = JsonConvert.SerializeObject(sj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var response = client.PostAsync(uri, content).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var fazendaServer = JsonConvert.DeserializeObject<FazendaJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Diagnostics.Debug.WriteLine(response);
+                    return null;
+                }
+                else
+                    return fazendaServer;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public async Task<List<Fazenda>> GetFazendasAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/fazenda";
+                var response = await client.GetStringAsync(url);
+                var fazendasJson = JsonConvert.DeserializeObject<List<FazendaJson>>(response);
+
+                return loadFazendas(fazendasJson);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private FazendaJson loadFazendaJson(Fazenda fazenda)
+        {
+            FazendaJson fj = new FazendaJson();
+
+            fj.id = fazenda.Id;
+            fj.nome = fazenda.Nome;
+            fj.hectares = fazenda.Hectares;
+            fj.data_desativacao = fazenda.DataDesativacao.ToString();
+            fj.cidade = fazenda.Cidade;
+            fj.uf = fazenda.UF;
+            fj.bairro = fazenda.Bairro;
+            fj.email = fazenda.Email;
+            fj.endereco_web = fazenda.EnderecoWeb;
+            fj.telefone = fazenda.Telefone;
+            fj.cli_id = fazenda.ClienteId;
+
+            return fj;
+        }
+
+        private List<Fazenda> loadFazendas(List<FazendaJson> fazendasJson)
+        {
+            List<Fazenda> fazendas = new List<Fazenda>();
+
+            foreach (var x in fazendasJson)
+            {
+                Fazenda f = new Fazenda();
+                f.Id = x.id;
+                f.Nome = x.nome;
+                f.Hectares = x.hectares;
+                //f.DataDesativacao = x.data_desativacao;
+                f.Cidade = x.cidade;
+                f.UF = x.uf;
+                f.Bairro = x.bairro;
+                f.Email = x.email;
+                f.EnderecoWeb = x.endereco_web;
+                f.Telefone = x.telefone;
+                f.ClienteId = x.cli_id;
+
+                fazendas.Add(f);
+            }
+
+            return fazendas;
+        }
+        #endregion
+
+        #region Talhões
+        public TalhaoJson AddTalhaoAsync(Talhao talhao)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/talhao";
+
+                TalhaoJson tj = loadTalhaoJson(talhao);
+
+                var uri = new Uri(string.Format(url, tj.id));
+                var data = JsonConvert.SerializeObject(tj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var response = client.PostAsync(uri, content).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var talhaoServer = JsonConvert.DeserializeObject<TalhaoJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Diagnostics.Debug.WriteLine(response);
+                    return null;
+                }
+                else
+                    return talhaoServer;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public async Task<List<Talhao>> GetTalhaoAsync()
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/api/talhao";
+                var response = await client.GetStringAsync(url);
+                var talhoesJson = JsonConvert.DeserializeObject<List<TalhaoJson>>(response);
+
+                return loadTalhoes(talhoesJson);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private TalhaoJson loadTalhaoJson(Talhao talhao)
+        {
+            TalhaoJson tj = new TalhaoJson();
+
+            tj.id = talhao.Id;
+            tj.descricao = talhao.Descricao;
+            tj.tamanho = talhao.Tamanho;
+            tj.fazenda_id = talhao.FazendaId;
+            tj.data_desativacao = talhao.DataDesativacao;
+
+            return tj;
+        }
+
+        private List<Talhao> loadTalhoes(List<TalhaoJson> talhoesJson)
+        {
+            List<Talhao> talhoes = new List<Talhao>();
+
+            foreach (var x in talhoesJson)
+            {
+                Talhao t = new Talhao();
+                t.Id = x.id;
+                t.Descricao = x.descricao;
+                t.FazendaId = x.fazenda_id;
+                t.Tamanho = x.tamanho;
+                t.DataDesativacao = x.data_desativacao;
+
+                talhoes.Add(t);
+            }
+
+            return talhoes;
+        }
+        #endregion
+
+        #region Historico Atualização
         public HistoricoAtualizacao GetLastReleaseAsync()
         {
             try
@@ -429,5 +616,6 @@ namespace RegulaPrism.Services
 
             return lastRelease;
         }
+        #endregion
     }
 }

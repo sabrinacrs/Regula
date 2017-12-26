@@ -6,8 +6,8 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-  <application android:label="CottonApp" android:theme="@style/MyTheme" android:icon="@drawable/cultivaricon" android:name="android.app.Application" android:allowBackup="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="RegulaPrism" android:name="md5fb13c04159a903f813d7e986f1b85e30.MainActivity">
+  <application android:label="Cultiva Cotton" android:theme="@style/MyTheme" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Cultiva Cotton" android:name="md5fb13c04159a903f813d7e986f1b85e30.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

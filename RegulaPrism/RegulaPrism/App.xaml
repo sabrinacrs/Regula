@@ -9,17 +9,28 @@
 
       <!-- Color Header Bar -->
       <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="#378251"/><!--#4ba561 8fd08f-->
-        <Setter Property="BarTextColor" Value="Color.White"/>
+        <Setter Property="BarBackgroundColor" Value="#3E4095"/><!--#4ba561 8fd08f 378251-->
+        <Setter Property="BarTextColor" Value="#F5F5F5"/>
       </Style>
 
+      
+      <!-- Background Master Detail Page -->
+      <Style x:Key="background-master-detail" TargetType="NavigationPage">
+        <Setter Property="BackgroundColor" Value="#3E4095"/>
+      </Style>
+      
+      <!-- Label Item Master Detail -->
+      <Style x:Key="label-item-master-detail" TargetType="Label">
+        <Setter Property="TextColor" Value="#F5F5F5"/>
+        <Setter Property="Font" Value="Medium"/>
+      </Style>
+      
+      <!--BOTOES-->
       <!-- Button Save Style -->
       <Style x:Key="button-save" TargetType="Button">
         <Setter Property="BorderColor" Value="Blue"/>
         <Setter Property="TextColor" Value="#ffffff"/>
         <Setter Property="BackgroundColor" Value="#60BD60"/><!-- 016D72 60BD60-->
-        <!--<Setter Property="BorderWidth" Value="10"/>-->
-        <!--<Setter Property="BorderRadius" Value="-20"/>-->
       </Style>
 
       <!-- Button Delete Style -->
@@ -48,30 +59,6 @@
       </Style>
       
       <!-- Button Menu Home -->
-      <Style x:Key="button-menu-home-1" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#127E35"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
-      <Style x:Key="button-menu-home-2" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#1cc1a4"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
-      <Style x:Key="button-menu-home-3" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#1cc151"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
-      <Style x:Key="button-menu-home-4" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#1b5c9e"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
-      <Style x:Key="button-menu-home-5" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#1B9E5C"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
-      <Style x:Key="button-menu-home-6" TargetType="Button">
-        <Setter Property="BackgroundColor" Value="#1b9e9e"/>
-        <Setter Property="TextColor" Value="#ffffff"/>
-      </Style>
       <Style x:Key="button-menu-home-default" TargetType="Button">
         <Setter Property="BackgroundColor" Value="#ffffff"/>
         <Setter Property="BorderColor" Value="#000000"/>
@@ -84,11 +71,11 @@
         <Setter Property="TextColor" Value="#000000"/>
       </Style>
 
+      <!--LABELS-->
       <!-- Label Dados Pessoais Formulário -->
       <Style x:Key="label-dados-pessoais" TargetType="Label">
         <Setter Property="BackgroundColor" Value="#D2D7DF"/> <!-- C6C6C7#dde0ec  #ededee -->
         <Setter Property="TextColor" Value="#0e4f34"/> <!-- #989aa3 -->
-        <!--<Setter Property="FontSize" Value="Medium"/>-->
       </Style>
       
       <!-- Label Resultado Cálculos -->
@@ -109,12 +96,10 @@
       <!--Label Cultivares Recomedadas-->
       <Style x:Key="label-cultivares-recomendadas-title" TargetType="Label">
         <Setter Property="Font" Value="Bold"/>
-        <!--<Setter Property="TextColor" Value="#5AAA3D"></Setter>-->
       </Style>
       
       <Style x:Key="label-cultivares-recomendadas-detail" TargetType="Label">
         <Setter Property="FontSize" Value="Small"></Setter>
-        <!--<Setter Property="TextColor" Value="#5AAA3D"></Setter>-->
       </Style>
       
       <!--Cultivar List-->

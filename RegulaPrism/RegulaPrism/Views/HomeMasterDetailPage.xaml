@@ -6,14 +6,14 @@
                   x:Class="RegulaPrism.Views.HomeMasterDetailPage"
                   Title="{Binding Title}">
     <MasterDetailPage.Master>
-        <ContentPage Title="Default" BackgroundColor="#5e9b73">
+        <ContentPage Title="Default" Style="{StaticResource background-master-detail}">
             <StackLayout Padding="5, 20, 5, 5">
                 <ListView x:Name="ItemsMenuLateral" HasUnevenRows="True" ItemsSource="{Binding Itens}" SelectedItem="{Binding SelectedItem}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout Padding="20">
-                                    <Label Text="{Binding Titulo}" TextColor="White" Font="Large"/>
+                                    <Label Text="{Binding Titulo}" Style="{StaticResource label-item-master-detail}"/>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

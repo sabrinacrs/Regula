@@ -56,8 +56,10 @@
     <Compile Include="Models\Fazenda.cs" />
     <Compile Include="Models\InformacaoManual.cs" />
     <Compile Include="Models\ItemMenuLateral.cs" />
+    <Compile Include="Models\Json\FazendaJson.cs" />
     <Compile Include="Models\Json\HistoricoAtualizacaoJson.cs" />
     <Compile Include="Models\Json\SemeaduraJson.cs" />
+    <Compile Include="Models\Json\TalhaoJson.cs" />
     <Compile Include="Models\Semeadura.cs" />
     <Compile Include="Models\SemeaduraModel.cs" />
     <Compile Include="Models\Tolerancia.cs" />
@@ -147,6 +149,9 @@
     </Compile>
     <Compile Include="Views\CultivaresDoencasListPage.xaml.cs">
       <DependentUpon>CultivaresDoencasListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CultivaresDoencasToleranciasResult.xaml.cs">
+      <DependentUpon>CultivaresDoencasToleranciasResult.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\CultivarHomePage.xaml.cs">
       <DependentUpon>CultivarHomePage.xaml</DependentUpon>
@@ -567,7 +572,12 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Views\CultivaresDoencasToleranciasResult.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Imgs\regulaico.png" />
   </ItemGroup>

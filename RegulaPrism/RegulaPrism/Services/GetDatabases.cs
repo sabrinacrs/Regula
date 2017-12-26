@@ -405,5 +405,20 @@ namespace RegulaPrism.Services
 
         //  Historico de Atualização
 
+        // Fazendas
+        #region Fazenda Operations Sync
+        public FazendaJson SendFazendaToServer(Fazenda fazenda)
+        {
+            return _dataService.AddFazendaAsync(fazenda);
+        }
+        #endregion
+
+        // Talhão
+        #region Talhão Operations Sync
+        public TalhaoJson SendTalhaoToServer(Talhao talhao)
+        {
+            return _dataService.AddTalhaoAsync(talhao);
+        }
+        #endregion
     }
 }

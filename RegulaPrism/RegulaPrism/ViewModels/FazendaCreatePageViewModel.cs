@@ -1,8 +1,10 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
 using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
@@ -106,9 +108,10 @@ namespace RegulaPrism.ViewModels
 
         private NavigationParameters _navigationParameters;
 
+        private GetDatabases _databaseServer;
+
         public DelegateCommand NavigateToFazendaContatoPageCommand { get; private set; }
         public DelegateCommand FazendaSaveCommand { get; private set; }
-
         public DelegateCommand InfoCommand { get; private set; }
 
         public FazendaCreatePageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
@@ -120,6 +123,7 @@ namespace RegulaPrism.ViewModels
             _regulaApiService = regulaApiService;
             _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
+            _databaseServer = new GetDatabases();
 
             NavigateToFazendaContatoPageCommand = new DelegateCommand(NavigateToFazendaContatoPage);
             FazendaSaveCommand = new DelegateCommand(FazendaSave);
@@ -141,19 +145,39 @@ namespace RegulaPrism.ViewModels
             {
                 _fazenda = fazendaView();
 
-                if (_regulaApiService.InsertFazenda(_fazenda))
+                if (CrossConnectivity.Current.IsConnected)
                 {
-                    // passa parametro navigationaware
-                    _navigationParameters.Add("fazenda", _fazenda);
-                    _navigationParameters.Add("cliente", _cliente);
+                    // envia fazenda para servidor e recebe id da fazenda no servidor
+                    FazendaJson fazendaJson = _databaseServer.SendFazendaToServer(_fazenda);
 
-                    _dialogService.DisplayAlertAsync("Nova fazenda", "Fazenda " + _fazenda.Nome + " registrada", "OK");
-                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaListPage", UriKind.Absolute), _navigationParameters); // "FazendaListPage", _navigationParameters
+                    if (fazendaJson == null)
+                    {
+                        _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
+                    }
+                    else
+                    {
+                        if (_regulaApiService.InsertFazenda(_fazenda))
+                        {
+                            // passa parametro navigationaware
+                            _navigationParameters.Add("fazenda", _fazenda);
+                            _navigationParameters.Add("cliente", _cliente);
+
+                            _dialogService.DisplayAlertAsync("Nova fazenda", "Fazenda " + _fazenda.Nome + " registrada", "OK");
+                            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/FazendaListPage", UriKind.Absolute), _navigationParameters); // "FazendaListPage", _navigationParameters
+                        }
+                        else
+                        {
+                            _dialogService.DisplayAlertAsync("", "Algo deu errado no cadastro da nova fazenda. Verifique os dados e tente novamente", "OK");
+                        }
+                    }
                 }
                 else
                 {
-                    _dialogService.DisplayAlertAsync("", "Algo deu errado no cadastro da nova fazenda. Verifique os dados e tente novamente", "OK");
+                    _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
                 }
+
+
+
             }
             else
             {

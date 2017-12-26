@@ -11,8 +11,7 @@
 namespace RegulaPrism.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Sabrina\\Documents\\Regula\\Front-End App\\RegulaPrism\\RegulaPrism\\RegulaPri" +
-        "sm\\Views\\HomeMasterDetailPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("F:\\RegulaPrism\\RegulaPrism\\RegulaPrism\\Views\\HomeMasterDetailPage.xaml")]
     public partial class HomeMasterDetailPage : global::Xamarin.Forms.MasterDetailPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

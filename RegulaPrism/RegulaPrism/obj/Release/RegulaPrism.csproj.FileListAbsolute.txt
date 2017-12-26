@@ -83,9 +83,14 @@ C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPr
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.InformacoesPage.xaml.g.cs
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.Views.CultivaresDoencasToleranciasResult.xaml.g.cs
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
 C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Release\RegulaPrism.dll.mdb

@@ -1,88 +1,89 @@
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe.config
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.Unity.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.Extensions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Forms.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Unity.Forms.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\SQLite.Net.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\SQLite.Net.Platform.XamarinIOS.Unified.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Extensions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Primitives.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.iOS.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Newtonsoft.Json.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.dll.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.Unity.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.Extensions.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Forms.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Unity.Forms.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Extensions.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Primitives.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.dll.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.iOS.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.pdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Newtonsoft.Json.xml
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ar\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ca\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\cs\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\da\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\de\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\el\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\es\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\fi\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\fr\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\he\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hi\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hr\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hu\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\id\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\it\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ja\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ko\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ms\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\nb\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\nl\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pl\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pt\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ro\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ru\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\sk\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\sv\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\th\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\tr\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\uk\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\vi\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\ibtool\_BundleResourceWithLogicalName.items
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\optimized\
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.csprojResolveAssemblyReference.cache
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.csproj.RegulaPrism.iOS.exe.config
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.exe
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.exe.mdb
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe.config
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.Unity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Unity.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\SQLite.Net.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\SQLite.Net.Platform.XamarinIOS.Unified.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Primitives.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.iOS.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Newtonsoft.Json.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.ServiceLocation.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Practices.Unity.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Microsoft.Threading.Tasks.Extensions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Forms.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Prism.Unity.Forms.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Extensions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\System.Net.Http.Primitives.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Core.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Platform.iOS.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Xamarin.Forms.Xaml.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Plugin.Connectivity.Abstractions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\Newtonsoft.Json.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ar\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ca\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\cs\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\da\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\de\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\el\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\es\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\fi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\fr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\he\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\hu\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\id\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\it\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ja\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ko\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ms\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\nb\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\nl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pl\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pt\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\pt-BR\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ro\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\ru\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\sk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\sv\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\th\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\tr\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\uk\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\vi\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\ibtool\_BundleResourceWithLogicalName.items
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\actool\_PartialAppManifest.items
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\actool\_BundleResourceWithLogicalName.items
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\optimized\
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.csprojResolveAssemblyReference.cache
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.csproj.RegulaPrism.iOS.exe.config
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.exe
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\obj\iPhoneSimulator\Release\RegulaPrism.iOS.exe.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.iOS\bin\iPhoneSimulator\Release\RegulaPrism.iOS.exe.mdb

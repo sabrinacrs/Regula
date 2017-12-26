@@ -1,8 +1,10 @@
-﻿using Prism.Commands;
+﻿using Plugin.Connectivity;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
 using Prism.Services;
 using RegulaPrism.Models;
+using RegulaPrism.Models.Json;
 using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
@@ -78,6 +80,8 @@ namespace RegulaPrism.ViewModels
 
         private NavigationParameters _navigationParameters;
 
+        private GetDatabases _databaseServer;
+
         public DelegateCommand TalhaoSaveCommand { get; private set; }
         public DelegateCommand InfoCommand { get; private set; }
 
@@ -90,6 +94,7 @@ namespace RegulaPrism.ViewModels
             _regulaApiService = regulaApiService;
             _informacoesManuais = informacoesManuais;
             _navigationParameters = new NavigationParameters();
+            _databaseServer = new GetDatabases();
             _fazendaSelectedIndex = -1;
 
             TalhaoSaveCommand = new DelegateCommand(TalhaoSave);
@@ -113,18 +118,35 @@ namespace RegulaPrism.ViewModels
                 // inserção do talhão no banco
                 _talhao.FazendaId = _fazenda.Id;
 
-                if(_regulaApiService.InsertTalhao(_talhao))
+                if (CrossConnectivity.Current.IsConnected)
                 {
-                    // passa parametro navigationaware
-                    _navigationParameters.Add("fazenda", _fazenda);
-                    _navigationParameters.Add("cliente", _cliente);
+                    // envia fazenda para servidor e recebe id da fazenda no servidor
+                    TalhaoJson talhaoJson = _databaseServer.SendTalhaoToServer(_talhao);
 
-                    _dialogService.DisplayAlertAsync("Novo talhão", "Talhão " + _talhao.Descricao + " registrado", "OK");
-                    _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/TalhaoListPage", UriKind.Absolute), _navigationParameters);
+                    if (talhaoJson == null)
+                    {
+                        _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
+                    }
+                    else
+                    {
+                        if (_regulaApiService.InsertTalhao(_talhao))
+                        {
+                            // passa parametro navigationaware
+                            _navigationParameters.Add("fazenda", _fazenda);
+                            _navigationParameters.Add("cliente", _cliente);
+
+                            _dialogService.DisplayAlertAsync("Novo talhão", "Talhão " + _talhao.Descricao + " registrado", "OK");
+                            _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/TalhaoListPage", UriKind.Absolute), _navigationParameters);
+                        }
+                        else
+                        {
+                            _dialogService.DisplayAlertAsync("", "Algo deu errado no cadastro do talhão. Verifique os dados e tente novamente", "OK");
+                        }
+                    }
                 }
                 else
                 {
-                    _dialogService.DisplayAlertAsync("", "Algo deu errado no cadastro do talhão. Verifique os dados e tente novamente", "OK");
+                    _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
                 }
             }
             else

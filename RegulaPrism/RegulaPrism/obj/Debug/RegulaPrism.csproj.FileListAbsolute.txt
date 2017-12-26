@@ -1,0 +1,175 @@
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll.config
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\MySql.Data.CF.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Forms.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Unity.Forms.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\SQLite.Net.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Forms.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Unity.Forms.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.csproj.App.config
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.csprojResolveAssemblyReference.cache
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.App.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.MainPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SpeakPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CalcularSemeaduraPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.LoginPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.HomeMasterDetailPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.HomePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SemeaduraPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.ClienteCreatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.ClienteUpdatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaCreatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaHomePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaContatoPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaLocalizacaoPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaRegisterTabbedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaUpdatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoCreatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoHomePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoUpdatePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSelectedTabbedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TesteInterface.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoSelectedTabbedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaDoencasPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarDoencaToleranciaPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaSelectedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.RegistrarSemeaduraPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSemeadurasListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSemeaduraSelectedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarHomePage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarSelectedPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarCicloPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRendimentoFibraListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivaresDoencasListPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SelectDoencasPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.InformacoesPage.xaml.g.cs
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.pdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll.mdb
+C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll.config
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.Unity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\MySql.Data.CF.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Newtonsoft.Json.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Unity.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\SQLite.Net.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Primitives.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Platform.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Practices.Unity.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Newtonsoft.Json.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Plugin.Connectivity.Abstractions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Forms.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Prism.Unity.Forms.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Extensions.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\System.Net.Http.Primitives.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Core.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\Xamarin.Forms.Xaml.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.csproj.App.config
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.csprojResolveAssemblyReference.cache
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.App.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.MainPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SpeakPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CalcularSemeaduraPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.LoginPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.HomeMasterDetailPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.HomePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SemeaduraPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.ClienteCreatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.ClienteUpdatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaCreatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaHomePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaContatoPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaLocalizacaoPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaRegisterTabbedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaUpdatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoCreatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoHomePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoUpdatePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSelectedTabbedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TesteInterface.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.TalhaoSelectedTabbedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaDoencasPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarDoencaToleranciaPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRecomendadaSelectedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.RegistrarSemeaduraPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSemeadurasListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.FazendaSemeaduraSelectedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarHomePage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarSelectedPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarCicloPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivarRendimentoFibraListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivaresDoencasListPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.SelectDoencasPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.InformacoesPage.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivaresDoencasToleranciasResult.xaml.g.cs
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll.mdb
