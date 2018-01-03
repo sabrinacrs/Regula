@@ -167,6 +167,7 @@ class MonoPackageManager_Resources {
 		"System.Net.Primitives.dll",
 		"System.ComponentModel.dll",
 		"System.Collections.Concurrent.dll",
+		"CryptSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

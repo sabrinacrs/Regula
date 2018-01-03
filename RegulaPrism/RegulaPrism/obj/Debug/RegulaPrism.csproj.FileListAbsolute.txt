@@ -171,5 +171,8 @@ F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.InformacoesPa
 F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.Views.CultivaresDoencasToleranciasResult.xaml.g.cs
 F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll
 F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\CryptSharp.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\CryptSharp.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\CryptSharp.xml
 F:\RegulaPrism\RegulaPrism\RegulaPrism\obj\Debug\RegulaPrism.dll.mdb
 F:\RegulaPrism\RegulaPrism\RegulaPrism\bin\Debug\RegulaPrism.dll.mdb

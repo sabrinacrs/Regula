@@ -18,17 +18,30 @@ namespace RegulaPrism.Services
             _dataService = new DataService();
         }
 
+        public GetDatabases(IRegulaApiService regulaApiService)
+        {
+            _dataService = new DataService();
+            _regulaApiService = regulaApiService;
+        }
+
         public void getDatabases(IRegulaApiService regulaApiService)
         {
             _dataService = new DataService();
             _regulaApiService = regulaApiService;
 
-            // verificar se houve mudança na base de dados do servidor
-            // se houver, verifica quais tabelas mudaram
-            // clona as tabelas alteradas
-
             // copia dados
             Clone();
+        }
+
+        public void saveFazendasCliente(Cliente cliente)
+        {
+            SaveFazendasServer(cliente);
+        }
+
+        public void saveTalhoesFazendasCliente(Cliente cliente)
+        {
+            // pega os talhoes do cliente
+            SaveTalhoesClienteServer(cliente);
         }
 
         private void Clone()
@@ -67,6 +80,16 @@ namespace RegulaPrism.Services
             return _dataService.GetClienteAsync(cliente);
         }
 
+        public Cliente GetClienteByEmail(string clienteEmail)
+        {
+            return _dataService.GetClienteByEmailAsync(clienteEmail);
+        }
+
+        public Cliente GetClienteByLogin(string clienteLogin)
+        {
+            return _dataService.GetClienteByLoginAsync(clienteLogin);
+        }
+
         public void UpdateClienteOnServer(Cliente cliente)
         {
             _dataService.UpdateClienteAsync(cliente);
@@ -79,17 +102,20 @@ namespace RegulaPrism.Services
         #endregion
 
         // Semeadura
+        #region Semeadura Operations Sync
         public SemeaduraJson SendSemeaduraToServer(Semeadura semeadura)
         {
             return _dataService.AddSemeaduraAsync(semeadura);
         }
+        #endregion
 
         // Historico Atualizacao
+        #region Historico Atualizacao Operations Sync
         public HistoricoAtualizacao GetLastRelease()
         {
             return _dataService.GetLastReleaseAsync();
         }
-
+        #endregion
 
         // Cultivares
         #region Cultivar Operations Sync
@@ -411,6 +437,21 @@ namespace RegulaPrism.Services
         {
             return _dataService.AddFazendaAsync(fazenda);
         }
+
+        private async void SaveFazendasServer(Cliente cliente)
+        {
+            List<Fazenda> fazendasServer = await _dataService.GetFazendasAsync();
+
+            // insere cada fazenda no banco local
+            foreach (Fazenda x in fazendasServer)
+            {
+                // verifica se a fazenda pertence ao cliente
+                if(x.ClienteId == cliente.Id)
+                {
+                    _regulaApiService.InsertFazenda(x);
+                }
+            }
+        }
         #endregion
 
         // Talhão
@@ -418,6 +459,33 @@ namespace RegulaPrism.Services
         public TalhaoJson SendTalhaoToServer(Talhao talhao)
         {
             return _dataService.AddTalhaoAsync(talhao);
+        }
+
+        private async void SaveTalhoesServer()
+        {
+            List<Talhao> talhoesServer = await _dataService.GetTalhaoAsync();
+
+            // insere cada talhao no banco local
+            foreach (Talhao x in talhoesServer)
+            {
+                _regulaApiService.InsertTalhao(x);
+            }
+        }
+
+        private async void SaveTalhoesClienteServer(Cliente cliente)
+        {
+            List<Talhao> talhoesServer = await _dataService.GetTalhaoByClienteAsync(cliente);
+
+            // insere cada talhao no banco local
+            foreach (Talhao t in talhoesServer)
+            {
+                _regulaApiService.InsertTalhao(t);
+            }
+        }
+
+        private async void saveTalhoesFazendas(List<Fazenda> fazendas)
+        {
+            List<Talhao> talhoesServer = await _dataService.GetTalhaoAsync();
         }
         #endregion
     }

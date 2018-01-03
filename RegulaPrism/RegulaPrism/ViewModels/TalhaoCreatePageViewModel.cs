@@ -158,9 +158,7 @@ namespace RegulaPrism.ViewModels
         private void Informacoes()
         {
             InformacaoManual im = _informacoesManuais.InformacoesTalhaoCreate();
-
             _navigationParameters.Add("informacao", im);
-
             _navigationService.NavigateAsync("InformacoesPage", _navigationParameters);
         }
 

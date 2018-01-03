@@ -10,7 +10,7 @@ namespace RegulaPrism.Models
 {
     public class Fazenda
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id
         {
             get;

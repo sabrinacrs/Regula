@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CryptSharp;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RegulaPrism.Models;
 using RegulaPrism.Models.Json;
@@ -280,6 +281,56 @@ namespace RegulaPrism.Services
             }
         }
 
+        public Cliente GetClienteByEmailAsync(string clienteInfo)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/clienteemail/" + clienteInfo;
+
+                var uri = new Uri(string.Format(url));
+                var response = client.GetAsync(uri).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var clienteServer = JsonConvert.DeserializeObject<ClienteJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+                else
+                    return loadCliente(clienteServer); ;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
+        public Cliente GetClienteByLoginAsync(string clienteInfo)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/clientelogin/" + clienteInfo;
+
+                var uri = new Uri(string.Format(url));
+                var response = client.GetAsync(uri).Result;
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var clienteServer = JsonConvert.DeserializeObject<ClienteJson>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+                else
+                    return loadCliente(clienteServer); ;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
         public void UpdateClienteAsync(Cliente cliente)
         {
             try
@@ -361,6 +412,29 @@ namespace RegulaPrism.Services
             cj.status = cliente.Status;
 
             return cj;
+        }
+
+        private Cliente loadCliente(ClienteJson x)
+        {
+            Cliente c = new Cliente();
+
+            c.Id = x.id;
+            c.Nome = x.nome;
+            c.Email = x.email;
+            c.Login = x.login;
+            c.Senha = x.senha;
+            c.Telefone = x.telefone;
+            c.Cidade = x.cidade;
+            c.UF = x.uf;
+            c.CEP = x.cep;
+            c.Logradouro = x.logradouro;
+            c.Numero = x.numero;
+            c.Bairro = x.bairro;
+            c.CPF = x.cpf;
+            //c.DataDesativacao = "";//cliente.DataDesativacao.ToString();
+            c.Status = x.status;
+
+            return c;
         }
         #endregion
 
@@ -452,7 +526,7 @@ namespace RegulaPrism.Services
         {
             try
             {
-                string url = "http://www.cottonappadm.xyz/api/fazenda";
+                string url = "http://www.cottonappadm.xyz/testeapi/fazenda";
                 var response = await client.GetStringAsync(url);
                 var fazendasJson = JsonConvert.DeserializeObject<List<FazendaJson>>(response);
 
@@ -544,7 +618,7 @@ namespace RegulaPrism.Services
         {
             try
             {
-                string url = "http://www.cottonappadm.xyz/api/talhao";
+                string url = "http://www.cottonappadm.xyz/testeapi/talhao";
                 var response = await client.GetStringAsync(url);
                 var talhoesJson = JsonConvert.DeserializeObject<List<TalhaoJson>>(response);
 
@@ -556,6 +630,35 @@ namespace RegulaPrism.Services
             }
         }
 
+        public async Task<List<Talhao>> GetTalhaoByClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/talhoescliente/{0}";
+
+                ClienteJson cj = loadClienteJson(cliente);
+
+                var uri = new Uri(string.Format(url, cliente.Id));
+                var data = JsonConvert.SerializeObject(cj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var response = await client.GetAsync(uri);
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var talhoesServer = JsonConvert.DeserializeObject<List<TalhaoJson>>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+                else
+                    return loadTalhoes(talhoesServer);
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
         private TalhaoJson loadTalhaoJson(Talhao talhao)
         {
             TalhaoJson tj = new TalhaoJson();
@@ -563,7 +666,7 @@ namespace RegulaPrism.Services
             tj.id = talhao.Id;
             tj.descricao = talhao.Descricao;
             tj.tamanho = talhao.Tamanho;
-            tj.fazenda_id = talhao.FazendaId;
+            tj.faz_id = talhao.FazendaId;
             tj.data_desativacao = talhao.DataDesativacao;
 
             return tj;
@@ -578,7 +681,7 @@ namespace RegulaPrism.Services
                 Talhao t = new Talhao();
                 t.Id = x.id;
                 t.Descricao = x.descricao;
-                t.FazendaId = x.fazenda_id;
+                t.FazendaId = x.faz_id;
                 t.Tamanho = x.tamanho;
                 t.DataDesativacao = x.data_desativacao;
 

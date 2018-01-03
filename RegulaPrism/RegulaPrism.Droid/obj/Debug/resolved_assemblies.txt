@@ -86,3 +86,4 @@ F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Col
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Mono.CSharp.dll
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Mono.Data.Tds.dll
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Transactions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\CryptSharp.dll

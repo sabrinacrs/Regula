@@ -156,6 +156,9 @@ namespace RegulaPrism.ViewModels
                     }
                     else
                     {
+                        // pega id da fazenda no servidor
+                        _fazenda.Id = fazendaJson.id;
+
                         if (_regulaApiService.InsertFazenda(_fazenda))
                         {
                             // passa parametro navigationaware
@@ -175,9 +178,6 @@ namespace RegulaPrism.ViewModels
                 {
                     _dialogService.DisplayAlertAsync("Alerta", "Não foi possível realizar o cadastro. Verifique a conexão com a internet e tente novamente.", "OK");
                 }
-
-
-
             }
             else
             {

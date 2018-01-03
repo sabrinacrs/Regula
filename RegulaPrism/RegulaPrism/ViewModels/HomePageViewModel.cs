@@ -8,6 +8,7 @@ using RegulaPrism.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace RegulaPrism.ViewModels
@@ -19,6 +20,13 @@ namespace RegulaPrism.ViewModels
         {
             get { return _title; }
             set { SetProperty(ref _title, value); }
+        }
+
+        private bool _isLoading;
+        public bool IsLoading
+        {
+            get { return _isLoading; }
+            set { SetProperty(ref _isLoading, value); }
         }
 
         private Cliente _cliente;
@@ -161,10 +169,23 @@ namespace RegulaPrism.ViewModels
 
                 if (choise)
                 {
+                    // componente loading 
+                    _isLoading = true;
+
+                    // delay para carregamento
+                    await Task.Delay(3000);
+
                     // carregar dados do servidor p/ app
                     try
                     {
+                        // obter base de dados de cultivares
                         _databaseServer.getDatabases(_regulaApiService);
+
+                        //// obter fazendas do cliente
+                        //_databaseServer.saveFazendasCliente(_cliente);
+
+                        //// obter talhoes do cliente
+                        //_databaseServer.saveTalhoesFazendasCliente(_cliente);
 
                         // insere historico atualizacao no sqlite
                         insereHistoricoAtualizacao();
@@ -173,6 +194,8 @@ namespace RegulaPrism.ViewModels
                     {
                         await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
                     }
+
+                    _isLoading = false;
                 }
             }         
         }

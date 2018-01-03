@@ -11,8 +11,7 @@
 namespace RegulaPrism.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Sabrina\\Documents\\Regula\\Front-End App\\RegulaPrism\\RegulaPrism\\RegulaPri" +
-        "sm\\Views\\HomePage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("F:\\RegulaPrism\\RegulaPrism\\RegulaPrism\\Views\\HomePage.xaml")]
     public partial class HomePage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -34,6 +33,9 @@ namespace RegulaPrism.Views {
         private global::Xamarin.Forms.Button ButtonHomeHelp;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Grid loadingOverlay;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(HomePage));
             ButtonHomeCultivares = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonHomeCultivares");
@@ -42,6 +44,7 @@ namespace RegulaPrism.Views {
             ButtonHomeTalhao = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonHomeTalhao");
             ButtonHomeUsuario = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonHomeUsuario");
             ButtonHomeHelp = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "ButtonHomeHelp");
+            loadingOverlay = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "loadingOverlay");
         }
     }
 }

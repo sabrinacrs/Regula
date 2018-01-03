@@ -397,5 +397,10 @@ F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\System.Xml
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\CryptSharp.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\CryptSharp.pdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\CryptSharp.xml
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\CryptSharp.dll.mdb
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\android\assets\CryptSharp.dll.mdb
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Debug\RegulaPrism.Droid.dll.mdb
 F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\bin\Debug\RegulaPrism.Droid.dll.mdb

@@ -12,6 +12,6 @@ namespace RegulaPrism.Models.Json
         public string descricao { get; set; }
         public decimal tamanho { get; set; }
         public DateTime data_desativacao { get; set; }
-        public int fazenda_id { get; set; }
+        public int faz_id { get; set; }
     }
 }

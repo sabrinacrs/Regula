@@ -1,4 +1,5 @@
-﻿using Plugin.Connectivity;
+﻿using CryptSharp;
+using Plugin.Connectivity;
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Navigation;
@@ -89,9 +90,9 @@ namespace RegulaPrism.ViewModels
 
             // services
             _navigationParameters = new NavigationParameters();
-            _databaseServer = new GetDatabases();
             _navigationService = navigationService;
             _regulaApiService = regulaApiService;
+            _databaseServer = new GetDatabases(regulaApiService);
             _informacoesManuais = informacoesManuais;
             _dialogService = dialogService;
             _cloneDatabaseServer = cloneDatabaseServer;
@@ -136,7 +137,55 @@ namespace RegulaPrism.ViewModels
             // cliente não encontrado
             if (cliente == null)
             {
-                await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
+                // procura no servidor para recuperar informações da internet
+                // verifica conexão
+                if (CrossConnectivity.Current.IsConnected)
+                {
+                    if (clienteExists(Login))
+                    {
+                        _cliente = getClienteFromServer(Login);
+
+                        bool matches = false;
+
+                        if (Senha != null)
+                            matches = Crypter.CheckPassword(Senha, _cliente.Senha);
+                            
+                        // valida senha
+                        if (!matches || Senha == null)
+                             await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
+                        else
+                        {
+                            // salva senha real, e não a criptografada
+                            _cliente.Senha = Senha;
+
+                            // insere cliente no banco local
+                            if (_regulaApiService.InsertCliente(_cliente))
+                            {
+                                // obter fazendas do cliente
+                                _databaseServer.saveFazendasCliente(_cliente);
+
+                                // obter talhoes do cliente
+                                _databaseServer.saveTalhoesFazendasCliente(_cliente);
+
+                                _navigationParameters.Add("cliente", _cliente);
+
+                                await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
+                            }
+                            else
+                            {
+                                await _dialogService.DisplayAlertAsync("", "Não foi possível realizar a sincronização com os dados do servidor. Verifique sua conexão e tente novamente.", "OK");
+                            }
+                        }
+                    }
+                    else
+                    {
+                        await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
+                    }
+                }
+                else
+                {
+                    await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
+                }
             }
             else
             {
@@ -144,7 +193,7 @@ namespace RegulaPrism.ViewModels
                 if(clienteDisable(cliente.Status))
                 {
                     // conta desativada
-                    var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
+                    var choise =  await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
 
                     if (choise)
                     {
@@ -152,9 +201,9 @@ namespace RegulaPrism.ViewModels
                         {
                             cliente.Status = "A";
                             if (_regulaApiService.UpdateCliente(cliente))
-                                _databaseServer.UpdateClienteOnServer(cliente); // atualiza status do cliente no servidor
+                               _databaseServer.UpdateClienteOnServer(cliente); // atualiza status do cliente no servidor
 
-                            await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
+                             await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
                         }
                         else
                         {
@@ -250,121 +299,30 @@ namespace RegulaPrism.ViewModels
             }
         }
 
-        // verifica status desse login no servidor
-//        ClienteJson cj = _databaseServer.GetClienteServer(cliente);
-            
-//            // cliente não encontrado
-//            if (cliente == null)
-//            {
-//                await _dialogService.DisplayAlertAsync("", "Este login/e-mail não consta em nossos registros", "OK");
-//    }
-//            // conta desativada pelo adms
-//            else if (cliente.Status.Equals("IA")) // IA - inativado pelo administrador
-//            {
-//                if(cj != null && !cj.status.Equals("IA"))
-//                {
-//                    cliente.Status = cj.status;
-//                    _regulaApiService.UpdateCliente(cliente);
+        private bool clienteExists(string clienteInfo)
+        {
+            // procura cliente no servidor de acordo com email ou login
+            if (getClienteFromServer(clienteInfo) == null)
+                return false;
 
-//                    _navigationParameters.Add("cliente", _cliente);
-//                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
-//                }
-//                else
-//                {
-//                    // conta desativada pelo adm
-//                    await _dialogService.DisplayAlertAsync("", "Esta conta foi desativada pelo administrador do sistema.", "OK");
-//                }
-//            }
-//            else if (cliente.Status.Equals("I"))
-//            {
-//                // conta desativada
-//                var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
+            return true;
+        }
 
-//                if (choise)
-//                {
-//                    cliente.Status = "A";
-//                    if(_regulaApiService.UpdateCliente(cliente))
-//                        _databaseServer.UpdateClienteOnServer(cliente);
+        private Cliente getClienteFromServer(string clienteInfo)
+        {
+            // procura cliente com base no email
+            Cliente c = _databaseServer.GetClienteByEmail(clienteInfo);
 
-//                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
-//                }
-//            }
-//            else
-//            {
-//                if (!Senha.Equals(cliente.Senha) || Senha == null)
-//                    await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
-//                else
-//                {
-//                    Cliente = new Cliente();
-//Cliente = cliente;
-//                    _navigationParameters.Add("cliente", _cliente);
+            if (c != null)
+                return c;
 
-//                    await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/HomeMasterDetailPage/NavigationPage/HomePage", UriKind.Absolute), _navigationParameters);
-//                }
-//            }
-        //// verifica status desse login no servidor
-        //GetDatabases gdb = new GetDatabases();
-        //ClienteJson cj = gdb.GetClienteServer(c);
+            // verifica login
+            c = _databaseServer.GetClienteByLogin(clienteInfo);
 
-        //if(c.Status.Equals("IA"))
-        //{
-        //    if(cj != null && !cj.status.Equals("IA"))
-        //    {
-        //        c.Status = cj.status;
-        //        _regulaApiService.UpdateCliente(c);
+            if (c != null)
+                return c;
 
-        //        Login = c.Login;
-        //        Senha = c.Senha;
-        //    }
-        //}
-        //else if (!c.Status.Equals("I"))
-        //{
-        //    // se não econtrou cliente, adm excluiu o cliente
-        //    if (cj != null)
-        //    {
-        //        if (!clienteIsDisable(cj))
-        //        {
-        //            Login = c.Login;
-        //            Senha = c.Senha;
-        //        }
-        //        else
-        //        {
-        //            c.Status = cj.status;
-        //            _regulaApiService.UpdateCliente(c);
-        //        }
-        //    }
-        //    else
-        //    {
-        //        // exclui cliente do banco local
-        //        _regulaApiService.DeleteCliente(c);
-        //    }
-        //}
-
-        //private async void consumeAPI()
-        //{
-        //    // clonar a base de dados
-        //    if (_regulaApiService.GetCultivar().Count() <= 0)
-        //    {
-        //        try
-        //        {
-        //            GetDatabases gdb = new GetDatabases();
-        //            gdb.getDatabases(_regulaApiService);
-
-        //            // insere historico atualizacao no sqlite
-        //            HistoricoAtualizacao ha = new HistoricoAtualizacao();
-        //            ha.DataAtualizacao = DateTime.Now.Date.ToString();
-        //            ha.Status = "D";
-
-        //            if (!_regulaApiService.InsertHistoricoAtualizacao(ha))
-        //            {
-        //                await _dialogService.DisplayAlertAsync("", "Ocorreu um erro ao sicronizar a base de dados. Verifique sua conexão e tente novamente", "OK");
-        //            }
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            await _dialogService.DisplayAlertAsync("", ex.ToString(), "OK");
-        //        }
-        //    }
-        //}
+            return null;
+        }
     }
 }

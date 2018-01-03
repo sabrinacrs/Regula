@@ -32,8 +32,13 @@
                 <Button x:Name="ButtonHomeTalhao" Text="Talhões" Command="{Binding NavigateToTalhaoHomePageCommand}" Grid.Row="1" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
                 <Button x:Name="ButtonHomeUsuario" Text="Usuário" Command="{Binding NavigateToClienteUpdatePageCommand}" Grid.Row="2" Grid.Column="0" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
                 <Button x:Name="ButtonHomeHelp" Text="Ajuda" Command="{Binding NavigateToAjudaPageCommand}" Grid.Row="2" Grid.Column="1" Style="{StaticResource button-menu-home-default}" ContentLayout="Top,0"></Button>
-                
             </Grid>
+          
+            <StackLayout VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+              <Grid x:Name="loadingOverlay" VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+                <ActivityIndicator Color="Green" IsRunning="{Binding IsLoading}"></ActivityIndicator>
+              </Grid>
+            </StackLayout>
         </StackLayout>
         
     </ContentPage.Content>
