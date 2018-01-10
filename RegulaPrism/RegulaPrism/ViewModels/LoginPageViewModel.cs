@@ -26,14 +26,42 @@ namespace RegulaPrism.ViewModels
         private bool _isLoading;
         public bool IsLoading
         {
+            get { return _isLoading; }
+            set { SetProperty(ref _isLoading, value); }
+        }
+
+        private bool _isVisible;
+        public bool IsVisible
+        {
+            get { return _isVisible; }
+            set { SetProperty(ref _isVisible, value); }
+        }
+
+        private bool _isVisibleFormLogin;
+        public bool IsVisibleFormLogin
+        {
             get
             {
-                return this._isLoading;
+                return this._isVisibleFormLogin;
             }
             set
             {
-                this._isLoading = value;
-                RaisePropertyChanged("IsLoading");
+                this._isVisibleFormLogin = value;
+                RaisePropertyChanged("IsVisible");
+            }
+        }
+
+        private bool _isVisibleButtonRegister;
+        public bool IsVisibleButtonRegister
+        {
+            get
+            {
+                return this._isVisibleButtonRegister;
+            }
+            set
+            {
+                this._isVisibleButtonRegister = value;
+                RaisePropertyChanged("IsVisible");
             }
         }
 
@@ -86,7 +114,7 @@ namespace RegulaPrism.ViewModels
         public LoginPageViewModel(INavigationService navigationService, IPageDialogService dialogService, IRegulaApiService regulaApiService, ICloneDatabaseServer cloneDatabaseServer, IInformacoesManuais informacoesManuais)
         {
             // binding do título da página
-            Title = "CottonApp";
+            Title = "Cultiva Cotton";
 
             // services
             _navigationParameters = new NavigationParameters();
@@ -97,6 +125,13 @@ namespace RegulaPrism.ViewModels
             _dialogService = dialogService;
             _cloneDatabaseServer = cloneDatabaseServer;
 
+            // Form Login
+            IsVisibleFormLogin = false;
+            IsVisibleButtonRegister = true;
+
+            IsLoading = false;
+            IsVisible = true;
+
             // instanciar commands
             NavigateToClienteCreatePageCommand = new DelegateCommand(NavigateToClienteCreatePage);
             NavigateToHomeMasterDetailPageCommand = new DelegateCommand(NavigateToHomeMasterDetailPage);
@@ -105,6 +140,19 @@ namespace RegulaPrism.ViewModels
             // verifica se ja tem usuario cadastrado para carregar campos automaticamente
             if (_regulaApiService.GetClientes().Count() > 0 && Login == null && Senha == null)
             {
+                loadCliente();
+            }
+        }
+
+        private async void loadCliente()
+        {
+            IsLoading = true;
+            IsVisible = false;
+
+            try
+            {
+                await Task.Delay(4000);
+
                 Cliente c = new Cliente();
                 c = _regulaApiService.GetClientes().ElementAt(0);
 
@@ -117,8 +165,16 @@ namespace RegulaPrism.ViewModels
                 {
                     Login = c.Login;
                     Senha = c.Senha;
+
+                    _isVisibleButtonRegister = false;
                 }
+            }catch(Exception ex)
+            {
+
             }
+
+            IsLoading = false;
+            IsVisible = true;
         }
 
         private void NavigateToClienteCreatePage()
@@ -149,10 +205,10 @@ namespace RegulaPrism.ViewModels
 
                         if (Senha != null)
                             matches = Crypter.CheckPassword(Senha, _cliente.Senha);
-                            
+
                         // valida senha
                         if (!matches || Senha == null)
-                             await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
+                            await _dialogService.DisplayAlertAsync("", "Senha inválida", "OK");
                         else
                         {
                             // salva senha real, e não a criptografada
@@ -166,6 +222,9 @@ namespace RegulaPrism.ViewModels
 
                                 // obter talhoes do cliente
                                 _databaseServer.saveTalhoesFazendasCliente(_cliente);
+
+                                // obter semeaduras do cliente
+                                _databaseServer.saveSemeadurasCliente(_cliente);
 
                                 _navigationParameters.Add("cliente", _cliente);
 
@@ -190,20 +249,20 @@ namespace RegulaPrism.ViewModels
             else
             {
                 // verifica status - se o cliente está ativado / desativado
-                if(clienteDisable(cliente.Status))
+                if (clienteDisable(cliente.Status))
                 {
                     // conta desativada
-                    var choise =  await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
+                    var choise = await _dialogService.DisplayAlertAsync("Confirmação", "Esta conta foi desativada. Deseja reativá-la?", "Sim", "Não");
 
                     if (choise)
                     {
-                        if(CrossConnectivity.Current.IsConnected) // se está conectado com a internet, faz a atualização
+                        if (CrossConnectivity.Current.IsConnected) // se está conectado com a internet, faz a atualização
                         {
                             cliente.Status = "A";
                             if (_regulaApiService.UpdateCliente(cliente))
-                               _databaseServer.UpdateClienteOnServer(cliente); // atualiza status do cliente no servidor
+                                _databaseServer.UpdateClienteOnServer(cliente); // atualiza status do cliente no servidor
 
-                             await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
+                            await _navigationService.NavigateAsync(new Uri("http://brianlagunas.com/NavigationPage/LoginPage", UriKind.Absolute));
                         }
                         else
                         {
@@ -283,12 +342,16 @@ namespace RegulaPrism.ViewModels
                     {
                         Login = c.Login;
                         Senha = c.Senha;
+
+                        _isVisibleButtonRegister = false;
                     }
                 }
                 else
                 {
                     Login = c.Login;
                     Senha = c.Senha;
+
+                    _isVisibleButtonRegister = false;
                 }
             }
             else

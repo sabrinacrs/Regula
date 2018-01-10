@@ -9,11 +9,43 @@
         <ContentPage Title="Default" Style="{StaticResource background-master-detail}">
             <StackLayout Padding="5, 20, 5, 5">
                 <ListView x:Name="ItemsMenuLateral" HasUnevenRows="True" ItemsSource="{Binding Itens}" SelectedItem="{Binding SelectedItem}">
-                    <ListView.ItemTemplate>
+                  <ListView.Header>
+                    <StackLayout Padding="20">
+                        <Grid HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                          <!-- Row Definitions of Grid -->
+                          <Grid.RowDefinitions>
+                            <RowDefinition Height="50"></RowDefinition>
+                          </Grid.RowDefinitions>
+
+                          <!-- Column Definitions of Grid -->
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50"></ColumnDefinition>
+                          </Grid.ColumnDefinitions>
+
+                          <Image Source="icon.png" Aspect="AspectFill" Grid.Row="0" Grid.Column="0"></Image>
+                      </Grid>
+                    </StackLayout>
+                  </ListView.Header>
+                  
+                  <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
-                                <StackLayout Padding="20">
-                                    <Label Text="{Binding Titulo}" Style="{StaticResource label-item-master-detail}"/>
+                                <StackLayout Padding="20, 0, 20, 0">
+                                  <Grid ColumnSpacing="20">
+                                    <!-- Row Definitions of Grid -->
+                                    <Grid.RowDefinitions>
+                                      <RowDefinition Height="50"></RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <!-- Column Definitions of Grid -->
+                                    <Grid.ColumnDefinitions>
+                                      <ColumnDefinition Width="20"></ColumnDefinition>
+                                      <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="{Binding ImageSource}" Grid.Row="0" Grid.Column="0" />
+                                    <Label Text="{Binding Titulo}" Style="{StaticResource label-item-master-detail}" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="1"/>
+                                  </Grid>
                                 </StackLayout>
                             </ViewCell>
                         </DataTemplate>

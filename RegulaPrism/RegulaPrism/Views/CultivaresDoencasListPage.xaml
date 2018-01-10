@@ -16,7 +16,7 @@
 
             <StackLayout VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
                 <Grid x:Name="loadingOverlay" VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
-                    <ActivityIndicator Color="Green" IsRunning="{Binding IsLoading}"></ActivityIndicator>
+                    <ActivityIndicator Color="Blue" IsRunning="{Binding IsLoading}"></ActivityIndicator>
                 </Grid>
                 <Grid VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
                     <!-- Row Definitions of Grid -->
@@ -29,7 +29,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Green" Text="Carregando ..." Grid.Row="0" Grid.Column="0"></Label>
+                    <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Blue" Text="Carregando ..." Grid.Row="0" Grid.Column="0"></Label>
                 </Grid>
             </StackLayout>
 

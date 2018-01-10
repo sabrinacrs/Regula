@@ -8,10 +8,11 @@ namespace RegulaPrism
 {
     public class ItemMenuLateral
     {
-        public ItemMenuLateral(String Titulo, String Descricao)
+        public ItemMenuLateral(String Titulo, String Descricao, String ImageSource)
         {
             this.Titulo = Titulo;
             this.Descricao = Descricao;
+            this.ImageSource = ImageSource;
         }
         public string Titulo
         {
@@ -20,6 +21,12 @@ namespace RegulaPrism
         }
 
         public string Descricao
+        {
+            get;
+            set;
+        }
+
+        public string ImageSource
         {
             get;
             set;

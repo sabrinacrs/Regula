@@ -11,8 +11,7 @@
 namespace RegulaPrism.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Sabrina\\Documents\\Regula\\Front-End App\\RegulaPrism\\RegulaPrism\\RegulaPri" +
-        "sm\\Views\\FazendaSelectedTabbedPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("F:\\RegulaPrism\\RegulaPrism\\RegulaPrism\\Views\\FazendaSelectedTabbedPage.xaml")]
     public partial class FazendaSelectedTabbedPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

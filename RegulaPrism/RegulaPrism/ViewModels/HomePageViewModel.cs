@@ -61,7 +61,7 @@ namespace RegulaPrism.ViewModels
 
         public HomePageViewModel(INavigationService navigationService, IPageDialogService dialogService, ICloneDatabaseServer cloneDatabaseServer, IRegulaApiService regulaApiService, IInformacoesManuais informacoesManuais)
         {
-            Title = "CottonApp";
+            Title = "Cultiva Cotton";
 
             _navigationService = navigationService;
             _regulaApiService = regulaApiService;

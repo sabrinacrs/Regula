@@ -4,20 +4,64 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="RegulaPrism.Views.LoginPage"
-             Title="{Binding Title}"
-             BackgroundColor="White">
+             BackgroundColor="#ffffff">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Ajuda" Command="{Binding InfoCommand}" Order="Secondary"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Padding="30, 150, 30, 0" Spacing="20">
-            <Entry Text="{Binding Login}" x:Name="Login" Placeholder="Login ou Email" />
-            <Entry Text="{Binding Senha}" x:Name="Senha" Placeholder="Senha" IsPassword="True" />
-            <Label x:Name="Registrar" Text="       Não possui usuário registrado? Cadastre-se" />
+      <StackLayout Padding="0, 50, 0, 0">
+        <!--Logo-->
+        <StackLayout>
+          <Grid HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+            <!-- Row Definitions of Grid -->
+            <Grid.RowDefinitions>
+              <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
 
-            <ActivityIndicator x:Name="actInd" IsRunning="{Binding IsLoading}" IsVisible="{Binding IsLoading}" Color="Red"/>
-            
-            <Button x:Name="Entrar" Text="Entrar" Style="{StaticResource button-save}" Command="{Binding NavigateToHomeMasterDetailPageCommand}"/>
+            <!-- Column Definitions of Grid -->
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="icon.png" Aspect="AspectFill" Grid.Row="0" Grid.Column="0"></Image>
+          </Grid>
         </StackLayout>
+        
+        <!--Componente Loading-->
+        <StackLayout VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+          <Grid x:Name="loadingOverlay" VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+            <ActivityIndicator Color="Blue" IsRunning="{Binding IsLoading}"></ActivityIndicator>
+          </Grid>
+          <Grid VerticalOptions="CenterAndExpand" IsVisible="{Binding IsLoading}">
+            <!-- Row Definitions of Grid -->
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <!-- Column Definitions of Grid -->
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="Green" Text="Carregando ..." Grid.Row="0" Grid.Column="0"></Label>
+          </Grid>
+        </StackLayout>
+        
+        <!--Formulário-->
+        <StackLayout IsVisible="{Binding IsVisible}">
+          
+          <StackLayout Padding="30, 50, 30, 0" IsVisible="{Binding IsVisible}">
+            <Entry Text="{Binding Login}" x:Name="Login" Placeholder="Login ou Email" FontSize="Small" TextColor="#3E4095" IsVisible="{Binding IsVisible}"/>
+            <Entry Text="{Binding Senha}" x:Name="Senha" Placeholder="Senha" IsPassword="True" FontSize="Small" TextColor="#3E4095" IsVisible="{Binding IsVisible}"/>
+            <Label x:Name="Registrar" Text="       Não possui usuário registrado? Cadastre-se" TextColor="#3E4095" IsVisible="false"/>
+
+            <Button x:Name="Entrar" Text="Entrar" Style="{StaticResource button-save}" Command="{Binding NavigateToHomeMasterDetailPageCommand}" IsVisible="{Binding IsVisible}"/>
+          </StackLayout>
+          
+          <StackLayout Padding="30, 0, 30, 0" IsVisible="{Binding IsVisible}">
+            <Button x:Name="Cadastrar" Text="Cadastre-se" Style="{StaticResource button-default}" Command="{Binding NavigateToClienteCreatePageCommand}" IsVisible="{Binding IsVisibleButtonRegister}"/>
+          </StackLayout>
+        </StackLayout>
+      </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,55 +1,56 @@
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.Droid.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\FormsViewGroup.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.ServiceLocation.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.Unity.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Threading.Tasks.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Threading.Tasks.Extensions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\MySql.Data.CF.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Newtonsoft.Json.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.Abstractions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Forms.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Unity.Forms.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\SQLite.Net.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\SQLite.Net.Platform.XamarinAndroid.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.Extensions.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.Primitives.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Annotations.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Compat.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Core.UI.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Core.Utils.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Design.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Fragment.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Media.Compat.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Transition.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v4.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.CardView.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.Palette.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Java.Interop.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.CSharp.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Mono.Android.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\mscorlib.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Core.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Data.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.Linq.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Numerics.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.XmlDocument.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Runtime.Serialization.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.ServiceModel.Internals.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.ComponentModel.TypeConverter.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Runtime.Serialization.Formatters.dll
-C:\Users\Sabrina\Documents\Regula\Front-End App\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Mono.CSharp.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.Droid.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\FormsViewGroup.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.ServiceLocation.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Practices.Unity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Threading.Tasks.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.Threading.Tasks.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\MySql.Data.CF.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Newtonsoft.Json.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.Abstractions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Plugin.Connectivity.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Prism.Unity.Forms.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\SQLite.Net.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\SQLite.Net.Platform.XamarinAndroid.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.Extensions.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.Primitives.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Annotations.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Compat.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Core.UI.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Core.Utils.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Design.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Fragment.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Media.Compat.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Transition.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v4.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.CardView.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.MediaRouter.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.Palette.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.v7.RecyclerView.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Android.Support.Vector.Drawable.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Java.Interop.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Microsoft.CSharp.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Mono.Android.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\mscorlib.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Core.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Data.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Net.Http.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.Linq.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\RegulaPrism.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Numerics.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Xml.XmlDocument.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Runtime.Serialization.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.ServiceModel.Internals.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.ComponentModel.TypeConverter.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\System.Runtime.Serialization.Formatters.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\Mono.CSharp.dll
+F:\RegulaPrism\RegulaPrism\RegulaPrism.Droid\obj\Release\android\assets\CryptSharp.dll

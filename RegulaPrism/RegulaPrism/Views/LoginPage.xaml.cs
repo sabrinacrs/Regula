@@ -13,6 +13,8 @@ namespace RegulaPrism.Views
             {
                 Command = new Command(() => OnLabelClicked()),
             });
+
+            Cadastrar.BorderColor = Color.Blue;
         }
 
         public void OnLabelClicked()

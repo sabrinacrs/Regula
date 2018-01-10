@@ -10,7 +10,7 @@ namespace RegulaPrism.Models
 {
     public class Talhao
     {
-        [PrimaryKey, AutoIncrement]
+        [PrimaryKey]
         public int Id
         {
             get;

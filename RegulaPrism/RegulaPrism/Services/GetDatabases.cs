@@ -44,6 +44,12 @@ namespace RegulaPrism.Services
             SaveTalhoesClienteServer(cliente);
         }
 
+        public void saveSemeadurasCliente(Cliente cliente)
+        {
+            // pega os talhoes do cliente
+            SaveSemeadurasClienteServer(cliente);
+        }
+
         private void Clone()
         {
             // save cultivar
@@ -106,6 +112,17 @@ namespace RegulaPrism.Services
         public SemeaduraJson SendSemeaduraToServer(Semeadura semeadura)
         {
             return _dataService.AddSemeaduraAsync(semeadura);
+        }
+
+        private async void SaveSemeadurasClienteServer(Cliente cliente)
+        {
+            List<Semeadura> semeadurasServer = await _dataService.GetSemeadurasByClienteAsync(cliente);
+
+            // insere cada semeadura no banco local
+            foreach (Semeadura s in semeadurasServer)
+            {
+                _regulaApiService.InsertSemeadura(s);
+            }
         }
         #endregion
 

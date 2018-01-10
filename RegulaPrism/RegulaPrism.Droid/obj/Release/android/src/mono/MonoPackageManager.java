@@ -139,6 +139,7 @@ class MonoPackageManager_Resources {
 		"System.Xml.XmlDocument.dll",
 		"System.ComponentModel.TypeConverter.dll",
 		"System.Runtime.Serialization.Formatters.dll",
+		"CryptSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

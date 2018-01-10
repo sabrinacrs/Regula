@@ -6,9 +6,9 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="RegulaPrism.Views.FazendaSelectedTabbedPage"
             Title="{Binding Title}"
-            BarBackgroundColor="#4ba561"
+            BarBackgroundColor="#3E4095"
             BarTextColor="White"
-            BackgroundColor="White">
+            BackgroundColor="#3E4095">
     <TabbedPage.Children>
         <local:FazendaSemeadurasListPage/> <!-- Lista de Semeaduras daquela fazenda -->
         <local:TalhaoListPage/> <!-- Lista de talhões da fazenda-->

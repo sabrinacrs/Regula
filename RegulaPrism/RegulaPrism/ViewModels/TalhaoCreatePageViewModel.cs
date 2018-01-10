@@ -129,6 +129,9 @@ namespace RegulaPrism.ViewModels
                     }
                     else
                     {
+                        // id do talhao no servidor no talhao do sqlite
+                        _talhao.Id = talhaoJson.id;
+
                         if (_regulaApiService.InsertTalhao(_talhao))
                         {
                             // passa parametro navigationaware

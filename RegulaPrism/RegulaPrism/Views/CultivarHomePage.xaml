@@ -7,8 +7,8 @@
              Title="{Binding Title}"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout Padding="30, 20, 30, 20">
-            <Grid>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+            <Grid HorizontalOptions="Center" VerticalOptions="FillAndExpand" Padding="20, 60, 20, 0">
                 <!-- Row Definitions of Grid -->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150"></RowDefinition>

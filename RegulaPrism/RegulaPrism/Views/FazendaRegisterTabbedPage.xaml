@@ -6,9 +6,9 @@
             prism:ViewModelLocator.AutowireViewModel="True"
             x:Class="RegulaPrism.Views.FazendaRegisterTabbedPage"
             Title="{Binding Title}"
-            BarBackgroundColor="#8fd08f"
+            BarBackgroundColor="#3E4095"
             BarTextColor="White"
-            BackgroundColor="White">
+            BackgroundColor="#3E4095">
     <TabbedPage.Children>
         <!--<local:FazendaCreatePage/>-->
         <local:FazendaContatoPage/>

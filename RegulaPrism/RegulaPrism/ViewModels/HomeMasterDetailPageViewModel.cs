@@ -57,7 +57,7 @@ namespace RegulaPrism.ViewModels
 
         public HomeMasterDetailPageViewModel(INavigationService navigationService)
         {
-            Title = "Regula";
+            Title = "Cultiva Cotton";
 
             _itens = GetItens();
             _navigationService = navigationService;
@@ -71,14 +71,13 @@ namespace RegulaPrism.ViewModels
             List<ItemMenuLateral> lista = new List<ItemMenuLateral>();
 
             //lista.Add(new ItemMenuLateral("Cadastrar Cliente", ""));
-            lista.Add(new ItemMenuLateral("Home", "HomePage"));
-            lista.Add(new ItemMenuLateral("Cultivares", "CultivarHomePage"));
-            lista.Add(new ItemMenuLateral("Semeadura", "SemeaduraPage"));
-            lista.Add(new ItemMenuLateral("Fazendas", "FazendaHomePage"));
-            lista.Add(new ItemMenuLateral("Talhões", "TalhaoHomePage"));
-            //lista.Add(new ItemMenuLateral("Cadastrar Talhão", "TalhaoHomePage"));
-            lista.Add(new ItemMenuLateral("Dados Pessoais", "ClienteUpdatePage"));
-            lista.Add(new ItemMenuLateral("Sair", "LoginPage"));
+            lista.Add(new ItemMenuLateral("Home", "HomePage", "homeblue.png"));
+            lista.Add(new ItemMenuLateral("Cultivares", "CultivarHomePage", "cultivarblue.png"));
+            lista.Add(new ItemMenuLateral("Semeadura", "SemeaduraPage", "semeadurablue.png"));
+            lista.Add(new ItemMenuLateral("Fazendas", "FazendaHomePage", "homecolor.png"));
+            lista.Add(new ItemMenuLateral("Talhões", "TalhaoHomePage", "talhaoblue.png"));
+            lista.Add(new ItemMenuLateral("Dados Pessoais", "ClienteUpdatePage", "avatarblue.png"));
+            lista.Add(new ItemMenuLateral("Sair", "LoginPage", "signoutblue.png"));
 
             return lista;
         }

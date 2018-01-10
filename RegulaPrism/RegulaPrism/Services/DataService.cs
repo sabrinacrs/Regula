@@ -473,6 +473,35 @@ namespace RegulaPrism.Services
             }
         }
 
+        public async Task<List<Semeadura>> GetSemeadurasByClienteAsync(Cliente cliente)
+        {
+            try
+            {
+                string url = "http://www.cottonappadm.xyz/testeapi/semeadurascliente/{0}";
+
+                ClienteJson cj = loadClienteJson(cliente);
+
+                var uri = new Uri(string.Format(url, cliente.Id));
+                var data = JsonConvert.SerializeObject(cj);
+                var content = new StringContent(data, Encoding.UTF8, "application/json");
+                var response = await client.GetAsync(uri);
+                var jsonReturned = response.Content.ReadAsStringAsync();
+                var semeadurasServer = JsonConvert.DeserializeObject<List<SemeaduraJson>>(jsonReturned.Result);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+                else
+                    return loadSemeaduras(semeadurasServer);
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex);
+                return null;
+            }
+        }
+
         private SemeaduraJson loadSemeaduraJson(Semeadura semeadura)
         {
             SemeaduraJson sj = new SemeaduraJson();
@@ -488,6 +517,28 @@ namespace RegulaPrism.Services
             //cliente.DataDesativacao.ToString();
 
             return sj;
+        }
+
+        private List<Semeadura> loadSemeaduras(List<SemeaduraJson> semeadurasJson)
+        {
+            List<Semeadura> semeaduras = new List<Semeadura>();
+
+            foreach (var x in semeadurasJson)
+            {
+                Semeadura s = new Semeadura();
+                s.Id = x.id;
+                s.QuilosSementes = x.quilos_sementes;
+                s.Germinacao = x.germinacao;
+                s.MetrosLineares = x.metros_lineares;
+                s.TalhaoId = x.talhao_id;
+                s.CultivarEpocaSemeaduraCultId = x.cultivar_id;
+                s.CultivarEpocaSemeaduraEpId = x.epoca_semeadura_id;
+                //s.Data = x.data;
+
+                semeaduras.Add(s);
+            }
+
+            return semeaduras;
         }
         #endregion
 

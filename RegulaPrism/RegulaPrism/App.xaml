@@ -16,12 +16,12 @@
       
       <!-- Background Master Detail Page -->
       <Style x:Key="background-master-detail" TargetType="NavigationPage">
-        <Setter Property="BackgroundColor" Value="#3E4095"/>
+        <Setter Property="BackgroundColor" Value="White"/>
       </Style>
       
       <!-- Label Item Master Detail -->
       <Style x:Key="label-item-master-detail" TargetType="Label">
-        <Setter Property="TextColor" Value="#F5F5F5"/>
+        <Setter Property="TextColor" Value="#3E4095"/>
         <Setter Property="Font" Value="Medium"/>
       </Style>
       
@@ -31,6 +31,14 @@
         <Setter Property="BorderColor" Value="Blue"/>
         <Setter Property="TextColor" Value="#ffffff"/>
         <Setter Property="BackgroundColor" Value="#60BD60"/><!-- 016D72 60BD60-->
+      </Style>
+
+      <!-- Button Save Style -->
+      <Style x:Key="button-default" TargetType="Button">
+        <Setter Property="BorderColor" Value="Blue"/>
+        <Setter Property="TextColor" Value="#3E4095"/>
+        <Setter Property="BackgroundColor" Value="#d2d1d1"/>
+        <!-- 016D72 60BD60-->
       </Style>
 
       <!-- Button Delete Style -->
